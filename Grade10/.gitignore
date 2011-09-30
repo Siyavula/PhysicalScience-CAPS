@@ -5,3 +5,5 @@
 *.dvi
 *.toc
 *.swp
+*.tex~
+*.backup
