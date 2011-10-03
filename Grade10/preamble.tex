@@ -1,5 +1,4 @@
-   
-    \newenvironment{toc}%
+   \newenvironment{toc}%
     {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
     \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
     \setlength{\partopsep}{0cm}}
@@ -64,8 +63,8 @@
     \usepackage{pst-optic}         %Jo
     \usepackage{pstricks-add}         %Jo
     \usepackage{pst-labo}         %Jo   
-    \usepackage{mdframed}
     \usepackage{auto-pst-pdf}
+    \usepackage{mdframed}
     \sffamily
     \pagestyle{headings}
 
@@ -177,6 +176,38 @@
 \end{center}
 \vspace{3mm}}
 
+\newcommand{\Tip}[1]{
+\vspace{3mm}
+\begin{center}
+\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
+\noindent%
+\textbf{Tip:}\par
+#1
+\end{minipage}}
+\end{center}
+\vspace{3mm}}
+
+\newcommand{\Warning}[1]{
+\vspace{3mm}
+\begin{center}
+\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
+\noindent%
+\textbf{Warning:}\par
+#1
+\end{minipage}}
+\end{center}
+\vspace{3mm}}
+
+\newcommand{\Note}[1]{
+\vspace{3mm}
+\begin{center}
+\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
+\noindent%
+\textbf{Note:}\par
+#1
+\end{minipage}}
+\end{center}
+\vspace{3mm}}
 
                 
 
@@ -212,11 +243,203 @@
           \endgroup
         }
 
-        \newenvironment{exercise}{\begin{example}}
-        {\end{example}}
+        %\newenvironment{exercise}{\begin{example}}
+        %{\end{example}}
+
+% Inserted by MH to get step number etc. to work nicely
+% My attempt to define a worked example environment
+\newcounter{stepcounter}
+\setcounter{stepcounter}{1}
+
+\newcounter{workedexamplecounter}
+\setcounter{workedexamplecounter}{1}
+
+% can we deprecate the use of this, and use \westep instead
+\newcommand{\westep}[1]
+{\par \par%\pagebreak[1]
+ \textbf{\textit{Step \arabic{stepcounter} : #1}}\par
+ \addtocounter{stepcounter}{1}}
+
+
+\newenvironment{wex}[3]
+{% This is a picture at the beginning, a line or bar or something else
+% this command puts a bar in the margin and sets the bar width
+% Now we set margins
+% \begin{center}
+%\pagebreak
+%\begin{flushleft}
+%\begin{pspicture}(0,0)(10,0.01)
+% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
+% \psline[linecolor=gray]{-}(0,0)(0,-2)
+%\end{pspicture}
+%\end{flushleft}
+%\end{center}
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+%% Title and counter
+\rput(-2.0,0){\pspencil}\noindent
+%\begin{mdframed}[linewidth =2,margin=40]
+\textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
+#1}\par
+\textbf{Question:} #2\par
+\textbf{Answer}\par #3%
+\addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
+\par%\vspace{.25cm}
+}%
+{%
+%\end{mdframed}
+\end{quotation}
+%\nopagebreak[4]
+\begin{flushright}
+%\begin{pspicture}(0,0)(10,0.01)
+% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
+% \psline[linecolor=gray]{-}(10,0)(10,2)
+%\end{pspicture}
+\end{flushright}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{exercises}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Exercises:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{eocexercises}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Exercises:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{f_experiment}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Formal Experiment:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{i_experiment}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Informal Experiment:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{g_experiment}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{General Experiment:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{activity}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Activity:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{groupdiscussion}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Group Discussion:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+
+\newenvironment{casestudy}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Case Study:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{project}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Project:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{Investigation}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Investigation:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+
+
 
         \newenvironment{cnxrule}{\begin{example}}
         {\end{example}}
+
+\newenvironment{exercise}{\textbf{\par Needs to be changed to wex environment\par}\begin{example}}
+        {\end{example}}
+
 
         \newenvironment{definition}{\begin{example}}
         {\end{example}}
@@ -293,4 +516,7 @@
   
     \usepackage{fancyhdr}
     \pagestyle{fancy}
+
+
+
 
