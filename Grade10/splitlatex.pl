@@ -15,7 +15,7 @@ foreach $line (@lines)
 		$name =~ s/\\chapter{(.*) - Grade.*/\1/;
 		$name =~ s/ //g;
 		$name =~ s/\W//g;
-		open(INFO, '>PhysSci_Gr10_Ch_'.$counter."-$name.tex");
+		open(INFO, '>Mathematics_Gr10_Ch_'.$counter."-$name.tex");
 		$counter++;
 		$inside=1;
 	}
