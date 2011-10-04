@@ -602,4 +602,13 @@ linecolor=red%
 
 
 
+%Physics Definitions
+\def\rope{\psline(0,0.2)(5,.2)\psline(0,0)(5,0)\multirput(0,0)(0.2,0){25}{\psline(0,0)(0.2,0.2)}}
+
+\def\cart{\psframe(0,0.4)(1,1)\pscircle(0.2,0.2){0.2}\pscircle(0.8,0.2){0.2}}
+
+% Arrow for objects and images
+\newpsobject{oi}{psline}{arrowsize=6pt, arrowlength=1.5, arrowinset=0, linewidth=2pt}
+\psset{lensHeight=3,lensColor=lightgray}
+\newpsobject{PrincipalAxis}{psline}{linewidth=0.5pt,linecolor=gray}
 
