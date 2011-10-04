@@ -603,6 +603,25 @@ linecolor=red%
 
 
 
+% border icons
+\newcommand{\psintfact}%
+{%
+\rput(0,0){\begin{tabular}{c}\textbf{Interesting}\\ \textbf{Fact}%
+\end{tabular}}
+}
+
+\newcommand{\psfact}%
+{%
+\begin{pspicture}(-.5,-.5)(.5,.5)
+ \psintfact
+ \PstLens[LensSize=0.5,LensRotation=-60,LensMagnification=1.5](-.04,-.1){\psintfact}
+\end{pspicture}
+}
+
+
+
+
+
 %Physics Definitions
 \def\rope{\psline(0,0.2)(5,.2)\psline(0,0)(5,0)\multirput(0,0)(0.2,0){25}{\psline(0,0)(0.2,0.2)}}
 
