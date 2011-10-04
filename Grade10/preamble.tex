@@ -164,17 +164,18 @@
 \end{pspicture}\end{center}
 \vspace{3mm}\sffamily}%
 
-
 \newcommand{\Definition}[2]{
 \vspace{3mm}
+\begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=lightgray
+splittopskip=\topskip,skipbelow=\baselineskip,%
+skipabove=\baselineskip]%
 \begin{center}
-\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
-\noindent%
 \textbf{Definition: #1}\par
 #2
-\end{minipage}}
 \end{center}
+\end{mdframed}
 \vspace{3mm}}
+
 
 \newcommand{\Tip}[1]{
 \vspace{3mm}
@@ -188,15 +189,19 @@
 \vspace{3mm}}
 
 \newcommand{\Warning}[1]{
+\begin{mdframed}[linewidth=4pt,%
+linecolor=red%
+]
+%\begin{mdframed}[linewidth=2pt,linecolor=red]%
 \vspace{3mm}
 \begin{center}
-\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
 \noindent%
 \textbf{Warning:}\par
 #1
-\end{minipage}}
 \end{center}
+\end{mdframed}
 \vspace{3mm}}
+
 
 \newcommand{\Note}[1]{
 \vspace{3mm}
@@ -261,6 +266,29 @@
  \addtocounter{stepcounter}{1}}
 
 
+\newenvironment{oldwex}[3]
+{% This is a picture at the beginning, a line or bar or something else
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+%% Title and counter
+\rput(-2.0,0){\pspencil}\noindent
+%\begin{mdframed}[linewidth =2,margin=40]
+\textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
+#1}\par
+\textbf{Question:} #2\par
+\textbf{Answer}\par #3%
+\addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
+\par%\vspace{.25cm}
+}%
+{%
+%\end{mdframed}
+\end{quotation}
+\begin{flushright}
+\end{flushright}
+\setlength{\parindent}{\saveparindentlength}}
+
 \newenvironment{wex}[3]
 {% This is a picture at the beginning, a line or bar or something else
 % this command puts a bar in the margin and sets the bar width
@@ -280,7 +308,7 @@
 \setlength{\parindent}{0pt}
 %% Title and counter
 \rput(-2.0,0){\pspencil}\noindent
-%\begin{mdframed}[linewidth =2,margin=40]
+\begin{mdframed}[linewidth=2,linecolor=black,backgroundcolor=lightgray]
 \textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
 #1}\par
 \textbf{Question:} #2\par
@@ -289,7 +317,7 @@
 \par%\vspace{.25cm}
 }%
 {%
-%\end{mdframed}
+\end{mdframed}
 \end{quotation}
 %\nopagebreak[4]
 \begin{flushright}
@@ -299,6 +327,8 @@
 %\end{pspicture}
 \end{flushright}
 \setlength{\parindent}{\saveparindentlength}}
+
+
 
 \newenvironment{exercises}[1]
 {
@@ -329,6 +359,7 @@
 \newenvironment{f_experiment}[1]
 {
 \begin{quotation}
+\begin{mdframed}[linewidth=5,linecolor=darkgray]
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
@@ -336,12 +367,15 @@
 #1}\par
 }%
 {%
+\end{mdframed}
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}}
+
 
 \newenvironment{i_experiment}[1]
 {
 \begin{quotation}
+\begin{mdframed}[linewidth=5,linecolor=lightgray]
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
@@ -349,12 +383,14 @@
 #1}\par
 }%
 {%
+\end{mdframed}
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}}
 
 \newenvironment{g_experiment}[1]
 {
 \begin{quotation}
+\begin{mdframed}[linewidth=5,linecolor=lightgray]
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
@@ -362,10 +398,11 @@
 #1}\par
 }%
 {%
+\end{mdframed}
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}}
 
-\newenvironment{activity}[1]
+\newenvironment{oldactivity}[1]
 {
 \begin{quotation}
 \noindent
@@ -378,7 +415,46 @@
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}}
 
+\newenvironment{activity}[1]
+{
+\begin{quotation}
+\noindent
+\setlength{\parindent}{0pt}
+\hrule width \textwidth height 1pt\\
+\vspace{1pt}\hrule width \textwidth height 1pt\vspace{7pt}
+\textbf{\Large\textit{Activity:}
+#1}
+\vspace{5pt}
+\hrule width \textwidth height 1pt
+\vspace{5pt}
+}%
+{%
+\vspace{5pt}
+\hrule width \textwidth height 1pt
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
 \newenvironment{groupdiscussion}[1]
+{
+\begin{quotation}
+\noindent
+\setlength{\parindent}{0pt}
+\hrule width \textwidth height 1pt\\
+\vspace{1pt}\hrule width \textwidth height 1pt\vspace{7pt}
+\textbf{\Large\textit{Group Discussion:}
+#1}
+\vspace{5pt}
+\hrule width \textwidth height 1pt
+\vspace{5pt}
+}%
+{%
+\vspace{5pt}
+\hrule width \textwidth height 1pt
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+
+\newenvironment{oldgroupdiscussion}[1]
 {
 \begin{quotation}
 \noindent
@@ -390,7 +466,6 @@
 {%
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}}
-
 
 \newenvironment{casestudy}[1]
 {
@@ -516,6 +591,14 @@
   
     \usepackage{fancyhdr}
     \pagestyle{fancy}
+    \fancyfoot[C]{}
+    \fancyfoot[LE,RO]{\thepage}
+
+
+
+\usepackage[Bjornstrup]{fncychap}
+\ChNumVar{\fontsize{76}{80}\usefont{OT1}{pzc}{m}{n}\selectfont}
+\ChTitleVar{\raggedleft\HUGE\sffamily\bfseries}
 
 
 
