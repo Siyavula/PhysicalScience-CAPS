@@ -165,16 +165,14 @@
 \vspace{3mm}}%\sffamily}%
 
 \newcommand{\Definition}[2]{
-\vspace{3mm}
-\begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=lightgray
-splittopskip=\topskip,skipbelow=\baselineskip,%
+\begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=lightgray,skipbelow=\baselineskip,%
 skipabove=\baselineskip]%
 \begin{center}
-\textbf{Definition: #1}\par
+\textbf{Definition: #1}\par\nopagebreak
 #2
 \end{center}
 \end{mdframed}
-\vspace{3mm}}
+}
 
 
 \newcommand{\Tip}[1]{
