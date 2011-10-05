@@ -150,7 +150,7 @@
 
 
 \newenvironment{IFact}[1]%
-{\vspace{3mm}\rmfamily
+{\vspace{3mm}%\rmfamily
  \begin{center}\begin{pspicture}(0,0)(5,0.01)
  \psline[linecolor=red]{-}(0,0)(5,0)
 \end{pspicture}\end{center}
@@ -162,7 +162,7 @@
 {\begin{center}\begin{pspicture}(0,0)(5,0.01)
  \psline[linecolor=red]{-}(0,-0.1)(5,-0.1)
 \end{pspicture}\end{center}
-\vspace{3mm}\sffamily}%
+\vspace{3mm}}%\sffamily}%
 
 \newcommand{\Definition}[2]{
 \begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=lightgray,skipbelow=\baselineskip,%
