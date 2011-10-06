@@ -814,11 +814,12 @@ Chlorine-37 & & & & & \\\hline
 \label{m38741*id259357}In the following examples, the energy levels are shown as concentric circles around the central nucleus. The important thing to know for these diagrams is that the first energy level can hold 2 electrons, the second energy level can hold 8 electrons and the third energy level can hold 8 electrons.\par 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 
-\item{\textbf{Lithium}
-
+\item{\textbf{Lithium} \\
+\begin{minipage}{.4\textwidth}
 Lithium (Li) has an atomic number of 3, meaning that in a neutral atom, the number of electrons will also be 3. The first two electrons are found in the first energy level, while the third electron is found in the second energy level (figure \ref{fig:atom:lithium}).
-
-\begin{figure}[!ht]
+\end{minipage}
+\begin{minipage}{.6\textwidth}
+\begin{figure}[H]
 \begin{center}
 \begin{pspicture}(-5,1)(7,4)
 \SpecialCoor
@@ -844,15 +845,17 @@ Lithium (Li) has an atomic number of 3, meaning that in a neutral atom, the numb
 \label{fig:atom:lithium}
 \end{center}
 \end{figure}
+\end{minipage}
 }
 
-\item{\textbf{Fluorine}
-
+\item{\textbf{Fluorine} \\
+\begin{minipage}{.4\textwidth}
 Fluorine (F) has an atomic number of 9, meaning that a neutral atom also has 9 electrons. The first 2 electrons are found in the first energy level, while the other 7 are found in the second energy level (figure \ref{fig:atom:fluorine}).
-
-
-\begin{figure}[!h]
+\end{minipage}
+\begin{minipage}{.6\textwidth}
+\begin{figure}[H]
 \begin{center}
+\scalebox{0.8}{
 \begin{pspicture}(-5.5,-2)(7,1.5)
 \pscircle(0,0){1.25}
 \pscircle(0,0){0.75}
@@ -860,18 +863,22 @@ Fluorine (F) has an atomic number of 9, meaning that a neutral atom also has 9 e
 \multido{\n=90+180}{2}{\pscircle[fillcolor=black,fillstyle=solid]({0.75;\n}){0.1}}
 \multido{\n=0+45}{7}{\pscircle[fillcolor=black,fillstyle=solid]({1.25;\n}){0.1}}
 \end{pspicture}
+}
 \caption{The arrangement of electrons in a fluorine atom.}
 \label{fig:atom:fluorine}
 \end{center}
 \end{figure}
+\end{minipage}
 }
 
-\item{\textbf{Argon}
-
+\item{\textbf{Argon} \\
+\begin{minipage}{.4\textwidth}
 Argon has an atomic number of 18, meaning that a neutral atom also has 18 electrons. The first 2 electrons are found in the first energy level, the next 8 are found in the second energy level, and the last 8 are found in the third energy level (figure \ref{fig:atom:argon}).
-
-\begin{figure}[!h]
+\end{minipage}
+\begin{minipage}{.6\textwidth}
+\begin{figure}[H]
 \begin{center}
+\scalebox{0.7}{
 \begin{pspicture}(-6,-2)(7,2)
 \pscircle(0,0){1.75}
 \pscircle(0,0){1.25}
@@ -882,10 +889,12 @@ Argon has an atomic number of 18, meaning that a neutral atom also has 18 electr
 \multido{\n=0+45}{8}{\pscircle[fillcolor=black,fillstyle=solid]({1.75;\n}){0.1}}
 \pscircle[fillcolor=black,fillstyle=solid]({1.25;0}){0.1}
 \end{pspicture}
+}
 \caption{The arrangement of electrons in an argon atom.}
 \label{fig:atom:argon}
 \end{center}
 \end{figure}
+\end{minipage}
 }
 \end{enumerate}
 
@@ -899,6 +908,8 @@ Argon has an atomic number of 18, meaning that a neutral atom also has 18 electr
 The first energy level contains only one 's' orbital, the second energy level contains one 's' orbital and three 'p' orbitals and the third energy level contains one 's' orbital and three 'p' orbitals (as well as 5 'd' orbitals). Within each energy level, the 's' orbital is at a lower energy than the 'p' orbitals. This arrangement is shown in figure \ref{fig:Aufbau:blank}. 
 
 \begin{figure}[h]
+\begin{center}
+ \scalebox{.8}{
  \begin{pspicture}(-6,-8)(6,5)
 %\psgrid
  
@@ -941,7 +952,9 @@ The first energy level contains only one 's' orbital, the second energy level co
 }
 }
 \end{pspicture}
-\caption{The positions of the first ten orbits of an atom on an energy diagram.  Note that each block is able to hold two electrons.}
+}
+\end{center}
+\caption{The positions of the first ten orbitals of an atom on an energy diagram.  Note that each block is able to hold two electrons.}
 \label{fig:Aufbau:blank}
 \end{figure}
 
@@ -954,7 +967,7 @@ The first energy level contains only one 's' orbital, the second energy level co
 \label{m38741*uid83}\item The s subshell can hold 2 electrons
 \label{m38741*uid84}\item The p subshell can hold 6 electrons
 \end{itemize}
-        \label{m38741*eip-15}In the examples you will cover, you will mainly be filling the s and p subshells. Occasionally you may get an example that has the d subshell. The f subshell is more complex and is not covered at this level.
+        \label{m38741*eip-15}In the examples you will cover, you will mainly be filling the s and p subshells.
 \par 
         \label{m38741*id259599}The way that electrons are arranged in an atom is called its \textbf{electron configuration}.\par 
 
@@ -971,80 +984,30 @@ The first energy level contains only one 's' orbital, the second energy level co
 
 \Tip{When there are two electrons in an orbital, the electrons are called an \textbf{electron pair}. If the orbital only has one electron, this electron is said to be an \textbf{unpaired electron}. Electron pairs are shown with arrows pointing in opposite directions.}
         
-
 \IFact{Aufbau is the German word for 'building up'. Scientists used this term since this is exactly what we are doing when we work out electron configuration, we are building up the atoms structure.}
-\begin{wex}
-{%title
-Aufbau diagrams
-}
-{%question
-Give the electron configuration for sodium ($Na$) and draw an aufbau diagram.
-}
-{%answer
-\westep{} Sodium has 11 electrons.
-\westep{} We start by placing two electrons in the $1s$ orbital: ${1s}^{2}$. Now we have 9 electrons left to place in orbitals, so we put two in the $2s$ orbital: ${2s}^{2}$. There are now 7 electrons to place in orbitals so we place 6 of them in the $2p$ orbital: ${2p}^{6}$. The last electron goes into the $3s$ orbital: ${3s}^{1}$.
-\westep{} The electron configuration is: ${1s}^{2}{2s}^{2}{2p}^{6}{3s}^{1}$
-\westep{} Using the electron configuration we get the following diagram:
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m38741*uid847}
-    \begin{center}
-    \label{m38741*uid847!!!underscore!!!media}\label{m38741*uid847!!!underscore!!!printimage}\includegraphics[width=3cm]{col11305.imgs/m38126_wexaufbau.png} % ;wexaufbau.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}      
-} 
-\end{wex} 
+
 \label{m38741*eip-873}You can think of Aufbau diagrams as being similar to people getting on a bus or a train. People will first sit in empty seats with empty seats between them and the other people (unless they know the people and then they will sit next to them). When all the seats are filled like this, any more people that get on will be forced to sit next to someone or stand. As the bus or train fills even more the people have to stand to fit on. \par \label{m38741*id259728}
-
-An Aufbau diagram for the element Lithium is shown in figure \ref{fig:Aufbau:Lithium}.
-
-\begin{figure}[!h]
-\begin{center}
- \begin{pspicture}(-8,-6)(8,-2)
-%\psgrid
- 
- \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
-\rput(-2,0){
-% 1s
-  \rput(0,-6){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
-  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
-	\uput[ur](0,1){1s} }
-% 2s
-  \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
-	\spin{->}(1,0.2)(1,1.8)	 }
-	\uput[ur](0,1){2s} }
-}
-\end{pspicture}
-\caption{The electron configuration of Lithium, shown on an Aufbau diagram}
-\label{fig:Aufbau:Lithium}
-\end{center}
-\end{figure}
+\subsection{Spectroscopic electron configuration notation}
         \label{m38741*id259749}A special type of notation is used to show an atom's electron configuration. The notation describes the energy levels, orbitals and the number of electrons in each. For example, the electron configuration of lithium is ${1\mathrm{s}}^{2}{2\mathrm{s}}^{1}$. The number and letter describe the energy level and orbital and the number above the orbital shows how many electrons are in that orbital. 
 
 Aufbau diagrams for the elements fluorine and argon are shown in figures \ref{fig:Aufbau:fluorine} and \ref{fig:Aufbau:argon} respectively. Using standard notation, the electron configuration of fluorine is 1s$^{2}$ 2s$^{2}$ 2p$^{5}$ and the electron configuration of argon is 1s$^{2}$ 2s$^{2}$ 2p$^{6}$ 3s$^{2}$ 3p$^{6}$.
 
 \begin{figure}[H]
+\begin{center}
 \scalebox{0.7}{
 \begin{pspicture}(-8,-8)(8,5)
 %\psgrid
  
  \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
-\rput(-2,0){
+
 % 1s
-  \rput(0,-6){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
   	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
 	\uput[ur](0,1){1s} }
 % 2s
   \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
 	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
 	\uput[ur](0,1){2s} }
-% 3s
-  \rput(0,0){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) }
-	\uput[ur](0,1){3s} }
-% 4s
-  \rput(0,3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) }
-	\uput[ur](0,1){4s} }
 % 2p
   \rput(2,-2){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
 	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } 
@@ -1052,19 +1015,10 @@ Aufbau diagrams for the elements fluorine and argon are shown in figures \ref{fi
   \rput(3.5,-2){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
 	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } }
   \rput(5,-2){ \scalebox{0.5}{\pspolygon(0,0)(0,2)(3,2)(3,0) 	\spin{->}(1,0.2)(1,1.8)}}
-% 3p
-  \rput(2,1){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) }	
-	\uput[ur](0,1){3p} }
-  \rput(3.5,1){ \scalebox{0.5}{\pspolygon(0,0)(0,2)(3,2)(3,0) }}
-  \rput(5,1){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) }}
 
-  \psline(-0.5,-7)(-0.5,5)
-  \uput[dr](-0.5,-7){Fluorine}
-  \uput[dr](-2,-1.5){  \scalebox{1.5}{\parbox{\linewidth}{E \\ N \\ E \\ R \\ G \\ Y}} }  
-  \uput[u](-1.55,-1){ \psline[doubleline=true, doublesep=3pt]{->}(0,0)(0,3) }
-}
 \end{pspicture}
 }
+\end{center}
 \caption{An Aufbau diagram showing the electron configuration of fluorine}
 \label{fig:Aufbau:fluorine}
 \end{figure}
@@ -1116,11 +1070,209 @@ Aufbau diagrams for the elements fluorine and argon are shown in figures \ref{fi
 \caption{An Aufbau diagram showing the electron configuration of argon}
 \label{fig:Aufbau:argon}
 \end{figure}
-
-
-
-
-
+\begin{wex}
+{%title
+Aufbau diagrams
+}
+{%question
+Give the electron configuration for sodium ($\mathrm{Na}$) and draw an aufbau diagram.
+}
+{%answer
+\westep{Give the number of electrons} Sodium has 11 electrons.
+\westep{Place two electrons in the $1s$ orbital} We start by placing two electrons in the $1s$ orbital: ${1s}^{2}$. 
+\begin{figure}[H]
+\scalebox{0.8}{
+ \begin{pspicture}(-8,-6)(8,-2)
+%\psgrid
+\pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,-3.2)(0,-3.2)(0,-5.5)
+ \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
+\rput(-2,0){
+  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){1s} }
+}
+\end{pspicture}
+}
+\label{fig:Aufbau:wex}
+\end{figure}
+Now we have 9 electrons left to place in orbitals.  
+\westep{Place two electrons in the $2s$ orbital} 
+We put two electrons in the $2s$ orbital: ${2s}^{2}$. 
+    \setcounter{subfigure}{0}
+\begin{figure}[H]
+\scalebox{0.8}{
+ \begin{pspicture}(-8,-6)(8,-2)
+%\psgrid
+\pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,-1.2)(0,-1.2)(0,-5.5)
+ \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
+\rput(-2,0){
+% 1s
+  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){1s} }
+% 2s
+  \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	 }
+	\uput[ur](0,1){2s} }
+}
+\end{pspicture}
+}
+\label{fig:Aufbau:wex1}
+\end{figure}    
+There are now 7 electrons to place in orbitals.
+\westep{Place six electrons in the $2p$ orbital}
+We place 6 electrons in the $2p$ orbital: ${2p}^{6}$.
+\begin{figure}[H]
+\scalebox{.8}{
+ \begin{pspicture}(-8,-8)(8,5)
+%\psgrid
+\pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,0)(5,0)(5,-5.5) 
+ \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
+\rput(-2,0){
+% 1s
+  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){1s} }
+% 2s
+  \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){2s} }
+% 2p
+  \rput(2,-2){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } 
+	\uput[ur](0,1){2p} }
+  \rput(3.5,-2){ \scalebox{0.5}{ \pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } }
+  \rput(5,-2){ \scalebox{0.5}{\pspolygon(0,0)(0,2)(3,2)(3,0) \spin{->}(1,0.2)(1,1.8) \spin{->}(2,1.8)(2,0.2)}}
+}
+\end{pspicture}
+}
+\label{fig:Aufbau:wex2}
+\end{figure}
+There is now 1 electron left.
+\westep{Place the last electron in the $3s$ orbital}
+The last electron goes into the $3s$ orbital: ${3s}^{1}$.
+\westep{Write the final answer} The electron configuration is: ${1s}^{2}{2s}^{2}{2p}^{6}{3s}^{1}$. The Aufbau diagram will look as follows:
+    \setcounter{subfigure}{0}
+\begin{figure}[H]
+\scalebox{0.8}{
+ \begin{pspicture}(-8,-8)(8,5)
+%\psgrid
+\pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,1.2)(5,1.2)(5,-5.5) 
+ \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
+\rput(-2,0){
+% 1s
+  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){1s} }
+% 2s
+  \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){2s} }
+% 3s
+  \rput(0,-0.5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) \spin{->}(1,0.2)(1,1.8)}
+	\uput[ur](0,1){3s} }
+% 2p
+  \rput(2,-2){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } 
+	\uput[ur](0,1){2p} }
+  \rput(3.5,-2){ \scalebox{0.5}{ \pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } }
+  \rput(5,-2){ \scalebox{0.5}{\pspolygon(0,0)(0,2)(3,2)(3,0) \spin{->}(1,0.2)(1,1.8) \spin{->}(2,1.8)(2,0.2)}}
+}
+\end{pspicture}
+}
+\label{fig:Aufbau:wex3}
+\end{figure}
+} 
+\end{wex} 
+\subsubsection*{Aufbau diagrams for ions}
+When a neutral atom loses an electron it becomes positively charged and we call it a cation. For example, sodium will lose one elctron and become $\mathrm{Na}^{+}$ or calcium will lose two electrons and become $\mathrm{Ca}^{2+}$. In each of these cases, the outermost electron(s) will be lost. \\
+When a neutral atom gains an electron it becomes negatively charged and we call it an anion. For example chlorine will gain one electron and become $\mathrm{Cl}^{-}$ or oxygen will gain two electrons and become $\mathrm{O}^{2-}$.  \\
+Aufbau diagrams and electron configurations can be done for cations and anions as well. The following worked example will show you how. \\
+\begin{wex}
+{%title
+Aufbau diagrams
+}
+{%question
+Give the electron configuration for ($\mathrm{O}^{2-}$) and draw an Aufbau diagram.
+}
+{%answer
+\westep{Give the number of electrons} Oxygen has 8 electrons. The oxygen anion has gained two electrons and so the total number of electrons is 10.
+\westep{Place two electrons in the $1s$ orbital} We start by placing two electrons in the $1s$ orbital: ${1s}^{2}$. 
+\begin{figure}[H]
+\scalebox{0.8}{
+ \begin{pspicture}(-8,-6)(8,-2)
+%\psgrid
+\pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,-3.2)(0,-3.2)(0,-5.5)
+ \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
+\rput(-2,0){
+  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){1s} }
+}
+\end{pspicture}
+}
+\label{fig:Aufbau:wex}
+\end{figure}
+Now we have 8 electrons left to place in orbitals.  
+\westep{Place two electrons in the $2s$ orbital} 
+We put two electrons in the $2s$ orbital: ${2s}^{2}$. 
+    \setcounter{subfigure}{0}
+\begin{figure}[H]
+\scalebox{0.8}{
+ \begin{pspicture}(-8,-6)(8,-2)
+%\psgrid
+\pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,-1.2)(0,-1.2)(0,-5.5)
+ \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
+\rput(-2,0){
+% 1s
+  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){1s} }
+% 2s
+  \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	 }
+	\uput[ur](0,1){2s} }
+}
+\end{pspicture}
+}
+\label{fig:Aufbau:wex1}
+\end{figure}    
+There are now 6 electrons to place in orbitals.
+\westep{Place six electrons in the $2p$ orbital}
+We place 6 electrons in the $2p$ orbital: ${2p}^{6}$.
+\westep{Write the final answer} The electron configuration is: ${1s}^{2}{2s}^{2}{2p}^{6}$. The Aufbau diagram will look as follows:
+\begin{figure}[H]
+\scalebox{.8}{
+ \begin{pspicture}(-8,-8)(8,5)
+%\psgrid
+\pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,0)(5,0)(5,-5.5) 
+ \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
+\rput(-2,0){
+% 1s
+  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){1s} }
+% 2s
+  \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){2s} }
+% 2p
+  \rput(2,-2){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } 
+	\uput[ur](0,1){2p} }
+  \rput(3.5,-2){ \scalebox{0.5}{ \pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } }
+  \rput(5,-2){ \scalebox{0.5}{\pspolygon(0,0)(0,2)(3,2)(3,0) \spin{->}(1,0.2)(1,1.8) \spin{->}(2,1.8)(2,0.2)}}
+}
+\end{pspicture}
+}
+\label{fig:Aufbau:wex2}
+\end{figure}
+} 
+\end{wex} 
+\subsection*{Orbital shapes}
     \noindent
   \label{m38741*eip-793}There are different orbital shapes, but we will be mainly dealing with only two. These are the 's' and 'p' orbitals (there are also 'd' and 'f' orbitals). The 's' orbitals are spherical and the 'p' orbitals are dumbbell shaped. 
     \setcounter{subfigure}{0}
