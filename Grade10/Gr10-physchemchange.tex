@@ -1,4 +1,4 @@
-         \chapter{Physical and chemical change}
+         \chapter{Physical and chemical change}\fancyfoot[LO,RE]{Chemistry: Chemical change}
     \setcounter{figure}{1}
     \setcounter{subfigure}{1}
     \label{324e353f2415b0f24a8077f8f18039bb}
@@ -16,13 +16,11 @@
       \label{m38709*id62556}$\mathrm{H}{}_{2}\mathrm{O}\left(\mathrm{l}\right)\to \mathrm{H}{}_{2}\mathrm{O}\left(\mathrm{g}\right)$
       \par 
       \label{m38709*id62600}Conduction (the transfer of energy through a material) is another example of a physical change. As energy is transferred from one material to another, the \textsl{energy} of each material is changed, but not its chemical makeup. Dissolving one substance in another is also a physical change.\par 
-\label{m38709*fhsst!!!underscore!!!id76}\begin{definition}
-	  \begin{tabular*}{15 cm}{m{15 mm}m{}}
-	\hspace*{-50pt}  \includegraphics[width=0.5in]{col11305.imgs/psflag2.png}   & \Definition{   \label{id2458225}\textbf{ Physical change }} { \label{m38709*meaningfhsst!!!underscore!!!id76}
+\label{m38709*fhsst!!!underscore!!!id76}
+ \Definition{   \label{id2458225}\textbf{ Physical change }} { \label{m38709*meaningfhsst!!!underscore!!!id76}
       A change that can be seen or felt, but that doesn't involve the break up of the particles in the reaction. During a physical change, the \textsl{form} of matter may change, but not its \textsl{identity}. A change in temperature is an example of a physical change. 
        } 
-      \end{tabular*}
-      \end{definition}
+
 \label{m38709*id0209834} You can think of a physical change as a person who is standing still. When they start to move (start walking) then a change has occurred and this is similar to a physical change. \par 
       \label{m38709*id62640}There are some important things to remember about physical changes in matter:\par 
       \label{m38709*id62644}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
@@ -35,14 +33,45 @@ When a physical change occurs, the particles (e.g. atoms, molecules) may re-arra
 Figure~12.1 shows this more clearly. In each phase of water, the water molecule itself stays the same, but the way the molecules are arranged has changed. Note that in the solid phase, we simply show the water molecules as spheres. This makes it easier to see how tightly packed the molecules are. In reality the water molecules would all look the same.
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38709*uid2}
-    \begin{center}
-    \label{m38709*uid2!!!underscore!!!media}\label{m38709*uid2!!!underscore!!!printimage}\includegraphics[width=300px]{col11305.imgs/m38709_CG10C4_001.png} % m38709;CG10C4\_001.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{\rubberspace}\par \begin{cnxcaption}
-	  \small \textbf{Figure 12.1: }The arrangement of water molecules in the three phases of matter
-	\end{cnxcaption}
-    \vspace{.1in}
-    \end{center}
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(0,0)(10,2.6)
+\SpecialCoor
+%\psgrid[gridcolor=lightgray]
+\def\water{\psset{unit=0.25}\rput{150}{\pscircle(0,0){2}
+\psarc[fillcolor=white,fillstyle=solid](-1.5,1){1.5}{30}{260}
+\psarc[fillcolor=white,fillstyle=solid](1.5,1){1.5}{280}{150}
+\rput(-1.5,1){\pscurve(1.5;30)(-1;142.5)(1.5;260)}
+\rput(1.5,1){\pscurve(1.5;150)(-1;37.5)(1.5;280)}}}
+
+\rput(0,0.5){\psframe(0,0)(3,2)
+\rput(0.25,0.4){\multirput(0.2,0.2)(0.4,0){6}{\pscircle(0,0){0.2}}
+\multirput(0.2,0.6)(0.4,0){6}{\pscircle(0,0){0.2}}
+\multirput(0.2,1)(0.4,0){6}{\pscircle(0,0){0.2}}
+\multirput(0.4,0.8)(0.4,0){5}{\pscircle(0,0){0.1}}
+\multirput(0.4,0.4)(0.4,0){5}{\pscircle(0,0){0.1}}}}
+
+
+\rput(3.5,0){\psframe(0,0.5)(3,2.5)
+\rput(1.5,1){\psset{unit=0.5}\rput(0,-0.2){\water}
+\rput{185}(0,0.9){\water}
+\rput{120}(2,1){\water}
+\rput{310}(-2,1){\water}
+\rput(0,2.4){\water}}}
+
+\rput(7,0){\psframe(0,0.5)(3,2.5)
+\rput(1.5,1){\psset{unit=0.5}\rput{120}(2,1){\water}
+\rput{250}(-1,2){\water}}}
+
+\uput[d](1.5,0.5){solid}
+\uput[d](5,0.5){liquid}
+\uput[d](8.5,0.5){gas}
+
+\end{pspicture}
+\end{center}
+\caption{The arrangement of water molecules in the three phases of matter}
+\label{fig:physical change:water phases}
+\end{figure}
  \end{figure}       
 \label{m38709*uid221}\item \textsl{Conservation of mass}\newline
     In a physical change, the total mass, the number of atoms and the number of molecules will always stay the same. In other words you will always have the same number of molecules or atoms at the end of the change as you had at the beginning. 
@@ -51,7 +80,8 @@ Energy changes may take place when there is a physical change in matter, but the
 \label{m38709*uid4}\item \textsl{Reversibility}\newline
 Physical changes in matter are usually easier to reverse than chemical changes. Water vapour for example, can be changed back to liquid water if the temperature is lowered. Liquid water can be changed into ice by simply decreasing the temperature.
 \end{enumerate}
-        \label{m38709*eip-904}\noindent{}\textbf{Activity: Physical change}Use plastic pellets or marbles to represent water in the solid state. What do you need to do to the pellets to represent the change from solid to liquid? \par 
+        \label{m38709*eip-904}\begin{activity}{Physical change}Use plastic pellets or marbles to represent water in the solid state. What do you need to do to the pellets to represent the change from solid to liquid? \par 
+\end{activity}
     \label{m38709*cid3}
             \subsection{ Chemical Changes in Matter}
             \nopagebreak
@@ -59,25 +89,38 @@ Physical changes in matter are usually easier to reverse than chemical changes. 
       \label{m38709*id62788}The breakdown of copper (II) chloride to form copper and chlorine is an example of chemical change. A simplified diagram of this reaction is shown in Figure~12.2. In this reaction, the initial substance is copper (II) chloride, but once the reaction is complete, the products are copper and chlorine.\par 
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38709*uid5}
-    \begin{center}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
-        \label{m38709*uid5!!!underscore!!!media}\label{m38709*uid5!!!underscore!!!printimage}\includegraphics[width=300px]{col11305.imgs/m38709_CG10C4_002.png} % m38709;CG10C4\_002.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{\rubberspace}\par \begin{cnxcaption}
-	  \small \textbf{Figure 12.2: }The decomposition of copper(II) chloride to form copper and chlorine. We write this as: ${\mathrm{CuCl}}_{2}\to \mathrm{Cu}+{\mathrm{Cl}}_{2}$
-	\end{cnxcaption}
-    \vspace{.1in}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
-    \end{center}
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-5,-1)(4.5,1.5)
+%\psgrid[gridcolor=lightgray]
+\psellipse(-3,0)(0.6,0.6)
+\rput(-3,0){\textbf{Cu}}
+\psellipse(-4,0)(0.4,0.4)
+\rput(-4,0){\textbf{Cl}}
+\psellipse(-2,0)(0.4,0.4)
+\rput(-2,0){\textbf{Cl}}
+\psline[arrows=->](-1,0)(0,0)
+\psellipse(1,0)(0.6,0.6)
+\rput(1,0){\textbf{Cu}}
+\rput(2,0){\textbf{+}}
+\psellipse(2.8,0)(0.4,0.4)
+\rput(2.8,0){\textbf{Cl}}
+\psellipse(3.6,0)(0.4,0.4)
+\rput(3.6,0){\textbf{Cl}}
+\end{pspicture}
+\end{center}
+\begin{center}
+\rm${CuCl_{2} \rightarrow Cu + Cl_{2}}$
+\end{center}
+\caption{The decomposition of copper(II) chloride to form copper and chlorine}
+\label{fig:physchem:cucl2}
+\end{figure}
  \end{figure}       
 \par
-            \label{m38709*fhsst!!!underscore!!!id107}\begin{definition}
-	  \begin{tabular*}{15 cm}{m{15 mm}m{}}
-	\hspace*{-50pt}  \includegraphics[width=0.5in]{col11305.imgs/psflag2.png}   & \Definition{   \label{id2458579}\textbf{ Chemical change }} { \label{m38709*meaningfhsst!!!underscore!!!id107}
+            \label{m38709*fhsst!!!underscore!!!id107}
+ \Definition{   \label{id2458579}\textbf{ Chemical change }} { \label{m38709*meaningfhsst!!!underscore!!!id107}
       The formation of new substances in a chemical reaction. One type of matter is changed into something different. 
        } 
-      \end{tabular*}
-      \end{definition}
       \label{m38709*id62865}There are some important things to remember about chemical changes:\par 
       \label{m38709*id62869}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
             \label{m38709*uid6}\item \textsl{Arrangement of particles}\newline
@@ -112,21 +155,14 @@ Chemical changes are far more difficult to reverse than physical changes.
  \end{figure}       \par 
         \label{m38709*id63156}The decomposition of hydrogen peroxide is another example.\par 
 \label{m38709*secfhsst!!!underscore!!!id163}
-            \subsubsection{ Experiment : The decomposition of hydrogen peroxide}
+            \begin{g_experiment}{The decomposition of hydrogen peroxide}
             \nopagebreak
             \label{m38709*id63175}\noindent{}\textbf{Aim:}\newline
     To observe the decomposition of hydrogen peroxide when it is heated.\par 
         \label{m38709*id63194}\noindent{}\textbf{Apparatus:}\newline
     Dilute hydrogen peroxide (about 3\%); manganese dioxide; test tubes; a water bowl; stopper and delivery tube\par 
         \label{m38709*eip-470}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.75in]{col11305.imgs/psfact2.png} } & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {important: }Hydrogen peroxide can cause chemical burns. Work carefully with it.
-	\end{note}
-	\end{minipage}
-	\end{tabular}
+\Warning{Hydrogen peroxide can cause chemical burns. Work carefully with it.}
 	\par
       \label{m38709*id63199}
     \setcounter{subfigure}{0}
@@ -153,15 +189,9 @@ Chemical changes are far more difficult to reverse than physical changes.
     2{\mathrm{H}}_{2}{\mathrm{O}}_{2}\to 2\mathrm{H}{}_{2}\mathrm{O}+{\mathrm{O}}_{2}\tag{12.3}
       \end{equation}
 Note that the manganese dioxide is a catalyst and is not shown in the reaction. (A catalyst helps speed up a chemical reaction.)    \par 
+\end{g_experiment}
 \label{m38709*eip-619}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.75in]{col11305.imgs/psfact2.png} } & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {note: }The previous experiment used the downward displacement of water to collect a gas. This is a very common way to collect a gas in chemistry. The oxygen that is evolved in this reaction moves along the delivery tube and then collects in the top of the test tube. It does this because it is lighter than water and so displaces the water downwards. If you use a test tube with an outlet attached, you could collect the oxygen into jars and store it for use in other experiments. 
-	\end{note}
-	\end{minipage}
-	\end{tabular}
+\Note{The previous experiment used the downward displacement of water to collect a gas. This is a very common way to collect a gas in chemistry. The oxygen that is evolved in this reaction moves along the delivery tube and then collects in the top of the test tube. It does this because it is lighter than water and so displaces the water downwards. If you use a test tube with an outlet attached, you could collect the oxygen into jars and store it for use in other experiments.} 
 	\par
       \label{m38709*eip-633}The above experiment can be very vigourous and produce a lot of oxygen very rapidly. For this reason you use dilute hydrogen peroxide and only a small amount of manganese dioxide. \par 
       \label{m38709*uid17}
@@ -179,18 +209,39 @@ Note that the manganese dioxide is a catalyst and is not shown in the reaction. 
     2\mathrm{Mg}+{\mathrm{O}}_{2}\to 2\mathrm{MgO}\tag{12.5}
       \end{equation}
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m38709*uid18}
-    \begin{center}
-    \label{m38709*uid18!!!underscore!!!media}\label{m38709*uid18!!!underscore!!!printimage}\includegraphics[width=300px]{col11305.imgs/m38709_CG10C4_005.png} % m38709;CG10C4\_005.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{\rubberspace}\par \begin{cnxcaption}
-	  \small \textbf{Figure 12.5: }The synthesis of magnesium oxide ($\mathrm{MgO}$) from magnesium and oxygen
-	\end{cnxcaption}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       \par 
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-6,-1)(6,1.5)
+%\psgrid[gridcolor=lightgray]
+\rput(-1,0){
+\psellipse(-5,0)(0.75,0.75)
+\rput(-5,0){Mg}
+\psellipse(-3.2,0)(0.75,0.75)
+\rput(-3.2,0){Mg}
+\rput(-2,0){\textbf{+}}
+\psellipse(-1,0)(0.5,0.5)
+\rput(-1,0){O}
+\psellipse(0,0)(0.5,0.5)
+\rput(0,0){O}
+\psline[arrows=->](1,0)(2.5,0)
+\psellipse(3.5,0)(0.75,0.75)
+\rput(3.5,0){Mg}
+\psellipse(4.75,0)(0.5,0.5)
+\rput(4.75,0){O}
+\rput(3,0){
+\psellipse(3.5,0)(0.75,0.75)
+\rput(3.5,0){Mg}
+\psellipse(4.75,0)(0.5,0.5)
+\rput(4.75,0){O}
+}
+}
+\end{pspicture}
+\end{center}
+\caption{The synthesis of magnesium oxide (MgO) from magnesium and oxygen}
+\label{fig:chemical change:synthesis}
+\end{figure}      \par 
 \label{m38709*secfhsst!!!underscore!!!id243}
-            \subsubsection{ Experiment: Chemical reactions involving iron and sulphur }
+            \begin{g_experiment}{Chemical reactions involving iron and sulphur }
             \nopagebreak
             \label{m38709*id63437}\noindent{}\textbf{Aim:}
           \newline
@@ -202,9 +253,39 @@ Note that the manganese dioxide is a catalyst and is not shown in the reaction. 
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38709*id63460}
     \begin{center}
-    \label{m38709*id63460!!!underscore!!!media}\label{m38709*id63460!!!underscore!!!printimage}\includegraphics[width=2cm]{col11305.imgs/m38709_CG10C4_006.png} % m38709;CG10C4\_006.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
+\begin{pspicture}(0,-4.301621)(6.4140625,4.253465)
+\psline[linewidth=0.04cm](2.4714065,1.4040043)(4.351406,3.0040045)
+\psline[linewidth=0.04cm](3.0114062,0.8440044)(4.811406,2.4440045)
+\rput{-49.11223}(-0.46802804,4.402622){\psellipse[linewidth=0.04,dimen=outer](4.5838127,2.7134783)(0.3788815,0.19499093)}
+\rput{130.79858}(5.409092,-0.2251927){\psarc[linewidth=0.04](2.7560983,1.125682){0.38911715}{0.0}{180.22943}}
+\psline[linewidth=0.04cm](2.48,1.4134653)(3.66,1.3934652)
+\rput{-50.467102}(-2.1400015,3.1871772){\psframe[linewidth=0.04,dimen=outer](2.7114062,4.004004)(1.911406,3.7240043)}
+\psline[linewidth=0.04cm](2.611406,3.6040044)(2.7514062,3.424004)
+\psline[linewidth=0.04cm](2.7514062,3.424004)(3.0114062,3.384004)
+\psline[linewidth=0.04cm](3.0114062,3.384004)(3.5714064,2.6840045)
+\psline[linewidth=0.04cm](3.5714064,2.6840045)(3.6314063,2.4440045)
+\psline[linewidth=0.04cm](2.4914062,3.5040045)(2.611406,3.3640041)
+\psline[linewidth=0.04cm](2.611406,3.3640041)(2.6314063,3.1840045)
+\psline[linewidth=0.04cm](2.6314063,3.1840045)(2.6514063,3.1240041)
+\psline[linewidth=0.04cm](2.6514063,3.1240041)(3.1714065,2.5040045)
+\psline[linewidth=0.04cm](3.1714065,2.5040045)(3.9314063,2.0040045)
+\psline[linewidth=0.04cm](3.9314063,2.0040045)(4.1114063,2.2240043)
+\psline[linewidth=0.04cm](4.1114063,2.2240043)(3.4914062,2.5040045)
+\psline[linewidth=0.04cm](3.4914062,2.5040045)(2.7914064,3.2240043)
+\psline[linewidth=0.04cm](2.7914064,3.2240043)(2.6714065,3.2840044)
+\psline[linewidth=0.04cm](2.7914064,3.2240043)(2.9914062,3.1840045)
+\psline[linewidth=0.04cm](2.9914062,3.1840045)(3.4714065,2.664004)
+\psline[linewidth=0.04cm](3.4714065,2.664004)(3.5314064,2.4840045)
+\psline[linewidth=0.04cm](3.44,2.2134652)(3.4514065,1.9640043)
+\psline[linewidth=0.04cm](3.4514065,1.9640043)(3.6914065,1.7640043)
+\psline[linewidth=0.04cm](3.6914065,1.7640043)(3.9114063,1.9840044)
+\psline[linewidth=0.04cm](3.9114063,1.9840044)(3.6714065,2.0840044)
+\psline[linewidth=0.04cm](3.6714065,2.0840044)(3.56,2.2534652)
+\pspolygon[linewidth=0.04](2.5914063,-0.07599564)(2.5914063,-0.61599565)(2.3714063,-0.7759956)(2.3114064,-2.2759957)(2.9114063,-2.2759957)(2.9114063,-0.7159956)(2.7714062,-0.55599564)(2.7714062,-0.07599564)
+\rput{-204.0165}(3.8733587,-5.2158813){\psarc[linewidth=0.04](2.491407,-2.1959953){0.96}{301.69748}{268.90167}}
+\rput{-204.0165}(3.7619426,-5.4846077){\psarc[linewidth=0.04](2.4642787,-2.342208){0.9778325}{0.77209437}{203.44756}}
+\psellipse[linewidth=0.04,dimen=outer](2.6814063,0.24400435)(0.17,0.3)
+\end{pspicture} 
     \end{center}
  \end{figure}       
         \par 
@@ -219,14 +300,7 @@ Note that the manganese dioxide is a catalyst and is not shown in the reaction. 
 \end{enumerate}
         \par 
         \label{m38709*eip-963}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.5in]{col11305.imgs/pstip2.png} } & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {warning: }When working with a bunsen burner work in a well ventilated space and ensure that there are no flammable substances close by. Always tuck loose clothing in and ensure that long hair is tied back.
-	\end{note}
-	\end{minipage}
-	\end{tabular}
+      \Warning{When working with a bunsen burner work in a well ventilated space and ensure that there are no flammable substances close by. Always tuck loose clothing in and ensure that long hair is tied back.}
 	\par
       \label{m38709*id63554}\noindent{}\textbf{Results:}
           \newline
@@ -243,20 +317,14 @@ A synthesis reaction has taken place. The equation for the reaction is:
     \mathrm{Fe}+\mathrm{S}\to \mathrm{FeS}\tag{12.6}
       \end{equation}
     \par 
+\end{g_experiment}
 \label{m38709*secfhsst!!!underscore!!!id294}
-            \subsubsection{  Investigation : Physical or chemical change? }
+            \begin{Investigation}{Physical or chemical change? }
             \nopagebreak
         \label{m38709*id63636}\noindent{}\textbf{Apparatus:}
 Bunsen burner, 4 test tubes, a test tube rack and a test tube holder, small spatula, pipette, magnet, a birthday candle, $\mathrm{NaCl}$ (table salt), $0,1\phantom{\rule{2pt}{0ex}}\mathrm{M}\phantom{\rule{4pt}{0ex}}{\mathrm{AgNO}}_{3}$, $6\phantom{\rule{2pt}{0ex}}\mathrm{M}\phantom{\rule{4pt}{0ex}}\mathrm{HCl}$, magnesium ribbon, iron filings, sulphur.\par 
         \label{m38709*eip-118}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.5in]{col11305.imgs/pstip2.png} } & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {warning: }${\mathrm{AgNO}}_{3}$ stains the skin. Be careful when working with it or use gloves.
-	\end{note}
-	\end{minipage}
-	\end{tabular}
+\Warning{${\mathrm{AgNO}}_{3}$ stains the skin. Be careful when working with it or use gloves.}
 	\par
       \label{m38709*id62113}\noindent{}\textbf{Method:}
         \label{m38709*id62119}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
@@ -334,6 +402,7 @@ Decide whether each of the following changes are physical or chemical and give a
 \end{table}
     \par
   \par 
+\end{Investigation}
   \label{m38709**end}
          \section{ Conservation of matter}
     \nopagebreak
@@ -355,13 +424,10 @@ the total energy that is \textsl{released} when new bonds are formed. This means
       \par 
       \label{m38711*id64411}Energy is needed to break the $\mathrm{O}-\mathrm{O}$ bonds in the oxygen molecule so that new $\mathrm{Mg}-\mathrm{O}$ bonds can be formed, and energy is released when the product ($\mathrm{MgO}$) forms.\par 
       \label{m38711*id64416}Despite all the energy changes that seem to take place during reactions, it is important to remember that energy cannot be created or destroyed. Energy that enters a system will have come from the surrounding environment and energy that leaves a system will again become part of that environment. This is known as the \textbf{conservation of energy} principle.\par 
-\label{m38711*fhsst!!!underscore!!!id409}\begin{definition}
-	  \begin{tabular*}{15 cm}{m{15 mm}m{}}
-	\hspace*{-50pt}  \includegraphics[width=0.5in]{col11305.imgs/psflag2.png}   & \Definition{   \label{id2460317}\textbf{ Conservation of energy principle }} { \label{m38711*meaningfhsst!!!underscore!!!id409}
+\label{m38711*fhsst!!!underscore!!!id409}
+\Definition{   \label{id2460317}\textbf{ Conservation of energy principle }} { \label{m38711*meaningfhsst!!!underscore!!!id409}
       Energy cannot be created or destroyed. It can only be changed from one form to another. 
        } 
-      \end{tabular*}
-      \end{definition}
       \label{m38711*id64445}Chemical reactions may produce some very visible and often violent changes. An explosion, for example, is a sudden increase in volume and release of energy when high temperatures are generated and gases are released. For example, $\mathrm{NH}{}_{4}{\mathrm{NO}}_{3}$ can be heated to generate nitrous oxide. Under these conditions, it is highly sensitive and can detonate easily in an explosive exothermic reaction.\par 
     \label{m38711*cid5}
             \subsection{ Conservation of atoms and mass in reactions}
@@ -373,13 +439,53 @@ the total energy that is \textsl{released} when new bonds are formed. This means
       \par 
       \label{m38711*id64563}
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m38711*id64566}
-    \begin{center}
-    \label{m38711*id64566!!!underscore!!!media}\label{m38711*id64566!!!underscore!!!printimage}\includegraphics[width=300px]{col11305.imgs/m38711_CG10C4_007.png} % m38711;CG10C4\_007.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-6,-1.5)(12,1.5)
+%\psgrid[gridcolor=lightgray]
+\rput(-2,0){
+\psellipse(-3,0)(0.5,0.5)
+\rput(-3,0){O}
+\psellipse(-2,0)(0.5,0.5)
+\rput(-2,0){O}
+\psellipse(-3.3,0.75)(0.3,0.3)
+\rput(-3.3,0.75){H}
+\psellipse(-1.7,0.75)(0.3,0.3)
+\rput(-1.7,0.75){H}
+\rput(3,-1){
+\psellipse(-3,0)(0.5,0.5)
+\rput(-3,0){O}
+\psellipse(-2,0)(0.5,0.5)
+\rput(-2,0){O}
+\psellipse(-3.3,0.75)(0.3,0.3)
+\rput(-3.3,0.75){H}
+\psellipse(-1.7,0.75)(0.3,0.3)
+\rput(-1.7,0.75){H}
+}
+\psline[arrows=->](2,0)(4,0)
+\psellipse(5,0)(0.5,0.5)
+\rput(5,0){O}
+\psellipse(4.5,0.65)(0.3,0.3)
+\rput(4.5,0.65){H}
+\psellipse(5.5,0.65)(0.3,0.3)
+\rput(5.5,0.65){H}
+\rput(2,-0.5){
+\psellipse(5,0)(0.5,0.5)
+\rput(5,0){O}
+\psellipse(4.5,0.65)(0.3,0.3)
+\rput(4.5,0.65){H}
+\psellipse(5.5,0.65)(0.3,0.3)
+\rput(5.5,0.65){H}
+}
+\rput(8.5,0){\textbf{+}}
+\psellipse(9.5,0)(0.5,0.5)
+\rput(9.5,0){O}
+\psellipse(10.5,0)(0.5,0.5)
+\rput(10.5,0){O}
+}
+\end{pspicture}
+\end{center}
+\end{figure}      
       \par 
       \label{m38711*id64573}
         \textsl{Left hand side of the equation}
@@ -400,13 +506,35 @@ the total energy that is \textsl{released} when new bonds are formed. This means
       \end{equation}
     \label{m38711*id64723}
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m38711*id64726}
-    \begin{center}
-    \label{m38711*id64726!!!underscore!!!media}\label{m38711*id64726!!!underscore!!!printimage}\includegraphics[width=300px]{col11305.imgs/m38711_CG10C4_008.png} % m38711;CG10C4\_008.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-6,-1)(6,1.5)
+%\psgrid[gridcolor=lightgray]
+\rput(-1,0){
+\psellipse(-5,0)(0.75,0.75)
+\rput(-5,0){Mg}
+\psellipse(-3.2,0)(0.75,0.75)
+\rput(-3.2,0){Mg}
+\rput(-2,0){\textbf{+}}
+\psellipse(-1,0)(0.5,0.5)
+\rput(-1,0){O}
+\psellipse(0,0)(0.5,0.5)
+\rput(0,0){O}
+\psline[arrows=->](1,0)(2.5,0)
+\psellipse(3.5,0)(0.75,0.75)
+\rput(3.5,0){Mg}
+\psellipse(4.75,0)(0.5,0.5)
+\rput(4.75,0){O}
+\rput(3,0){
+\psellipse(3.5,0)(0.75,0.75)
+\rput(3.5,0){Mg}
+\psellipse(4.75,0)(0.5,0.5)
+\rput(4.75,0){O}
+}
+}
+\end{pspicture}
+\end{center}
+\end{figure}     
       \par 
       \label{m38711*id64732}
         \textsl{Left hand side of the equation}
@@ -420,7 +548,7 @@ the total energy that is \textsl{released} when new bonds are formed. This means
       \label{m38711*id64811}$\mathrm{Number\; of\; atoms\; of\; each\; element}=\left(2\ensuremath{\times}\mathrm{Mg}\right)+\left(2\ensuremath{\times}\mathrm{O}\right)$\par 
       \label{m38711*id64833}Both the atomic mass and the number of atoms of each element are conserved in the reaction.\par 
 \label{m38711*secfhsst!!!underscore!!!id486}
-            \subsubsection{ Activity : The conservation of atoms in chemical reactions }
+            \begin{activity}{The conservation of atoms in chemical reactions }
             \nopagebreak
             \label{m38711*id64844}\noindent{}\textbf{Materials:}
       \label{m38711*id64853}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
@@ -441,8 +569,9 @@ ${\mathrm{CaCO}}_{3}\to {\mathrm{CO}}_{2}+\mathrm{CaO}$
       \label{m38711*id65031}\noindent{}\textbf{Discussion}
      You should have noticed that the number of atoms in the reactants is the same as the number of atoms in the product. The number of atoms is conserved during the reaction. However, you will also see that the molecules in the reactants and products is not the same. The \textsl{arrangement of atoms} is not conserved during the reaction.
  \par 
+\end{activity}
 \label{m38711*eip-14}
-            \subsubsection{ Experiment: Conservation of matter}
+            \begin{g_experiment}{Conservation of matter}
             \nopagebreak
             \label{m38711*eip-453}\noindent{}\textbf{Aim:}
 To prove the law of conservation of matter experimentally.
@@ -451,14 +580,7 @@ To prove the law of conservation of matter experimentally.
 Test tubes; glass beaker; lead (II) nitrate; sodium iodide; hydrochloric acid; bromothymol blue; Cal-C-Vita tablet, plastic bag; rubber band; mass meter 
 \par 
 \label{m38711*eip-153}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.5in]{col11305.imgs/pstip2.png} } & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {warning: }Always be careful when handling chemicals (particularly strong acids like hydrochloric acid) as you can burn yourself badly. 
-	\end{note}
-	\end{minipage}
-	\end{tabular}
+\Warning{Always be careful when handling chemicals (particularly strong acids like hydrochloric acid) as you can burn yourself badly. }
 	\par
       \label{m38711*id72432}\noindent{}\textbf{Method:}\textbf{Reaction 1}
 \label{m38711*id6342}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
@@ -504,11 +626,10 @@ Test tubes; glass beaker; lead (II) nitrate; sodium iodide; hydrochloric acid; b
       %--------------------------------------------------------------------
     \end{xtabular}
       \end{center}
-    \begin{center}{\small\bfseries Table 12.2}\end{center}
-    \begin{caption}{\small\bfseries Table 12.2}\end{caption}
 \end{table}
     \par
-  \label{m38711*eip-634}Add the masses for the reactants for each reaction. Do the same for the products. For each reaction compare the mass of the reactants to the mass of the products. What do you notice? Is the mass conserved?\par \label{m38711*eip-65}In the experiment above you should have found that the mass at the start of the reaction is the same as the mass at the end of the reaction. You may have found that these masses differed slightly, but this is due to errors in measurements and in performing experiments (all scientists make some errors in performing experiments).  \par 
+  \label{m38711*eip-634}Add the masses for the reactants for each reaction. Do the same for the products. For each reaction compare the mass of the reactants to the mass of the products. What do you notice? Is the mass conserved?\par \label{m38711*eip-65}In the experiment above you should have found that the mass at the start of the reaction is the same as the mass at the end of the reaction. You may have found that these masses differed slightly, but this is due to errors in measurements and in performing experiments (all scientists make some errors in performing experiments).  \par
+\end{g_experiment} 
     \label{m38711*cid6}
             \subsection{ Law of constant composition}
             \nopagebreak
@@ -553,7 +674,7 @@ The following video provides a summary of the concepts covered in this chapter.
 \label{m38711*uid51}\item \textbf{Gay-Lussac's Law} states that in a chemical reaction between gases, the relative volumes of the gases in the reaction are present in a ratio of small whole numbers if all the gases are at the same temperature and pressure.
 \end{enumerate}
 \label{m38711*secfhsst!!!underscore!!!id584}
-            \subsubsection{ End of chapter exercises}
+            \begin{eocexercises}{Physical and chemical change}
             \nopagebreak
       \label{m38711*id65631}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
             \label{m38711*uid6234}\item For each of the following definitions give one word or term:
@@ -614,8 +735,6 @@ The following video provides a summary of the concepts covered in this chapter.
       %--------------------------------------------------------------------
     \end{xtabular}
       \end{center}
-    \begin{center}{\small\bfseries Table 12.3}\end{center}
-    \begin{caption}{\small\bfseries Table 12.3}\end{caption}
 \end{table}
     \par
           \label{m38711*uid53}\item For each of the following reactions, say whether it is an example of a synthesis or decomposition reaction:
@@ -633,3 +752,4 @@ show that the 'law of conservation of mass' applies.\newline
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11305.imgs/summary_www.png}} Find the answers with the shortcodes:
  \par \begin{tabular}[h]{cccccc}
  (1.) l2z  &  (2.) l2u  &  (3.) l2J  &  (4.) l3q  &  (5.) l3l  &  (6.) l3i  & \end{tabular}
+\end{eocexercises}
