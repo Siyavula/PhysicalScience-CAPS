@@ -418,7 +418,7 @@ of \textbf{negative} electric charge.\par \label{m38745*eip-222}The electrons de
 blocks called \textbf{protons} and \textbf{neutrons}. Together, the protons and
 neutrons are called \textbf{nucleons}.\par 
         \label{m38745*uid12}
-            \subsection*{The Proton}
+            \subsubsection*{The Proton}
             \nopagebreak
           \label{m38745*id255338}Each proton carries one unit of \textbf{positive} electric charge.
 Since we know that atoms are
@@ -428,7 +428,7 @@ out the positive and negative charge to zero. The total positive charge of a
 nucleus is equal to the number of protons in the nucleus. The proton is much heavier
 than the electron (10 000 times heavier!) and has a mass of $1,6726\ensuremath{\times}{10}^{-27}\phantom{\rule{2pt}{0ex}}\mathrm{kg}$. When we talk about the atomic mass of an atom, we are mostly referring to the combined mass of the protons and neutrons, i.e. the nucleons.\par 
         \label{m38745*uid13}
-            \subsection*{The Neutron}
+            \subsubsection*{The Neutron}
             \nopagebreak
           \label{m38745*id254468}The neutron is electrically neutral i.e. it carries no charge at all.
 Like the proton, it is much heavier than the electron and its mass is $1,6749\ensuremath{\times}{10}^{-27}\phantom{\rule{2pt}{0ex}}\mathrm{kg}$ (slightly heavier than the proton).\par 
@@ -821,6 +821,7 @@ Lithium (Li) has an atomic number of 3, meaning that in a neutral atom, the numb
 \begin{minipage}{.6\textwidth}
 \begin{figure}[H]
 \begin{center}
+\scalebox{.7}{
 \begin{pspicture}(-5,1)(7,4)
 \SpecialCoor
 %\psgrid[gridcolor=lightgray]
@@ -841,6 +842,7 @@ Lithium (Li) has an atomic number of 3, meaning that in a neutral atom, the numb
 \uput[r](2,-1.2){\parbox[l]{4cm}{nucleus, containing 3 protons and 4 neutrons}}
 }
 \end{pspicture}
+}
 \caption{The arrangement of electrons in a lithium atom.}
 \label{fig:atom:lithium}
 \end{center}
@@ -855,7 +857,7 @@ Fluorine (F) has an atomic number of 9, meaning that a neutral atom also has 9 e
 \begin{minipage}{.6\textwidth}
 \begin{figure}[H]
 \begin{center}
-\scalebox{0.8}{
+\scalebox{1}{
 \begin{pspicture}(-5.5,-2)(7,1.5)
 \pscircle(0,0){1.25}
 \pscircle(0,0){0.75}
@@ -870,23 +872,23 @@ Fluorine (F) has an atomic number of 9, meaning that a neutral atom also has 9 e
 \end{figure}
 \end{minipage}
 }
-
-\item{\textbf{Argon} \\
+\pagebreak
+\item{\textbf{Neon} \\
 \begin{minipage}{.4\textwidth}
-Argon has an atomic number of 18, meaning that a neutral atom also has 18 electrons. The first 2 electrons are found in the first energy level, the next 8 are found in the second energy level, and the last 8 are found in the third energy level (figure \ref{fig:atom:argon}).
+Neon has an atomic number of 10, meaning that a neutral atom also has 10 electrons. The first 2 electrons are found in the first energy level and the last 8 are found in the second energy level. (figure \ref{fig:atom:argon}).
 \end{minipage}
 \begin{minipage}{.6\textwidth}
 \begin{figure}[H]
 \begin{center}
-\scalebox{0.7}{
+\scalebox{1.2}{
 \begin{pspicture}(-6,-2)(7,2)
-\pscircle(0,0){1.75}
+% \pscircle(0,0){1.75}
 \pscircle(0,0){1.25}
 \pscircle(0,0){0.75}
 \pscircle[fillcolor=lightgray,fillstyle=solid](0,0){0.25}
 \multido{\n=90+180}{2}{\pscircle[fillcolor=black,fillstyle=solid]({0.75;\n}){0.1}}
 \multido{\n=0+45}{8}{\pscircle[fillcolor=black,fillstyle=solid]({1.25;\n}){0.1}}
-\multido{\n=0+45}{8}{\pscircle[fillcolor=black,fillstyle=solid]({1.75;\n}){0.1}}
+% \multido{\n=0+45}{8}{\pscircle[fillcolor=black,fillstyle=solid]({1.75;\n}){0.1}}
 \pscircle[fillcolor=black,fillstyle=solid]({1.25;0}){0.1}
 \end{pspicture}
 }
@@ -1077,18 +1079,19 @@ Aufbau diagrams for the elements fluorine and argon are shown in figures \ref{fi
 \end{center}
 \end{figure}
 \end{minipage}
+\Tip{The spectroscopic electron configuration can be written in shorter form. For example, magnesium can be represented as $\mathrm{[Ne]}3s^{2}$ and carbon as $\mathrm{[H]}2s^{2}2p^{2}$}
 \begin{wex}
 {%title
 Aufbau diagrams and spectroscopic electron configuration 
 }
 {%question
-Give the electron configuration for sodium ($\mathrm{Na}$) and draw an aufbau diagram.
+Give the electron configuration for nitrogen ($\mathrm{N}$) and draw an aufbau diagram.
 }
 {%answer
-\westep{Give the number of electrons} Sodium has 11 electrons.
+\westep{Give the number of electrons} Nitrogen has 7 electrons.
 \westep{Place two electrons in the $1s$ orbital} We start by placing two electrons in the $1s$ orbital: ${1s}^{2}$. 
 \begin{figure}[H]
-\scalebox{0.8}{
+\scalebox{0.7}{
  \begin{pspicture}(-8,-6)(8,-2)
 %\psgrid
 \pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,-3.2)(0,-3.2)(0,-5.5)
@@ -1102,12 +1105,12 @@ Give the electron configuration for sodium ($\mathrm{Na}$) and draw an aufbau di
 }
 \label{fig:Aufbau:wex}
 \end{figure}
-Now we have 9 electrons left to place in orbitals.  
+Now we have 5 electrons left to place in orbitals.  
 \westep{Place two electrons in the $2s$ orbital} 
 We put two electrons in the $2s$ orbital: ${2s}^{2}$. 
     \setcounter{subfigure}{0}
 \begin{figure}[H]
-\scalebox{0.8}{
+\scalebox{0.7}{
  \begin{pspicture}(-8,-6)(8,-2)
 %\psgrid
 \pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,-1.2)(0,-1.2)(0,-5.5)
@@ -1119,23 +1122,24 @@ We put two electrons in the $2s$ orbital: ${2s}^{2}$.
 	\uput[ur](0,1){1s} }
 % 2s
   \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
-	\spin{->}(1,0.2)(1,1.8)	 }
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
 	\uput[ur](0,1){2s} }
 }
 \end{pspicture}
 }
 \label{fig:Aufbau:wex1}
 \end{figure}    
-There are now 7 electrons to place in orbitals.
-\westep{Place six electrons in the $2p$ orbital}
-We place 6 electrons in the $2p$ orbital: ${2p}^{6}$.
+There are now 3 electrons to place in orbitals.
+\westep{Place three electrons in the $2p$ orbital}
+We place 3 electrons in the $2p$ orbital: ${2p}^{3}$.
 \begin{figure}[H]
-\scalebox{.8}{
+\scalebox{.7}{
  \begin{pspicture}(-8,-8)(8,5)
 %\psgrid
-\pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,0)(5,0)(5,-5.5) 
+\pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-4.5,-5.5)(-4.5,0)(17.5,0)(17.5,-5.5) 
  \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
-\rput(-2,0){
+%1st p electron
+\rput(-4,0){
 % 1s
   \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
   	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
@@ -1146,51 +1150,53 @@ We place 6 electrons in the $2p$ orbital: ${2p}^{6}$.
 	\uput[ur](0,1){2s} }
 % 2p
   \rput(2,-2){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
-	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } 
+	\spin{->}(1,0.2)(1,1.8)	 } 
 	\uput[ur](0,1){2p} }
   \rput(3.5,-2){ \scalebox{0.5}{ \pspolygon(0,0)(0,2)(3,2)(3,0) 
-	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } }
-  \rput(5,-2){ \scalebox{0.5}{\pspolygon(0,0)(0,2)(3,2)(3,0) \spin{->}(1,0.2)(1,1.8) \spin{->}(2,1.8)(2,0.2)}}
+		 } }
+  \rput(5,-2){ \scalebox{0.5}{\pspolygon(0,0)(0,2)(3,2)(3,0) }}}
+%second p electron
+\rput(3,0){
+% 1s
+  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){1s} }
+% 2s
+  \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){2s} }
+% 2p
+  \rput(2,-2){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	 } 
+	\uput[ur](0,1){2p} }
+  \rput(3.5,-2){ \scalebox{0.5}{ \pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	 } }
+  \rput(5,-2){ \scalebox{0.5}{\pspolygon(0,0)(0,2)(3,2)(3,0) }}}
+%3rd p electron
+\rput(10,0){
+% 1s
+  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){1s} }
+% 2s
+  \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
+	\uput[ur](0,1){2s} }
+% 2p
+  \rput(2,-2){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	 } 
+	\uput[ur](0,1){2p} }
+  \rput(3.5,-2){ \scalebox{0.5}{ \pspolygon(0,0)(0,2)(3,2)(3,0) 
+	\spin{->}(1,0.2)(1,1.8)	 } }
+  \rput(5,-2){ \scalebox{0.5}{\pspolygon(0,0)(0,2)(3,2)(3,0) \spin{->}(1,0.2)(1,1.8) }}
 }
 \end{pspicture}
 }
 \label{fig:Aufbau:wex2}
 \end{figure}
-There is now 1 electron left.
-\westep{Place the last electron in the $3s$ orbital}
-The last electron goes into the $3s$ orbital: ${3s}^{1}$.
-\westep{Write the final answer} The electron configuration is: ${1s}^{2}{2s}^{2}{2p}^{6}{3s}^{1}$. The Aufbau diagram will look as follows:
-    \setcounter{subfigure}{0}
-\begin{figure}[H]
-\scalebox{0.8}{
- \begin{pspicture}(-8,-8)(8,5)
-%\psgrid
-\pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,1.2)(5,1.2)(5,-5.5) 
- \newpsobject{spin}{psline}{arrowsize=10pt, arrowinset=0, linewidth=3pt}
-\rput(-2,0){
-% 1s
-  \rput(0,-5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
-  	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
-	\uput[ur](0,1){1s} }
-% 2s
-  \rput(0,-3){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
-	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) }
-	\uput[ur](0,1){2s} }
-% 3s
-  \rput(0,-0.5){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) \spin{->}(1,0.2)(1,1.8)}
-	\uput[ur](0,1){3s} }
-% 2p
-  \rput(2,-2){ \scalebox{0.5}{	\pspolygon(0,0)(0,2)(3,2)(3,0) 
-	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } 
-	\uput[ur](0,1){2p} }
-  \rput(3.5,-2){ \scalebox{0.5}{ \pspolygon(0,0)(0,2)(3,2)(3,0) 
-	\spin{->}(1,0.2)(1,1.8)	\spin{->}(2,1.8)(2,0.2) } }
-  \rput(5,-2){ \scalebox{0.5}{\pspolygon(0,0)(0,2)(3,2)(3,0) \spin{->}(1,0.2)(1,1.8) \spin{->}(2,1.8)(2,0.2)}}
-}
-\end{pspicture}
-}
-\label{fig:Aufbau:wex3}
-\end{figure}
+There is now 1 electron left..
+\westep{Write the final answer} The electron configuration is: ${1s}^{2}{2s}^{2}{2p}^{3}$. The Aufbau diagram is given in the step above.
+  
 } 
 \end{wex} 
 \subsubsection*{Aufbau diagrams for ions}
@@ -1208,7 +1214,7 @@ Give the electron configuration for ($\mathrm{O}^{2-}$) and draw an Aufbau diagr
 \westep{Give the number of electrons} Oxygen has 8 electrons. The oxygen anion has gained two electrons and so the total number of electrons is 10.
 \westep{Place two electrons in the $1s$ orbital} We start by placing two electrons in the $1s$ orbital: ${1s}^{2}$. 
 \begin{figure}[H]
-\scalebox{0.8}{
+\scalebox{0.7}{
  \begin{pspicture}(-8,-6)(8,-2)
 %\psgrid
 \pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,-3.2)(0,-3.2)(0,-5.5)
@@ -1227,7 +1233,7 @@ Now we have 8 electrons left to place in orbitals.
 We put two electrons in the $2s$ orbital: ${2s}^{2}$. 
     \setcounter{subfigure}{0}
 \begin{figure}[H]
-\scalebox{0.8}{
+\scalebox{0.7}{
  \begin{pspicture}(-8,-6)(8,-2)
 %\psgrid
 \pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,-1.2)(0,-1.2)(0,-5.5)
@@ -1251,7 +1257,7 @@ There are now 6 electrons to place in orbitals.
 We place 6 electrons in the $2p$ orbital: ${2p}^{6}$.
 \westep{Write the final answer} The electron configuration is: ${1s}^{2}{2s}^{2}{2p}^{6}$. The Aufbau diagram will look as follows:
 \begin{figure}[H]
-\scalebox{.8}{
+\scalebox{.7}{
  \begin{pspicture}(-8,-8)(8,5)
 %\psgrid
 \pspolygon[lincolor=black,fillstyle=solid,fillcolor=white](-2.5,-5.5)(-2.5,0)(5,0)(5,-5.5) 
@@ -1411,6 +1417,8 @@ $\mathrm{N}$ & & & \\\hline
         \label{m38741*id260480}Models are often simplified. The small toy cars that you may have played with as a child are models. They give you a good idea of what a real car looks like, but they are much smaller and much simpler. A model cannot always be absolutely accurate and it is important that we realise this so that we don't build up an incorrect idea about something.\par 
 \begin{groupdiscussion}{Building a model of an atom }
             \nopagebreak
+% \begin{minipage}{.6\textwidth}
+\begin{multicols}{2}
         \label{m38741*id260488}In groups of 3-4, you are going to build a model of an atom. Each group will get a different element to represent. Before you start, think about these questions:\par 
         \label{m38741*id260495}\begin{itemize}[noitemsep]
             \label{m38741*uid114}\item What information do I have about the structure of the atom? (e.g. what parts make it up? how big is it?)
@@ -1424,6 +1432,14 @@ $\mathrm{N}$ & & & \\\hline
 \label{m38741*uid119}\item Are there any ways in which our model could be improved?
 \end{itemize}
         \label{m38741*id260596}Now look at what other groups have done. Discuss the same questions for each of the models you see and record your answers. \par 
+\end{multicols}
+% \end{minipage}
+% \begin{minipage}{.4\textwidth}
+\begin{center}
+ \includegraphics[width=0.4\textwidth]{photos/BuildAtom.png}
+\end{center}
+
+% \end{minipage}
 \end{groupdiscussion}      
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38806*transverse-waves}
@@ -1567,50 +1583,32 @@ ${1\mathrm{s}}^{2}{2\mathrm{s}}^{2}{2\mathrm{p}}^{5}$\end{enumerate}
         \begin{center}
       \label{m38741*eip-282}
     \noindent
-    \tabletail{%
-        \hline
-        \multicolumn{4}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
-        \hline
-      }
-      \tablelasttail{}
-      \begin{xtabular}[t]{|l|l|l|l|}\hline
+      \begin{tabular}{|l|l|l|l|}\hline
         Element or ion &
         Electron configuration &
         Core electrons &
-        Valence electrons% make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}
-      %--------------------------------------------------------------------
+        Valence electrons \\ \hline
         Boron ($\mathrm{B}$) &
          &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}
-      %--------------------------------------------------------------------
+       \\ \hline
         Calcium ($\mathrm{Ca}$) &
          &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}
-      %--------------------------------------------------------------------
+     \\ \hline
         Silicon ($\mathrm{Si}$) &
          &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}
-      %--------------------------------------------------------------------
+       \\ \hline
         Lithium ion ($\mathrm{Li}^{+}$) &
          &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}
-      %--------------------------------------------------------------------
+      \\ \hline
         Neon ($\mathrm{Ne}$) &
          &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}
-      %--------------------------------------------------------------------
-    \end{xtabular}
+     \\ \hline
+    \end{tabular}
       \end{center}
 \end{table}
     \par
