@@ -244,9 +244,11 @@ To investigate the electrical conductivities of different substances and solutio
           \newline
         Set up the experiment by connecting the circuit as shown in the diagram below. In the diagram, 'X' represents the substance or solution that you will be testing. When you are using the solid crystals, the crocodile clips can be attached directly to each end of the crystal. When you are using solutions, two carbon rods are placed into the liquid and the clips are attached to each of the rods. In each case, complete the circuit and allow the current to flow for about 30 seconds. Observe whether the ammeter shows a reading.\par 
         \label{m38720*id334362}
+\begin{minipage}{.5\textwidth}
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38720*id334366}
 \begin{center}
+\scalebox{0.7}{
 \begin{pspicture}(0,-0.6)(5,6.2)
 \SpecialCoor
 %\psgrid[gridcolor=lightgray]
@@ -271,8 +273,45 @@ To investigate the electrical conductivities of different substances and solutio
 \psline(0,2)(0,0)
 \rput(-1.5,2.5){Ammeter}
 \end{pspicture}
+}
 \end{center}
- \end{figure}       
+ \end{figure}
+\end{minipage}
+\begin{minipage}{.5\textwidth}   
+	\begin{figure}[H] % horizontal\label{m38720*id334366}
+\begin{center}
+\scalebox{0.7}{
+\begin{pspicture}(0,-0.6)(5,6.2)
+\SpecialCoor
+%\psgrid[gridcolor=lightgray]
+\pnode(0,0){A}
+\pnode(0,5){B}
+\pnode(5,5){C}
+\pnode(5,0){D}
+\pnode(3.5,0){E}
+\pnode(1.5,0){F}
+\battery(B)(C){battery}
+\psline(C)(D)
+\psline[arrowsize=10pt,arrowinset=0,arrowlength=2.5]{->}(D)(E)
+\psline[linewidth=.1](1.5,0)(1.5,-1.2)
+\psline[linewidth=.1](3.5,0)(3.5,-1.2)
+\psline(1.2,-0.5)(1.2,-1.5)(3.7,-1.5)(3.7,-0.5)
+\psline(1.2,-0.7)(3.7,-0.7)
+\uput[u](2.5,-2){test substance}
+\rput(2.5,-1.2){X}
+\psline(4,0)(4,-0.4)(4.6,-0.4)
+\uput[r](4.6,-0.4){crocodile clip}
+\psline[arrowsize=10pt,arrowinset=0,arrowlength=2.5]{<-}(F)(A)
+\psellipse(0,2.5)(0.5,0.5)
+\rput(0,2.5){\textbf{A}}
+\psline(0,5)(0,3)
+\psline(0,2)(0,0)
+\rput(-1.5,2.5){Ammeter}
+\end{pspicture}
+}
+\end{center}
+ \end{figure}
+\end{minipage}    
         \par 
         \label{m38720*id334372}\noindent{}\textbf{Results:}
           \newline
@@ -370,48 +409,30 @@ Solutions that contain free-moving ions are able to conduct electricity because 
 4 test tubes; copper(II) chloride solution; sodium carbonate solution; sodium sulphate solution\par 
       \label{m38719*id339975}
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m38719*id339978}
+\begin{figure}[H]
+
 \begin{center}
-\begin{pspicture}(-6,-1)(6,2.8)
-\rput(1,0){
-\psline(-3,0)(-3,2)
-\psline(-2.4,0)(-2.4,2)
-\psellipse(-2.7,0)(0.3,0.15)
-\psellipse(-2.7,2)(0.3,0.15)
-\psline(-3,0.8)(-2.4,0.8)
-\psline(-2.7,0.5)(-2,0.5)
-\rput(-1.5,0.5){CuCl$_{2}$}
-\rput(-2.5,0){
-\psline(-3,0)(-3,2)
-\psline(-2.4,0)(-2.4,2)
-\psellipse(-2.7,0)(0.3,0.15)
-\psellipse(-2.7,2)(0.3,0.15)
-\psline(-3,0.8)(-2.4,0.8)
-\psline(-2.7,0.5)(-2,0.5)
-\rput(-1.5,0.5){CuCl$_{2}$}
-}
-\rput(2.5,0){
-\psline(-3,0)(-3,2)
-\psline(-2.4,0)(-2.4,2)
-\psellipse(-2.7,0)(0.3,0.15)
-\psellipse(-2.7,2)(0.3,0.15)
-\psline(-3,0.8)(-2.4,0.8)
-\psline(-2.7,0.5)(-2,0.5)
-\rput(-1.3,0.5){Na$_{2}$CO$_{3}$}
-}
-\rput(5,0){
-\psline(-3,0)(-3,2)
-\psline(-2.4,0)(-2.4,2)
-\psellipse(-2.7,0)(0.3,0.15)
-\psellipse(-2.7,2)(0.3,0.15)
-\psline(-3,0.8)(-2.4,0.8)
-\psline(-2.7,0.5)(-2,0.5)
-\rput(-1.3,0.5){Na$_{2}$SO$_{4}$}
-}
-}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-5,-5)(5,5)
+\psset{unit=1cm}
+\newpsstyle{white} {linestyle=solid,linewidth=.1,fillstyle=solid,fillcolor=white}
+\rput(-4,0){\pstTubeEssais[niveauLiquide1=40]}
+\psline[linewidth=0.04]{->}(-3.8,-1)(-3,-1)
+\uput[r](-3,-1){\large{$\mathrm{CuCl}_2$}}
+\rput(0,0){\pstTubeEssais[niveauLiquide1=40,aspectLiquide1=white]}
+\psline[linewidth=0.04]{->}(0.2,-1)(1,-1)
+\uput[r](1,-1){\large{$\mathrm{Na}_{2}\mathrm{CO}_3$}}
+\rput(4,0){\pstTubeEssais[niveauLiquide1=40]}
+\psline[linewidth=0.04]{->}(4.2,-1)(5,-1)
+\uput[r](5,-1){\large{$\mathrm{CuCl}_2$}}
+\rput(8,0){\pstTubeEssais[niveauLiquide1=40,aspectLiquide1=white]}
+\psline[linewidth=0.04]{->}(8.2,-1)(9,-1)
+\uput[r](9,-1){\large{$\mathrm{Na}_{2}\mathrm{SO}_4$}}
 \end{pspicture}
+}
 \end{center}
- \end{figure}       
+\end{figure}       
       \par 
       \label{m38719*id339985}\noindent{}\textbf{Method:}
         \newline
@@ -488,7 +509,7 @@ If we look up which of these salts are soluble and which are insoluble, we see t
     2{\mathrm{Na}}^{+}+\mathrm{SO}_{4}^{2-}+{\mathrm{Cu}}^{2+}+2{\mathrm{Cl}}^{-}\to 2{\mathrm{Na}}^{+}+\mathrm{SO}_{4}^{2-}+{\mathrm{Cu}}^{2+}+2{\mathrm{Cl}}^{-}\tag{17.23}
       \end{equation}
 \end{enumerate}
-      \label{m38719*id340954}Table 17.2 shows some of the general rules about the solubility of different salts based on a number of investigations:\par 
+      \label{m38719*id340954}Table~\ref{tab:solubility} shows some of the general rules about the solubility of different salts based on a number of investigations:\par 
     % \textbf{m38719*uid69}\par
           \begin{table}[H]
     % \begin{table}[H]
@@ -496,7 +517,7 @@ If we look up which of these salts are soluble and which are insoluble, we see t
         \begin{center}
       \label{m38719*uid69}
     \noindent
-      \begin{tabular}{|l|l|}\hline
+      \begin{tabular}{|l|p{8cm}|}\hline
                 \textbf{Salt}
                &
                 \textbf{Solubility} \\ \hline
@@ -521,6 +542,7 @@ If we look up which of these salts are soluble and which are insoluble, we see t
     \end{tabular}
       \end{center}
     \caption{General rules for the solubility of salts}
+\label{tab:solubility}
 \end{table}
     \par
   \label{m38719*eip-870}Salts of carbonates, phosphates, oxalates, chromates and sulphides are generally insoluble.\par 
@@ -621,9 +643,18 @@ There are many types of reactions that can occur in aqueous solutions. In this s
             \begin{g_experiment}{Demonstration: Oxidation of sodium metal}
             \nopagebreak
             \label{m38719*eip-355}
-You will need a bunsen burner, a small piece of sodium metal and a metal spatula. Light the bunsen burner. Place the sodium metal on the spatula. Place the sodium in the flame. When the reaction finishes, you should observe a white powder on the spatula. This is a mixture of sodium oxide (${Na}_{2}\mathrm{O}$) and sodium peroxide (${Na}_{2}{\mathrm{O}}_{2}$). 
+\begin{minipage}{.6\textwidth}
+You will need a bunsen burner, a small piece of sodium metal and a metal spatula. Light the bunsen burner. Place the sodium metal on the spatula. Place the sodium in the flame. When the reaction finishes, you should observe a white powder on the spatula. This is a mixture of sodium oxide (${\mathrm{Na}}_{2}\mathrm{O}$) and sodium peroxide (${\mathrm{Na}}_{2}{\mathrm{O}}_{2}$). 
 \par \label{m38719*eip-980}
       \Warning{Sodium metal is very reactive. Sodium metal reacts vigourously with water and should never be placed in water. Be very careful when handling sodium metal.}
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+ \begin{center}
+  \includegraphics[width=.5\textwidth]{photos/sodium_flame_soren_wedel_nielsen_wikipedia.jpg}
+ \end{center}
+
+\end{minipage}
+
 \end{g_experiment}
 	\par
 \label{m38719*eip-611}
