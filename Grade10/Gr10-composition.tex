@@ -164,78 +164,27 @@ This is also a 3-dimensional molecular model. The atoms are represented by
 spheres.
 Figure~11.3 and Figure~11.4 are some examples of 
 \textbf{simple molecules} that are represented in 
-different ways.
-    \setcounter{subfigure}{0}
-\begin{figure}[h]
+different ways. \\
+\begin{minipage}{.5\textwidth}
+%     \setcounter{subfigure}{0}
+% \begin{figure}[h]
 \begin{center}
-\begin{pspicture}(-6,-2.2)(6,1)
-\SpecialCoor
-%\psgrid[gridcolor=lightgray]
-
-\psset{unit=0.75}
-\pscircle(0,0){2}
-
-\rput{150}{\psarc[fillcolor=white,fillstyle=solid](-1.5,1){1.5}{30}{260}
-\psarc[fillcolor=white,fillstyle=solid](1.5,1){1.5}{280}{150}
-\rput(-1.5,1){\pscurve(1.5;30)(-1;142.5)(1.5;260)}
-\rput(1.5,1){\pscurve(1.5;150)(-1;37.5)(1.5;280)}}
-\psline(0,1)(-4,1)
-\rput(-6,1){oxygen atom}
-\psline(-1.5,-0.5)(-4,-0.5)
-\psline(0.5,-2)(-4,-0.5)
-\rput(-6,-0.5){hydrogen atoms}
-
-\psset{unit=1.5}
-\rput(4,0){\pnode(-1,-1){RO}\pnode(0,0){H}\pnode(1,-1){LO}
-\psline(RO)(H)
-\psline(LO)(H)
-\rput*(H){O}
-\rput*(LO){H}
-\rput*(RO){H}}
-\end{pspicture}
-\caption{A space-filling model and structural formula of a water molecule. Each molecule is made up of two hydrogen atoms that are attached to one oxygen atom. This is a simple molecule.}
-\label{fig:microscopic:water molecule}
+\includegraphics[width=0.8\textwidth]{photos/water.jpg}
+% \caption{A space-filling model and structural formula of a water molecule. Each molecule is made up of two hydrogen atoms that are attached to one oxygen atom. This is a simple molecule.}
+% \label{fig:microscopic:water molecule}
 \end{center}
-\end{figure}    
-    \setcounter{subfigure}{0}
-\begin{figure}[h]
+% \end{figure}    
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+%     \setcounter{subfigure}{0}
+% \begin{figure}[h]
 \begin{center}
-\begin{pspicture}(-6,-2.4)(6,2)
-\SpecialCoor
-%\psgrid[gridcolor=lightgray]
-
-\psset{unit=0.75}
-\pscircle(0,0){2}
-%\psline(0,0)(3;142.5)
-%\psline(0,0)(3;37.5)
-
-\rput{150}{
-\psarc[fillcolor=white,fillstyle=solid](-1.5,1){1.5}{30}{260}
-\psarc[fillcolor=white,fillstyle=solid](1.5,1){1.5}{280}{150}
-\rput(-1.5,1){\pscurve(1.5;30)(-1;142.5)(1.5;260)}
-\rput(1.5,1){\pscurve(1.5;150)(-1;37.5)(1.5;280)}
-\psarc(0,-1){1.5}{195}{345}
-}
-
-\psline(0,1)(-4,1)
-\psline(-2,0)(-4,0)
-\rput(-6,1){nitrogen atom}
-\rput(-6,0){hydrogen atom}
-
-\psset{unit=1.5}
-\rput(4,0){\pnode(0,0){N}\pnode(1;210){H1}\pnode(1;270){H2}\pnode(1;330){H3}
-\psline(N)(H1)
-\psline(N)(H2)
-\psline(N)(H3)
-\rput*(N){N}
-\rput*(H1){H}
-\rput*(H2){H}
-\rput*(H3){H}}
-\end{pspicture}
-\caption{A space-filling model and structural formula of a molecule of ammonia. Each molecule is made up of one nitrogen atom and three hydrogen atoms. This is a simple molecule.}
-\label{fig:microscopic:ammonia}
+\includegraphics[width=0.8\textwidth]{photos/ammonia.jpg}
+% \caption{A space-filling model and structural formula of a molecule of ammonia. Each molecule is made up of one nitrogen atom and three hydrogen atoms. This is a simple molecule.}
+% \label{fig:microscopic:ammonia}
 \end{center}
-\end{figure}
+% \end{figure}
+\end{minipage}
        \end{itemize}
 Figure \ref{fig:microscopic:diamond} shows the bonds between the carbon atoms in diamond, 
 which is a \textbf{giant molecule}. Each carbon atom 
