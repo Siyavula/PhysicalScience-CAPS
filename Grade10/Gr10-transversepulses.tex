@@ -251,15 +251,7 @@
 
     \noindent
 \label{m38801*notfhsst!!!underscore!!!id259}
-\begin{tabular}{cc}
-	   \hspace*{-50pt}\raisebox{-8 mm}{ \includegraphics[width=0.5in]{col11305.imgs/pstip2.png}  }& 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {tip: }The pulse speed depends on the properties of the medium and not on the amplitude or pulse length of the pulse.
-	\end{note}
-	\end{minipage}
-	\end{tabular}
-	\par
+      \Tip{The pulse speed depends on the properties of the medium and not on the amplitude or pulse length of the pulse.}
 \label{m38801*secfhsst!!!underscore!!!id260}
             \begin{exercises}{  Pulse Speed }
             \nopagebreak
@@ -298,56 +290,68 @@
             \nopagebreak
       \label{m38802*id316136}Two or more pulses can pass through the same medium at that same time in the same place. When they do they interact with each other to form a different disturbance at that point. The resulting pulse is obtained by using the \textsl{principle of superposition}. 
 \Definition{Principle of superposition}{
-The principle of superposition states that when two disturbance occupy the same space at the same time they are added.} 
+The principle of superposition states that when two disturbance occupy the same space at the same time the resulting disturbance is the sum of two disturbances.} 
 
 After pulses pass through each other, each pulse continues along its original direction of travel, and their original amplitudes remain unchanged.\par 
-      \label{m38802*id316148}Constructive interference takes place when two pulses meet each other to create a larger pulse. The amplitude of the resulting pulse is the sum of the amplitudes of the two initial pulses. This is shown in Figure \ref{m38802*uid53!!!underscore!!!media}.\par 
+      \label{m38802*id316148}Constructive interference takes place when two pulses meet each other to create a larger pulse. The amplitude of the resulting pulse is the sum of the amplitudes of the two initial pulses. This could be two crests meeting or two troughs meeting. This is shown in Figure \ref{m38802*uid53!!!underscore!!!media}.\par 
 
 \Definition{   \label{id2436281}\textbf{ Constructive interference}} { \label{m38802*meaningfhsst!!!underscore!!!id567}
       Constructive interference is when two pulses meet, resulting in a bigger pulse. 
        } 
      \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38802*uid53}
-%    \begin{center}
-%    \rule[.1in]{\figurerulewidth}{.005in} \\
-%        \label{m38802*uid53!!!underscore!!!media}\label{m38802*uid53!!!underscore!!!printimage}\includegraphics[width=0.3\columnwidth]{col11305.imgs/m38802_PG10C4_018.png} % m38802;PG10C4\_018.png;;;6.0;8.5;
-%      \vspace{2pt}
-%    \vspace{\rubberspace}\par \begin{cnxcaption}
-%	  \small \textbf{Figure 6.5: }Superposition of two pulses: constructive interference.
-%	\end{cnxcaption}
-%    \vspace{.1in}
-%    \rule[.1in]{\figurerulewidth}{.005in} \\
-%    \end{center}
-
-    \begin{center}
+\begin{center}
     \scalebox{0.7}
     {
     \begin{pspicture}(0,-5)(4,1.8)
     %\psgrid[gridcolor=lightgray]
     \def\pulse{\psline[linecolor=white,linestyle=solid,linewidth=2pt](0,0)(1.02,0)\psplot[xunit=0.034]{0}{30}{6 x mul sin}}
 
-    \rput(0,0){\uput[u](2,1.2){pulses move towards each other}
+    \rput(-3,0){\uput[u](2,1.2){pulses move towards each other}
     \psline(0,0)(4,0)
     \rput(0,0){\psline{->}(0,1.2)(0.5,1.2)\pulse}
     \psline{<-}(3.5,1.2)(4,1.2)\rput(3,0){\pulse}}
 
-    \rput(0,-3){\uput[u](2,2.2){pulses constructively interfere}
+    \rput(-3,-3){\uput[u](2,2.2){pulses constructively interfere}
     \psline(0,0)(4,0)
     \rput(1.5,0){\psset{yunit=2}\pulse}}
 
-    \rput(0,-5){\uput[u](2,1.2){pulses move away from other}
+    \rput(-3,-5){\uput[u](2,1.2){pulses move away from other}
     \psline(0,0)(4,0)
     \rput(0,0){\psline{<-}(0,1.2)(0.5,1.2)\pulse}
     \psline{->}(3.5,1.2)(4,1.2)\rput(3,0){\pulse}}
+%     \end{pspicture}
+%     }
+% \end{minipage}
+% \begin{minipage}{.5\textwidth}
+%     \scalebox{0.7}
+%     {
+%     \begin{pspicture}(0,-5)(4,1.8)
+%     %\psgrid[gridcolor=lightgray]
+    \def\pulse{\psline[linecolor=white,linestyle=solid,linewidth=2pt](0,0)(1.02,0)\psplot[xunit=0.034]{0}{30}{-6 x mul sin}}
+
+    \rput(3,0){\uput[u](2,1.2){pulses move towards each other}
+    \psline(0,1)(4,1)
+    \rput(0,1){\psline{->}(0,.2)(0.5,0.2)\pulse}
+    \psline{<-}(3.5,1.2)(4,1.2)\rput(3,1){\pulse}}
+
+    \rput(3,-3){\uput[u](2,2.2){pulses constructively interfere}
+    \psline(0,2)(4,2)
+    \rput(1.5,2){\psset{yunit=2}\pulse}}
+
+    \rput(3,-5){\uput[u](2,1.2){pulses move away from other}
+    \psline(0,1)(4,1)
+    \rput(0,1){\psline{<-}(0,.2)(0.5,0.2)\pulse}
+    \psline{->}(3.5,1.2)(4,1.2)\rput(3,1){\pulse}}
     \end{pspicture}
     }
-    \end{center}
+\end{center}    
 \caption{Superposition of two pulses: constructive interference.}
 \label{m38802*uid53!!!underscore!!!media}
  \end{figure}       
 
 
-      \label{m38802*id316190}Destructive interference takes place when two pulses meet and cancel each other. The amplitude of the resulting pulse is the sum of the amplitudes of the two initial pulses, but the one amplitude will be a negative number. This is shown in Figure \ref{m38802*uid54!!!underscore!!!media}. In general, amplitudes of individual pulses add together to give the amplitude of the resultant pulse.\par 
+      \label{m38802*id316190}Destructive interference takes place when two pulses meet and result in a smaller. The amplitude of the resulting pulse is the sum of the amplitudes of the two initial pulses, but the one amplitude will be a negative number. This is shown in Figure \ref{m38802*uid54!!!underscore!!!media}. In general, amplitudes of individual pulses are summed together to give the amplitude of the resultant pulse.\par 
 
 \Definition{   \label{id2436357}\textbf{ Destructive interference}} { \label{m38802*meaningfhsst!!!underscore!!!id578}
       Destructive interference is when two pulses meet, resulting in a smaller pulse. 
@@ -613,7 +617,13 @@ You should observe that when you produce two pulses simultaneously you see them 
             \section{Summary}
             \nopagebreak
             \label{m38802*eip-404}\begin{itemize}[noitemsep]
-            \item A medium is the substance or material in which a wave will move\item A pulse is a single disturbance that moves through a medium\item The amplitude of a pules is a measurement of how far the medium is displaced from rest\item Pulse speed is the distance a pulse travels per unit time\item Constructive interference is when two pulses meet and result in a bigger pulse\item Destructive interference is when two pulses meet and and result in a smaller pulse\item We can draw graphs to show the motion of a particle in the medium or to show the motion of a pulse through the medium\item When a pulse moves from a thin rope to a thick rope, the speed and pulse length decrease. The pulse will be reflected and inverted in the thin rope. The reflected pulse has the same length and speed, but a different amplitude\item When a pulse moves from a thick rope to a thin rope, the speed and pulse length increase. The pulse will be reflected in the thick rope. The reflected pulse has the same length and speed, but a different amplitude\item A pulse reaching a free end will be reflected but not inverted. A pulse reaching a fixed end will be reflected and inverted\end{itemize}
+            \item A medium is the substance or material in which a pulse will move
+	    \item A pulse is a single disturbance that moves through a medium
+	    \item The amplitude of a pules is a measurement of how far the medium is displaced from rest
+	    \item Pulse speed is the distance a pulse travels per unit time
+	    \item Constructive interference is when two pulses meet and result in a bigger pulse		
+	    \item Destructive interference is when two pulses meet and and result in a smaller pulse
+	    \end{itemize}
         \label{m38802*cid9}
 
 
