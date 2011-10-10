@@ -165,9 +165,12 @@ Chemical changes are far more difficult to reverse than physical changes.
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38709*id63200}
     \begin{center}
-    \label{m38709*id63200!!!underscore!!!media}\label{m38709*id63200!!!underscore!!!printimage}\includegraphics[width=300px]{col11305.imgs/m38709_CG10C4_004.png} % m38709;CG10C4\_004.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
+\scalebox{0.8}{
+\begin{pspicture}(0,0)(5,5)
+\psset{unit=0.5cm,glassType=erlen,recuperationGaz,niveauLiquide1=20}
+\pstChauffageBallon[tubeRecourbe]
+\end{pspicture}
+}
     \end{center}
  \end{figure}       
         \par 
@@ -206,7 +209,7 @@ Note that the manganese dioxide is a catalyst and is not shown in the reaction. 
     2\mathrm{Mg}+{\mathrm{O}}_{2}\to 2\mathrm{MgO}\tag{12.5}
       \end{equation}
     \setcounter{subfigure}{0}
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \begin{pspicture}(-6,-1)(6,1.5)
 %\psgrid[gridcolor=lightgray]
@@ -250,39 +253,13 @@ Note that the manganese dioxide is a catalyst and is not shown in the reaction. 
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38709*id63460}
     \begin{center}
-\begin{pspicture}(0,-4.301621)(6.4140625,4.253465)
-\psline[linewidth=0.04cm](2.4714065,1.4040043)(4.351406,3.0040045)
-\psline[linewidth=0.04cm](3.0114062,0.8440044)(4.811406,2.4440045)
-\rput{-49.11223}(-0.46802804,4.402622){\psellipse[linewidth=0.04,dimen=outer](4.5838127,2.7134783)(0.3788815,0.19499093)}
-\rput{130.79858}(5.409092,-0.2251927){\psarc[linewidth=0.04](2.7560983,1.125682){0.38911715}{0.0}{180.22943}}
-\psline[linewidth=0.04cm](2.48,1.4134653)(3.66,1.3934652)
-\rput{-50.467102}(-2.1400015,3.1871772){\psframe[linewidth=0.04,dimen=outer](2.7114062,4.004004)(1.911406,3.7240043)}
-\psline[linewidth=0.04cm](2.611406,3.6040044)(2.7514062,3.424004)
-\psline[linewidth=0.04cm](2.7514062,3.424004)(3.0114062,3.384004)
-\psline[linewidth=0.04cm](3.0114062,3.384004)(3.5714064,2.6840045)
-\psline[linewidth=0.04cm](3.5714064,2.6840045)(3.6314063,2.4440045)
-\psline[linewidth=0.04cm](2.4914062,3.5040045)(2.611406,3.3640041)
-\psline[linewidth=0.04cm](2.611406,3.3640041)(2.6314063,3.1840045)
-\psline[linewidth=0.04cm](2.6314063,3.1840045)(2.6514063,3.1240041)
-\psline[linewidth=0.04cm](2.6514063,3.1240041)(3.1714065,2.5040045)
-\psline[linewidth=0.04cm](3.1714065,2.5040045)(3.9314063,2.0040045)
-\psline[linewidth=0.04cm](3.9314063,2.0040045)(4.1114063,2.2240043)
-\psline[linewidth=0.04cm](4.1114063,2.2240043)(3.4914062,2.5040045)
-\psline[linewidth=0.04cm](3.4914062,2.5040045)(2.7914064,3.2240043)
-\psline[linewidth=0.04cm](2.7914064,3.2240043)(2.6714065,3.2840044)
-\psline[linewidth=0.04cm](2.7914064,3.2240043)(2.9914062,3.1840045)
-\psline[linewidth=0.04cm](2.9914062,3.1840045)(3.4714065,2.664004)
-\psline[linewidth=0.04cm](3.4714065,2.664004)(3.5314064,2.4840045)
-\psline[linewidth=0.04cm](3.44,2.2134652)(3.4514065,1.9640043)
-\psline[linewidth=0.04cm](3.4514065,1.9640043)(3.6914065,1.7640043)
-\psline[linewidth=0.04cm](3.6914065,1.7640043)(3.9114063,1.9840044)
-\psline[linewidth=0.04cm](3.9114063,1.9840044)(3.6714065,2.0840044)
-\psline[linewidth=0.04cm](3.6714065,2.0840044)(3.56,2.2534652)
-\pspolygon[linewidth=0.04](2.5914063,-0.07599564)(2.5914063,-0.61599565)(2.3714063,-0.7759956)(2.3114064,-2.2759957)(2.9114063,-2.2759957)(2.9114063,-0.7159956)(2.7714062,-0.55599564)(2.7714062,-0.07599564)
-\rput{-204.0165}(3.8733587,-5.2158813){\psarc[linewidth=0.04](2.491407,-2.1959953){0.96}{301.69748}{268.90167}}
-\rput{-204.0165}(3.7619426,-5.4846077){\psarc[linewidth=0.04](2.4642787,-2.342208){0.9778325}{0.77209437}{203.44756}}
-\psellipse[linewidth=0.04,dimen=outer](2.6814063,0.24400435)(0.17,0.3)
-\end{pspicture} 
+\begin{pspicture}(0,0)(5,5)
+\psset{unit=0.5cm,tubeSeul=true,pince=true}
+\newpsstyle{fred} {linestyle=none,fillstyle=solid,fillcolor=blue}
+\newpsstyle{george} {linestyle=none,fillstyle=solid,fillcolor=orange}
+%playing with colours, try tweak this to look like the real thing, add photo of the real thing?
+\pstChauffageTube[aspectLiquide1=fred,aspectLiquide2=george,niveauLiquide1=80,niveauLiquide2=40]
+\end{pspicture}
     \end{center}
  \end{figure}       
         \par 
@@ -341,61 +318,35 @@ Decide whether each of the following changes are physical or chemical and give a
     % \\ '' '0'
         \begin{center}
       \label{m38709*id63990}
-    \noindent
-    \tabletail{%
-        \hline
-        \multicolumn{3}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
-        \hline
-      }
-      \tablelasttail{}
-      \begin{xtabular}[t]{|l|l|l|}\hline
+      \begin{tabular}{|l|l|l|}\hline
                   \textbf{Description}
                  &
                   \textbf{Physical or chemical change}
                  &
-                  \textbf{Reason}
-                % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
+                  \textbf{Reason} \\ \hline
         melting candle wax &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
+        \\ \hline
         dissolving $\mathrm{NaCl}$ &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
+      \\ \hline
         mixing $\mathrm{NaCl}$ with ${\mathrm{AgNO}}_{3}$ &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
+        \\ \hline
         tearing magnesium ribbon &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
+       \\ \hline
         adding $\mathrm{HCl}$ to magnesium ribbon &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
+        \\ \hline
         mixing iron and sulphur &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
+        \\ \hline
         heating iron and sulphur &
          &
-        % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
-    \end{xtabular}
+        \\ \hline
+    \end{tabular}
       \end{center}
-    \begin{center}{\small\bfseries Table 12.1}\end{center}
-    \begin{caption}{\small\bfseries Table 12.1}\end{caption}
 \end{table}
     \par
   \par 
@@ -552,7 +503,7 @@ the total energy that is \textsl{released} when new bonds are formed. This means
         \par 
 
       \label{m38711*id64882}\noindent{}\textbf{Method:}\\
-% \begin{minipage}{.6\textwidth}
+\begin{minipage}{.6\textwidth}
       \label{m38711*id64889}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
             \label{m38711*uid35}\item Choose a reaction from any that have been used in this chapter or any other \textsl{balanced} chemical reaction that you can think of. To help to explain this activity, we will use the decomposition reaction of calcium carbonate to produce carbon dioxide and calcium oxide.
 ${\mathrm{CaCO}}_{3}\to {\mathrm{CO}}_{2}+\mathrm{CaO}$
@@ -561,12 +512,12 @@ ${\mathrm{CaCO}}_{3}\to {\mathrm{CO}}_{2}+\mathrm{CaO}$
 \label{m38711*uid38}\item Now count the number of atoms on each side of the table. What do you notice?
 \label{m38711*uid39}\item Observe whether there is any difference between the molecules in the reactants and the molecules in the products.
 \end{enumerate}
-% \end{minipage}
-% \begin{minipage}{.4\textwidth}
-%  \begin{center}
-%  \includegraphics[width=.6\textwidth]{photos/balancing3.png}\par
-% \end{center}
-% \end{minipage}
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+ \begin{center}
+ \includegraphics[width=.6\textwidth]{photos/balancing3.png}\par
+\end{center}
+\end{minipage}
         \par 
       \label{m38711*id65031}\noindent{}\textbf{Discussion}
      You should have noticed that the number of atoms in the reactants is the same as the number of atoms in the product. The number of atoms is conserved during the reaction. However, you will also see that the molecules in the reactants and products is not the same. The \textsl{arrangement of atoms} is not conserved during the reaction.

@@ -114,13 +114,7 @@ graphical representation to show a molecule's structure
 %\psgrid[gridcolor=lightgray]
 \rput(-3,0){(a) \textbf{C$_{4}$H$_{10}$}}
 \rput(-1,0){(b) \textbf{C$_{2}$H$_{5}$}}
-\rput(2,0){\textbf{CH}}
-\rput(2,1){\textbf{CH$_{3}$}}
-\rput(1,-1){\textbf{CH$_{3}$}}
-\rput(3,-1){\textbf{CH$_{3}$}}
-\psline(2,0.3)(2,0.7)
-\psline(1.95,-0.3)(1,-0.7)
-\psline(2.05,-0.3)(3,-0.7)
+\rput(1,0){(c) \chemfig{CH(-[2]CH_3)(-[7]CH_3)(-[5]CH_3)}}
 \end{pspicture}
 \caption{Diagram showing (a) the molecular, (b) the empirical and (c) the structural formula of isobutane}
 \label{fig:representing isobutane}
@@ -185,7 +179,7 @@ different ways. \\
 \end{center}
 % \end{figure}
 \end{minipage}
-       \end{itemize}
+       \end{itemize} \noindent
 Figure \ref{fig:microscopic:diamond} shows the bonds between the carbon atoms in diamond, 
 which is a \textbf{giant molecule}. Each carbon atom 
 is joined to four others, and this pattern repeats itself until a complex 
@@ -196,29 +190,8 @@ bonded to four carbon atoms, but some of these carbon atoms have been omitted.
     \setcounter{subfigure}{0}
 \begin{figure}[h]
 \begin{center}
-\begin{pspicture}(-2,-3)(6,1)
-\SpecialCoor
-%\psgrid[gridcolor=lightgray]
-
-%\psset{unit=0.75}
-\def\diamond{\pnode(0,0){c0}\pnode(1;90){c1}\pnode(1;210){c2}\pnode(1;330){c3}\pnode(0,-1){c4}
-\psdots[dotsize=4pt](c0)(c1)(c2)(c3)(c4)
-\psline(c0)(c1)\psline(c0)(c2)\psline(c0)(c3)\psline(c0)(c4)}
-
-\rput(0,0){\diamond}
-\rput(0,-1){\diamond}
-\rput(1.73,0){\diamond}
-\rput(-0.87,-1.5){\diamond}
-\rput(0,-2){\diamond}
-\rput(0.87,-1.5){\diamond}
-
-\rput(5,-1){\diamond}
-
-%\multirput(0,0)(1.73,0){4}{\diamond}\multirput(0.87,1.5)(1.73,0){4}{\diamond}\multirput(0,-1)(1.73,0){4}{\diamond}\multirput(0,1)(1.73,0){4}{\diamond}
-
-%\rput(0,1){\multirput(0,0)(1.73,0){4}{\diamond}\multirput(0.87,1.5)(1.73,0){4}{\diamond}\multirput(0,3)(1.73,0){4}{\diamond}}
-\end{pspicture}
-\caption{Diagrams showing the microscopic structure of diamond. The diagram on the left shows part of a diamond lattice, made up of numerous carbon atoms. The diagram on the right shows how each carbon atom in the lattice is joined to four others. This forms the basis of the lattice structure. Diamond is a giant molecule.}
+\includegraphics[width=0.3\textwidth]{photos/Diamond_Carbon.png}
+\caption{Diagrams showing the microscopic structure of diamond.}
 \label{fig:microscopic:diamond}
 \end{center}
 \end{figure}
