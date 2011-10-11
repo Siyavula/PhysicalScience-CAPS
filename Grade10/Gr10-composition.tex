@@ -15,10 +15,18 @@ But what is it exactly that makes up these materials? In other words, if we were
 to break down a material into the parts that make it up, what would we find? And 
 how is it that a material's microscopic structure (the small parts that make up 
 the material) is able to give it all these different properties?\par 
+\begin{minipage}{.6\textwidth}
       \label{m38120*id307099}The answer lies in the smallest building block of 
 matter: the \textbf{atom}. It is the \textsl{type} of atoms, and the way in which they are 
 \textsl{arranged} in a material, that affects the 
 properties of that substance. This is similar to building materials. We can use bricks, steel, cement, wood, straw (thatch), mud and many other things to build structures from. In the same way that the choice of building material affects the properties of the structure, so the atoms that make up matter affect the properties of matter.\par 
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+ \begin{center}
+\includegraphics[width=0.6\textwidth]{photos/atom_model_kit.jpg}
+ \end{center}
+\end{minipage}
+
       \label{m38120*id307459}It is not often that substances are found in atomic 
 form (just as you seldom find a building or structure made from one building material). Normally, atoms are bonded (joined) to other atoms to form \textbf{compounds} or \textbf{molecules}. It is only in the \textsl{noble gases} (e.g. helium, neon and argon) that atoms 
 are found individually and are not bonded to other atoms. We looked at some of the 
@@ -38,7 +46,7 @@ Almost everything around us is made up of compounds. The only substances that do
 \item \textbf{Ionic compounds} form as a result of ionic bonding where electrons are transferred from metals to non-metals. 
 \item \textbf{Metals} are formed as a result of metallic bonding where metal atoms lose their outer electrons to form a lattice of regularly spaced positive ions and a 'pool' of delocalized electrons that surround the positive ions. 
 \end{itemize}
-The following diagram illustrates how compounds can be subdivided by the type of bonding.
+The following diagram illustrates how compounds can be subdivided by the type of bonding and the structure.
 \begin{figure}[H]
  \begin{center}
   \begin{pspicture}(-6,0.5)(6,5)
@@ -55,12 +63,12 @@ The following diagram illustrates how compounds can be subdivided by the type of
 \rput(-3,2.3){sulphur ($\mathsf{S}_{8}$)}
 \rput(-3,1.8){buckyballs ($\mathsf{C}_{60}$)}
 %putting other text
-\rput(4.5,2.8){\textsl{ionic network}}
-\rput(4.5,2.4){\textsl{structures}}
-\rput(1.2,2.8){\textsl{covalent network}}
-\rput(1.2,2.4){\textsl{structures}}
-\rput(7.8,2.8){\textsl{metallic network}}
-\rput(7.8,2.4){\textsl{structures}}
+\rput(4.5,2.8){\textbf{ionic network}}
+\rput(4.5,2.4){\textbf{structures}}
+\rput(1.2,2.8){\textbf{covalent network}}
+\rput(1.2,2.4){\textbf{structures}}
+\rput(7.8,2.8){\textbf{metallic network}}
+\rput(7.8,2.4){\textbf{structures}}
 %ionic structures
 \rput(4.5,1.9){sodium chloride ($\mathsf{NaCl}$)}
 \rput(4.5,1.4){barium sulphate ($\mathsf{BaSO}_{4}$)}
@@ -76,8 +84,26 @@ The following diagram illustrates how compounds can be subdivided by the type of
 \end{pspicture}
  \end{center}
 \end{figure}
-Compounds can also be divided based on their structure. Relatively small molecules are called \textbf{covalent molecular structures}. These exist and interact as seperate molecules. Oxygen ($\mathsf{O}_{2}$), water ($\mathsf{H}_{2}\mathsf{O}$), octane ($\mathsf{C}_{8}\mathsf{H}_{18}$), sulphur ($\mathsf{S}_{8}$) and buckminsterfullerene ($\mathsf{C}_{60}$, buckyballs) are all examples of covalent molecular structures. \\
+\subsection*{Covalent molecular structures}
+Relatively small molecules are called \textbf{covalent molecular structures}. These exist and interact as seperate molecules. Oxygen ($\mathsf{O}_{2}$), water ($\mathsf{H}_{2}\mathsf{O}$), octane ($\mathsf{C}_{8}\mathsf{H}_{18}$), sulphur ($\mathsf{S}_{8}$) and buckminsterfullerene ($\mathsf{C}_{60}$, buckyballs) are all examples of covalent molecular structures. \\
+\begin{figure}[H]
+ \begin{center}
+  \includegraphics[width=0.2\textwidth]{photos/Buckyball_Carbon.png} 
+\includegraphics[width=0.2\textwidth]{photos/sulphur_wikipedia.png}
+ \end{center}
+\caption{Covalent molecular structures}
+\end{figure}
+
+\subsection*{Network structures}
 Compounds that exist as giant repeating lattice structures ae called network structures. Examples include covalent molecules such as diamond, graphite and silica. Ionic substances are also network structures, for example a sodium chloride crystal is a huge lattice of repeating units made of sodium and chloride ions. All substances formed as a result of ionic bonding are network structures. Metals exist as large continuous lattice structures and are also classified as network structures. For example copper, zinc and iron can be seen as a giant crystals and are therefore considered to be network strucutres.
+\begin{figure}[H]
+ \begin{center}
+\includegraphics[width=0.2\textwidth]{photos/copper_structure.png} 
+\includegraphics[width=0.2\textwidth]{photos/Diamond_Carbon.png} 
+\includegraphics[width=0.2\textwidth]{photos/BaSO4_wikipedia.png} 
+ \end{center}
+\caption{Network structures. From left to right: metallic, covalent and ionic.}
+\end{figure}
             \subsection*{Representing molecules}
             \nopagebreak
         \label{m38120*id307557}The structure of a molecule can be shown in many 
@@ -131,127 +157,125 @@ The empirical formula is useful when we want to write the formula for \textsl{ne
 %\psgrid[gridcolor=lightgray]
 \rput(-3,0){(a) \textbf{C$_{4}$H$_{10}$}}
 \rput(-1,0){(b) \textbf{C$_{2}$H$_{5}$}}
-\rput(1,0){(c) \chemfig{CH(-[2]CH_3)(-[7]CH_3)(-[5]CH_3)}}
+\rput(0.5,0){(c)}
+\rput(2,0){\chemfig{CH(-[2]CH_3)(-[7]CH_3)(-[5]CH_3)}}
 \end{pspicture}
-\caption{Diagram showing (a) the molecular, (b) the empirical and (c) the structural formula of isobutane}
+\caption{Diagram showing (a) the molecular, (b) the empirical and (c) the structural formula of 2-methylpropanone}
 \label{fig:representing isobutane}
 \end{center}
 \end{figure}      
-\label{m38120*uid4}\item \textbf{Using diagrams to show the 
-structure of a molecule}
-Diagrams of molecules are very useful because they help us to picture how the 
-atoms are arranged in the molecule and they help us to see the shape of the 
-molecule. There are two types of diagrams that are commonly used:
+\label{m38120*uid4}\item \textbf{Using diagrams to show the structure of a compound}
+Diagrams of compounds are very useful because they help us to picture how the atoms are arranged in the compound and they help us to see the shape of the compound. There are three types of diagrams that are commonly used:
 \label{m38120*id307860}\begin{itemize}[noitemsep]
-            \label{m38120*uid5}\item 
-\textsl{Ball and stick models}
-This is a 3-dimensional molecular model that uses 'balls' to represent atoms and 
-'sticks' to represent the bonds between them. The centres of the atoms (the 
-balls) are connected by straight lines which represent the bonds between them. A 
-simplified example is shown in Figure~11.2.
-    \setcounter{subfigure}{0}
-\begin{figure}[h]
-\begin{center}
-\begin{pspicture}(-3,-1)(3,2)
-%\psgrid[gridcolor=lightgray]
-\rput(-1,0){
-\psellipse(0,1.5)(0.5,0.5)
-\psline{->}(0.5,1.5)(1.5,1.5)
-\rput(2.95,1.5){oxygen atom}
-\psellipse(-2.1,0.2)(0.3,0.3)
-\psellipse(0.8,-0.6)(0.3,0.3)
-\psline{->}(1.1,-0.6)(1.5,-0.6)
-\rput(3,-0.6){hydrogen atom}
-\psline(-0.4,1.3)(-1.8,0.25)
-\psline(0.3,1.1)(0.8,-0.35)
-}
-\end{pspicture}
-\caption{A ball and stick model of a water molecule}
-\label{fig:water ball and stick}
-\end{center}
-\end{figure}
-       \label{m38120*uid7}\item \textsl{Space-filling model}
-This is also a 3-dimensional molecular model. The atoms are represented by 
-spheres.
-Figure~11.3 and Figure~11.4 are some examples of 
-\textbf{simple molecules} that are represented in 
-different ways. \\
-\begin{minipage}{.5\textwidth}
-%     \setcounter{subfigure}{0}
-% \begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.8\textwidth]{photos/water.jpg}
-% \caption{A space-filling model and structural formula of a water molecule. Each molecule is made up of two hydrogen atoms that are attached to one oxygen atom. This is a simple molecule.}
-% \label{fig:microscopic:water molecule}
-\end{center}
-% \end{figure}    
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-%     \setcounter{subfigure}{0}
-% \begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.8\textwidth]{photos/ammonia.jpg}
-% \caption{A space-filling model and structural formula of a molecule of ammonia. Each molecule is made up of one nitrogen atom and three hydrogen atoms. This is a simple molecule.}
-% \label{fig:microscopic:ammonia}
-\end{center}
-% \end{figure}
-\end{minipage}
-       \end{itemize} \noindent
-Figure \ref{fig:microscopic:diamond} shows the bonds between the carbon atoms in diamond, 
-which is a \textbf{giant molecule}. Each carbon atom 
-is joined to four others, and this pattern repeats itself until a complex 
-\textsl{lattice} structure is formed. Each black 
-ball in the diagram represents a carbon atom, and each line represents the bond 
-between two carbon atoms. Note that the carbon atoms on the edges are actually 
-bonded to four carbon atoms, but some of these carbon atoms have been omitted.
-    \setcounter{subfigure}{0}
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.3\textwidth]{photos/Diamond_Carbon.png}
-\caption{Diagrams showing the microscopic structure of diamond.}
-\label{fig:microscopic:diamond}
-\end{center}
-\end{figure}
-       \end{enumerate}
-\label{m38120*notfhsst!!!underscore!!!id112}
-\Ifact{Diamonds are most often thought of in terms of their use in the 
-jewellery industry. However, about 80\% of mined diamonds are unsuitable for use 
-as gemstones and are therefore used in industry because of their strength and 
-hardness. These properties of diamonds are due to the strong covalent bonds 
-(covalent bonding will be explained later) between the carbon atoms in diamond. 
-The most common uses for diamonds in industry are in cutting, drilling, 
-grinding, and polishing.}
+\item \textbf{Wireframe or stick models} \\
+In this model, the bonds between atoms are shown as 'sticks'. These 'sticks' are colored to show which atoms are bonding. The common colors that are used are: 
+\begin{itemize}[noitemsep]
+ \item black or gray for carbon
+\item red for oxygen
+\item white for hydrogen
+\item blue for nitrogen
+\item yellow, pink, green for other atoms
+\end{itemize}
 
-	\par
-\label{m38120*uid8310432}This website\footnote{http://alteredqualia.com/canvasmol/}
-         allows you to view several molecules. You do 
-not need to know these molecules, this is simply to allow you to see one way of 
-representing molecules. 
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m38120*uid10123}
-    \begin{center}
-    \label{m38120*uid101!!!underscore!!!media}\label{m38120*uid10123!!!underscore!!!printimage}\includegraphics[width=6cm]{col11305.imgs/m38120_canvasmol.png} % m38120;canvasmol.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{\rubberspace}\par \begin{cnxcaption}
-	  \small \textbf{Figure 11.6: }Ball-and-stick view of ethanol from http://alteredqualia.com/canvasmol/\footnotemark{}
-	\end{cnxcaption}
-    \vspace{.1in}
-    \end{center}
- \end{figure}   
-    \addtocounter{footnote}{-1}
-\par 
-\label{m38120*secfhsst!!!underscore!!!id115}
-            \begin{exercises}{ Atoms and molecules         }
+\label{m38120*uid5}\item \textbf{Ball and stick models} \\
+This is a 3-dimensional molecular model that uses 'balls' to represent atoms and 'sticks' to represent the bonds between them. The centres of the atoms (the balls) are connected by straight lines which represent the bonds between them. The balls are colored using the same colors as for the stick or wireframe model.
+\item \textbf{Space-filling models} \\
+This is also a 3-dimensional molecular model. The atoms are represented by spheres. These spheres are colored as in the stick or wireframe model.
+\end{itemize}
+Table~\ref{tab:atommodels} shows examples of the different types of models for all the types of compounds.
+\begin{table}[H]
+ \begin{center}
+  \begin{tabular}{|l|l|l|l|l|}  \hline
+   & \textbf{Covalent molecular} & \textbf{Covalent network} & \textbf{Ionic network} & \textbf{Metallic network}   \\ \hline
+\textbf{Name of compound} & glucose & graphite & sodium nitrate & zinc \\ \hline
+\textbf{Formula} & $\mathsf{C}_{6}\mathsf{H}_{12}\mathsf{O}_6$ or $\mathsf{C}\mathsf{H}_{2}\mathsf{O}$ & $\mathsf{C}$ & $\mathsf{NaNO}_{3}$ & $\mathsf{Zn}$  \\ \hline
+\textbf{Stick model} & \includegraphics[width=.1\textwidth]{photos/glucose_wire.png} & \includegraphics[width=.1\textwidth]{photos/Graphite_Carbon.png} & &  \\ \hline
+\textbf{Ball-and-stick model} & \includegraphics[width=.1\textwidth]{photos/glucose_balls.png}  & \includegraphics[width=.1\textwidth]{photos/graphite_wikipedia.png} & \includegraphics[width=.1\textwidth]{photos/Sodiumnitrate_wikipedia.png} & \includegraphics[width=.1\textwidth]{photos/zinc_balls.jpg} \\ \hline
+\textbf{Space-filling model} & \includegraphics[width=.1\textwidth]{photos/glucose_spacefill.png}  & & & \includegraphics[width=.1\textwidth]{photos/zinc_spacefill.png} \\ \hline
+  \end{tabular}
+ \end{center}
+\caption{Different represetations for compounds}
+\label{tab:atommodels}
+\end{table}
+
+\begin{Activity}{Representing compounds}
+A list of substances is given below. Make use of atomic model kits, play dough and toothpicks, or coloured polystyrene balls and skewer sticks to represent each of the substances in three dimensional structures.\\
+\begin{minipage}{.3\textwidth}
+\begin{itemize}
+ \item glucose ($\mathsf{C}_{6}\mathsf{H}_{12}\mathsf{O}_{6}$)
+\item silica ($\mathsf{SiO}_{2}$)
+\item sodium chloride ($\mathsf{NaCl}$)
+\item sulfur ($\mathsf{S}_{8}$)
+\item diamond ($\mathsf{C}$)
+\item graphite ($\mathsf{C}$)
+\item buckyballs( $\mathsf{C}_{60}$)
+\item sucrose ($\mathsf{C}_{12}\mathsf{H}_{22}\mathsf{O}_{11}$)
+\item copper ($\mathsf{Cu}$)
+\end{itemize}
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{photos/water.jpg}
+\end{center}  
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{photos/ammonia.jpg}
+\end{center}
+\end{minipage}
+\end{Activity}
+\label{m38120*uid8310432}This website (http://alteredqualia.com/canvasmol/) allows you to view several compounds. You do not need to know these molecules, this is simply to allow you to see one way of representing molecules. 
+    \section{ Summary}
             \nopagebreak
-            \label{m38120*id308039}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m38120*uid11}\item In each of the following, say whether the chemical 
-substance is made up of single atoms, simple molecules or giant molecules.
+            \label{m38120*cid7} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11305.imgs/summary_www.png}} {(section shortcode: P10055 )} \par 
+      \label{m38120*id311034}\begin{itemize}[noitemsep]
+            \label{m38120*uid67}\item The smallest unit of matter is the \textbf{atom}. Atoms can combine to form \textbf{compounds}.
+\label{m38120*uid68}\item A \textbf{compound} is a group of two or more atoms that are attracted to each other by chemical bonds.
+\label{m38120*uid69}\item \textbf{Covalent molecular structure} interact and exist as seperate molecules.
+\item \textbf{Network structures} exist as giant repeating lattices. Network structures can be covalent, ionic or metallic. 
+\label{m38120*uid71}\item The \textbf{chemical formula} of a compound is an abbreviated way of showing a compound, using the symbols for 
+the elements in the compound.
+\label{m38120*uid72}\item The \textbf{molecular formula} of a molecule gives the exact number of atoms of each element that are in the molecule.
+\label{m38120*uid73}\item The \textbf{empirical formula} of a compound gives the relative number of atoms of each element in the compound.
+\label{m38120*uid70}\item The structure of a compound can be represented by stick, ball-and-stick or space-filling models.
+\item A \textbf{stick} model use colored sticks to represent compounds.
+\label{m38120*uid75}\item A \textbf{ball-and-stick} diagram is a 3-dimensional molecular model that uses 'balls' to represent atoms and 'sticks' to represent the bonds between them.
+\label{m38120*uid76}\item A \textbf{space-filling model} is also a 3-dimensional molecular model. The atoms are represented by spheres.
+\label{m38120*uid77}\item In a molecule, atoms are held together by \textbf{chemical bonds}. Covalent bonds, ionic bonds and metallic bonds are examples of chemical bonds.
+\label{m38120*uid78}\item A \textbf{covalent bond} exists between non-metal atoms. An \textbf{ionic bond} exists between non-metal and metal atoms and a \textbf{metallic bond} exists between metal atoms.
+\end{itemize}
+\label{m38120*secfhsst!!!underscore!!!id497}
+            \begin{eocexercises}{Composition of matter}
+            \nopagebreak
+            \label{m38120*id311490}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+            \label{m38120*uid87}\item Give one word or term for each of the following 
+descriptions.
+\label{m38120*id34411506}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \label{m38120*uid90}\item A composition of two or more atoms that act as a unit.
+\label{m38120*uid9221}\item Chemical formula that gives the relative number of atoms 
+of each element that are in a molecule.
+\end{enumerate}
+\label{m38120*uid227}\item Give a definition for each of the following terms: 
+\label{m38120*id311506}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \label{m38120*uid930}\item molecule
+\label{m38120*uid91}\item ionic compound
+\item covalent network structure
+\item empirical formula
+\item ball-and-stick model\end{enumerate}
+\label{m38120*uid92}\item Ammonia, an ingredient in household cleaners, is made up of one part nitrogen ($\mathsf{N}$) and three parts hydrogen ($\mathsf{H}$). Answer the following questions:
+\label{m38120*id311590}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \label{m38120*uid94}\item is ammonia a covalent, ionic or metallic substance?
+\label{m38120*uid95}\item write down the molecular formula for ammonia
+\label{m38120*uid96}\item draw a ball-and-stick diagram
+\label{m38120*uid97}\item draw a space-filling diagram
+\end{enumerate}
+            \label{m38120*uid11}\item In each of the following, say whether the chemical substance is made up of covalent, molecular structures, covalent network structures, ionic network structures or metallic structures:
 \label{m38120*id308055}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
             \label{m38120*uid12}\item ammonia gas (${\mathsf{NH}}_{3}$)
 \label{m38120*uid13}\item zinc metal ($\mathsf{Zn}$)
 \label{m38120*uid14}\item graphite ($\mathsf{C}$)
 \label{m38120*uid15}\item nitric acid (${\mathsf{HNO}}_{3}$)
-\label{m38120*uid16}\item neon gas ($\mathsf{He}$)
+\label{m38120*uid16}\item potassium bromide ($\mathsf{KBr}$)
 \end{enumerate}
 \label{m38120*uid17}\item Refer to the diagram below and then answer the 
 questions that follow:
@@ -264,9 +288,9 @@ questions that follow:
 
 \psset{unit=0.75}
 
-\pscircle[fillcolor=white,fillstyle=solid](2,0){1.5}
-\pscircle[fillcolor=white,fillstyle=solid](0,0){2}
-\psarc[fillcolor=white,fillstyle=solid](-2,0){1.5}{45}{-45}
+\pscircle[fillcolor=red,fillstyle=solid](2,0){1.5}
+\pscircle[fillcolor=blue,fillstyle=solid](0,0){2}
+\psarc[fillcolor=red,fillstyle=solid](-2,0){1.5}{45}{-45}
 \rput(-2,0){\pscurve(1.5;45)(-1.5;180)(1.5;-45)}
 
 \psset{unit=1.5}
@@ -285,90 +309,16 @@ questions that follow:
             \label{m38120*uid18}\item Identify 
 the molecule.
 \label{m38120*uid19}\item Write the molecular formula for the molecule.
-\label{m38120*uid20}\item Is the molecule a simple or giant molecule?
+\label{m38120*uid20}\item Is the molecule a covalent, ionic or metallic substance? Explain.
 \end{enumerate}
 \label{m38120*uid21}\item Represent each of the following molecules using its 
-\textsl{chemical formula}, \textsl{structural formula} and \textsl{ball and stick model}.
+\textsl{chemical formula}, \textsl{structural formula} and the \textsl{ball-and-stick model}.
 \label{m38120*id308228}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m38120*uid22}\item Hydrogen\label{m38120*uid23}\item Ammonia\label{m38120*uid24}\item sulphur dioxide
-\end{enumerate}
-\end{enumerate}
-\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11305.imgs/summary_www.png}} Find the answers with the shortcodes:
- \par \begin{tabular}[h]{cccccc}
- (1.) li5  &  (2.) liN  &  (3.) liR  & \end{tabular}
-\end{exercises}
-    \section{ Summary}
-            \nopagebreak
-            \label{m38120*cid7} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11305.imgs/summary_www.png}} {(section shortcode: P10055 )} \par 
-      \label{m38120*id311034}\begin{itemize}[noitemsep]
-            \label{m38120*uid67}\item The smallest unit of matter is the \textbf{atom}. Atoms can combine to form \textbf{molecules}.
-\label{m38120*uid68}\item A \textbf{compound} is a 
-group of two or more atoms that are attracted to each other by chemical bonds.
-\label{m38120*uid69}\item A \textbf{small molecule} 
-consists of a few atoms per molecule. A \textbf{giant 
-molecule} consists of millions of atoms per molecule, for example 
-metals and diamonds.
-\label{m38120*uid70}\item The structure of a molecule can be represented in a 
-number of ways.
-\label{m38120*uid71}\item The \textbf{chemical formula} 
-of a molecule is an abbreviated way of showing a molecule, using the symbols for 
-the elements in the molecule. There are two types of chemical formulae: 
-molecular and empirical formula.
-\label{m38120*uid72}\item The \textbf{molecular 
-formula} of a molecule gives the exact number of atoms of each element 
-that are in the molecule.
-\label{m38120*uid73}\item The \textbf{empirical 
-formula} of a molecule gives the relative number of atoms of each 
-element in the molecule.
-\label{m38120*uid74}\item Molecules can also be represented using \textbf{diagrams}.
-\label{m38120*uid75}\item A \textbf{ball and stick} 
-diagram is a 3-dimensional molecular model that uses 'balls' to represent atoms 
-and 'sticks' to represent the bonds between them.
-\label{m38120*uid76}\item A \textbf{space-filling 
-model} is also a 3-dimensional molecular model. The atoms are 
-represented by spheres.
-\label{m38120*uid77}\item In a molecule, atoms are held together by \textbf{chemical bonds} or \textbf{intramolecular forces}. Covalent bonds, ionic bonds and 
-metallic bonds are examples of chemical bonds.
-\label{m38120*uid78}\item A \textbf{covalent bond} 
-exists between non-metal atoms. An \textbf{ionic bond} 
-exists between non-metal and metal atoms and a \textbf{metallic 
-bond} exists between metal atoms.
-\label{m38120*uid79}\item \textbf{Intermolecular 
-forces} are the bonds that hold \textsl{molecules} together.
-\end{itemize}
-\label{m38120*secfhsst!!!underscore!!!id497}
-            \begin{eocexercises}{Composition of matter}
-            \nopagebreak
-            \label{m38120*id311490}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m38120*uid87}\item Give one word or term for each of the following 
-descriptions.
-\label{m38120*id34411506}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m38120*uid90}\item A composition of two or more atoms that act as a unit.
-\label{m38120*uid9221}\item Chemical formula that gives the relative number of atoms 
-of each element that are in a molecule.
-\end{enumerate}
-\label{m38120*uid227}\item Give a definition for each of the following terms: 
-descriptions.
-\label{m38120*id311506}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m38120*uid930}\item molecule
-\label{m38120*uid91}\item Ionic compound
-\item Covalent network structure\item Empirical formula\item Ball-and-stick model\end{enumerate}
-\label{m38120*uid92}\item Ammonia, an ingredient in household cleaners, can be broken down to 
-form one part nitrogen ($\mathsf{N}$) and three parts hydrogen ($\mathsf{H}$). This means that 
-ammonia...
-\label{m38120*id311590}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m38120*uid94}\item is a 
-colourless gas
-\label{m38120*uid95}\item is not a compound
-\label{m38120*uid96}\item cannot be an element
-\label{m38120*uid97}\item has the formula ${\mathsf{N}}_{3}\mathsf{H}$
-\end{enumerate}
-        \item Represent each of the following molecules using its chemical formula, its structural formula and the ball-and-stick model:
-\label{m38120*id524}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \label{m38120*uid22}\item hydrogen\label{m38120*uid23}\item ammonia\label{m38120*uid24}\item sulphur dioxide
             \item nitrogen\item carbon dioxide\item methane\item argon\end{enumerate}
 \end{enumerate}
   \label{m38120**end}
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11305.imgs/summary_www.png}} Find the answers with the shortcodes:
  \par \begin{tabular}[h]{cccccc}
- (1.) l2e  &  (2.) l2M  &  (3.) liV  &  (4.) l2L  & \end{tabular}
+ (1.) l2e  &  (2.) l2M  &  (3.) liV  &  (4.) l2L  &   (1.) li5  &  (2.) liN  &  (3.) liR  \end{tabular}
 \end{eocexercises}
