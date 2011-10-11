@@ -16,6 +16,8 @@
     \setlength{\marginparwidth}{0pt}
     %\setlength{\}{0pt}
   
+\newlength{\saveparindentlength}
+
         \usepackage[paper=letterpaper, 
           lmargin=1in, rmargin=1in, 
           tmargin=1in, bmargin=1in,
@@ -63,6 +65,7 @@
     \usepackage{pst-optic}         %Jo
     \usepackage{pstricks-add}         %Jo
     \usepackage{pst-labo}         %Jo   
+    \usepackage{pst-3dplot}
     \usepackage{auto-pst-pdf}
     \usepackage{mdframed}
     \sffamily
@@ -169,7 +172,6 @@
 skipabove=\baselineskip]%
 \begin{center}
 \textbf{Definition: #1}\par\nopagebreak
-\hrule
 #2
 \end{center}
 \end{mdframed}
@@ -698,4 +700,3 @@ linecolor=red%
 \psset{lensHeight=3,lensColor=lightgray}
 \newpsobject{PrincipalAxis}{psline}{linewidth=0.5pt,linecolor=gray}
 \newcommand{\ms}{m$\cdot$s$^{-1}$}                %m/s in text
-
