@@ -17,6 +17,7 @@
     %\setlength{\}{0pt}
   
 \newlength{\saveparindentlength}
+\newlength{\saveparindentlengthtwo}
 
         \usepackage[paper=letterpaper, 
           lmargin=1in, rmargin=1in, 
@@ -288,6 +289,7 @@ linecolor=red%
 \end{quotation}
 \begin{flushright}
 \end{flushright}
+
 \setlength{\parindent}{\saveparindentlength}}
 
 \definecolor{siyavula-gray}{RGB}{239, 239, 239}
@@ -303,25 +305,26 @@ linecolor=red%
 
 \newenvironment{wex}[3]
 {
+\setlength{\saveparindentlengthtwo}{\parindent}
 \begin{quotation}
 \noindent
-\vspace{.5cm}
+\vspace*{.5cm}
 \setlength{\parindent}{0pt}
 %% Title and counter
 %\rput(-2.0,0){\pspencil}\noindent
 \begin{mdframed}[linewidth=1pt,linecolor=darkgray]
 \textit{\textbf{Worked Example \arabic{workedexamplecounter}: }#1}
-\end{mdframed}
+\end{mdframed}\vspace*{1mm}
 \begin{mdframed}[skipabove=-2mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
-\vspace{3mm}
-\textbf{\textit{Question:}} \vspace{3mm} 
+\vspace*{3mm}
+\textbf{\textit{Question:}} \vspace*{3mm} 
 \hrule
-\vspace{3mm}
+\vspace*{3mm}
 \textit{#2}
-\vspace{3mm}\par
-\textit{\textbf{Answer:}}\vspace{3mm}
+\vspace*{3mm}\par
+\textit{\textbf{Answer:}}\vspace*{3mm}
 \hrule
-\vspace{3mm}
+\vspace*{3mm}
  #3%
 \addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
 \par%\vspace{.25cm}
@@ -336,8 +339,7 @@ linecolor=red%
 % \psline[linecolor=gray]{-}(10,0)(10,2)
 %\end{pspicture}
 \end{flushright}
-\setlength{\parindent}{\saveparindentlength}
-\par
+\setlength{\parindent}{\saveparindentlengthtwo}
 }
 
 
