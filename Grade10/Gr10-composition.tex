@@ -187,11 +187,36 @@ Table~\ref{tab:atommodels} shows examples of the different types of models for a
  \begin{center}
   \begin{tabular}{|l|l|l|l|l|}  \hline
    & \textbf{Covalent molecular} & \textbf{Covalent network} & \textbf{Ionic network} & \textbf{Metallic network}   \\ \hline
-\textbf{Name of compound} & glucose & graphite & sodium nitrate & zinc \\ \hline
-\textbf{Formula} & $\mathsf{C}_{6}\mathsf{H}_{12}\mathsf{O}_6$ or $\mathsf{C}\mathsf{H}_{2}\mathsf{O}$ & $\mathsf{C}$ & $\mathsf{NaNO}_{3}$ & $\mathsf{Zn}$  \\ \hline
-\textbf{Stick model} & \includegraphics[width=.1\textwidth]{photos/glucose_wire.png} & \includegraphics[width=.1\textwidth]{photos/Graphite_Carbon.png} & &  \\ \hline
-\textbf{Ball-and-stick model} & \includegraphics[width=.1\textwidth]{photos/glucose_balls.png}  & \includegraphics[width=.1\textwidth]{photos/graphite_wikipedia.png} & \includegraphics[width=.1\textwidth]{photos/Sodiumnitrate_wikipedia.png} & \includegraphics[width=.1\textwidth]{photos/zinc_balls.jpg} \\ \hline
-\textbf{Space-filling model} & \includegraphics[width=.1\textwidth]{photos/glucose_spacefill.png}  & & & \includegraphics[width=.1\textwidth]{photos/zinc_spacefill.png} \\ \hline
+\textbf{Name of compound} & glucose & graphite & silver chloride & zinc \\ \hline
+\textbf{Formula} & $\mathsf{C}_{6}\mathsf{H}_{12}\mathsf{O}_6$ or $\mathsf{C}\mathsf{H}_{2}\mathsf{O}$ & $\mathsf{C}$ & $\mathsf{AgCl}$ & $\mathsf{Zn}$  \\ \hline
+\textbf{Stick model} & \includegraphics[width=.1\textwidth]{photos/glucose_wire.png} & \includegraphics[width=.1\textwidth]{photos/Graphite_Carbon.png} & \scalebox{0.4} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.78)(2.02,1.78)
+  \psset{Alpha=75,Beta=20}
+  \psset{xMin=-3,xMax=3,yMin=-3,yMax=3,zMin=-3,zMax=3}
+%   \pstThreeDCoor
+   \pstThreeDLine(-2,-2,-2)(-2,-2,2) \pstThreeDLine(-2,-2,2)(-2,2,2)
+   \pstThreeDLine(-2,2,2)(-2,2,-2) \pstThreeDLine(-2,2,-2)(-2,-2,-2)
+   \pstThreeDLine(-2,-2,0)(-2,2,0) \pstThreeDLine(-2,0,-2)(-2,0,2)
+
+   \pstThreeDLine(0,-2,-2)(0,-2,2) \pstThreeDLine(0,-2,2)(0,2,2)
+   \pstThreeDLine(0,2,2)(0,2,-2) \pstThreeDLine(0,2,-2)(0,-2,-2)
+   \pstThreeDLine(0,-2,0)(0,2,0) \pstThreeDLine(0,0,-2)(0,0,2)
+
+  \pstThreeDLine(2,-2,-2)(2,-2,2) \pstThreeDLine(2,-2,2)(2,2,2)
+  \pstThreeDLine(2,2,2)(2,2,-2) \pstThreeDLine(2,2,-2)(2,-2,-2)
+  \pstThreeDLine(2,-2,0)(2,2,0) \pstThreeDLine(2,0,-2)(2,0,2)
+
+  \pstThreeDLine(-2,2,2)(2,2,2) \pstThreeDLine(-2,0,2)(2,0,2)
+  \pstThreeDLine(-2,-2,2)(2,-2,2)
+  \pstThreeDLine(-2,2,0)(2,2,0) \pstThreeDLine(-2,0,0)(2,0,0)
+  \pstThreeDLine(-2,-2,0)(2,-2,0)
+  \pstThreeDLine(-2,2,-2)(2,2,-2) \pstThreeDLine(-2,0,-2)(2,0,-2)
+  \pstThreeDLine(-2,-2,-2)(2,-2,-2)
+\end{pspicture} 
+}  & \includegraphics[width=.1\textwidth]{photos/zinc_sticks.png} \\ \hline
+\textbf{Ball-and-stick model} & \includegraphics[width=.1\textwidth]{photos/glucose_balls.png}  & \includegraphics[width=.1\textwidth]{photos/graphite_wikipedia.png} & \includegraphics[width=.1\textwidth]{photos/silver_chloride_ballstick.png} & \includegraphics[width=.1\textwidth]{photos/zinc_balls.jpg} \\ \hline
+\textbf{Space-filling model} & \includegraphics[width=.1\textwidth]{photos/glucose_spacefill.png}  & \includegraphics[width=.1\textwidth]{photos/graphite_spacefill.png} & \includegraphics[width=.1\textwidth]{photos/silverchloride_spacefill_wikipedia.png} & \includegraphics[width=.1\textwidth]{photos/zinc_spacefill.png} \\ \hline
   \end{tabular}
  \end{center}
 \caption{Different represetations for compounds}
