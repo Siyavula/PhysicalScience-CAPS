@@ -19,11 +19,11 @@
 \newlength{\saveparindentlength}
 \newlength{\saveparindentlengthtwo}
 
-        \usepackage[paper=letterpaper, 
-          lmargin=1in, rmargin=1in, 
-          tmargin=1in, bmargin=1in,
-          twoside,centering,
-          includehead]{geometry}
+       \usepackage[paper=letter, 
+      lmargin=0.1\paperwidth, rmargin=0.25\paperwidth, 
+      tmargin=1in, bmargin=1in,
+      twoside, centering,
+      includehead, marginsep=3mm, marginparwidth=0.225\paperwidth ]{geometry}
       
     \usepackage{layouts}
     \usepackage{multicol}
@@ -151,6 +151,8 @@
     \DeclareUnicodeCharacter {62843}{\ensuremath{\leftrightarrow}}
 
 
+\definecolor{siyavula-gray}{RGB}{239,239,239}
+\definecolor{siyavula-dark-gray}{RGB}{194,194,194}
 
 
 \newenvironment{IFact}[1]%
@@ -169,12 +171,10 @@
 \vspace{3mm}}%\sffamily}%
 
 \newcommand{\Definition}[2]{
-\begin{mdframed}[linewidth=2,topmargin=10,leftmargin=40,rightmargin=40,linecolor=lightgray,skipbelow=\baselineskip,%
-skipabove=\baselineskip]%
-\begin{center}
-\textbf{Definition: #1}\par\nopagebreak
+\begin{mdframed}[linewidth=2, margin=1cm,linecolor=lightgray,skipbelow=0.5cm,%
+skipabove=0.5cm]%
+\textsl{DEFINITION: } \hspace{1cm} #1\nopagebreak\par
 #2
-\end{center}
 \end{mdframed}
 }
 
@@ -206,15 +206,19 @@ linecolor=red%
 
 
 \newcommand{\Note}[1]{
-\vspace{3mm}
-\begin{center}
-\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
-\noindent%
-\textbf{Note:}\par
-#1
-\end{minipage}}
-\end{center}
-\vspace{3mm}}
+\marginpar{%odd
+\begin{minipage}[h]{0.225\paperwidth}
+
+\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, margin=10pt]
+Note
+\end{mdframed}
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
+\small #1
+\end{mdframed}
+\end{minipage}
+}
+}
+
 
                 
 
@@ -398,30 +402,45 @@ linecolor=red%
 \end{flushright}
 \setlength{\parindent}{\saveparindentlength}}
 
-
+%EZ new counters for exercises, 
+\newcounter{exercisecounter}
+\setcounter{exercisecounter}{1}
+% make it reset for new chapters
+\makeatletter
+\@addtoreset{exercisecounter}{chapter}
+\makeatother
 
 \newenvironment{exercises}[1]
 {
+\exercisesheading
 
-\hrule width \textwidth height 1pt\\
+%\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \setlength{\parindent}{0pt}
-\textbf{\textit{Exercises:}
-#1}\par
+%\vspace{\baselineskip}
+%\textbf{\textit{Exercises:}
+%#1}
+\par
 }%
 {%
 \end{quotation}
-\setlength{\parindent}{\saveparindentlength}}
+\setlength{\parindent}{\saveparindentlength}
+
+%insert the more practise at www.maths10.
+%( More practise at \url{www.maths10.co.za} with \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} M049 )
+}
 
 \newenvironment{eocexercises}[1]
 {
-\hrule width \textwidth height 1pt\\
+\eocexercisesheading
+%\hrule width \textwidth height 1pt\\
 \begin{quotation}
-\noindent
-\vspace{.5cm}
+%\noindent
+%\vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{End of chapter exercises:}
-#1}\par
+%\textbf{\textit{End of chapter exercises:}
+%#1}
+\par
 }%
 {%
 \end{quotation}
@@ -702,3 +721,161 @@ linecolor=red%
 \psset{lensHeight=3,lensColor=lightgray}
 \newpsobject{PrincipalAxis}{psline}{linewidth=0.5pt,linecolor=gray}
 \newcommand{\ms}{m$\cdot$s$^{-1}$}                %m/s in text
+
+
+
+
+
+
+
+
+
+
+% fancy headings
+
+\usepackage{tikz}
+\usepackage[explicit]{titlesec}
+
+\newcommand*\chapterlabel{}
+
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\fontsize{32}\bfseries\slshape}
+  {\gdef\chapterlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-3cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \shade[left color=white, right color=gray] (0,0) rectangle
+          (1.2\paperwidth,3cm);
+        \node[anchor=west,text centered, yshift=1.5cm, xshift=0.2\paperwidth]
+              {\color{black} #1 \hfill \color{white}\chapterlabel};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{1.5cm}{1cm}{2cm}
+
+
+
+\newcommand*\sectionlabel{}
+\titleformat{\section}
+  {\gdef\sectionlabel{}
+   \normalfont\sffamily\fontsize{18}\bfseries\slshape}
+  {\gdef\sectionlabel{\thesection }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west,yshift=-1.5cm, xshift=-0.4\paperwidth]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (1.3\paperwidth,1cm);
+        \node[anchor=west,text centered ,yshift=0.5cm, xshift=0.3\paperwidth]
+              {\color{black} #1  };
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\section}{1.5cm}{1.5cm}{2cm}
+
+
+
+\newcommand*\subsectionlabel{}
+\titleformat{\subsection}
+  {\gdef\subsectionlabel{}
+   \normalfont\sffamily\fontsize{18}\bfseries\slshape}
+  {\gdef\subsectionlabel{\thesubsection\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+   \node[anchor=west, yshift=-1.5cm, xshift=-0.085\paperwidth]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (0.915\paperwidth,1.0cm);
+        \node[anchor=west,text centered ,yshift=0.5cm]
+              {\color{black} #1  };
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\subsection}{1.5cm}{1cm}{2cm}
+
+
+
+\newcommand{\summary}{
+\vspace{6\baselineskip} \par
+{\normalfont \sffamily\fontsize{22}\bfseries
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west, xshift=-0.4\paperwidth]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (1.2\paperwidth,2cm);
+        \node[anchor=west,text centered ,yshift=1.cm, xshift=0.3\paperwidth]
+              {   \color{black} Chapter \chapterlabel | Summary  };
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+
+}
+\par
+\vspace{\baselineskip}
+}
+
+
+\newcommand{\exercisesheading}{
+\addtocounter{exercisecounter}{1}
+ \par  \vspace*{3\baselineskip}
+{  \fontsize{10}\bfseries\itshape
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west ,text centered]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[color=white, draw=black, very thick] (0,0) rectangle
+          (0.33\textwidth, 0.75cm);
+       \node[anchor=west, yshift=0.3525cm, text centered]
+              { \bfseries ~ \color{black} Exercise \chapterlabel~-~\arabic{exercisecounter}   };
+       \end{tikzpicture}
+    };
+    
+% now the gray bar to the end of the paragraph
+    \node[anchor=west, xshift=0.335\textwidth]{
+      \begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (0.655\textwidth,0.75cm);
+       \end{tikzpicture}
+
+
+      };
+   \end{tikzpicture}
+
+}
+\par
+\vspace{\baselineskip}
+
+}
+\newcommand{\eocexercisesheading}{
+\par \vspace*{3\baselineskip} 
+{\normalfont \sffamily\fontsize{16}\bfseries
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west, yshift=6\baselineskip, xshift=0., text centered]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[color=white, draw=black, very thick] (0,0) rectangle
+          (0.3\textwidth,1.5cm);
+       \node[anchor=west, yshift=0.75cm, text centered]
+              { ~~  \color{black} Chapter \chapterlabel };
+       \end{tikzpicture}
+    };
+    
+% now the gray bar to the end of the paragraph
+    \node[anchor=west, xshift=0.31\textwidth]{
+      \begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (0.69\textwidth,1.5cm);
+            \node[anchor=west, yshift=0.75cm, text centered]
+              {   \color{black} End of Chapter Exercises };
+
+       \end{tikzpicture}
+
+
+      };
+   \end{tikzpicture}
+
+}
+\par
+\vspace{\baselineskip}
+}
+
