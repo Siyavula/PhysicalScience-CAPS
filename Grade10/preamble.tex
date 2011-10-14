@@ -154,8 +154,21 @@
 \definecolor{siyavula-gray}{RGB}{239,239,239}
 \definecolor{siyavula-dark-gray}{RGB}{194,194,194}
 
+\newenvironment{IFact}[1]{
+\marginpar{%odd
+\begin{minipage}[h]{0.225\paperwidth}
 
-\newenvironment{IFact}[1]%
+\begin{mdframed}[linecolor=siyavula-gray, backgroundcolor=siyavula-gray, skipbelow=-pt, margin=10pt]
+Interesting Fact
+\end{mdframed}
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
+\small #1
+\end{mdframed}
+\end{minipage}
+}
+}
+
+\newenvironment{IFact_old}[1]%
 {\vspace{3mm}%\rmfamily
  \begin{center}\begin{pspicture}(0,0)(5,0.01)
  \psline[linecolor=red]{-}(0,0)(5,0)
