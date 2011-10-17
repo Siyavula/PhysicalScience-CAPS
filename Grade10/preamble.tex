@@ -19,12 +19,11 @@
 \newlength{\saveparindentlength}
 \newlength{\saveparindentlengthtwo}
 
-       \usepackage[paper=letter, 
+\usepackage[paper=letter, 
       lmargin=0.1\paperwidth, rmargin=0.25\paperwidth, 
       tmargin=1in, bmargin=1in,
       twoside, centering,
-      includehead, marginsep=3mm, marginparwidth=0.225\paperwidth ]{geometry}
-      
+      includehead, marginsep=5mm, marginparwidth=0.23\paperwidth ]{geometry}      
     \usepackage{layouts}
     \usepackage{multicol}
     \usepackage{amsmath} %for \underset, \overset, and more?
@@ -154,8 +153,21 @@
 \definecolor{siyavula-gray}{RGB}{239,239,239}
 \definecolor{siyavula-dark-gray}{RGB}{194,194,194}
 
+\newenvironment{Ifact}[1]{
+\marginpar{%odd
+\begin{minipage}[h]{0.225\paperwidth}
 
-\newenvironment{IFact}[1]%
+\begin{mdframed}[linecolor=siyavula-gray, backgroundcolor=siyavula-gray, skipbelow=-pt, margin=10pt]
+Interesting Fact
+\end{mdframed}
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
+\small #1
+\end{mdframed}
+\end{minipage}
+}
+}
+
+\newenvironment{IFact_old}[1]%
 {\vspace{3mm}%\rmfamily
  \begin{center}\begin{pspicture}(0,0)(5,0.01)
  \psline[linecolor=red]{-}(0,0)(5,0)
@@ -180,15 +192,18 @@ skipabove=0.5cm]%
 
 
 \newcommand{\Tip}[1]{
-\vspace{3mm}
-\begin{center}
-\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
-\noindent%
-\textbf{Tip:}\par
-#1
-\end{minipage}}
-\end{center}
-\vspace{3mm}}
+\marginpar{%odd
+\begin{minipage}[m]{0.22\paperwidth}
+\begin{mdframed}[linecolor=darkgray, margin=10pt]
+Tip
+\end{mdframed}
+\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt, margin=10pt]
+\small #1
+\end{mdframed}
+\end{minipage}
+}
+}
+
 
 \newcommand{\Warning}[1]{
 \begin{mdframed}[linewidth=4pt,%
@@ -207,7 +222,7 @@ linecolor=red%
 
 \newcommand{\Note}[1]{
 \marginpar{%odd
-\begin{minipage}[h]{0.225\paperwidth}
+\begin{minipage}[h]{0.22\paperwidth}
 
 \begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, margin=10pt]
 Note
@@ -449,7 +464,7 @@ Note
 \newenvironment{f_experiment}[1]
 {
 \begin{quotation}
-\begin{mdframed}[linewidth=5,linecolor=darkgray]
+\begin{mdframed}[linewidth=2pt,linecolor=darkgray]
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
@@ -465,7 +480,7 @@ Note
 \newenvironment{i_experiment}[1]
 {
 \begin{quotation}
-\begin{mdframed}[linewidth=5,linecolor=lightgray]
+\begin{mdframed}[linewidth=2pt,linecolor=lightgray]
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
@@ -480,7 +495,7 @@ Note
 \newenvironment{g_experiment}[1]
 {
 \begin{quotation}
-\begin{mdframed}[linewidth=5,linecolor=lightgray]
+\begin{mdframed}[linewidth=2pt,linecolor=lightgray]
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
