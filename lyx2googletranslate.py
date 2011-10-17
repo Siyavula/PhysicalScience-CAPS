@@ -85,12 +85,12 @@ def fit_for_html(html_file):
 	regex_replace(html_file,r'\{\}','EMPTYBRACKET')
 	regex_replace(html_file,r'\\protect','')	
 	regex_replace(html_file,r'\\(hline|tabularnewline|ldots| \& |item)',r'<span class="notranslate">\\\1</span>') # without contents
-	regex_replace(html_file,r'\\(index){([^}]*)}',r'<span class="notranslate">\\\1{</span>\2<span class="notranslate">endparentesis</span>') # translate contents
-	regex_replace(html_file,r'\\(citep|citet|citetitle|citeauthor|begin|includegraphics|label|bibliography|input|include|ref|vref|pageref)({|\[)([^}]*)}',r'<span class="notranslate">\\\1\2\3endparentesis</span>') # don't translate contents
+	regex_replace(html_file,r'\\(index){([^}]*)}',r'<span class="notranslate">\\\1{</span>\2<span class="notranslate">endparantesis</span>') # translate contents
+        regex_replace(html_file,r'\\(textbf|textsl|textit|activity|par|hspace|vspace|citep|citet|citetitle|citeauthor|begin|includegraphics|label|bibliography|input|include|ref|vref|pageref)({|\[)([^}]*)}',r'<span class="notranslate"> \\\1\2\3endparentesis</span>') # don't translate contents
 	regex_replace(html_file,r'\\(end)({|\[)([^}]*)}',r'</p><p class="notranslate">\\\1\2\3endparentesis</p><p>') # don't translate contents and add paragraph end	
 	regex_replace(html_file,r'\\(emph){([^}]*)}',r'<span class="notranslate">\\\1{</span>\2<span class="notranslate">endparentesis</span>') # translate contents
-	regex_replace(html_file,r'\\(chapter|section|subsection|subsubsection|chapter\*|section\*|subsection\*|subsubsection\*|caption|footnote){([^}]*)}',r'<span class="notranslate">\\\1{</span>\2<span class="notranslate">}</span>') # translate contents
-	regex_replace(html_file,r'\\(chapter|section|subsection|subsubsection|chapter\*|section\*|subsection\*|subsubsection\*|caption|footnote)\[([^\]]*)\]{([^}]*)}',r'<span class="notranslate">\\\1[</span>\2<span class="notranslate">]{</span>\3<span class="notranslate">}</span>') # translate contents
+	regex_replace(html_file,r'\\(center|minipage|enumerate|activity|chapter|section|subsection|subsubsection|chapter\*|section\*|subsection\*|subsubsection\*|caption|footnote){([^}]*)}',r'<span class="notranslate">\\\1{</span>\2<span class="notranslate">}</span>') # translate contents
+	regex_replace(html_file,r'\\(caption|textbf|textit|textsl|textnormal|Definition|Tip|Warning|enumerate|tabular|array|chapter|section|subsection|subsubsection|chapter\*|section\*|subsection\*|subsubsection\*|caption|footnote)\[([^\]]*)\]{([^}]*)}',r'<span class="notranslate">\\\1[</span>\2<span class="notranslate">]{</span>\3<span class="notranslate">}</span>') # translate contents
 	regex_replace(html_file,r'\\(addcontentsline)({[^}]*})({[^}]*}){([^}]*)}',r'<span class="notranslate">\\\1\2\3{</span>\4<span class="notranslate">}</span>') # translate some contents
 	regex_replace(html_file,r'\\(item</span>) \[{([^}]*)}\]',r'\\\1 <span class="notranslate">[</span>\2<span class="notranslate">]</span>') # don't translate and remove extra bracket
 	regex_replace(html_file,r'([|{)([^]}]*)(]|})',spacerepl) # temporarily remove spaces inside arguments
@@ -122,20 +122,31 @@ def fit_for_html(html_file):
 	regex_replace(html_file,'</span>,',',</span>')
 #	regex_replace(html_file,r'{','BEGINBRACKET')
 #	regex_replace(html_file,r'}','ENDBRACKET')	
-	return True
+        regex_replace(html_file, r'<span class="notranslate"> \\begin{pspicture}</span>', r'<div class="notranslate"><span class="notranslate">\\begin{pspicture}</span>')
+        regex_replace(html_file, r'end{pspicture}', r'end{pspicture}</div>')
+        regex_replace(html_file, '<body><div class="notranslate">', '<body>')
+        for bad in ['hline', 'par', 'nopagebreak', 'westep', 'rightskip', 'leftskip', 'noindent', 'item', 'newline', 'mathsf', 'rightarrow','nopagebreak','setcounter','raisebox','fancyfoot','leftskip','rightskip','IFact','scalebox','textwidth','noindent','Tip']:
+            regex_replace(html_file, r'\\%s'%bad, r'<span class="notranslate">\\%s</span>'%bad)
+        regex_replace(html_file, r'<span</span>', r'</span><span')
+#        regex_replace(html_file, r'\\par', r'<span class="notranslate">\\par</span>')
+#        regex_replace(html_file, r'\\westep', r'<span class="notranslate">\\westep</span>')
+        regex_replace(html_file, r'label=', r'<span class="notranslate">label=</span>')
+#        regex_replace(html_file, r'\\nopagebreak', r'<span class="notranslate">\\nopagebreak</span>')
+      
+        return True
 	
 
 		
 def import_lyx():
-	lyx_files = runcommand('ls *lyx')[1].split()
-	for lyx_file in lyx_files:
-		tex_file = lyx2tex(lyx_file)
+	tex_files = runcommand('ls *tex')[1].split()
+	for tex_file in tex_files:
+#		tex_file = lyx2tex(lyx_file)
 		html_file = tex_file.replace('.','_') + '.html'
 		runcommand('cp ' + tex_file + ' ' + html_file)
 		fit_for_html(html_file)
 		words = int(runcommand('wc -w ' + html_file)[1].split()[0])
-		if words / 5000 > 1:
-			split_html(html_file,words)
+		#if words / 5000 > 1:
+		#	split_html(html_file,words)
 
 def exclamrepl(matchobj):
 	return matchobj.group(0).replace('! ','!')
