@@ -142,6 +142,53 @@ component.
 \end{center}
 \end{minipage}
 
+\begin{activity}{Constructing circuits}
+%\begin{minipage}{.5\textwidth}
+Construct circuits to measure the emf and the terminal potential difference for a battery.
+% \end{minipage}
+% \begin{minipage}{.5\textwidth}
+%\subsubsection{Components of electrical circuits}
+Some common elements (components) which can be found in electrical circuits include light bulbs, batteries, connecting leads, switches, resistors, voltmeters and ammeters. You have learnt about many of these already. Below is a table with the items and their symbols:
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|c|l|}\hline
+\textbf{Component} & \textbf{Symbol} & \textbf{Usage} \\\hline\hline
+\raisebox{0.35cm}{light bulb}&\begin{pspicture}(-0.5,-0.5)(0.5,0.5)
+\scalebox{0.75}{\lamp(-1,0)(1,0){}}\end{pspicture} & 
+\raisebox{0.35cm}{glows when charge moves through it} \\ \hline
+\raisebox{0.35cm}{battery}&\begin{pspicture}(-0.5,-0.5)(0.5,0.5)
+\scalebox{0.75}{\battery(-1,0)(1,0){}}\end{pspicture} & 
+\raisebox{0.35cm}{provides energy for charge to move} \\ \hline
+\raisebox{0.35cm}{switch}&\begin{pspicture}(-0.5,-0.5)(0.5,0.5)
+\scalebox{0.75}{\switch(-1,0)(1,0){}}\end{pspicture} & 
+\raisebox{0.35cm}{allows a circuit to be open or closed} \\ \hline
+\raisebox{-0.35cm}{resistor}&\begin{pspicture}(-0.5,0)(0.5,0.5)
+\scalebox{0.75}{\resistor(-1,0)(1,0){}}\end{pspicture} & 
+\raisebox{-0.35cm}{resists the flow of charge} \\ 
+&
+OR& \\ 
+&
+\begin{pspicture}(-0.75,-0.25)(0.75,0.25)
+\scalebox{0.75}{\resistor[dipolestyle=zigzag](-1,0)(1,0){}}\end{pspicture} & \\ \hline
+\raisebox{0.35cm}{voltmeter}&\begin{pspicture}(-0.5,-0.5)(0.5,0.5)
+\scalebox{0.75}{\circledipole[labeloffset=0](-1,0)(1,0){V}}\end{pspicture} & 
+\raisebox{0.35cm}{measures potential difference} \\ \hline
+\raisebox{0.35cm}{ammeter}&\begin{pspicture}(-0.5,-0.5)(0.5,0.5)
+\scalebox{0.75}{\circledipole[labeloffset=0](-1,0)(1,0){A}}\end{pspicture} & 
+\raisebox{0.35cm}{measures current in a circuit} \\ \hline
+\raisebox{0.35cm}{connecting lead}&\begin{pspicture}(0,0)(1,1)
+\psline(-0.25,0.5)(1.25,0.5)\end{pspicture} & 
+\raisebox{0.35cm}{connects circuit elements together} \\ \hline
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+%\end{minipage}
+\end{activity}
+
 
 
 \section{Resistance}
@@ -176,11 +223,11 @@ much lower resistance due to their larger cross-section (they are thicker).
 An important effect of a resistor is that it \textit{converts} electrical
 energy into other forms of \textbf{heat} energy. \textbf{Light} energy is a by-product of the heat that is produced.
 
-\begin{IFact}{There is a special type of conductor,
+\IFact{There is a special type of conductor,
 called a \textbf{superconductor} that has no resistance, but the
 materials that make up all known superconductors only start superconducting
 at very low temperatures (approximately -170$^o$ C).}
-\end{IFact}
+
 
 \subsubsection{Why do batteries go flat?}
 A battery stores chemical potential energy. When it is connected in a circuit, a chemical reaction takes place inside the battery which converts chemical potential energy to electrical energy which powers the electrons to move through the circuit. All the circuit elements (such as the conducting leads, resistors and lightbulbs) have some resistance to the flow of charge and convert the electrical energy to heat and, in the case of the lightbulb, light.
@@ -1038,7 +1085,7 @@ battery, returning to the battery.
 
 The arrows in this picture show you the direction that charge will flow in the circuit. They don't show you much charge will flow, only the direction. 
 
-\begin{IFact}{ Benjamin Franklin made a guess about the
+\IFact{ Benjamin Franklin made a guess about the
 direction of charge flow when rubbing smooth wax with rough wool.
 He thought that the charges flowed from the wax to the wool (i.e.
 from positive to negative) which was opposite to the real
@@ -1049,7 +1096,7 @@ of electrons. By the time the true direction of electron flow was
 discovered, the convention of ``positive'' and ``negative'' had
 already been so well accepted in the scientific world that no
 effort was made to change it. }
-\end{IFact}
+
 
 \Tip{A battery \textbf{does not} produce the same amount of
 current no matter what is connected to it. While the voltage
