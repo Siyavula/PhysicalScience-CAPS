@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.bib
+*.pdf
+*.dvi
+*.toc
+*.swp
+*.tex~
+*.backup
+main.ps
