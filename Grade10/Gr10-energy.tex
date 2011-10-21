@@ -349,12 +349,12 @@ The following simulation covers the law of conservation of energy. \newline
 \pscurve[linewidth=2pt](2.4,0.5)(2.6,0.7)(2.8,0.5)
 \psline[linestyle=dashed](2,4)(3,4)
 \psline[linestyle=dotted]{->}(2.6,4)(2.6,0.8)
-\rput[l](3.1,4){The mechanical energy ($E_{M}$) at the top.}
+\rput[l](3.1,4){The mechanical energy ($E_{M1} = E_{P1} + E_{K1}$) at the top.}
 %\rput[l](3.1,-0.2){The kinetic energy is a maximum at the bottom}
 \rput[l](3.2,2.8){The mechanical energy will remain}
 \rput[l](3.2,2.4){constant throughout the motion.}
 %\rput[l](3.1,4.2){The potential energy is a maximum at the top.}
-\rput[l](3.1,0){The mechanical energy ($E_{M}$) at the bottom.}
+\rput[l](3.1,0){The mechanical energy ($E_{M2} = E_{P2} + E_{K2}$) at the bottom.}
 \end{pspicture}
 \end{center}
 \end{figure}   
@@ -444,33 +444,42 @@ These are all in SI units so we do not have to convert.
 \item Velocity at the bottom
 \end{itemize}
 
-\westep{Calculate the potential energy.}
+\westep{Calculate the potential energy at the top of the waterfall.}
 \begin{eqnarray*}
 E_{P} &=& mgh\\
 &=& (100)(9,8)(5)\\
 &=& 4900~\text{J}
 \end{eqnarray*}
 
-\westep{Calculate the kinetic energy.}
+\westep{Calculate the kinetic energy at the bottom of the waterfall.}
+The total mechanical energy must be conserved. 
+\begin{eqnarray*}
+E_{K1} + E_{P1} = E_{K2} + E_{P2}
+\end{eqnarray*}
+Since the trunk's velocity is zero at the top of the waterfall, $E_{K1}=0$. \\
+At the bottom of the waterfall, $h = 0 \ \mathsf{m}$, so $E_{P2}=0$. \\
+Therefore $E_{P1} = E_{K2}$ or in words: \\
 The kinetic energy of the tree trunk at the bottom of the waterfall is equal to the potential energy it had at the top of the waterfall. Therefore $E_{K}$ = 4900 J.\\
 
-\westep{Calculate the velocity.}
+\westep{Calculate the velocity at the bottom of the waterfall.}
 To calculate the velocity of the tree trunk we need to use the equation for kinetic energy.
 \begin{eqnarray*}
 E_{K} & = & \frac{1}{2}mv^2 \\
 4900 &=& \frac{1}{2} (100) (v^2) \\
 98 &=& v^2\\
 v &=& 9,899...\\
-v &=& 9,90 \ \text{downwards}
+v &=& 9,90 \ \mathsf{J}
 \end{eqnarray*}}
 \end{wex}
     \noindent
 \par
+
+
             \label{m38786*secfhsst!!!underscore!!!id2130}
       \noindent
-\begin{wex}{Pendulum}{A 2~kg metal ball is suspended from a rope. If it is released from point $A$ and swings down to the point $B$ (the bottom of its arc): \begin{enumerate}[label=\textbf{\arabic*}.]
-\item Show that the velocity of the ball is independent of it mass.
-\item Calculate the velocity of the ball at point $B$.
+\begin{wex}{Pendulum}{A 2~kg metal ball is suspended from a rope as a pendulum. If it is released from point $A$ and swings down to the point $B$ (the bottom of its arc): \begin{enumerate}[label=\textbf{\arabic*}.]
+\item show that the velocity of the ball is independent of its mass,
+\item calculate the velocity of the ball at point $B$.
 \end{enumerate}
 \begin{center}
 \begin{pspicture}(-0.1,-0.3)(3.3,3.1)
@@ -500,27 +509,148 @@ All quantities are in SI units.\\
 \end{itemize}
 
 \westep{Apply the Law of Conservation of Mechanical Energy to the situation}
-As there is no friction, mechanical energy is conserved. Therefore: 
+Since there is no friction, mechanical energy is conserved. Therefore: 
 \begin{eqnarray*}
-E_{MA} &=& E_{MB}\\
-E_{PA} + E_{KA} &=& E_{PB} + E_{KB}\\
-mgh_A + \frac{1}{2}m(v_A)^2 &=& mgh_B + \frac{1}{2}m(v_B)^2\\
-mgh_A + 0 &=& 0 + \frac{1}{2}m(v_B)^2\\
-mgh_A &=& \frac{1}{2}m(v_B)^2
+E_{M1} &=& E_{M2}\\
+E_{P1} + E_{K1} &=& E_{P2} + E_{K2}\\
+mgh_1 + \frac{1}{2}m(v_1)^2 &=& mgh_2 + \frac{1}{2}m(v_2)^2\\
+mgh_1 + 0 &=& 0 + \frac{1}{2}m(v_2)^2\\
+mgh_1 &=& \frac{1}{2}m(v_2)^2
 \end{eqnarray*}
-As the mass of the ball $m$ appears on both sides of the equation, it can be eliminated so that the equation becomes:
-$gh_A = \frac{1}{2}(v_B)^2}$
-$2gh_A = (v_B)^2}$
+The mass of the ball $m$ appears on both sides of the equation so it can be eliminated so that the equation becomes:
+\begin{eqnarray*}
+gh_1 &=& \frac{1}{2}(v_2)^2 \\
+2gh_1 &=& (v_2)^2
+\end{eqnarray*}
 This proves that the velocity of the ball is independent of its mass. It does not matter what its mass is, it will always have the same velocity when it falls through this height.
-\westep{Calculate the velocity of the ball}
+\westep{Calculate the velocity of the ball at point B}
 We can use the equation above, or do the calculation from 'first principles':
 \begin{eqnarray*}
-(v_B)^2 &=& 2gh_A\\
-(v_B)^2 &=& (2)(9.8)(0,5)\\
-(v_B)^2 &=& 9,8\\
-v_B &=& \sqrt{9,8}~ \ \text{m} \cdot \text{s}^{-1}}
-\end{eqnarray*}}
+(v_2)^2 &=& 2gh_1\\
+(v_2)^2 &=& (2)(9.8)(0,5)\\
+(v_2)^2 &=& 9,8\\
+v_2 &=& \sqrt{9,8} \\
+v_2 &=& 3,13~ \ \text{m} \cdot \text{s}^{-1}}
+\end{eqnarray*}
+
+Alternatively you can do: 
+\begin{eqnarray*}
+E_{K1} + E_{P1} &=& E_{K2} + E_{P2} \\
+mgh_1 + \frac{1}{2}m(v_1)^2 &=& mgh_2 + \frac{1}{2}m(v_2)^2\\
+mgh_1 + 0 &=& 0 + \frac{1}{2}m(v_2)^2\\
+(v_{2})^2 &=& \frac{2mgh_1}{m} \\
+(v_{2})^2 &=& \frac{2(2)(9,8)(0,5)}{2} \\
+v_2 &=& \sqrt{9,8} \\
+v_2 &=& 3,13~ \ \text{m} \cdot \text{s}^{-1}}
+\end{eqnarray*}
+}
 \end{wex}
+
+% Add new worked examples on roller coasters and inclined planes
+
+\begin{wex}{The roller coaster}
+{A roller coaster ride at an amusement park starts from rest at a height of 50 m above the ground and rapidly drops down along its track. At some point, the track does a full 360 degree loop which has a height of 20 m, before finishing off at ground level. The roller coaster train itself with a full load of people on it has a mass of 850 kg.  
+If the roller coaster and its track are frictionless, calculate:
+\begin{enumerate}[label=\textbf{\arabic*}.]
+\item the velocity of the roller coaster when it reaches the top of the loop
+\item the velocity of the roller coaster at the bottom of the loop (i.e. ground level)
+\end{enumerate}
+}
+{
+\westep{Analyse the question to determine what information is provided}
+\begin{itemize}
+\item The mass of the roller coaster is $m$ = 850 kg
+\item The initial height of the roller coaster at its starting position is $h_{1}$ = 50 m
+\item The roller coaster starts from rest, so its initial velocity $v_{1} = 0 \mathsf{m\cdot s^{-1}}$
+\item The height of the loop is $h_{2}$ = 20 m 
+\item The height at the bottom of the loop is at ground level, $h_{3}$ = 0 m
+\end{itemize}
+We do not need to convert units as they are in the correct form already.
+
+\westep{Analyse the question to determine what is being asked}
+\begin{itemize}
+\item the velocity of the roller coaster at the top of the loop
+\item the velocity of the roller coaster at the bottom of the loop
+\end{itemize}
+
+\westep{Calculate the velocity at the top of the loop}
+From the conservation of mechanical energy, We know that at any two points in the system, the total mechanical energy must be the same. Let's compare the situation at the start of the roller coaster to the situation at the top of the loop:
+\begin{eqnarray*}
+E_{M1} & = & E_{M2} \\
+E_{K1} + E_{P1} & = & E_{K2} + E_{P2} \\
+0 + mgh_{1} &=& \frac{1}{2}m(v_{2})^2 + mgh_{2} 
+\end{eqnarray*}
+We can eliminate the mass, $m$, from the equation by dividing both sides by $m$.
+\begin{eqnarray*}
+gh_{1} &=&  \frac{1}{2}(v_{2})^2 + gh_{2} 
+\end{eqnarray*}
+The important thing to note here is that the total mechanical energy at the top of the loop is composed of both kinetic and gravitational potential energy, whereas the mechanical energy at the start of the roller coaster is only gravitational potential energy. 
+\begin{eqnarray*}
+(v_{2})^2 &=& 2(gh_{1} - gh_{2}) \\
+(v_{2})^2 &=& 2((9,8)(50) - (9,8)(20)) \\
+v_{2} &=& 24,25 \ \mathsf{m\cdot s^{-1}}
+\end{eqnarray*}
+
+\westep{Calculate the velocity at the bottom of the loop}
+Again we can use the conservation of energy and the total mechanical energy at the bottom of the loop should be the same as the total mechanical energy of the system at any other position. 
+Let's compare the situations at the start of the roller coaster's trip and the bottom of the loop:
+\begin{eqnarray*}
+E_{M1} & = & E_{M3} \\
+E_{K1} + E_{P1} & = & E_{K3} + E_{P3} \\
+\frac{1}{2}m_{1}(0)^2 + mgh_{1} &=& \frac{1}{2}m(v_{3})^2 + mg(0) \\
+mgh_{1} &=&  \frac{1}{2}m(v_{3})^2 \\
+(v_3)^2 &=& 2gh_1 \\
+(v_3)^2 &=& 2(9,8)(50) \\
+v_3 &=& 31,30 \ \mathsf{m \cdot s^{-1}}
+\end{eqnarray*}
+
+}
+\end{wex}
+
+
+\begin{wex}{An inclined plane}
+{
+\begin{minipage}{0.5\textwidth}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1)(6.82,2.12)
+\psline[linewidth=0.04cm](0.0,2.1)(5.0,-2.08)
+\psline[linewidth=0.04cm](5.0,-2.08)(6.8,-2.08)
+\pscircle[linewidth=0.04,dimen=outer](0.94,1.68){0.1}
+\psline[linewidth=0.04cm](0.96,1.56)(0.98,1.4)
+\psline[linewidth=0.04cm](0.98,1.4)(0.88,1.34)
+\psline[linewidth=0.04cm](0.98,1.4)(1.04,1.22)
+\psline[linewidth=0.04cm](0.98,1.52)(1.12,1.6)
+\psline[linewidth=0.04cm](1.12,1.6)(1.14,1.38)
+\psline[linewidth=0.04cm](1.14,1.38)(0.98,1.38)
+\psline[linewidth=0.04cm](0.98,1.44)(0.84,1.54)
+\pscircle[linewidth=0.04,dimen=outer](5.05,-2.01){0.09}
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](0.98,1.24)(0.98,-2.08)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.4515625,-0.515){\small 10 m}
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](1.18,1.76)(5.26,-1.68)
+\usefont{T1}{ptm}{m}{n}
+\rput{-39.05351}(0.5531386,2.1454816){\rput(3.2615626,0.285){\small 100 m}}
+\end{pspicture} 
+}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+A mountain climber who is climbing a mountain in the Drakensberg during winter, by mistake drops her water bottle which then slides 100 m down the side of a steep slope to a point which is 10 m lower than the climber's position.
+\end{minipage} 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item If the bottle starts from rest, how fast is it travelling by the time it reaches the bottom of the slope?
+\item What is the total change in the climber's potential energy as she climbs down the mountain to fetch her fallen water bottle?
+\end{enumerate}
+}
+{
+
+}
+\end{wex}
+
+
+
+
+
     \noindent
 \label{m38786*secfhsst!!!underscore!!!id2545}
 \begin{exercises}{Potential Energy }
