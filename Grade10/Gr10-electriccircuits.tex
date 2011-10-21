@@ -699,27 +699,112 @@ In general, for resistors in series, the total resistance is given by:
 
 We know that the potential energy lost across a resistor is proportional to the resistance of the component because the higher the resistance the more work must be done to drive charge through the resistor.
 
-\begin{wex}{Series resistors I}
-{}
-{}
-\end{wex}
+\begin{wex}{Series resistors I}{%
+A circuit contains two resistors in series. The resistors have resistance values of $5~\Omega$ and $17~\Omega$. \\
+\begin{center}
+\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
+\pnode(0,0){A}
+\pnode(0,3){B}
+\pnode(3,3){C}
+\pnode(3,0){D}
+\battery(A)(B){}
+\psline(B)(C)
+\psdot[dotscale=2](A)
+\psdot[dotscale=2](B)
+% draw resistors
+\resistor[dipolestyle=rectangle](C)(D){$5~\Omega$}
+\resistor[dipolestyle=rectangle](A)(D){$17~\Omega$}
+%\resistor[dipolestyle=rectangle](H)(J){}
+\end{pspicture}\end{center}\\
+What is the total resistance in the ciruit?}{%
+\westep{Analyse the question}
+We are told that the circuit is a series circuit and that we need to calculate the total resistance. The values of the two resistors have been given in the correct units, $\Omega$.
+\westep{Apply the relevant principles}
+The total resistance for resistors in series is the sum of the individual resistances. We can use
+\begin{equation*}
+ R_S = R_1 + R_2 + \ldots
+\end{equation*}.
+We have only two resistors and we now the resistances. In this case we have that:
+\begin{align*}
+ R_S &= R_1 + R_2 + \ldots\\
+R_S &= R_1 + R_2\\
+&=5~\Omega + 17~\Omega\\
+&=22~\Omega
+\end{align*}
+\westep{Quote the final result}
+The total resistance of the resistors in series is $22~\Omega$.}\end{wex}
 
+\begin{wex}{Series resistors II}{%
+A circuit contains three resistors in series. The resistors have resistance values of $0,5~\Omega$, $7,5~\Omega$ and $11~\Omega$. \\
+\begin{center}
+\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
+\pnode(0,0){A}
+\pnode(0,3){B}
+\pnode(3,3){C}
+\pnode(3,0){D}
+\battery(A)(B){}
+\psline(B)(C)
+\psdot[dotscale=2](A)
+\psdot[dotscale=2](B)
+% draw resistors
+\resistor[dipolestyle=rectangle](C)(D){$0,5~\Omega$}
+\resistor[dipolestyle=rectangle](A)(D){$7,5~\Omega$}
+\resistor[dipolestyle=rectangle](H)(J){$11~\Omega$}
+\end{pspicture}\end{center}\\
+What is the total resistance in the ciruit?}{%
+\westep{Analyse the question}
+We are told that the circuit is a series circuit and that we need to calculate the total resistance. The values of the three resistors have been given in the correct units, $\Omega$.
+\westep{Apply the relevant principles}
+The total resistance for resistors in series is the sum of the individual resistances. We can use
+\begin{equation*}
+ R_S = R_1 + R_2 + \ldots
+\end{equation*}.
+We have three resistors and we now the resistances. In this case we have that:
+\begin{align*}
+ R_S &= R_1 + R_2 + \ldots\\
+R_S &= R_1 + R_2 + R_3\\
+&=0,5~\Omega + 7,5~\Omega + 11~\Omega\\
+&=19~\Omega
+\end{align*}
+\westep{Quote the final result}
+The total resistance of the resistors in series is $19~\Omega$.}\end{wex}
 
-
-%. The total potential difference is shared evenly across the total resistance of the circuit. This means that the potential difference per unit of resistance is
-% \begin{equation*}
-% V_{per\ unit\ of\ resistance} = \frac{V_{total}}{R_{total}}
-% \end{equation*}
-% Then the voltage across a resistor is just the resistance times the potential difference per unit of resistance
-% \begin{equation*}
-% V_{resistor} = R_{resistor}\cdot\frac{V_{total}}{R_{total}}.
-% \end{equation*}
-
-
-% CHILD SECTION END 
-
-
-
+\begin{wex}{Series resistors III}{%
+A circuit contains two resistors in series. The resistors have resistance values of $750~k\Omega$ and $1,7~M\Omega$. \\
+\begin{center}
+\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
+\pnode(0,0){A}
+\pnode(0,3){B}
+\pnode(3,3){C}
+\pnode(3,0){D}
+\battery(A)(B){}
+\psline(B)(C)
+\psdot[dotscale=2](A)
+\psdot[dotscale=2](B)
+% draw resistors
+\resistor[dipolestyle=rectangle](C)(D){$750~k\Omega$}
+\resistor[dipolestyle=rectangle](A)(D){$1,7~M\Omega$}
+%\resistor[dipolestyle=rectangle](H)(J){}
+\end{pspicture}\end{center}\\
+What is the total resistance in the ciruit?}{%
+\westep{Analyse the question}
+We are told that the circuit is a series circuit and that we need to calculate the total resistance. The values of the two resistors have been given in the correct units, $\Omega$.
+\westep{Apply the relevant principles}
+The total resistance for resistors in series is the sum of the individual resistances. We can use
+\begin{equation*}
+ R_S = R_1 + R_2 + \ldots
+\end{equation*}.
+We have only two resistors and we now the resistances. In this case we have that:
+\begin{align*}
+ R_S &= R_1 + R_2 + \ldots\\
+R_S &= R_1 + R_2\\
+&=750~k\Omega + 1,7~M\Omega\\
+&=750\times10^{3}~\Omega + 1,7\times10^{6}~\Omega\\
+&=0,75\times10^{6}~\Omega + 1,7\times10^{6}~\Omega\\
+&=2,45\times10^{6}~\Omega=2,45~M\Omega
+\end{align*}
+\westep{Quote the final result}
+The total resistance of the resistors in series is $2,45~M\Omega$.}\end{wex}
 
 
 \subsection{Potential difference and parallel resistors}
@@ -1275,6 +1360,113 @@ For any two resistors in parallel we now know that
 \begin{equation*}
 R_P=\frac{\text{product of resistances}}{\text{sum of resistances}}=\frac{R_1R_2}{R_1+R_2}
 \end{equation*}
+
+\begin{wex}{Parallel resistors I}{%
+A circuit contains two resistors in parallel. The resistors have resistance values of $15~\Omega$ and $7~\Omega$. \\
+\begin{center}
+\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
+\pnode(0,0){A}
+\pnode(0,3){B}
+\pnode(3,3){C}
+\pnode(3,0){D}
+\battery(A)(B){}
+\psline(B)(C)
+\psdot[dotscale=2](A)
+\psdot[dotscale=2](B)
+% draw resistors
+\resistor[dipolestyle=rectangle](C)(D){$5~\Omega$}
+\resistor[dipolestyle=rectangle](A)(D){$17~\Omega$}
+%\resistor[dipolestyle=rectangle](H)(J){}
+\end{pspicture}\end{center}\\
+What is the total resistance in the ciruit?}{%
+\westep{Analyse the question}
+We are told that the circuit is a series circuit and that we need to calculate the total resistance. The values of the two resistors have been given in the correct units, $\Omega$.
+\westep{Apply the relevant principles}
+The total resistance for resistors in series is the sum of the individual resistances. We can use
+\begin{equation*}
+ R_S = R_1 + R_2 + \ldots
+\end{equation*}.
+We have only two resistors and we now the resistances. In this case we have that:
+\begin{align*}
+ R_S &= R_1 + R_2 + \ldots\\
+R_S &= R_1 + R_2\\
+&=5~\Omega + 17~\Omega\\
+&=22~\Omega
+\end{align*}
+\westep{Quote the final result}
+The total resistance of the resistors in series is $22~\Omega$.}\end{wex}
+
+\begin{wex}{Series resistors II}{%
+A circuit contains three resistors in series. The resistors have resistance values of $0,5~\Omega$, $7,5~\Omega$ and $11~\Omega$. \\
+\begin{center}
+\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
+\pnode(0,0){A}
+\pnode(0,3){B}
+\pnode(3,3){C}
+\pnode(3,0){D}
+\battery(A)(B){}
+\psline(B)(C)
+\psdot[dotscale=2](A)
+\psdot[dotscale=2](B)
+% draw resistors
+\resistor[dipolestyle=rectangle](C)(D){$0,5~\Omega$}
+\resistor[dipolestyle=rectangle](A)(D){$7,5~\Omega$}
+\resistor[dipolestyle=rectangle](H)(J){$11~\Omega$}
+\end{pspicture}\end{center}\\
+What is the total resistance in the ciruit?}{%
+\westep{Analyse the question}
+We are told that the circuit is a series circuit and that we need to calculate the total resistance. The values of the three resistors have been given in the correct units, $\Omega$.
+\westep{Apply the relevant principles}
+The total resistance for resistors in series is the sum of the individual resistances. We can use
+\begin{equation*}
+ R_S = R_1 + R_2 + \ldots
+\end{equation*}.
+We have three resistors and we now the resistances. In this case we have that:
+\begin{align*}
+ R_S &= R_1 + R_2 + \ldots\\
+R_S &= R_1 + R_2 + R_3\\
+&=0,5~\Omega + 7,5~\Omega + 11~\Omega\\
+&=19~\Omega
+\end{align*}
+\westep{Quote the final result}
+The total resistance of the resistors in series is $19~\Omega$.}\end{wex}
+
+\begin{wex}{Series resistors III}{%
+A circuit contains two resistors in series. The resistors have resistance values of $750~k\Omega$ and $1,7~M\Omega$. \\
+\begin{center}
+\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
+\pnode(0,0){A}
+\pnode(0,3){B}
+\pnode(3,3){C}
+\pnode(3,0){D}
+\battery(A)(B){}
+\psline(B)(C)
+\psdot[dotscale=2](A)
+\psdot[dotscale=2](B)
+% draw resistors
+\resistor[dipolestyle=rectangle](C)(D){$750~k\Omega$}
+\resistor[dipolestyle=rectangle](A)(D){$1,7~M\Omega$}
+%\resistor[dipolestyle=rectangle](H)(J){}
+\end{pspicture}\end{center}\\
+What is the total resistance in the ciruit?}{%
+\westep{Analyse the question}
+We are told that the circuit is a series circuit and that we need to calculate the total resistance. The values of the two resistors have been given in the correct units, $\Omega$.
+\westep{Apply the relevant principles}
+The total resistance for resistors in series is the sum of the individual resistances. We can use
+\begin{equation*}
+ R_S = R_1 + R_2 + \ldots
+\end{equation*}.
+We have only two resistors and we now the resistances. In this case we have that:
+\begin{align*}
+ R_S &= R_1 + R_2 + \ldots\\
+R_S &= R_1 + R_2\\
+&=750~k\Omega + 1,7~M\Omega\\
+&=750\times10^{3}~\Omega + 1,7\times10^{6}~\Omega\\
+&=0,75\times10^{6}~\Omega + 1,7\times10^{6}~\Omega\\
+&=2,45\times10^{6}~\Omega=2,45~M\Omega
+\end{align*}
+\westep{Quote the final result}
+The total resistance of the resistors in series is $2,45~M\Omega$.}\end{wex}
 
 
 
