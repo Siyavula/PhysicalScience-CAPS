@@ -341,14 +341,19 @@ Note
 {\large\textbf{\textit{QUESTION}}} \vspace*{4pt} 
 \hrule
 \vspace*{18pt}
-\textit{\noindent #2}
+\noindent
+\textit{#2}
 \vspace*{28pt}
 
 \noindent
 \textbf{\textit{SOLUTION}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
- #3%
+\begingroup
+\leftskip20pt
+\rightskip20pt
+#3%
+\endgroup
 \vspace*{28pt}
 \hrule
 \addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
