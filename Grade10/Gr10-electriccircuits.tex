@@ -158,6 +158,19 @@ When current flows in a circuit we show this on a diagram by adding arrows. The 
 
 If the voltage is high enough a current can be driven through almost anything. In the plasma ball example on the left, a voltage is created that is high enough to get charge to flow through the gas in the ball. The voltage is very high but the resulting current is very low. This makes it safe to touch.
 \end{minipage}
+\IFact{Benjamin Franklin made a guess about the
+direction of charge flow when rubbing smooth wax with rough wool.
+He thought that the charges flowed from the wax to the wool (i.e.
+from positive to negative) which was opposite to the real
+direction. Due to this, electrons are said to have a
+\emph{negative} charge and so objects which Ben Franklin called
+``negative'' (meaning a shortage of charge) really have an excess
+of electrons. By the time the true direction of electron flow was
+discovered, the convention of ``positive'' and ``negative'' had
+already been so well accepted in the scientific world that no
+effort was made to change it.}
+
+
 
 
 \subsection{Ammeter}
@@ -232,6 +245,35 @@ Experiment with different combinations of components in the circuits.
 
 %\end{minipage}
 \end{activity}
+\Tip{A battery \textbf{does not} produce the same amount of
+current no matter what is connected to it. While the voltage
+produced by a battery is constant, the amount of current supplied
+depends on what is in the circuit.}
+
+The table below summarises the use of each measuring instrument
+that we discussed and the way it should be connected to a circuit
+component.
+
+\begin{center}
+\begin{tabular}{ | c | c | c | }
+\hline 
+\textbf{Instrument} & \textbf{Measured Quantity} & \textbf{Proper Connection} \\ \hline \hline 
+Voltmeter & Voltage & In Parallel \\ \hline Ammeter &
+Current & In Series \\ \hline
+\hline
+\end{tabular}
+\end{center}
+
+
+\begin{activity}{Using meters}If possible, 
+connect meters in circuits to get used to the use of meters to
+measure electrical quantities. If the meters have more than one
+scale, always connect to the \textbf{largest scale} first so that the meter
+will not be damaged by having to measure values that exceed its
+limits.
+\end{activity}
+
+
 
 \begin{wex}{Calculating current I}
 {An amount of charge equal to 45 C moves past a point in a circuit in 1 second, what is the current in the circuit?
@@ -365,65 +407,6 @@ Since energy is always conserved, the battery goes flat when all its chemical po
 \subsection{Resistors in electric circuits}
 It is important to understand what effect adding resistors to a circuit has on the \textit{total} resistance of a circuit and on the current that can flow in the circuit. 
 
-\subsubsection{Resistors in series}
-When we add resistors in series to a circuit, we \textit{increase} the resistance to the flow of current. There is only \textbf{one path} that the current can flow down and the current is the same at all places in the series circuit. Take a look at the diagram below: On the left there is a circuit with a single resistor and a battery. No matter where we measure the current, it is the same in a series circuit. On the right, we have added a second resistor in series to the circuit. The \textit{total} resistance of the circuit has \textit{increased} and you can see from the reading on the ammeter that the current in the circuit has decreased.
-
-\begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-2.43)(15.033594,2.43)
-\psline[linewidth=0.04cm](8.128563,-0.127)(9.108562,-0.127)
-\psline[linewidth=0.068cm](8.448563,-0.0070)(8.828563,-0.0070)
-\psframe[linewidth=0.04,dimen=outer](11.34,1.99)(10.251562,1.53)
-\rput(7.99,-0.385){\small V = 2 V}
-\rput(10.802188,2.235){\small R = 2 $\Omega$}
-\rput(14.283594,0.475){\small I = 0.67 A}
-\rput(10.840313,-1.805){Adding a resistor to the circuit }
-\rput(10.866406,-2.225){increases the total resistance}
-\psframe[linewidth=0.04,dimen=outer](11.28,-0.97)(10.191563,-1.43)
-\pscircle[linewidth=0.04,dimen=outer](13.05,0.44){0.39}
-\pscircle[linewidth=0.04,dimen=outer](8.69,1.02){0.39}
-\rput(8.72,1.06){\large A}
-\rput(13.06,0.44){\large A}
-\psline[linewidth=0.04cm](8.64,0.03)(8.64,0.65)
-\psline[linewidth=0.04cm](8.68,1.37)(8.66,1.75)
-\psline[linewidth=0.04cm](8.66,1.75)(10.28,1.75)
-\psline[linewidth=0.04cm](11.34,1.77)(13.08,1.77)
-\psline[linewidth=0.04cm](13.1,1.77)(13.1,0.79)
-\psline[linewidth=0.04cm](13.08,0.07)(13.08,-1.23)
-\psline[linewidth=0.04cm](13.1,-1.21)(11.26,-1.21)
-\psline[linewidth=0.04cm](8.64,-0.11)(8.64,-1.19)
-\psline[linewidth=0.04cm](8.62,-1.19)(10.22,-1.19)
-\rput(10.762188,-0.745){\small R = 1 $\Omega$}
-\rput(9.843594,0.995){\small I = 0.67 A}
-\psline[linewidth=0.04cm](0.6885625,-0.127)(1.6685625,-0.127)
-\psline[linewidth=0.068cm](1.0085624,-0.0070)(1.3885624,-0.0070)
-\psframe[linewidth=0.04,dimen=outer](3.9,1.99)(2.8115625,1.53)
-\rput(0.55,-0.385){\small V = 2 V}
-\rput(3.3621874,2.235){\small R = 2 $\Omega$}
-\rput(6.563594,0.455){\small I = 1 A}
-\rput(3.4703126,-1.825){The current in a series circuit }
-\rput(3.3664062,-2.205){is the same everywhere}
-\pscircle[linewidth=0.04,dimen=outer](5.61,0.44){0.39}
-\pscircle[linewidth=0.04,dimen=outer](1.25,1.02){0.39}
-\rput(1.28,1.06){\large A}
-\rput(5.62,0.44){\large A}
-\psline[linewidth=0.04cm](1.2,0.03)(1.2,0.65)
-\psline[linewidth=0.04cm](1.24,1.37)(1.22,1.75)
-\psline[linewidth=0.04cm](1.22,1.75)(2.84,1.75)
-\psline[linewidth=0.04cm](3.9,1.77)(5.64,1.77)
-\psline[linewidth=0.04cm](5.66,1.77)(5.66,0.79)
-\psline[linewidth=0.04cm](5.64,0.07)(5.64,-1.23)
-\psline[linewidth=0.04cm](1.2,-0.11)(1.2,-1.19)
-\psline[linewidth=0.04cm](1.18,-1.19)(5.66,-1.19)
-\rput(2.183594,0.995){\small I = 1 A}
-\rput(14.106406,-0.11){\footnotesize (the current is }
-\rput(13.746407,-0.41){\footnotesize smaller)}
-\rput(9.626407,0.35){\footnotesize smaller)}
-\rput(9.986406,0.65){\footnotesize (the current is }
-\end{pspicture} 
-}
-\end{center}
 
 \subsection{Potential difference and series resistors}
 
@@ -573,6 +556,68 @@ Let us look at this in a bit more detail. In the picture below you can see what 
 
 % Use the fact that voltage is proportional to resistance to calculate what proportion of the total voltage of a circuit will be found across each circuit element. 
 
+\subsubsection{Resistors in series}
+When we add resistors in series to a circuit, we \textit{increase} the resistance to the flow of current. There is only \textbf{one path} that the current can flow down and the current is the same at all places in the series circuit. Take a look at the diagram below: On the left there is a circuit with a single resistor and a battery. No matter where we measure the current, it is the same in a series circuit. On the right, we have added a second resistor in series to the circuit. The \textit{total} resistance of the circuit has \textit{increased} and you can see from the reading on the ammeter that the current in the circuit has decreased.
+
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.43)(15.033594,2.43)
+\psline[linewidth=0.04cm](8.128563,-0.127)(9.108562,-0.127)
+\psline[linewidth=0.068cm](8.448563,-0.0070)(8.828563,-0.0070)
+\psframe[linewidth=0.04,dimen=outer](11.34,1.99)(10.251562,1.53)
+\rput(7.99,-0.385){\small V = 2 V}
+\rput(10.802188,2.235){\small R = 2 $\Omega$}
+\rput(14.283594,0.475){\small I = 0.67 A}
+\rput(10.840313,-1.805){Adding a resistor to the circuit }
+\rput(10.866406,-2.225){increases the total resistance}
+\psframe[linewidth=0.04,dimen=outer](11.28,-0.97)(10.191563,-1.43)
+\pscircle[linewidth=0.04,dimen=outer](13.05,0.44){0.39}
+\pscircle[linewidth=0.04,dimen=outer](8.69,1.02){0.39}
+\rput(8.72,1.06){\large A}
+\rput(13.06,0.44){\large A}
+\psline[linewidth=0.04cm](8.64,0.03)(8.64,0.65)
+\psline[linewidth=0.04cm](8.68,1.37)(8.66,1.75)
+\psline[linewidth=0.04cm](8.66,1.75)(10.28,1.75)
+\psline[linewidth=0.04cm](11.34,1.77)(13.08,1.77)
+\psline[linewidth=0.04cm](13.1,1.77)(13.1,0.79)
+\psline[linewidth=0.04cm](13.08,0.07)(13.08,-1.23)
+\psline[linewidth=0.04cm](13.1,-1.21)(11.26,-1.21)
+\psline[linewidth=0.04cm](8.64,-0.11)(8.64,-1.19)
+\psline[linewidth=0.04cm](8.62,-1.19)(10.22,-1.19)
+\rput(10.762188,-0.745){\small R = 1 $\Omega$}
+\rput(9.843594,0.995){\small I = 0.67 A}
+\psline[linewidth=0.04cm](0.6885625,-0.127)(1.6685625,-0.127)
+\psline[linewidth=0.068cm](1.0085624,-0.0070)(1.3885624,-0.0070)
+\psframe[linewidth=0.04,dimen=outer](3.9,1.99)(2.8115625,1.53)
+\rput(0.55,-0.385){\small V = 2 V}
+\rput(3.3621874,2.235){\small R = 2 $\Omega$}
+\rput(6.563594,0.455){\small I = 1 A}
+\rput(3.4703126,-1.825){The current in a series circuit }
+\rput(3.3664062,-2.205){is the same everywhere}
+\pscircle[linewidth=0.04,dimen=outer](5.61,0.44){0.39}
+\pscircle[linewidth=0.04,dimen=outer](1.25,1.02){0.39}
+\rput(1.28,1.06){\large A}
+\rput(5.62,0.44){\large A}
+\psline[linewidth=0.04cm](1.2,0.03)(1.2,0.65)
+\psline[linewidth=0.04cm](1.24,1.37)(1.22,1.75)
+\psline[linewidth=0.04cm](1.22,1.75)(2.84,1.75)
+\psline[linewidth=0.04cm](3.9,1.77)(5.64,1.77)
+\psline[linewidth=0.04cm](5.66,1.77)(5.66,0.79)
+\psline[linewidth=0.04cm](5.64,0.07)(5.64,-1.23)
+\psline[linewidth=0.04cm](1.2,-0.11)(1.2,-1.19)
+\psline[linewidth=0.04cm](1.18,-1.19)(5.66,-1.19)
+\rput(2.183594,0.995){\small I = 1 A}
+\rput(14.106406,-0.11){\footnotesize (the current is }
+\rput(13.746407,-0.41){\footnotesize smaller)}
+\rput(9.626407,0.35){\footnotesize smaller)}
+\rput(9.986406,0.65){\footnotesize (the current is }
+\end{pspicture} 
+}
+\end{center}
+
+
+
 \begin{center}
 \begin{pspicture}(0,-0.5)(12,3.5)
 %\psgrid
@@ -652,8 +697,14 @@ In general, for resistors in series, the total resistance is given by:
  R_S = R_1 + R_2 + \ldots
 \end{equation*}
 
-
 We know that the potential energy lost across a resistor is proportional to the resistance of the component because the higher the resistance the more work must be done to drive charge through the resistor.
+
+\begin{wex}{Series resistors I}
+{}
+{}
+\end{wex}
+
+
 
 %. The total potential difference is shared evenly across the total resistance of the circuit. This means that the potential difference per unit of resistance is
 % \begin{equation*}
@@ -670,76 +721,6 @@ We know that the potential energy lost across a resistor is proportional to the 
 
 
 
-\subsubsection{Resistors in parallel}
-In contrast to the series case, when we add resistors in parallel, we create \textbf{more paths} along which current can flow. By doing this we \textit{decrease} the total resistance of the circuit! 
-
-Take a look at the diagram below. On the left we have the same circuit as in the previous diagram with a battery and a resistor. The ammeter shows a current of 1 ampere. On the right we have added a second resistor in parallel to the first resistor. This has increased the number of paths (branches) the charge can take through the circuit - the total resistance has decreased. You can see that the current in the circuit has increased. Also notice that the current in the different branches can be different.
-
-\begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-2.84)(15.3203125,2.84)
-\rput(11.470312,-2.235){Adding a resistor to the circuit in}
-\rput(11.506406,-2.615){parallel decreases the total resistance}
-\psline[linewidth=0.04cm](0.6885625,-0.617)(1.6685625,-0.617)
-\psline[linewidth=0.068cm](1.0085624,-0.497)(1.3885624,-0.497)
-\psframe[linewidth=0.04,dimen=outer](3.9,1.5)(2.8115625,1.04)
-\rput(0.55,-0.875){\small V = 2 V}
-\rput(3.3621874,1.745){\small R = 2 $\Omega$}
-\rput(6.563594,-0.035){\small I = 1 A}
-\pscircle[linewidth=0.04,dimen=outer](5.61,-0.05){0.39}
-\rput(5.62,-0.05){\large A}
-\psline[linewidth=0.04cm](1.2,-0.46)(1.2,1.28)
-\psline[linewidth=0.04cm](1.22,1.26)(2.84,1.26)
-\psline[linewidth=0.04cm](3.9,1.28)(5.64,1.28)
-\psline[linewidth=0.04cm](5.66,1.28)(5.66,0.3)
-\psline[linewidth=0.04cm](5.64,-0.42)(5.64,-1.72)
-\psline[linewidth=0.04cm](1.2,-0.6)(1.2,-1.68)
-\psline[linewidth=0.04cm](1.18,-1.68)(5.66,-1.68)
-\psline[linewidth=0.04cm](8.688562,-0.697)(9.668563,-0.697)
-\psline[linewidth=0.068cm](9.008562,-0.577)(9.388562,-0.577)
-\psframe[linewidth=0.04,dimen=outer](11.9,1.42)(10.811563,0.96)
-\rput(8.55,-0.955){\small V = 2 V}
-\rput(11.362187,0.625){\small R = 2 $\Omega$}
-\rput(14.563594,-0.135){\small I = 3 A}
-\pscircle[linewidth=0.04,dimen=outer](13.61,-0.13){0.39}
-\rput(13.62,-0.13){\large A}
-\psline[linewidth=0.04cm](9.2,-0.54)(9.2,1.2)
-\psline[linewidth=0.04cm](9.22,1.18)(10.84,1.18)
-\psline[linewidth=0.04cm](13.66,1.2)(13.66,0.22)
-\psline[linewidth=0.04cm](13.64,-0.5)(13.64,-1.8)
-\psline[linewidth=0.04cm](9.2,-0.68)(9.2,-1.76)
-\psline[linewidth=0.04cm](9.18,-1.76)(13.66,-1.76)
-\psframe[linewidth=0.04,dimen=outer](11.88,2.4)(10.791562,1.94)
-\rput(11.362187,1.685){\small R = 1 $\Omega$}
-\psline[linewidth=0.04cm](9.2,2.16)(10.82,2.16)
-\psline[linewidth=0.04cm](9.2,1.1)(9.18,2.18)
-\pscircle[linewidth=0.04,dimen=outer](12.77,1.17){0.39}
-\rput(12.78,1.17){\large A}
-\pscircle[linewidth=0.04,dimen=outer](12.73,2.11){0.39}
-\rput(12.74,2.11){\large A}
-\psline[linewidth=0.04cm](11.9,1.18)(12.42,1.18)
-\psline[linewidth=0.04cm](11.86,2.16)(12.38,2.16)
-\psline[linewidth=0.04cm](13.16,1.18)(13.68,1.18)
-\psline[linewidth=0.04cm](13.1,2.16)(13.7,2.16)
-\psline[linewidth=0.04cm](13.66,1.08)(13.66,2.16)
-\rput(12.783594,0.585){\small I = 1 A}
-\rput(12.783594,2.665){\small I = 2 A}
-\rput(14.540313,-0.7){\footnotesize The current }
-\rput(14.390312,-0.98){\footnotesize is bigger}
-\end{pspicture} 
-}
-\end{center}
-
-\begin{exercises}{Resistance}
-
-\begin{enumerate}
-\item What is the unit of resistance called and what is its symbol?
-\item Explain what happens to the total resistance of a circuit when resistors are added in series?
-\item Explain what happens to the total resistance of a circuit when resistors are added in parallel?
-\item Why do batteries go flat? 
-\end{enumerate}
-\end{exercises}
 
 \subsection{Potential difference and parallel resistors}
 
@@ -1176,68 +1157,274 @@ V_{battery} &=& V_{parallel} + V_{known}\\
 \end{eqnarray*}}\end{wex}
 
 
+\subsubsection{Resistors in parallel}
+In contrast to the series case, when we add resistors in parallel, we create \textbf{more paths} along which current can flow. By doing this we \textit{decrease} the total resistance of the circuit! 
 
-ksjfkdsahf 
-
-
-
-
-\subsection{Series Circuits}
-
-In a series circuit, the charge has a single path from the
-battery, returning to the battery.
+Take a look at the diagram below. On the left we have the same circuit as in the previous section with a battery and a resistor. The ammeter shows a current of 1~A. On the right we have added a second resistor in parallel to the first resistor. This has increased the number of paths (branches) the charge can take through the circuit - the total resistance has decreased. You can see that the current in the circuit has increased. Also notice that the current in the different branches can be different.
 
 \begin{center}
-\begin{pspicture}(-3,-3)(3,3)
-%\psgrid
-\pnode(-2,2){A}
-\pnode(2,2){B}
-\pnode(2,-2){C}
-\pnode(-2,-2){D}
-\pnode(-1,2){E}
-\pnode(1,2){F}
-\pnode(-1,-2){G}
-\pnode(1,-2){H}
-\pnode(2,1){I}
-\pnode(2,-1){J}
-\pnode(-2,1){K}
-\pnode(-2,-1){L}
-
-\battery[intensity,directconvention=false](K)(L){$E$}
-\resistor[intensity,dipolestyle=rectangle](E)(F){$R$}
-\resistor[intensity,dipolestyle=rectangle,directconvention=false](G)(H){$R$}
-\resistor[intensity,dipolestyle=rectangle](I)(J){$R$}
-
-
-\wire[arrowscale=2](A)(E)
-\wire[arrowscale=2](F)(B)
-\wire[arrowscale=2](B)(I)
-\wire[arrowscale=2](J)(C)
-\wire[arrowscale=2](C)(H)
-\wire[arrowscale=2](G)(D)
-\wire[arrowscale=2](D)(L)
-\wire[arrowscale=2](K)(A)
-\end{pspicture}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.84)(15.3203125,2.84)
+\rput(11.470312,-2.235){Adding a resistor to the circuit in}
+\rput(11.506406,-2.615){parallel decreases the total resistance}
+\psline[linewidth=0.04cm](0.6885625,-0.617)(1.6685625,-0.617)
+\psline[linewidth=0.068cm](1.0085624,-0.497)(1.3885624,-0.497)
+\psframe[linewidth=0.04,dimen=outer](3.9,1.5)(2.8115625,1.04)
+\rput(0.55,-0.875){\small V = 2 V}
+\rput(3.3621874,1.745){\small R = 2 $\Omega$}
+\rput(6.563594,-0.035){\small I = 1 A}
+\pscircle[linewidth=0.04,dimen=outer](5.61,-0.05){0.39}
+\rput(5.62,-0.05){\large A}
+\psline[linewidth=0.04cm](1.2,-0.46)(1.2,1.28)
+\psline[linewidth=0.04cm](1.22,1.26)(2.84,1.26)
+\psline[linewidth=0.04cm](3.9,1.28)(5.64,1.28)
+\psline[linewidth=0.04cm](5.66,1.28)(5.66,0.3)
+\psline[linewidth=0.04cm](5.64,-0.42)(5.64,-1.72)
+\psline[linewidth=0.04cm](1.2,-0.6)(1.2,-1.68)
+\psline[linewidth=0.04cm](1.18,-1.68)(5.66,-1.68)
+\psline[linewidth=0.04cm](8.688562,-0.697)(9.668563,-0.697)
+\psline[linewidth=0.068cm](9.008562,-0.577)(9.388562,-0.577)
+\psframe[linewidth=0.04,dimen=outer](11.9,1.42)(10.811563,0.96)
+\rput(8.55,-0.955){\small V = 2 V}
+\rput(11.362187,0.625){\small R = 2 $\Omega$}
+\rput(14.563594,-0.135){\small I = 3 A}
+\pscircle[linewidth=0.04,dimen=outer](13.61,-0.13){0.39}
+\rput(13.62,-0.13){\large A}
+\psline[linewidth=0.04cm](9.2,-0.54)(9.2,1.2)
+\psline[linewidth=0.04cm](9.22,1.18)(10.84,1.18)
+\psline[linewidth=0.04cm](13.66,1.2)(13.66,0.22)
+\psline[linewidth=0.04cm](13.64,-0.5)(13.64,-1.8)
+\psline[linewidth=0.04cm](9.2,-0.68)(9.2,-1.76)
+\psline[linewidth=0.04cm](9.18,-1.76)(13.66,-1.76)
+\psframe[linewidth=0.04,dimen=outer](11.88,2.4)(10.791562,1.94)
+\rput(11.362187,1.685){\small R = 1 $\Omega$}
+\psline[linewidth=0.04cm](9.2,2.16)(10.82,2.16)
+\psline[linewidth=0.04cm](9.2,1.1)(9.18,2.18)
+\pscircle[linewidth=0.04,dimen=outer](12.77,1.17){0.39}
+\rput(12.78,1.17){\large A}
+\pscircle[linewidth=0.04,dimen=outer](12.73,2.11){0.39}
+\rput(12.74,2.11){\large A}
+\psline[linewidth=0.04cm](11.9,1.18)(12.42,1.18)
+\psline[linewidth=0.04cm](11.86,2.16)(12.38,2.16)
+\psline[linewidth=0.04cm](13.16,1.18)(13.68,1.18)
+\psline[linewidth=0.04cm](13.1,2.16)(13.7,2.16)
+\psline[linewidth=0.04cm](13.66,1.08)(13.66,2.16)
+\rput(12.783594,0.585){\small I = 1 A}
+\rput(12.783594,2.665){\small I = 2 A}
+\rput(14.540313,-0.7){\footnotesize The current }
+\rput(14.390312,-0.98){\footnotesize is bigger}
+\end{pspicture} 
+}
 \end{center}
 
-The arrows in this picture show you the direction that charge will flow in the circuit. They don't show you much charge will flow, only the direction. 
-
-\IFact{Benjamin Franklin made a guess about the
-direction of charge flow when rubbing smooth wax with rough wool.
-He thought that the charges flowed from the wax to the wool (i.e.
-from positive to negative) which was opposite to the real
-direction. Due to this, electrons are said to have a
-\emph{negative} charge and so objects which Ben Franklin called
-``negative'' (meaning a shortage of charge) really have an excess
-of electrons. By the time the true direction of electron flow was
-discovered, the convention of ``positive'' and ``negative'' had
-already been so well accepted in the scientific world that no
-effort was made to change it.}
-
-
-\Tip{A battery \textbf{does not} produce the same amount of
-current no matter what is connected to it. While the voltage
-produced by a battery is constant, the amount of current supplied
-depends on what is in the circuit.}
+The total resistance of a number of parallel resistors is NOT the sum of the individual resistances as the overall resistance decreases with more paths for the current. The total resistance for parallel resistors is given by:
+\begin{equation*}
+ \frac{1}{R_P}=\frac{1}{R_1}+\frac{1}{R_2}+\ldots
+\end{equation*}
+Let us consider the case where we have two resistors in parallel and work out what the final resistance would be. This situation is shown in the diagram below:
+\begin{center}
+\begin{pspicture}(-.2,-.2)(3,3)
+\pnode(0,0){A}
+\pnode(0,3){B}
+\pnode(3,3){C}
+\pnode(3,0){D}
+\pnode(3,2.5){E}
+\pnode(3,.5){F}
+\pnode(2,2.5){G}
+\pnode(4,2.5){H}
+\pnode(2,.5){I}
+\pnode(4,.5){J}
 
 
+
+\battery(A)(B){}
+\psline(B)(C)
+\psline(C)(E)
+\psline(A)(D)
+\psline(D)(F)
+
+\psline(E)(G)
+\psline(F)(I)
+
+\psdot[dotscale=2](C)
+\psdot[dotscale=2](D)
+
+
+
+% draw resistors
+
+\resistor[dipolestyle=rectangle,labeloffset=0](E)(F){$R_1$}
+\resistor[dipolestyle=rectangle,labeloffset=0](G)(I){$R_2$}
+\end{pspicture}
+\end{center}
+Applying the formula for the total resistance we have:
+\begin{align*}
+\frac{1}{R_P}&=\frac{1}{R_1}+\frac{1}{R_2}+\ldots \\
+&\text{there are only two resistors}\\
+\frac{1}{R_P}&=\frac{1}{R_1}+\frac{1}{R_2}\\
+&\text{add the fractions}\\
+\frac{1}{R_P}&=\frac{1}{R_1}\times\frac{R_2}{R_2}+\frac{1}{R_2}\times\frac{R_1}{R_1}\\ 
+\frac{1}{R_P}&=\frac{R_2}{R_1R_2}+\frac{R_1}{R_1R_2}\\ 
+&\text{rearrange}\\
+\frac{1}{R_P}&=\frac{R_2+R_1}{R_1R_2}\\ 
+\frac{1}{R_P}&=\frac{R_1+R_2}{R_1R_2}\\ 
+R_P&=\frac{R_1R_2}{R_1+R_2}\\ 
+\end{align*}
+For any two resistors in parallel we now know that
+\begin{equation*}
+R_P=\frac{\text{product of resistances}}{\text{sum of resistances}}=\frac{R_1R_2}{R_1+R_2}
+\end{equation*}
+
+
+
+\begin{exercises}{Resistance}
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item What is the unit of resistance called and what is its symbol?
+\item Explain what happens to the total resistance of a circuit when resistors are added in series?
+\item Explain what happens to the total resistance of a circuit when resistors are added in parallel?
+\item Why do batteries go flat? 
+\end{enumerate}
+\end{exercises}
+
+% 
+% 
+% \subsection{Series Circuits}
+% 
+% In a series circuit, the charge has a single path from the
+% battery, returning to the battery.
+% 
+% \begin{center}
+% \begin{pspicture}(-3,-3)(3,3)
+% %\psgrid
+% \pnode(-2,2){A}
+% \pnode(2,2){B}
+% \pnode(2,-2){C}
+% \pnode(-2,-2){D}
+% \pnode(-1,2){E}
+% \pnode(1,2){F}
+% \pnode(-1,-2){G}
+% \pnode(1,-2){H}
+% \pnode(2,1){I}
+% \pnode(2,-1){J}
+% \pnode(-2,1){K}
+% \pnode(-2,-1){L}
+% 
+% \battery[intensity,directconvention=false](K)(L){$E$}
+% \resistor[intensity,dipolestyle=rectangle](E)(F){$R$}
+% \resistor[intensity,dipolestyle=rectangle,directconvention=false](G)(H){$R$}
+% \resistor[intensity,dipolestyle=rectangle](I)(J){$R$}
+% 
+% 
+% \wire[arrowscale=2](A)(E)
+% \wire[arrowscale=2](F)(B)
+% \wire[arrowscale=2](B)(I)
+% \wire[arrowscale=2](J)(C)
+% \wire[arrowscale=2](C)(H)
+% \wire[arrowscale=2](G)(D)
+% \wire[arrowscale=2](D)(L)
+% \wire[arrowscale=2](K)(A)
+% \end{pspicture}
+% \end{center}
+% 
+% The arrows in this picture show you the direction that charge will flow in the circuit. They don't show you much charge will flow, only the direction. 
+
+
+\begin{eocexercises}{Electric circuits}
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item{ Write definitions for each of the following:
+  \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+  \item resistor
+  \item coulomb
+  \item voltmeter
+  \end{enumerate}}
+
+\item{ Draw a circuit diagram which consists of the following components:
+  \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+  \item 2 batteries in parallel
+  \item an open switch
+  \item 2 resistors in parallel
+  \item an ammeter measuring total current
+  \item a voltmeter measuring potential difference across one of the parallel resistors
+  \end{enumerate}}
+
+\item{ Complete the table below: \\
+
+\begin{tabular}{ | c | c | c | c| } \hline 
+\textbf{Quantity} & \textbf{Symbol} & \textbf{Unit of meaurement} & \textbf{Symbol of unit} \\ \hline \hline 
+e.g. Distance & e.g. d & e.g. kilometer & e.g. km \\ \hline 
+Resistance &   &   &  \\ \hline
+Current  &   &   &  \\ \hline
+Potential difference  &   &   &  \\ \hline
+\hline
+\end{tabular}
+}
+
+\item{[SC 2003/11] The emf of a battery can best be explained as the $\dots$
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item{rate of energy delivered per unit current}
+\item{rate at which charge is delivered}
+\item{rate at which energy is delivered}
+\item{charge per unit of energy delivered by the battery}
+\end{enumerate}}
+
+\item{[IEB 2002/11 HG1] Which of the following is the correct definition of the emf of a battery?
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item{It is the product of current and the external resistance of the circuit.}
+\item{It is a measure of the cell's ability to conduct an electric current.}
+\item{It is equal to the ``lost volts'' in the internal resistance of the circuit.}
+\item{It is the power supplied by the battery per unit current passing through the battery.}
+\end{enumerate}}
+
+\item{[IEB 2005/11 HG] Three identical light bulbs A, B and C are connected in an electric circuit as shown in the diagram below.
+
+\begin{center}
+\begin{pspicture}(0,0)(6,5)
+\SpecialCoor
+%\psgrid[gridcolor=lightgray]
+\pnode(0,0){A}
+\pnode(0,4){B}
+\pnode(3,4){C}
+\pnode(5,4){D}
+\pnode(5,0){E}
+\pnode(3,0){F}
+\battery(A)(B){}
+\lamp(B)(C){A}
+\psline(C)(D)
+\psdots(3.6,4)(4.4,4)
+\uput[u](4,4){S}
+\lamp(D)(E){C}
+\psline(E)(A)
+\lamp(C)(F){B}
+\end{pspicture}
+\end{center}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item {How bright is bulb A compared to B and C?}
+ \item {How bright are the bulbs after switch S has been opened?}
+ \item {How do the currents in bulbs A and B change when switch S is opened?
+\begin{center}
+\begin{tabular}{|c|l|l|}\hline\hline
+&\textbf{Current in A}&\textbf{Current in B}\\\hline\hline
+(a)&decreases&increases\\\hline
+(b)&decreases&decreases\\\hline
+(c)&increases&increases\\\hline
+(d)&increases&decreases\\\hline
+\end{tabular}
+\end{center}}
+\end{enumerate}
+
+}
+
+\item{[IEB 2004/11 HG1] When a current $I$ is maintained in a conductor for a time of $t$, how many electrons with charge e pass any cross-section of the conductor per second?
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item{It}
+\item{It/e}
+\item{Ite}
+\item{e/It}
+\end{enumerate}}
+
+\end{enumerate}
+
+\end{eocexercises}
