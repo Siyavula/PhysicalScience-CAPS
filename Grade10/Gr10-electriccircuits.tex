@@ -1382,95 +1382,154 @@ A circuit contains two resistors in parallel. The resistors have resistance valu
 \end{pspicture}\end{center}\\
 What is the total resistance in the ciruit?}{%
 \westep{Analyse the question}
-We are told that the circuit is a series circuit and that we need to calculate the total resistance. The values of the two resistors have been given in the correct units, $\Omega$.
+We are told that the resistors in the circuit are in parallel circuit and that we need to calculate the total resistance. The values of the two resistors have been given in the correct units, $\Omega$.
 \westep{Apply the relevant principles}
-The total resistance for resistors in series is the sum of the individual resistances. We can use
+The total resistance for resistors in parallel has been shown to be the product of the resistances divided by the sum. We can use
 \begin{equation*}
- R_S = R_1 + R_2 + \ldots
+R_P=\frac{R_1R_2}{R_1+R_2}
 \end{equation*}.
 We have only two resistors and we now the resistances. In this case we have that:
 \begin{align*}
- R_S &= R_1 + R_2 + \ldots\\
-R_S &= R_1 + R_2\\
-&=5~\Omega + 17~\Omega\\
-&=22~\Omega
+R_P&=\frac{R_1R_2}{R_1+R_2}\\
+&=\frac{(15~\Omega)(7~\Omega)}{15~\Omega+7~\Omega}\\
+&=\frac{105~\Omega^2}{22~\Omega}\\
+&=4,77~\Omega
 \end{align*}
 \westep{Quote the final result}
-The total resistance of the resistors in series is $22~\Omega$.}\end{wex}
+The total resistance of the resistors in parallel is $4,77~\Omega$.}\end{wex}
 
-\begin{wex}{Series resistors II}{%
-A circuit contains three resistors in series. The resistors have resistance values of $0,5~\Omega$, $7,5~\Omega$ and $11~\Omega$. \\
+\begin{wex}{Parallel resistors II}{%
+We add a third parallel resistor to the configuration (setup) in the previous example. The additional resistor has a resistance of . \\
 \begin{center}
 \begin{pspicture}(-0.2,-0.2)(3.5,3.5)
 \pnode(0,0){A}
 \pnode(0,3){B}
 \pnode(3,3){C}
 \pnode(3,0){D}
+\pnode(6,3){E}
+\pnode(6,0){F}
+\pnode(4.5,3){G}
+\pnode(4.5,0){H}
 \battery(A)(B){}
-\psline(B)(C)
-\psdot[dotscale=2](A)
-\psdot[dotscale=2](B)
+\psline(B)(E)
+\psline(A)(F)
+% \psdot[dotscale=2](A)
+% \psdot[dotscale=2](B)
 % draw resistors
-\resistor[dipolestyle=rectangle](C)(D){$0,5~\Omega$}
-\resistor[dipolestyle=rectangle](A)(D){$7,5~\Omega$}
-\resistor[dipolestyle=rectangle](H)(J){$11~\Omega$}
-\end{pspicture}\end{center}\\
-What is the total resistance in the ciruit?}{%
-\westep{Analyse the question}
-We are told that the circuit is a series circuit and that we need to calculate the total resistance. The values of the three resistors have been given in the correct units, $\Omega$.
-\westep{Apply the relevant principles}
-The total resistance for resistors in series is the sum of the individual resistances. We can use
-\begin{equation*}
- R_S = R_1 + R_2 + \ldots
-\end{equation*}.
-We have three resistors and we now the resistances. In this case we have that:
-\begin{align*}
- R_S &= R_1 + R_2 + \ldots\\
-R_S &= R_1 + R_2 + R_3\\
-&=0,5~\Omega + 7,5~\Omega + 11~\Omega\\
-&=19~\Omega
-\end{align*}
-\westep{Quote the final result}
-The total resistance of the resistors in series is $19~\Omega$.}\end{wex}
-
-\begin{wex}{Series resistors III}{%
-A circuit contains two resistors in series. The resistors have resistance values of $750~k\Omega$ and $1,7~M\Omega$. \\
-\begin{center}
-\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
-\pnode(0,0){A}
-\pnode(0,3){B}
-\pnode(3,3){C}
-\pnode(3,0){D}
-\battery(A)(B){}
-\psline(B)(C)
-\psdot[dotscale=2](A)
-\psdot[dotscale=2](B)
-% draw resistors
-\resistor[dipolestyle=rectangle](C)(D){$750~k\Omega$}
-\resistor[dipolestyle=rectangle](A)(D){$1,7~M\Omega$}
+\resistor[dipolestyle=rectangle](C)(D){$15~\Omega$}
+\resistor[dipolestyle=rectangle](E)(F){$7~\Omega$}
+\resistor[dipolestyle=rectangle](G)(H){$3~\Omega$}
 %\resistor[dipolestyle=rectangle](H)(J){}
 \end{pspicture}\end{center}\\
 What is the total resistance in the ciruit?}{%
 \westep{Analyse the question}
-We are told that the circuit is a series circuit and that we need to calculate the total resistance. The values of the two resistors have been given in the correct units, $\Omega$.
+We are told that the resistors in the circuit are in parallel circuit and that we need to calculate the total resistance. The value of the additional resistor has been given in the correct units, $\Omega$.
 \westep{Apply the relevant principles}
-The total resistance for resistors in series is the sum of the individual resistances. We can use
+The total resistance for resistors in parallel has been given as
 \begin{equation*}
- R_S = R_1 + R_2 + \ldots
+\frac{1}{R_P}=\frac{1}{R_1}+\frac{1}{R_2}+\ldots
 \end{equation*}.
-We have only two resistors and we now the resistances. In this case we have that:
+We have three resistors and we now the resistances. In this case we have that:
 \begin{align*}
- R_S &= R_1 + R_2 + \ldots\\
-R_S &= R_1 + R_2\\
-&=750~k\Omega + 1,7~M\Omega\\
-&=750\times10^{3}~\Omega + 1,7\times10^{6}~\Omega\\
-&=0,75\times10^{6}~\Omega + 1,7\times10^{6}~\Omega\\
-&=2,45\times10^{6}~\Omega=2,45~M\Omega
+\frac{1}{R_P}&=\frac{1}{R_1}+\frac{1}{R_2}+\ldots \\
+&\text{there are three resistors}\\
+\frac{1}{R_P}&=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}\\
+&\text{add the fractions}\\
+\frac{1}{R_P}&=\frac{1}{R_1}\times\frac{R_2R_3}{R_2R_3}+\frac{1}{R_2}\times\frac{R_1R_3}{R_1R_3}+\frac{1}{R_3}\times\frac{R_1R_2}{R_1R_2}\\ 
+\frac{1}{R_P}&=\frac{R_2R_3}{R_1R_2R_3}+\frac{R_1R_3}{R_1R_2R_3}+\frac{R_1R_2}{R_1R_2R_3}\\ 
+&\text{rearrange}\\
+\frac{1}{R_P}&=\frac{R_2R_3+R_1R_3+R_2R_3}{R_1R_2R_3}\\ 
+R_P&=\frac{R_1R_2R_3}{R_2R_3+R_1R_3+R_2R_3}\\ 
+R_P&=\frac{(15~\Omega)(7~\Omega)(3~\Omega)}{(7~\Omega)(3~\Omega)+(15~\Omega)(3~\Omega)+(7~\Omega)(15~\Omega)}\\ 
+R_P&=\frac{315~\Omega^3}{21~\Omega^2+45~\Omega^2+105~\Omega^2}\\ 
+R_P&=\frac{315~\Omega^3}{171~\Omega^2}\\ 
+R_P&=1,84~\Omega
 \end{align*}
 \westep{Quote the final result}
-The total resistance of the resistors in series is $2,45~M\Omega$.}\end{wex}
+The total resistance of the resistors in parallel is $1,84~\Omega$. It makes sense that this is less than in the previous example because we added an additional path and reduced the overall resistance in the circuit.}\end{wex}
 
+When calculating the resistance for complex resistor configurations, you can start with any combination of two resistors (in series or parallel) and calculate their total resistance. Then you can replace them with a single resistor that has the total resistance you calculated. Now use this new resistor in combination with any other resistor and repeat the process until there is only one resistor left. In the above example we could just have used the answer from the first example in parallel with the new resistor and we would get the same answer. 
 
+\begin{wex}{Parallel resistors III}{%
+We add a third parallel resistor to the first parallel worked example configuration (setup). The additional resistor has a resistance of $3~\Omega$. \\
+\begin{center}
+\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
+\pnode(0,0){A}
+\pnode(0,3){B}
+\pnode(3,3){C}
+\pnode(3,0){D}
+\pnode(6,3){E}
+\pnode(6,0){F}
+\pnode(4.5,3){G}
+\pnode(4.5,0){H}
+\battery(A)(B){}
+\psline(B)(E)
+\psline(A)(F)
+% \psdot[dotscale=2](A)
+% \psdot[dotscale=2](B)
+% draw resistors
+\resistor[dipolestyle=rectangle](C)(D){$15~\Omega$}
+\resistor[dipolestyle=rectangle](E)(F){$7~\Omega$}
+\resistor[dipolestyle=rectangle](G)(H){$3~\Omega$}
+%\resistor[dipolestyle=rectangle](H)(J){}
+\end{pspicture}\end{center}\\
+What is the total resistance in the ciruit?}{%
+\westep{Analyse the question}
+We are told that the resistors in the circuit are in parallel circuit and that we need to calculate the total resistance. The value of the additional resistor has been given in the correct units, $\Omega$.
+\westep{Apply the relevant principles}
+We can swap the resistors around without changing the circuit:
+\begin{center}
+\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
+\pnode(0,0){A}
+\pnode(0,3){B}
+\pnode(3,3){C}
+\pnode(3,0){D}
+\pnode(6,3){E}
+\pnode(6,0){F}
+\pnode(4.5,3){G}
+\pnode(4.5,0){H}
+\battery(A)(B){}
+\psline(B)(E)
+\psline(A)(F)
+% \psdot[dotscale=2](A)
+% \psdot[dotscale=2](B)
+% draw resistors
+\pspolygon[linestyle=dashed](2.5,-.1)(2.5,3.1)(5.6,3.1)(5.6,-.1)(2.5,-.1)
+\resistor[dipolestyle=rectangle](C)(D){$15~\Omega$}
+\resistor[dipolestyle=rectangle](G)(H){$7~\Omega$}
+\resistor[dipolestyle=rectangle](E)(F){$3~\Omega$}
+%\resistor[dipolestyle=rectangle](H)(J){}
+\end{pspicture}\end{center}
+We have already calculated the total resistance of the two resistors in the dashed box to be $4,77~\Omega$. We can replace these two resistors with a single resistor of $4,77~\Omega$ to get:
+\begin{center}
+\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
+\pnode(0,0){A}
+\pnode(0,3){B}
+\pnode(3,3){C}
+\pnode(3,0){D}
+\pnode(6,3){E}
+\pnode(6,0){F}
+\battery(A)(B){}
+\psline(B)(E)
+\psline(A)(F)
+% \psdot[dotscale=2](A)
+% \psdot[dotscale=2](B)
+% draw resistors
+\resistor[dipolestyle=rectangle,labeloffset=1](C)(D){$4,77~\Omega$}
+\resistor[dipolestyle=rectangle](E)(F){$3~\Omega$}
+%\resistor[dipolestyle=rectangle](H)(J){}
+\end{pspicture}\end{center}\\
+\westep{Calculate the total resistance for the next pair of resistors}
+Then we use the formula for two parallel resistors again to get the total resistance for this new circuit:
+\begin{align*}
+R_P&=\frac{R_1R_2}{R_1+R_2}\\
+&=\frac{(4,77~\Omega)(3~\Omega)}{4,77~\Omega+3~\Omega}\\
+&=\frac{14,31~\Omega^2}{11,77~\Omega}\\
+&=1,84~\Omega
+\end{align*}
+\westep{Quote the final result}
+The total resistance of the resistors in parallel is $1,84~\Omega$. This is the same result as when we added all three resistors together at once.
+}\end{wex}
 
 \begin{exercises}{Resistance}
 
