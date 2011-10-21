@@ -165,12 +165,12 @@
 \definecolor{siyavula-gray}{RGB}{239,239,239}
 \definecolor{siyavula-dark-gray}{RGB}{194,194,194}
 
-\newenvironment{Ifact}[1]{
+\newenvironment{IFact}[1]{
 \marginpar{%odd
-\begin{minipage}[h]{0.225\paperwidth}
+\begin{minipage}[h]{0.22\paperwidth}
 
-\begin{mdframed}[linecolor=siyavula-gray, backgroundcolor=siyavula-gray, skipbelow=-pt, margin=10pt]
-Interesting Fact
+\begin{mdframed}[linecolor=black, linewidth=1pt, backgroundcolor=white, skipbelow=-pt, margin=10pt]
+\textbf{\textit{FACT}}
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
 \small #1
@@ -205,7 +205,7 @@ Interesting Fact
 {\Large\textsl{DEFINITION: } \textit{#1}}
 
 \par\noindent
-#2
+\textnormal{#2}
 \vspace*{28pt}
 \end{mdframed}
 \setlength{\parindent}{\oldparindent}
@@ -467,7 +467,7 @@ Note
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}}
 
-\newenvironment{f_experiment}[1]
+\newenvironment{f_experiment_deprecated}[1]
 {
 \begin{quotation}
 \begin{mdframed}[linewidth=2pt,linecolor=darkgray]
@@ -483,7 +483,7 @@ Note
 \setlength{\parindent}{\saveparindentlength}}
 
 
-\newenvironment{i_experiment}[1]
+\newenvironment{i_experiment_deprecated}[1]
 {
 \begin{quotation}
 \begin{mdframed}[linewidth=2pt,linecolor=lightgray]
@@ -498,7 +498,7 @@ Note
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}}
 
-\newenvironment{g_experiment}[1]
+\newenvironment{g_experiment_deprecated}[1]
 {
 \begin{quotation}
 \begin{mdframed}[linewidth=2pt,linecolor=lightgray]
@@ -512,6 +512,104 @@ Note
 \end{mdframed}
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{f_experiment}[1]{
+\par
+\newlength{\myfloatsep}
+\setlength{\myfloatsep}{\floatsep}
+\setlength{\floatsep}{2mm}
+%\begin{quotation}
+\noindent
+\vspace{.5cm}
+\newlength{\oldparindent}
+\setlength{\oldparindent}{\parindent}
+\setlength{\parindent}{20pt}
+
+\ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
+{\clearpage\vspace*{-\topskip}}{} 
+
+
+\begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
+\vspace*{8pt}
+{\Large\textbf{\textit{Formal experiment:}} } {\Large\textit{#1}}
+\vspace*{0pt}
+\end{mdframed}
+\vspace*{2pt}
+\begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
+
+}%
+{%
+\end{mdframed}
+\setlength{\parindent}{\oldparindent}
+\setlength{\floatsep}{\myfloatsep}
+\par
+}
+
+\newenvironment{i_experiment}[1]{
+\par
+\newlength{\myfloatsep}
+\setlength{\myfloatsep}{\floatsep}
+\setlength{\floatsep}{2mm}
+%\begin{quotation}
+\noindent
+\vspace{.5cm}
+\newlength{\oldparindent}
+\setlength{\oldparindent}{\parindent}
+\setlength{\parindent}{20pt}
+
+\ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
+{\clearpage\vspace*{-\topskip}}{} 
+
+
+\begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
+\vspace*{8pt}
+{\Large\textbf{\textit{Informal experiment:}} } {\Large\textit{#1}}
+\vspace*{0pt}
+\end{mdframed}
+\vspace*{2pt}
+\begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
+
+}%
+{%
+\end{mdframed}
+\setlength{\parindent}{\oldparindent}
+\setlength{\floatsep}{\myfloatsep}
+\par
+}
+
+\newenvironment{g_experiment}[1]{
+\par
+\newlength{\myfloatsep}
+\setlength{\myfloatsep}{\floatsep}
+\setlength{\floatsep}{2mm}
+%\begin{quotation}
+\noindent
+\vspace{.5cm}
+\newlength{\oldparindent}
+\setlength{\oldparindent}{\parindent}
+\setlength{\parindent}{20pt}
+
+\ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
+{\clearpage\vspace*{-\topskip}}{} 
+
+
+\begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
+\vspace*{8pt}
+{\Large\textbf{\textit{General experiment:}} } {\Large\textit{#1}}
+\vspace*{0pt}
+\end{mdframed}
+\vspace*{2pt}
+\begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
+
+}%
+{%
+\end{mdframed}
+\setlength{\parindent}{\oldparindent}
+\setlength{\floatsep}{\myfloatsep}
+\par
+}
+
+
 
 
 \newenvironment{activity}[1]
@@ -776,7 +874,7 @@ Note
 
 \titleformat{\chapter}
   {\gdef\chapterlabel{}
-   \normalfont\sffamily\fontsize{48}\bfseries\slshape}
+   \normalfont\sffamily\fontsize{28}\bfseries\slshape}
   {\gdef\chapterlabel{\thechapter\ }}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
     \node[yshift=-4cm] at (current page.north west)
