@@ -549,7 +549,17 @@ v_2 &=& 3,13~ \ \text{m} \cdot \text{s}^{-1}}
 % Add new worked examples on roller coasters and inclined planes
 
 \begin{wex}{The roller coaster}
-{A roller coaster ride at an amusement park starts from rest at a height of 50 m above the ground and rapidly drops down along its track. At some point, the track does a full 360 degree loop which has a height of 20 m, before finishing off at ground level. The roller coaster train itself with a full load of people on it has a mass of 850 kg.  
+{
+\begin{minipage}{0.5\textwidth}
+A roller coaster ride at an amusement park starts from rest at a height of 50 m above the ground and rapidly drops down along its track. At some point, the track does a full 360 degree loop which has a height of 20 m, before finishing off at ground level. The roller coaster train itself with a full load of people on it has a mass of 850 kg.  
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\textbf{Roller coaster} \\
+\includegraphics[width=0.8\textwidth]{photos/rollercoaster_by_Upsilon_Andromedae_Flickr.jpg}\\
+\textit{Photograph by Upsilon Andromedae on Flickr.}
+\end{center}
+\end{minipage}
 If the roller coaster and its track are frictionless, calculate:
 \begin{enumerate}[label=\textbf{\arabic*}.]
 \item the velocity of the roller coaster when it reaches the top of the loop
@@ -611,7 +621,7 @@ v_3 &=& 31,30 \ \mathsf{m \cdot s^{-1}}
 \begin{wex}{An inclined plane}
 {
 \begin{minipage}{0.5\textwidth}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-2.1)(6.82,2.12)
 \psline[linewidth=0.04cm](0.0,2.1)(5.0,-2.08)
@@ -627,23 +637,50 @@ v_3 &=& 31,30 \ \mathsf{m \cdot s^{-1}}
 \pscircle[linewidth=0.04,dimen=outer](5.05,-2.01){0.09}
 \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](0.98,1.24)(0.98,-2.08)
 \usefont{T1}{ptm}{m}{n}
-\rput(1.4515625,-0.515){\small 10 m}
+\rput(1.4515625,-0.515){\large 10 m}
 \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](1.18,1.76)(5.26,-1.68)
 \usefont{T1}{ptm}{m}{n}
-\rput{-39.05351}(0.5531386,2.1454816){\rput(3.2615626,0.285){\small 100 m}}
+\rput{-39.05351}(0.5531386,2.1454816){\rput(3.2615626,0.285){\large 100 m}}
 \end{pspicture} 
 }
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
-A mountain climber who is climbing a mountain in the Drakensberg during winter, by mistake drops her water bottle which then slides 100 m down the side of a steep slope to a point which is 10 m lower than the climber's position.
+A mountain climber who is climbing a mountain in the Drakensberg during winter, by mistake drops her water bottle which then slides 100 m down the side of a steep slope to a point which is 10 m lower than the climber's position. The mass of the climber is 60 kg and her water bottle has a mass of 500 g.
 \end{minipage} 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item If the bottle starts from rest, how fast is it travelling by the time it reaches the bottom of the slope?
-\item What is the total change in the climber's potential energy as she climbs down the mountain to fetch her fallen water bottle?
+\item What is the total change in the climber's potential energy as she climbs down the mountain to fetch her fallen water bottle? i.e. what is the difference between her potential energy at the top of the slope and the bottom of the slope?
 \end{enumerate}
 }
 {
+\westep{Analyse the question to determine what information is provided}
+\begin{itemize}
+\item the distance traveled by the water bottle down the slope, $d = 100$ m
+\item the difference in height between the starting position and the final position of the water bottle is $h = 10$ m
+\item the bottle starts sliding from rest, so its initial velocity $v_{1} = 0 \ \mathsf{m\cdot s^{-1}}$
+\item the mass of the climber is 60 kg
+\item the mass of the water bottle is 500 g. We need to convert this mass into kg: 500 g = 0,5 kg
+\end{itemize}
 
+\westep{Analyse the question to determine what is being asked}
+\begin{itemize}
+\item What is the velocity of the water bottle at the bottom of the slope?
+\item What is the difference between the climber's potential energy when she is at the top of the slope compared to when she reaches the bottom?
+\end{itemize}
+
+\westep{Calculate the velocity of the water bottle when it reaches the bottom of the slope}
+\begin{eqnarray*}
+E_{M1} &=& E_{M2} \\
+E_{K1} + E_{P1} &=& E_{K2} + E_{P2} \\
+\frac{1}{2}m(v_{1})^2 + mgh_{1} &=& \frac{1}{2}m(v_{2})^2 + mgh_{2}\\
+0 + mgh_{1} &=& \frac{1}{2}m(v_{2})^2 + 0 \\
+(v_{2})^2 &=& \frac{2mgh}{m} \\
+(v_{2})^2 &=& 2gh \\
+(v_{2})^2 &=& (2)(9,8)(10) \\
+v_2 &=& 14 \ \mathsf{m \cdot s^{-1}}
+\end{eqnarray*}
+
+\westep{Calculate the difference between the climber's potential energy at the top of the slope and her potential energy at the bottom of the slope}
 }
 \end{wex}
 
