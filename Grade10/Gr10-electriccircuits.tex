@@ -734,22 +734,20 @@ R_S &= R_1 + R_2\\
 \westep{Quote the final result}
 The total resistance of the resistors in series is $22~\Omega$.}\end{wex}
 
-\begin{wex}{Series resistors II}{%
-A circuit contains three resistors in series. The resistors have resistance values of $0,5~\Omega$, $7,5~\Omega$ and $11~\Omega$. \\
+\begin{wex}{Series resistors II}{
+A circuit contains three resistors in series. The resistors have resistance values of $0,5~\Omega$, $7,5~\Omega$ and $11~\Omega$.
 \begin{center}
-\begin{pspicture}(-0.2,-0.2)(3.5,3.5)
+\begin{pspicture}(-1,-1)(5.5,5.5)
+%\psgrid
 \pnode(0,0){A}
 \pnode(0,3){B}
 \pnode(3,3){C}
 \pnode(3,0){D}
 \battery(A)(B){}
-\psline(B)(C)
-\psdot[dotscale=2](A)
-\psdot[dotscale=2](B)
 % draw resistors
-\resistor[dipolestyle=rectangle](C)(D){$0,5~\Omega$}
+\resistor[dipolestyle=rectangle,labeloffset=1](C)(D){$0,5~\Omega$}
 \resistor[dipolestyle=rectangle](A)(D){$7,5~\Omega$}
-\resistor[dipolestyle=rectangle](H)(J){$11~\Omega$}
+\resistor[dipolestyle=rectangle](B)(C){$11~\Omega$}
 \end{pspicture}\end{center}\\
 What is the total resistance in the ciruit?}{%
 \westep{Analyse the question}
@@ -779,10 +777,10 @@ A circuit contains two resistors in series. The resistors have resistance values
 \pnode(3,0){D}
 \battery(A)(B){}
 \psline(B)(C)
-\psdot[dotscale=2](A)
-\psdot[dotscale=2](B)
+% \psdot[dotscale=2](A)
+% \psdot[dotscale=2](B)
 % draw resistors
-\resistor[dipolestyle=rectangle](C)(D){$750~k\Omega$}
+\resistor[dipolestyle=rectangle,labeloffset=1](C)(D){$750~k\Omega$}
 \resistor[dipolestyle=rectangle](A)(D){$1,7~M\Omega$}
 %\resistor[dipolestyle=rectangle](H)(J){}
 \end{pspicture}\end{center}\\
@@ -1044,6 +1042,7 @@ Exactly the same applies to the different points on the right. When you measure 
 
 \begin{wex}{Voltages I}{
 Consider this circuit diagram:\\
+\begin{center}
 \begin{pspicture}(-3,-0.5)(3,3.5)
 %\psgrid
 \pnode(0,0){A}
@@ -1051,18 +1050,18 @@ Consider this circuit diagram:\\
 \pnode(3,3){C}
 \pnode(3,0){D}
 % draw battery and wires
-\battery(A)(B){2V}
+\battery(A)(B){2\text{V}}
 \psline(B)(C)
 \psline(A)(D)
 % draw resistors
 \resistor[dipolestyle=rectangle](C)(D){$\rm{V}_{1}$}
-\end{pspicture}\\
+\end{pspicture}\end{center}\\
 What is the voltage across the resistor in the circuit shown?
 }{%
 \westep{Check what you have and the units}
 We have a circuit with a battery and one resistor. We know the voltage across the battery. We want to find that voltage across the resistor.
 \begin{equation*}
-V_{battery} = 2\rm{V}
+V_{battery} = 2~\text{V}
 \end{equation*}
 
 \westep{Applicable principles}
@@ -1369,13 +1368,16 @@ A circuit contains two resistors in parallel. The resistors have resistance valu
 \pnode(0,3){B}
 \pnode(3,3){C}
 \pnode(3,0){D}
+\pnode(6,3){E}
+\pnode(6,0){F}
 \battery(A)(B){}
-\psline(B)(C)
-\psdot[dotscale=2](A)
-\psdot[dotscale=2](B)
+\psline(B)(E)
+\psline(A)(F)
+% \psdot[dotscale=2](A)
+% \psdot[dotscale=2](B)
 % draw resistors
-\resistor[dipolestyle=rectangle](C)(D){$5~\Omega$}
-\resistor[dipolestyle=rectangle](A)(D){$17~\Omega$}
+\resistor[dipolestyle=rectangle](C)(D){$15~\Omega$}
+\resistor[dipolestyle=rectangle](E)(F){$7~\Omega$}
 %\resistor[dipolestyle=rectangle](H)(J){}
 \end{pspicture}\end{center}\\
 What is the total resistance in the ciruit?}{%
