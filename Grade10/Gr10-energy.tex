@@ -534,8 +534,8 @@ In the case of the pipe being held higher, the gravitational potential energy at
 During a flood a tree trunk of mass 100 kg falls down a waterfall. The waterfall is 5 m high. 
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
-%\scalebox{0.8} % Change this value to rescale the drawing.
-%{%
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
 \begin{pspicture}(0,-1.9)(4.0,1.9)
 \psline[linewidth=0.024cm](0.0978125,1.225)(1.7978125,1.225)
 \psline[linewidth=0.024cm](1.7978125,1.225)(1.7978125,-1.775)
@@ -548,7 +548,7 @@ During a flood a tree trunk of mass 100 kg falls down a waterfall. The waterfall
 %\usefont{T1}{ptm}{m}{n}
 \rput(0.62,0.26){waterfall}
 \end{pspicture} 
-%}
+}
 \end{minipage}
 If air resistance is ignored, calculate 
 \begin{enumerate}[label=\textbf{\arabic*}.]
@@ -556,7 +556,7 @@ If air resistance is ignored, calculate
 \item the kinetic energy of the tree trunk at the bottom of the waterfall.
 \item the magnitude of the velocity of the tree trunk at the bottom of the waterfall.
 \end{enumerate}
-}%s
+}
 {\westep{Analyse the question to determine what information is provided}
 \begin{itemize}
 \item The mass of the tree trunk $m$ = 100~kg
@@ -720,10 +720,7 @@ E_{K1} + E_{P1} & = & E_{K2} + E_{P2} \\
 \end{eqnarray*}
 We can eliminate the mass, $m$, from the equation by dividing both sides by $m$.
 \begin{eqnarray*}
-gh_{1} &=&  \frac{1}{2}(v_{2})^2 + gh_{2} 
-\end{eqnarray*}
-The important thing to note here is that the total mechanical energy at the top of the loop is composed of both kinetic and gravitational potential energy, whereas the mechanical energy at the start of the roller coaster is only gravitational potential energy. 
-\begin{eqnarray*}
+gh_{1} &=&  \frac{1}{2}(v_{2})^2 + gh_{2} \\
 (v_{2})^2 &=& 2(gh_{1} - gh_{2}) \\
 (v_{2})^2 &=& 2((9,8)(50) - (9,8)(20)) \\
 v_{2} &=& 24,25 \ \mathsf{m\cdot s^{-1}}
@@ -773,10 +770,10 @@ v_3 &=& 31,30 \ \mathsf{m \cdot s^{-1}}
 }
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
-A mountain climber who is climbing a mountain in the Drakensberg during winter, by mistake drops her water bottle which then slides 100 m down the side of a steep slope to a point which is 10 m lower than the climber's position. The mass of the climber is 60 kg and her water bottle has a mass of 500 g.
+A mountain climber who is climbing a mountain in the Drakensberg during winter, by mistake drops her water bottle which then slides 100 m down the side of a steep icy slope to a point which is 10 m lower than the climber's position. The mass of the climber is 60 kg and her water bottle has a mass of 500 g.
 \end{minipage} 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item If the bottle starts from rest, how fast is it travelling by the time it reaches the bottom of the slope?
+\item If the bottle starts from rest, how fast is it travelling by the time it reaches the bottom of the slope? (Neglect friction.)
 \item What is the total change in the climber's potential energy as she climbs down the mountain to fetch her fallen water bottle? i.e. what is the difference between her potential energy at the top of the slope and the bottom of the slope?
 \end{enumerate}
 }
@@ -864,16 +861,17 @@ E_{P1} - E_{P2} = 5880 - 0 = 5880 \ \mathsf{J}
  \par \begin{tabular}[h]{cccccc}
  (1.) lxV  & (2.) & (3.) lxp  &  (4.) lxd  &  (5.) lxv  &  (6.) lxw \end{tabular}
 \end{exercises}
-            \section*{Summary}
+
+\section*{Summary}
             \nopagebreak
       \label{m38786*id70947}\begin{itemize}[noitemsep]
-            \label{m38786*uid111}\item The potential energy of an object is the energy the object has due to his position above a reference point.
-\label{m38786*uid112}\item The kinetic energy of an object is the energy the object has due to its motion.
-\label{m38786*uid113}\item Mechanical energy of an object is the sum of the potential energy and kinetic energy of the object.
-\label{m38786*uid114}\item The unit for energy is the joule (J).
-\label{m38786*uid115}\item The Law of Conservation of Energy states that energy cannot be created or destroyed, but can only be changed from one form into another.
-\label{m38786*uid116}\item The Law of Conservation of Mechanical Energy states that the total mechanical energy of an isolated system remains constant.
-\label{m38786*uid117}\item The table below summarises the most important equations:
+\item The gravitational potential energy of an object is the energy the object has because of its position in the gravitational field relative to some reference point.
+\item The kinetic energy of an object is the energy the object has due to its motion.
+\item The mechanical energy of an object is the sum of the potential energy and kinetic energy of the object.
+\item The unit for energy is the joule (J).
+\item The Law of Conservation of Energy states that energy cannot be created or destroyed, but can only be changed from one form into another.
+\item The Law of Conservation of Mechanical Energy states that the total mechanical energy of an isolated system (i.e. no friction or air resistance) remains constant.
+\item The table below summarises the most important equations:
 \end{itemize}
     % \textbf{m38786*id71092}\par
           \begin{table}[H]
