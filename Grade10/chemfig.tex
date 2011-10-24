@@ -1278,11 +1278,20 @@
 								(\CF@lewis@x pt+\CF@lewis@dist*\CF@lewis@yoffset/2 pt,\CF@lewis@y-\CF@lewis@dist*\CF@lewis@xoffset/2 pt)circle(0.15ex)%
 								(\CF@lewis@x pt-\CF@lewis@dist*\CF@lewis@yoffset/2 pt,\CF@lewis@y+\CF@lewis@dist*\CF@lewis@xoffset/2 pt)circle(0.15ex);%
 						\else
-							\pgfmathparse{\CF@lewis@x pt+\CF@lewis@xoffset*\CF@lewis@current@offset}\let\CF@lewis@x\pgfmathresult
-							\pgfmathparse{\CF@lewis@y pt+\CF@lewis@yoffset*\CF@lewis@current@offset}\let\CF@lewis@y\pgfmathresult
-							\expandafter\draw\expandafter[\CF@lewis@style#3]%
-								(\CF@lewis@x pt+\CF@lewis@length*\CF@lewis@yoffset/2 pt,\CF@lewis@y-\CF@lewis@length*\CF@lewis@xoffset/2 pt)--%
-								(\CF@lewis@x pt-\CF@lewis@length*\CF@lewis@yoffset/2 pt,\CF@lewis@y+\CF@lewis@length*\CF@lewis@xoffset/2 pt);%
+							\if x\expandafter\@car\CF@lewis@remainpos\relax\@nil
+								\edef\CF@lewis@remainpos{\expandafter\@gobble\CF@lewis@remainpos}%
+								\node(center@cross)at(\CF@lewis@x pt+\CF@lewis@xoffset*\CF@lewis@current@offset,\CF@lewis@y pt+\CF@lewis@yoffset*\CF@lewis@current@offset){};
+								\expandafter\draw\expandafter[\CF@lewis@style#3](center@cross)--+(45:1.5pt);
+								\expandafter\draw\expandafter[\CF@lewis@style#3](center@cross)--+(135:1.5pt);
+								\expandafter\draw\expandafter[\CF@lewis@style#3](center@cross)--+(225:1.5pt);
+								\expandafter\draw\expandafter[\CF@lewis@style#3](center@cross)--+(315:1.5pt);
+							\else
+								\pgfmathparse{\CF@lewis@x pt+\CF@lewis@xoffset*\CF@lewis@current@offset}\let\CF@lewis@x\pgfmathresult
+								\pgfmathparse{\CF@lewis@y pt+\CF@lewis@yoffset*\CF@lewis@current@offset}\let\CF@lewis@y\pgfmathresult
+								\expandafter\draw\expandafter[\CF@lewis@style#3]%
+									(\CF@lewis@x pt+\CF@lewis@length*\CF@lewis@yoffset/2 pt,\CF@lewis@y-\CF@lewis@length*\CF@lewis@xoffset/2 pt)--%
+									(\CF@lewis@x pt-\CF@lewis@length*\CF@lewis@yoffset/2 pt,\CF@lewis@y+\CF@lewis@length*\CF@lewis@xoffset/2 pt);%
+							\fi
 						\fi
 					\fi
 			\fi
