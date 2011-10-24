@@ -158,7 +158,7 @@
 \begin{minipage}[h]{0.225\paperwidth}
 
 \begin{mdframed}[linecolor=siyavula-gray, backgroundcolor=siyavula-gray, skipbelow=-pt, margin=10pt]
-Interesting Fact
+Feit
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
 \small #1
@@ -195,7 +195,7 @@ skipabove=0.5cm]%
 \marginpar{%odd
 \begin{minipage}[m]{0.22\paperwidth}
 \begin{mdframed}[linecolor=darkgray, margin=10pt]
-Tip
+Wenk
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt, margin=10pt]
 \small #1
@@ -213,7 +213,7 @@ linecolor=red%
 \vspace{3mm}
 \begin{center}
 \noindent%
-\textbf{Warning:}\par
+\textbf{Waarskuwing}\par
 #1
 \end{center}
 \end{mdframed}
@@ -225,7 +225,7 @@ linecolor=red%
 \begin{minipage}[h]{0.22\paperwidth}
 
 \begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, margin=10pt]
-Note
+Nota
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
 \small #1
@@ -280,36 +280,6 @@ Note
 \newcounter{workedexamplecounter}
 \setcounter{workedexamplecounter}{1}
 
-% can we deprecate the use of this, and use \westep instead
-%\newcommand{\westep}[1]
-%{\par \par%\pagebreak[1]
-% \textbf{\textit{Step \arabic{stepcounter} : #1}}\par
-% \addtocounter{stepcounter}{1}}
-
-
-\newenvironment{oldwex}[3]
-{% This is a picture at the beginning, a line or bar or something else
-\begin{quotation}
-\noindent
-\vspace{.5cm}
-\setlength{\parindent}{0pt}
-%% Title and counter
-\rput(-2.0,0){\pspencil}\noindent
-%\begin{mdframed}[linewidth =2,margin=40]
-\textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
-#1}\par
-\textbf{Question:} #2\par
-\textbf{Answer}\par #3%
-\addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
-\par%\vspace{.25cm}
-}%
-{%
-%\end{mdframed}
-\end{quotation}
-\begin{flushright}
-\end{flushright}
-
-\setlength{\parindent}{\saveparindentlength}}
 
 \definecolor{siyavula-gray}{RGB}{239, 239, 239}
 
@@ -317,7 +287,7 @@ Note
 % new Peter John Style
 \newcommand{\westep}[1]
 {\par \vspace{3mm}%\pagebreak[1]
- \textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}\par\vspace{3mm}
+ \textit{Stap \arabic{stepcounter}} : \textit{\textbf{#1}}\par\vspace{3mm}
  \addtocounter{stepcounter}{1}}
 
 \definecolor{siyavula-gray}{RGB}{239,239,239}
@@ -332,16 +302,16 @@ Note
 %% Title and counter
 %\rput(-2.0,0){\pspencil}\noindent
 \begin{mdframed}[linewidth=1pt,linecolor=darkgray]
-\textit{\textbf{Worked Example \arabic{workedexamplecounter}: }#1}
+\textit{\textbf{Voorbeeld \arabic{workedexamplecounter}: }#1}
 \end{mdframed}\vspace*{1mm}
 \begin{mdframed}[skipabove=-2mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
 \vspace*{3mm}
-\textbf{\textit{Question:}} \vspace*{3mm} 
+\textbf{\textit{Probleem}} \vspace*{3mm} 
 \hrule
 \vspace*{3mm}
 \textit{#2}
 \vspace*{3mm}\par
-\textit{\textbf{Answer:}}\vspace*{3mm}
+\textit{\textbf{Oplossing}}\vspace*{3mm}
 \hrule
 \vspace*{3mm}
  #3%
@@ -363,59 +333,6 @@ Note
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\newenvironment{wex2}[3]
-{% This is a picture at the beginning, a line or bar or something else
-% this command puts a bar in the margin and sets the bar width
-% Now we set margins
-% \begin{center}
-%\pagebreak
-%\begin{flushleft}
-%\begin{pspicture}(0,0)(10,0.01)
-% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
-% \psline[linecolor=gray]{-}(0,0)(0,-2)
-%\end{pspicture}
-%\end{flushleft}
-%\end{center}
-\begin{quotation}
-\noindent
-\vspace{.5cm}
-\setlength{\parindent}{0pt}
-%% Title and counter
-\rput(-2.0,0){\pspencil}\noindent
-\begin{mdframed}[linewidth=2,linecolor=black,backgroundcolor=lightgray]
-\textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
-#1}\par
-\textbf{Question:} #2\par
-\textbf{Answer}\par #3%
-\addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
-\par%\vspace{.25cm}
-}%
-{%
-\end{mdframed}
-\end{quotation}
-%\nopagebreak[4]
-\begin{flushright}
-%\begin{pspicture}(0,0)(10,0.01)
-% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
-% \psline[linecolor=gray]{-}(10,0)(10,2)
-%\end{pspicture}
-\end{flushright}
-\setlength{\parindent}{\saveparindentlength}}
 
 %EZ new counters for exercises, 
 \newcounter{exercisecounter}
@@ -821,7 +738,7 @@ Note
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (1.2\paperwidth,2cm);
         \node[anchor=west,text centered ,yshift=1.cm, xshift=0.3\paperwidth]
-              {   \color{black} Chapter \chapterlabel | Summary  };
+              {   \color{black} Hoofstuk \chapterlabel | Opsomming  };
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -842,7 +759,7 @@ Note
         \draw[color=white, draw=black, very thick] (0,0) rectangle
           (0.33\textwidth, 0.75cm);
        \node[anchor=west, yshift=0.3525cm, text centered]
-              { \bfseries ~ \color{black} Exercise \chapterlabel~-~\arabic{exercisecounter}   };
+              { \bfseries ~ \color{black} Oefening \chapterlabel~-~\arabic{exercisecounter}   };
        \end{tikzpicture}
     };
     
@@ -871,7 +788,7 @@ Note
         \draw[color=white, draw=black, very thick] (0,0) rectangle
           (0.3\textwidth,1.5cm);
        \node[anchor=west, yshift=0.75cm, text centered]
-              { ~~  \color{black} Chapter \chapterlabel };
+              { ~~  \color{black} Hoofstuk \chapterlabel };
        \end{tikzpicture}
     };
     
@@ -881,7 +798,7 @@ Note
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (0.69\textwidth,1.5cm);
             \node[anchor=west, yshift=0.75cm, text centered]
-              {   \color{black} End of Chapter Exercises };
+              {   \color{black} Einde van Hoofstuk Oefeninge };
 
        \end{tikzpicture}
 
