@@ -4,7 +4,7 @@
     \nopagebreak
             \label{m38787} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11305.imgs/summary_video.png} &   \includegraphics[width=0.75cm]{col11305.imgs/summary_presentation.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: P10096 )} \par 
 \begin{minipage}{.5\textwidth}
-      \label{m38787*id62184}This chapter is about how things move along a straight line or, more scientifically, how things move \textsl{in one dimension}. This is useful for learning how to describe the movement (motion) of cars along a straight road or of trains along straight railway tracks.  There are three ideas we use to describe exactly how an object moves. They are:\par 
+      \label{m38787*id62184}This chapter is about how things move along a straight line or, more scientifically, how things move \textsl{in one dimension}. This is useful for learning how to describe the movement (motion) of cars along a straight road or of trains along straight railway tracks.  There are three features of motion that we use to describe exactly how an object moves. They are:\par 
 \end{minipage}
 \begin{minipage}{.5\textwidth}
 \begin{center}
@@ -26,15 +26,17 @@
             The first thing to focus on when studying motion of an object or person is their position. The word \textsl{position} describes your location (where you are). However, saying that you are \textsl{here} or \textsl{there} is meaningless, you have to use known points (reference points) to help specify your position.
 %  \textsl{relative} to a known reference point.
 
-\begin{minipage}{.5\textwidth}
+\begin{minipage}{.35\textwidth}
       \label{m38787*id62597}For example, if you were in a classroom and wanted to tell a classmate where you were standing you would first give them a reference point. The reference point might be the classroom door. You would then be able to say that you are 2~m from the doorway. This still doesn't give your position precisely. We need to provide a reference point and a coordinate system to use to define the location precisely. 
 \end{minipage}
-\begin{minipage}{.5\textwidth}
+\begin{minipage}{.6\textwidth}
 \begin{center}
- \includegraphics[width=.8\textwidth]{photos/youarehereby_chokola_flickr.jpg}
+\textbf{Describing your location}\\
+ \includegraphics[width=.8\textwidth]{photos/youarehereby_chokola_flickr.jpg}\\
+\textit{Photograph by chokola on Flickr.}
 \end{center}
-\end{minipage}
-Then you can say that you are, for example, 2~m from the door directly inside the classroom. The classroom door is a reference point and inside/outside is the coordinate system you have chosen. A frame of reference or \textbf{reference frame} is reference point which serves as the origin for a coordinate system. The coordinate system can be up or down, inside or outside, left or right or even forward or backward. These are all examples that define a 1-dimensional coordinate system. When dealing with problems mathematically we choose one of the directions as the \textbf{positive} direction.
+\end{minipage}\\
+Then you can say that you are, for example, 2~m from the door directly inside the classroom. The classroom door is a reference point and inside/outside is the coordinate system you have chosen. A frame of reference or \textbf{reference frame} is reference point which serves as the origin for a coordinate system. The coordinate system can be up or down, inside or outside, left or right or even forward or backward. These are all examples that define a 1-dimensional coordinate system. We choose one of the directions as the \textbf{positive} direction.
 
 \Definition{Frame of reference} { A frame of reference is a reference point combined with a set of directions. } 
 A graphical representation of a 1-dimensional frame of reference:
@@ -42,13 +44,13 @@ A graphical representation of a 1-dimensional frame of reference:
  \begin{center}
   \begin{pspicture}(-2,-2)(4,4)
    \psline{->}(-1,0)(3,0)
-\rput(2,0.4){$x_{i}$}
+\rput(2,0.4){$\vec{x}_{i}$}
 \rput(2,0){\qdisk(0,0){3pt}}
 \rput(3.3,0){$x$}
 \rput(0,-1.2){origin}
 \psdot(0,0)
 \rput[l](.2,.8){positive (+) direction}
-\rput[r](-.2,.8){negative ($\minus$) direction}
+\rput[r](-.2,.8){negative (--) direction}
 \psline[linestyle=dashed](0,-1)(0,1)
   \end{pspicture}
  \end{center}
@@ -61,7 +63,6 @@ You can define different frames of reference for the same problem but the outcom
 You are standing on the platform watching the train move from left to right. To you it looks as if the boy is moving from left to right, because relative to where you are standing (the platform), he is moving. According to the boy, and his \textsl{frame of reference} (the train), he is not moving.\par 
         \label{m38787*id62666}A frame of reference must have an origin (where you are standing on the platform) and at least a positive direction. The train was moving from left to right, making to your right positive and to your left negative. If someone else was looking at the same boy, his frame of reference will be different. For example, if he was standing on the other side of the platform, the boy will be moving from right to left.\par 
     \setcounter{subfigure}{0}
-\begin{figure}[H]
 \begin{center}
 \scalebox{1.3} % Change this value to rescale the drawing.
 {
@@ -102,7 +103,7 @@ You are standing on the platform watching the train move from left to right. To 
 \psline[linewidth=0.05cm](6.04,1.1720313)(5.92,0.97203124)
 \psline[linewidth=0.05cm](5.92,0.97203124)(6.12,0.8720313)
 \psdots[dotsize=0.12](6.18,1.5920312)
-\psline[linewidth=0.05cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(9.2,1.8920312)(10.62,1.8920312)
+\psline[linewidth=0.05cm,]{->}(9.2,1.8920312)(10.62,1.8920312)
 
 \rput(10.585781,2.1120312){\scriptsize train moving from left to right}
 
@@ -137,12 +138,6 @@ You are standing on the platform watching the train move from left to right. To 
 \end{pspicture}  
 }
 \end{center}
-\caption{Frames of Reference}
-\label{frames:boy:train}
-\end{figure}   
-        \label{m38787*id62702}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m38787*id62705}
 \begin{center}
 \begin{pspicture}(0,-0.5)(5,2)
 %\psgrid[gridcolor=gray]
@@ -156,26 +151,20 @@ You are standing on the platform watching the train move from left to right. To 
 \uput[l](0.5,0.5){negative direction (towards your left)}
 \end{pspicture}
 \end{center}
- \end{figure} 
 
-
- \label{m38787*id62675}For this chapter, we will only use frames of reference in the $x$-direction. By doing this we restrict ourselves to \textsl{one dimensional motion}. As there is only one dimension we can use the sign of the position to indicate the direction relative to the origin.
+ \label{m38787*id62675}For this chapter, we will only use frames of reference in the $x$-direction. By doing this we restrict ourselves to \textsl{one dimensional motion}. We can use the sign of the position value (positive or negative) to indicate the direction relative to the origin.
 \Definition{One dimensional motion}{An object is constrained to move back and forth along a line.}
 For example the blue dot in the figure below can only move along the $x$-axis. 
-\begin{figure}[H]
  \begin{center}
   \begin{pspicture}(-2,-2)(4,4)
    \psline[linewidth=.05cm]{<->}(-3,0)(3,0)
-% \rput(2,0.4){$x_{i}$}
+% \rput(2,0.4){$\vec{x}_{i}$}
 \rput(2,0){\pscircle[linecolor=blue,fillcolor=blue,fillstyle=solid](0,0){.2}}
 \rput(3.3,0){$x$}
 \rput(0,-.2){origin}
 \psline(0,-.1)(0,.1)
   \end{pspicture}
  \end{center}
-\caption{Frame of reference}
-\label{fig:frameofref2}
-\end{figure}
 %Frames of reference will be covered in more detail in Grade 12.\par       
          \label{m38787*eip-509}
     \setcounter{subfigure}{0}
@@ -190,8 +179,6 @@ Symbol: $x$\hspace{2cm} S.I. Unit: m}
         \label{m38787*id62737}A position is a measurement of a location within a reference frame. This means that positions can be negative or positive depending on the choice for the reference frame's coordinate system. 
 
 Depending on which reference point we choose, we can say that the school is $300~\text{m}$ from Kosma's house (with Kosma's house as the reference point or origin) or  $500~\text{m}$ from Kevin's house (with Kevin's house as the reference point or origin).\par 
-    \setcounter{subfigure}{0}
-\begin{figure}[H]
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -245,17 +232,13 @@ Depending on which reference point we choose, we can say that the school is $300
 \end{pspicture} 
 }
 \end{center}
-\label{position:reference3}
-\caption{Illustration of position}
-\end{figure}      
         \label{m38787*id62778}The shop is also $300~\text{m}$ from Kosma's house, but in the opposite direction as the school. When we choose a reference point, we have a positive direction and a negative direction. If we choose the direction towards the school as negative, then the direction towards the shop is positive. A negative direction is always opposite to the direction chosen as positive.
-    \setcounter{subfigure}{0}
-\begin{figure}[H]
+    
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.1871876)(9.225,1.1871876)
-\psline[linewidth=0.05cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,-0.6428125)(8.0,-0.6428125)
+\psline[linewidth=0.05cm,]{<->}(0.0,-0.6428125)(8.0,-0.6428125)
 \psline[linewidth=0.05cm](1.02,-0.5028125)(1.02,-0.7828125)
 \psline[linewidth=0.05cm](2.02,-0.5028125)(2.02,-0.7828125)
 \psline[linewidth=0.05cm](3.0,-0.5028125)(3.0,-0.7828125)
@@ -277,9 +260,9 @@ Depending on which reference point we choose, we can say that the school is $300
 \rput(6.0196877,-1.0128125){$+200$}
 
 \rput(7.01625,-1.0128125){$+300$}
-\psline[linewidth=0.05cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.0,0.2971875)(1.0,-0.4428125)
-\psline[linewidth=0.05cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.02,0.3171875)(4.02,-0.4628125)
-\psline[linewidth=0.05cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.02,0.2971875)(7.02,-0.4828125)
+\psline[linewidth=0.05cm,]{->}(1.0,0.2971875)(1.0,-0.4428125)
+\psline[linewidth=0.05cm,]{->}(4.02,0.3171875)(4.02,-0.4628125)
+\psline[linewidth=0.05cm,]{->}(7.02,0.2971875)(7.02,-0.4828125)
 
 \rput(0.965,0.6871875){School}
 
@@ -291,17 +274,18 @@ Depending on which reference point we choose, we can say that the school is $300
 
 \rput(8.612968,-0.5928125){$x$ (m)}
 \end{pspicture}  }
-\caption{The origin is at Kosma's house and the position of the school is $-300~\text{m}$. Positions towards the left are defined as negative and positions towards the right are defined as positive.}
-\label{pr:position:reference2}
 \end{center}
-\end{figure}     
+
+The origin is at Kosma's house and the position of the school is $-300~\text{m}$. Positions towards the left are defined as negative and positions towards the right are defined as positive.
+
+
 Note that we could also choose the positive direction to be towards the school. In this case Kosma's house is still $300~\text{m}$ away from the school, but it is now in the positive direction.
-   \begin{figure}[H]
+
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.1871876)(9.225,1.1871876)
-\psline[linewidth=0.05cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,-0.6428125)(8.0,-0.6428125)
+\psline[linewidth=0.05cm,]{<->}(0.0,-0.6428125)(8.0,-0.6428125)
 \psline[linewidth=0.05cm](1.02,-0.5028125)(1.02,-0.7828125)
 \psline[linewidth=0.05cm](2.02,-0.5028125)(2.02,-0.7828125)
 \psline[linewidth=0.05cm](3.0,-0.5028125)(3.0,-0.7828125)
@@ -323,9 +307,9 @@ Note that we could also choose the positive direction to be towards the school. 
 \rput(6.0196877,-1.0128125){$-200$}
 
 \rput(7.01625,-1.0128125){$-300$}
-\psline[linewidth=0.05cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.0,0.2971875)(1.0,-0.4428125)
-\psline[linewidth=0.05cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.02,0.3171875)(4.02,-0.4628125)
-\psline[linewidth=0.05cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.02,0.2971875)(7.02,-0.4828125)
+\psline[linewidth=0.05cm,]{->}(1.0,0.2971875)(1.0,-0.4428125)
+\psline[linewidth=0.05cm,]{->}(4.02,0.3171875)(4.02,-0.4628125)
+\psline[linewidth=0.05cm,]{->}(7.02,0.2971875)(7.02,-0.4828125)
 
 \rput(0.965,0.6871875){School}
 
@@ -337,12 +321,11 @@ Note that we could also choose the positive direction to be towards the school. 
 
 \rput(8.612968,-0.5928125){$x$ (m)}
 \end{pspicture}  }
-\caption{The origin is at Kosma's house and the position of the school is $+300~\text{m}$. Positions towards the left are defined as positive and positions towards the right are defined as negative.}
-\label{pr:position:referencenew}
+
 \end{center}
-\end{figure}   
-\label{m38787*secfhsst!!!underscore!!!id127}
-\begin{groupdiscussion}{Reference Points }
+The origin is at Kosma's house and the position of the school is $+300~\text{m}$. Positions towards the left are defined as positive and positions towards the right are defined as negative.
+
+\begin{groupdiscussion}{Reference points}
             \nopagebreak
         \label{m38787*id62809}Divide into groups of 5 for this activity.
 On a straight line, choose a reference point. Since position can have both positive and negative values, discuss the advantages and disadvantages of choosing\par 
@@ -353,7 +336,7 @@ On a straight line, choose a reference point. Since position can have both posit
 Stand in a straight line, take turns choosing a different group member as the origin. Let the group member choose
 which direction along the line is positive. Everyone should then try to define their position. You don't need to measure your position very precisely but can just approximate it. It is important to understand whether your position is positive or negative for each difference origin and choice of coordinate system.
 
-Notice that your position is different every time but that you didn't actually move.
+Notice that your position is different every time but that you didn't actually move. How you write an answer might be affected by the choice of a coordinate system but physical processes should never be affected.
 \end{groupdiscussion}
 \label{m38787*secfhsst!!!underscore!!!id138}
 \begin{exercises}{Position }
@@ -435,24 +418,24 @@ Notice that your position is different every time but that you didn't actually m
          \subsection*{Displacement and distance}
     \nopagebreak
             \label{m38788} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11305.imgs/summary_www.png}} {(section shortcode: P10098 )} \par 
-\Definition{Displacement} {Displacement is the change in an object's position. It is a vector that points from the initial position ($\vec{x_{i}}$) to the final position ($\vec{x_f}$).\\
+\Definition{Displacement} {Displacement is the change in an object's position. It is a vector that points from the initial position ($\vec{x}_{i}$) to the final position ($\vec{x_f}$).\\
 Symbol: $\Delta \vec{x}$\hspace{2cm} S.I. Unit: $\text{m}$ }
  
-      \label{m38788*id63003}The displacement of an object is defined as its change in position (final position minus initial position). Displacement has a magnitude and direction and is therefore a vector. For example, if the initial position of a car is $\vec{{x}_{i}}$ and it moves to a final position of $\vec{{x}_{f}}$, then the displacement is:\par 
+      \label{m38788*id63003}The displacement of an object is defined as its change in position (final position minus initial position). Displacement has a magnitude and direction and is therefore a vector. For example, if the initial position of a car is $\vec{x}_{i}$ and it moves to a final position of $\vec{x}_{f}$, then the displacement is:\par 
       \label{m38788*id63035}\nopagebreak\noindent{}
 \Tip{The symbol $\Delta $ is read out as \textsl{delta}. $\Delta $ is a letter of the Greek alphabet and is used in Mathematics and Science to indicate a change in a certain quantity, or a final value minus an initial value. For example, $\Delta x$ means change in $x$ while $\Delta t$ means change in $t$.}
         
     \begin{equation*}
-    \vec{{x}_{f}}-\vec{{x}_{i}}
+    \vec{x}_{f}-\vec{x}_{i}
       \end{equation*}
 To help visualise what the displacement vector looks like think back to the tail-to-head method. The displacement is the vector you add to the initial position vector to get a vector to the final position.
 \label{m38788*notfhsst!!!underscore!!!id194}
       \label{m38788*id63061}However, subtracting an initial quantity from a final quantity happens often in Physics, so we use the shortcut $\Delta $ to mean \textsl{final - initial}. Therefore, displacement can be written:\par 
       \label{m38788*id63080}\nopagebreak\noindent{}
         
-    \begin{equation}
-    \Delta \vec{x}=\vec{{x}_{f}}-\vec{{x}_{i}}
-      \end{equation}
+    \begin{equation*}
+    \Delta \vec{x}=\vec{x}_{f}-\vec{x}_{i}
+      \end{equation*}
 
 The following diagram illustrates the concept of displacement:
 \begin{figure}[H]
@@ -463,10 +446,10 @@ The following diagram illustrates the concept of displacement:
 \rput(3,0){\qdisk(0,0){2pt}}
 \rput[t](0,0.5){$0$}
 \psline(0,-.2)(0,.2)
-\rput[t](1,0.5){$x_{i}$}
-\rput[t](3,0.5){$x_{f}$}
+\rput[t](1,0.5){$\vec{x}_{i}$}
+\rput[t](3,0.5){$\vec{x}_{f}$}
 \psline{->}(1,-.3)(3,-0.3)
-\rput[b](2,-.7){$\Delta x$}
+\rput[b](2,-.7){$\Delta \vec{x}$}
   \end{pspicture}
  \end{center}
 \end{figure}
@@ -474,15 +457,15 @@ For example, if you roll a ball $5~\text{m}$ along a floor, in a straight line, 
 % Another example is a bead on a wire. Imagine you are standing in front of the wire, with the bead $10~\text{cm}$ to your left and you move the bead to $6~\text{cm}$ on your right. We take the positive direction as to the right, and your position as the origin. Then the bead starts at $-10~\text{cm}$ and ends at $6~\text{cm}$. The beads displacement is $6 - (-10) = 16~\text{cm}$.  
 \Tip{The words \textsl{initial} and \textsl{final} will be used very often in Physics. \textsl{Initial} refers to the situation in the beginning of the description/problem and \textsl{final} to the situation at the end.  It will often happen that the final value is smaller than the initial value, such that the difference is negative. This is ok!}
      
-\label{m38788*id63218}Displacement does not depend on the path travelled, but only on the initial and final positions (Figure~\ref{vectors:displ}). We use the word \textsl{distance} to describe how far an object travels along a particular path.
+\label{m38788*id63218}Displacement does not depend on the path travelled, but only on the initial and final positions. We use the word \textsl{distance} to describe how far an object travels along a particular path.
 \Tip{We will use $\text{D}$ in this book, but you may see $\text{d}$ used in other books.}
 
-\Definition{Distance}{Distance is the total length of the path taken in going from the initial position, $\vec{x_{i}}$, to the final position, $\vec{x_{f}}$. Distance is a scalar.\\Symbol: $D$\hspace{2cm} S.I. Unit: $\text{m}$}
+\Definition{Distance}{Distance is the total length of the path taken in going from the initial position, $\vec{x}_{i}$, to the final position, $\vec{x}_{f}$. Distance is a scalar.\\Symbol: $D$\hspace{2cm} S.I. Unit: $\text{m}$}
 
 In the image below you can see the path that winds because of a number of hills from a school to a nearby shop. The path is shown by a dashed line.\\
 
 \begin{minipage}{.5\textwidth}
-Distance is the length of dashed line. It will be how far you have to walk along the path. The displacement is different. Displacement is the straightline distance from the starting point to the endpoint -- from the school to the shop in the figure as shown by the solid arrow. 
+Distance is the length of dashed line. It is how far you have to walk along the path. The displacement is different. Displacement is the straight-line distance from the starting point to the endpoint -- from the school to the shop in the figure as shown by the solid arrow. 
 \end{minipage}
 \begin{minipage}{.5\textwidth}
 \begin{center}
@@ -556,25 +539,28 @@ If we use the same situation as earlier we can explore the concepts in more deta
 \rput(11.065469,0.171875){\small{Kevin}}
 \end{pspicture} 
 }
-If Komal walks to school, but instead of walking straight to school, he decided to walk to his friend Kevin's house first to fetch him so that they can walk to school together what distance did he cover and what is his displacement? Komal covers a distance of $400~\text{m}$ to Kevin's house and another $500~\text{m}$ from Kevin's house to the school. He covers a total distance of $900~\text{m}$. His displacement, however, is only $100~\text{m}$ towards the school. This is because displacement only looks at the starting position (his house) and the end position (the school). It does not depend on the path he travelled.\par 
+Komal walks to meet Kevin at his house before walking to school. What is Komal's displacement and what distance did he cover if he walks to school via Kevin's house? 
+
+Komal covers a distance of $400~\text{m}$ to Kevin's house and another $500~\text{m}$ from Kevin's house to the school. He covers a total distance of $900~\text{m}$. His displacement, however, is only $100~\text{m}$ towards the school. This is because displacement only looks at the starting position (his house) and the end position (the school). It does not depend on the path he travelled.
+ 
 \label{m38788*id62121}To calculate his distance and displacement, we need to choose a reference point and a direction. Let's choose Komal's house as the reference point, and towards Kevin's house as the positive direction (which means that towards the school is negative). We would do the calculations as follows:\\
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.35\textwidth}
 \begin{eqnarray*}
 \text{Distance (D)} &=& \text{path~travelled}\\
 &=&400\ \text{m} + 500\ \text{m}\\
 &=&900\ \text{m}\\
 \end{eqnarray*}
 \end{minipage}
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.65\textwidth}
 \begin{eqnarray*}
-\text{Displacement} (\Delta x) &=& x_f~ - ~ x_i\\
+\text{Displacement} (\Delta \vec{x}) &=& \vec{x}_f~ - ~ \vec{x}_i\\
 &=&-100\ \text{m} + 0\ \text{m}\\
 &=&-100\ \text{m}\\
 &=&100\ \text{m} \text{(in ~the~ negative~} x \text{~direction)}
 \end{eqnarray*}
 \end{minipage}
       \label{m38788*eip-883}
-Very often in calculations you will get a negative answer. For example, Komal's displacement in the example above, is calculated as $-100~\text{m}$. The minus sign in front of the answer means that his displacement is $100~\text{m}$ in the opposite direction (opposite to the direction chosen as positive in the beginning of the question). When we start a calculation we choose a frame of reference and a positive direction. In the first example above, the reference point is Komal's house and the positive direction is towards Kevin's house. Therefore Komal's displacement is $100~\text{m}$ towards the school. Notice that distance has no direction, but displacement has direction.\\
+Very often in calculations you will get a negative answer. For example, Komal's displacement in the example above, is calculated as $-100~\text{m}$. The minus sign in front of the answer means that his displacement is $100~\text{m}$ in the opposite direction (opposite to the direction chosen as positive in the beginning of the question). When we start a calculation we choose a frame of reference and a positive direction. In the first example above, the reference point is Komal's house and the positive direction is towards Kevin's house. Therefore Komal's displacement is $100~\text{m}$ towards the school. Notice that distance has no direction, but displacement has a direction.\\
       \label{m38788*id63667}Kevin walks to school with Komal and after school walks back home. What is Kevin's displacement and what distance did he cover?
 For this calculation we use Kevin's house as the reference point. Let's take towards the school as the positive direction.\\
 \begin{minipage}{0.5\textwidth}
@@ -586,7 +572,7 @@ For this calculation we use Kevin's house as the reference point. Let's take tow
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 \begin{eqnarray*}
-\text{Displacement} (\Delta x) &=& x_f~ - ~ x_i\\
+\text{Displacement} (\Delta \vec{x}) &=& \vec{x}_f~ - ~ \vec{x}_i\\
 &=&0\ \text{m} + 0\ \text{m}\\
 &=&0\ \text{m}
 \end{eqnarray*}
@@ -636,7 +622,7 @@ For this calculation we use Kevin's house as the reference point. Let's take tow
 Symbol: $v_{av}$\hspace{2cm} S.I. Units: $\text{m}\cdot \text{s}^{-1}$} 
 
 
-\Definition{Average velocity}{Average velocity is the \textbf{displacement} of a body divided by the time it took.\\
+\Definition{Average velocity}{Average velocity is the \textbf{displacement} of a body divided by the time it took for the displacement to occur.\\
 Symbol: $\vec{v}_{av}$\hspace{2cm} S.I. Units: $\text{m}\cdot \text{s}^{-1}$} 
 
 Before moving on review the difference between distance and displacement. Sometimes the average speed can be a very big number while the average velocity is zero.
@@ -650,9 +636,6 @@ Before moving on review the difference between distance and displacement. Someti
 \end{eqnarray*}\label{eq:pr:velocity}
       \label{m38791*id64460}Velocity can be positive or negative. A positive velocity points in the direction you chose as positive in your coordinate system. A negative velocity points in the direction opposite to the positive direction.
 
-      \label{m38791*id64500}Average velocity (symbol $\vec{v}_{av}$) is the displacement for the whole motion divided by the time taken for the whole motion. 
-
-
 Average speed (symbol $v_{av}$) is the distance travelled ($D$) divided by the time taken ($\Delta t$) for the journey. Distance and time are scalars and therefore speed will also be a scalar. Speed is calculated as follows:\par 
       \label{m38791*id64549}\nopagebreak\noindent{}
         
@@ -660,9 +643,9 @@ Average speed (symbol $v_{av}$) is the distance travelled ($D$) divided by the t
     \text{average speed (in m} \cdot {\text{s}}^{-1}\text{)}  =  \frac{\text{distance (in m)}}{\text{time (in s)}} 
       \end{equation*}
       \label{m38791*id64639}\nopagebreak\noindent{}
-    \begin{equation}
+    \begin{equation*}
     v_{av}=\frac{D}{\Delta t}
-      \end{equation}
+      \end{equation*}
       
 \begin{wex}{Average speed and average velocity}
 {James walks $2 \text{ km}$ away from home in 30 minutes. He then turns around and walks back home along the same path, also in 30 minutes. Calculate James' average speed and average velocity.\\
@@ -723,7 +706,7 @@ v_{av}&=&\frac{D}{\Delta t}\\
 
     \noindent
       \label{m38791*uid37}
-            \subsection*{Differences between Speed and Velocity}
+            \subsection*{Differences between speed and velocity}
             \nopagebreak
         \label{m38791*id66482}The differences between speed and velocity can be summarised as:\par 
 \begin{center}
@@ -745,7 +728,7 @@ v_{av}&=&\frac{D}{\Delta t}\\
 \label{m38791*id66641}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
             \label{m38791*uid39}\item How long was he out of the house (the time interval $\Delta t$ in seconds)?
 \label{m38791*uid40}\item How far did he walk (distance ($D$))?
-\label{m38791*uid41}\item What was his displacement ($\Delta x$)?
+\label{m38791*uid41}\item What was his displacement ($\Delta \vec{x}$)?
 \label{m38791*uid42}\item What was his average velocity (in $\text{m} \cdot \text{s}^{-1}$)?
 \label{m38791*uid43}\item What was his average speed (in $\text{m} \cdot \text{s}^{-1}$)?
 \end{enumerate}
@@ -899,8 +882,8 @@ v_{av}&=&\frac{D}{\Delta t}\\
 %{%lines and arrows showing motion
 %\begin{pspicture}(0,-3.7525)(6.5721874,3.7325)
 %\definecolor{color816g}{rgb}{0.4,0.4,0.4}
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(5.4625,-2.4475)(-5.8225,-2.4675)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(-5.8825,-2.7875)(5.4625,-2.7875)
+\psline[]{->}(5.4625,-2.4475)(-5.8225,-2.4675)
+\psline[]{->}(-5.8825,-2.7875)(5.4625,-2.7875)
 
 \rput(0,-3.1575){\huge 100 m}
 %
@@ -936,7 +919,7 @@ Bridget leaves his stopwatch running, and notices that at $t=5,0~\text{s}$, a ta
 \begin{pspicture}(0,-3.22)(6.74,3.2)
 \psframe[linewidth=0.04,dimen=outer](1.12,3.2)(1.02,0.2)
 \psframe[linewidth=0.04,dimen=outer](5.22,3.2)(5.12,0.2)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.12,0.3)(5.12,0.3)
+\psline[]{<->}(1.12,0.3)(5.12,0.3)
 
 \rput(3.080625,0.61){50 m}
 \psline[](0.82,-0.4)(1.12,-0.5)
@@ -963,9 +946,9 @@ Bridget leaves his stopwatch running, and notices that at $t=5,0~\text{s}$, a ta
 \psline[](4.22,-0.4)(4.02,-0.4)
 \psline[](4.02,-0.4)(4.02,-0.7)
 \psline[](4.02,-0.7)(4.22,-0.7)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](5.12,0.2)(5.12,-3.2)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](1.12,0.2)(1.12,-3.2)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.12,-0.56)(5.12,-0.56)
+\psline[](5.12,0.2)(5.12,-3.2)
+\psline[](1.12,0.2)(1.12,-3.2)
+\psline[]{->}(1.12,-0.56)(5.12,-0.56)
 
 \rput(2.6164062,-0.39){3 s}
 \psline[](0.9,-2.7)(1.1,-2.7)
@@ -1000,8 +983,8 @@ Bridget leaves his stopwatch running, and notices that at $t=5,0~\text{s}$, a ta
 \psline[](0.98,-2.38)(0.9,-2.3)
 \psline[](0.9,-2.3)(0.78,-2.3)
 \psline[](0.78,-2.28)(0.78,-2.5)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(5.12,-1.58)(1.12,-1.6)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.1,-2.5)(5.16,-2.5)
+\psline[]{->}(5.12,-1.58)(1.12,-1.6)
+\psline[]{->}(1.1,-2.5)(5.16,-2.5)
 
 \rput(1.5720313,-2.3){t = 5 s}
 
@@ -1023,28 +1006,28 @@ Bridget leaves his stopwatch running, and notices that at $t=5,0~\text{s}$, a ta
 \begin{pspicture}(0,-1.9421875)(6.02,1.9221874)
 \psline[](0.0,1.9021875)(6.0,1.9021875)
 \psline[](0.0,-1.0978125)(6.0,-1.0978125)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](0.0,0.9021875)(6.0,0.9021875)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](0.0,-0.0978125)(5.9,-0.0978125)
+\psline[](0.0,0.9021875)(6.0,0.9021875)
+\psline[](0.0,-0.0978125)(5.9,-0.0978125)
 \psframe[linewidth=0.05,dimen=outer](5.6,1.7021875)(4.5,1.1021875)
 
 \rput(4.915,1.4321876){car}
-\psline[linewidth=0.034cm,linestyle=dashed,dash=0.16cm 0.16cm](4.48,1.7821875)(4.52,-1.5378125)
-\psline[linewidth=0.034cm,linestyle=dashed,dash=0.16cm 0.16cm](0.4,1.7821875)(0.4,-1.5378125)
+\psline[linewidth=0.034cm,](4.48,1.7821875)(4.52,-1.5378125)
+\psline[linewidth=0.034cm,](0.4,1.7821875)(0.4,-1.5378125)
 \psline[](0.3,-1.4978125)(0.5,-1.6978126)
 \psline[](0.5,-1.4978125)(0.3,-1.6978126)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.2,1.9021875)(3.2,0.9021875)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.2,0.9021875)(3.2,-0.0978125)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.2,-0.0978125)(3.2,-1.0978125)
+\psline[]{<->}(3.2,1.9021875)(3.2,0.9021875)
+\psline[]{<->}(3.2,0.9021875)(3.2,-0.0978125)
+\psline[]{<->}(3.2,-0.0978125)(3.2,-1.0978125)
 
 \rput(2.871875,1.4121875){3 m}
 
 \rput(2.871875,0.4121875){3 m}
 
 \rput(2.871875,-0.5878125){3 m}
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.4,-1.5978125)(4.5,-1.5978125)
+\psline[]{<->}(0.4,-1.5978125)(4.5,-1.5978125)
 
 \rput(2.538125,-1.7878125){100 m}
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.5,1.4021875)(3.8,1.4021875)
+\psline[]{->}(4.5,1.4021875)(3.8,1.4021875)
 \end{pspicture} 
 }
 \end{center}
@@ -1099,7 +1082,7 @@ Bridget leaves his stopwatch running, and notices that at $t=5,0~\text{s}$, a ta
 \end{center}
 \end{Investigation}
   \label{m38791**end}
-         \subsection*{Acceleration}
+         \section{Acceleration}
     \nopagebreak
             \label{m38794} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11305.imgs/summary_fullmarks.png} &   \includegraphics[width=0.75cm]{col11305.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: P10100 )} \par 
 \Definition{Average acceleration} {Average acceleration is the change in average velocity divided by the time taken.\\
@@ -1112,9 +1095,9 @@ Symbol: $\vec{a}_{av}$\hspace{2cm} S.I. Units: $\text{m} \cdot \text{s}^{-2}$ }
     \vec{a}_{av}=\frac{\Delta \vec{v}}{\Delta t}
       \end{equation*}
 We only deal with problems with constant acceleration. This means that the average acceleration and the instantaneous acceleration are the same. To make things simpler we will only talk about acceleration and not average or instantaneous. This is represented as $\vec{a}$. We can also have the magnitude of the acceleration. This is:
-    \begin{equation}
+    \begin{equation*}
     a=\frac{\Delta \vec{v}}{\Delta t}
-      \end{equation}
+      \end{equation*}
       \label{m38794*id67769}Acceleration is a vector. Acceleration does not provide any information about the motion, but only about how the motion changes. It is not possible to tell how fast an object is moving or in which direction from the acceleration alone.\par 
       \label{m38794*id67775}Like velocity, acceleration can be negative or positive. We see that when the sign of the acceleration and the velocity are the same, the object is speeding up. If both velocity and acceleration are positive, the object is speeding up in a positive direction. If both velocity and acceleration are negative, the object is speeding up in a negative direction.
 % \Tip{Acceleration does not tell us about the direction of the motion. Acceleration only tells us how the velocity changes.}
@@ -1126,24 +1109,24 @@ We can see this in the following diagram:
 \rput(-3,0){
 \pspolygon(0,0)(0,1)(1,1)(1,0)(0,0)
 \psline{->}(0.3,1.1)(0.9,1.1)
-\rput[tl](0.3,1.5){$v$}
+\rput[tl](0.3,1.5){$\vec{v}$}
 \psline{->}(0.5,0.5)(1.5,0.5)
-\rput[tr](1.5,0.3){$a$}
+\rput[tr](1.5,0.3){$\vec{a}$}
 \rput(.8,-.3){speeding up}}
 \rput(-0.5,0){
 \pspolygon(0,0)(0,1)(1,1)(1,0)(0,0)
 \psline{<-}(0.3,1.1)(0.9,1.1)
-\rput[tl](0.3,1.5){$v$}
+\rput[tl](0.3,1.5){$\vec{v}$}
 \psline{->}(0.5,0.5)(1.5,0.5)
-\rput[tr](1.5,0.3){$a$}
+\rput[tr](1.5,0.3){$\vec{a}$}
 \rput(.8,-.3){slowing down}
 \rput(.8,-.6){deceleration}}
 \rput(3,0){
 \pspolygon(0,0)(0,1)(1,1)(1,0)(0,0)
 \psline{<-}(0.3,1.1)(0.9,1.1)
-\rput[tl](0.3,1.5){$v$}
+\rput[tl](0.3,1.5){$\vec{v}$}
 \psline{->}(0.5,0.5)(-0.5,0.5)
-\rput[tr](-.5,0.3){$a$}
+\rput[tr](-.5,0.3){$\vec{a}$}
 \rput(.8,-.3){speeding up}
 \rput(.8,-.6){negative acceleration}}
   \end{pspicture}
@@ -1154,14 +1137,16 @@ If velocity is positive and acceleration is negative, then the object is slowing
 
 \begin{wex}{Acceleration}{A car accelerates uniformly from and initial velocity of 2 m$\cdot$s$^{-1}$ to a final velocity of 10 m$\cdot$s$^1$ in 8 seconds. It then slows down uniformly to a final velocity of 4 m$\cdot$s$^{-1}$ in 6 seconds. Calculate the acceleration of the car during the first 8 seconds and during the last 6 seconds.}
 {
+\westep{Choose a reference frame}
+We choose the point where the car starts to accelerate as the origin and the direction in which the car is already moving as the positive direction.
 \westep{Identify what information is given and what is asked for:}
 Consider the motion of the car in two parts: the first 8 seconds and the last 6 seconds.\\
 \\
 \begin{minipage}{0.5\textwidth}
 \center{For the first 8 seconds:}
 \begin{eqnarray*}
-v_i &=& 2~\text{m}\cdot \text{s}^{-1}\\
-v_f &=& 10~\text{m}\cdot \text{s}^{-1}\\
+\vec{v}_i &=& 2~\text{m}\cdot \text{s}^{-1}\\
+\vec{v}_f &=& 10~\text{m}\cdot \text{s}^{-1}\\
 t_i &=& 0~\text{s}\\
 t_f &=& 8~\text{s}
 \end{eqnarray*}
@@ -1169,8 +1154,8 @@ t_f &=& 8~\text{s}
 \begin{minipage}{0.5\textwidth}
 \center{For the last 6 seconds:}
 \begin{eqnarray*}
-v_i &=& 10~\text{m}\cdot \text{s}^{-1}\\
-v_f &=& 4~\text{m}\cdot \text{s}^{-1}\\
+\vec{v}_i &=& 10~\text{m}\cdot \text{s}^{-1}\\
+\vec{v}_f &=& 4~\text{m}\cdot \text{s}^{-1}\\
 t_i &=& 8~\text{s}\\
 t_f &=& 14~\text{s}
 \end{eqnarray*}
@@ -1182,7 +1167,7 @@ t_f &=& 14~\text{s}
 \center{For the first 8 seconds:}
 \begin{eqnarray*}
 a &=& \frac{\Delta v}{\Delta t}\\
-&=& \frac{10\textrm{ \ms} - 2\textrm{ \ms}}{8\textrm{ s} - 0\textrm{ s}}\\
+&=& \frac{10\textrm{ \text{m}\cdot \text{s}^{-1}} - 2\textrm{ \text{m}\cdot \text{s}^{-1}}}{8\textrm{ s} - 0\textrm{ s}}\\
 &=& 1~\text{m}\cdot \text{s}^{-2}
 \end{eqnarray*}
 
@@ -1191,7 +1176,7 @@ a &=& \frac{\Delta v}{\Delta t}\\
 \center{For the next 6 seconds:}
 \begin{eqnarray*}
 a &=& \frac{\Delta v}{\Delta t}\\
-&=& \frac{4\textrm{ \ms} - 10\textrm{ \ms}}{14\textrm{ s} - 8\textrm{ s}}\\
+&=& \frac{4\textrm{ \text{m}\cdot \text{s}^{-1}} - 10\textrm{ \text{m}\cdot \text{s}^{-1}}}{14\textrm{ s} - 8\textrm{ s}}\\
 &=& -1~\text{m}\cdot \text{s}^{-2}
 \end{eqnarray*}
 
@@ -1225,12 +1210,32 @@ During the next 6 seconds the car had a negative acceleration. This means that i
             \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11305.imgs/summary_www.png}} { (Video:  P10101 )}
  \end{figure}       \par 
 %NTS CAPS says that instantaneous speed and velocity must only be covered now and not be covered where they currently are
-
+\nopagebreak
 \section{Instantaneous velocity and speed}
 
-Instantaneous velocity is the velocity at a specific instant in time. This can be different to the average velocity if the velocity isn't constant over the time period used to determine the average velocity.
 
-\Tip{An instant in time is different from the time taken or the time interval. It is therefore useful to use the symbol $t$ for an instant in time (for example during the 4$^\text{th}$ second) and the symbol $\Delta t$ for the time taken (for example during the first 5 seconds of the motion).}
+\begin{minipage}{.5\textwidth}
+\begin{center}
+\textbf{Sprinters taking off}\\
+\includegraphics[width=.8\textwidth]{photos/sprintersstarting_wwarby_flickr.jpg}\\
+\textbf{Sprinters finishing race}\\
+\includegraphics[width=.8\textwidth]{photos/sprintersending_wwarby_flickr.jpg}\\
+\textit{Photographs by wwarby on Flickr.}
+\end{center}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+
+We have looked at the average velocity and speed but sometimes we want to be more precise about what is happening between the initial and final times in a problem.
+
+
+Instantaneous velocity is the velocity at a specific instant in time. This can be different to the average velocity if the velocity isn't constant.
+
+Look at the photographs of the sprinters in a race. Their velocity is different as they take off and as they end. Their average velocity for the race doesn't change but their instantaneous velocity, as captured in the 'snapshots' of an instant in time does change. Their velocity in the photograph would be an instantaneous velocity.
+
+\end{minipage}
+
+\Tip{An instant in time is different from the time taken or the time interval. It is therefore useful to use the symbol $t$ for an instant in time (for example during the 4$^\text{th}$ second) and the symbol $\Delta t$ for the time taken (for example during the first 5 seconds of the motion).}\\
+
 
 \Definition{Instantaneous velocity}{Instantaneous velocity is the change in position over the change in a very small time interval ($\Delta t \approx 0$). \\
 Symbol: $\vec{v}$\hspace{2cm} S.I. Units: $\text{m}\cdot \text{s}^{-1}$} 
@@ -1238,19 +1243,14 @@ Symbol: $\vec{v}$\hspace{2cm} S.I. Units: $\text{m}\cdot \text{s}^{-1}$}
 \Definition{Instantaneous speed}{Instantaneous speed is the magnitude of instantaneous velocity.\\
 Symbol: $v$\hspace{2cm} S.I. Units: $\text{m}\cdot \text{s}^{-1}$} 
 
-
-
-
-\label{m38791*id64664}Instantaneous speed is the magnitude of instantaneous velocity. It has the same value, but no direction.\par 
-
-
+\label{m38791*id64664}Instantaneous velocity is a vector. Instantaneous speed is the magnitude of instantaneous velocity. It has the same value but is not a vector so it has no direction.
 
 
          \section{Description of motion}
 %NTS this section needs a formal project on acceleration
     \nopagebreak
             \label{m38795} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11305.imgs/summary_fullmarks.png} &   \includegraphics[width=0.75cm]{col11305.imgs/summary_simulation.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: P10102 )} \par 
-            \label{m38795*id68951}The purpose of this chapter is to describe motion, and now that we understand the definitions of displacement, distance, velocity, speed and acceleration, we are ready to start using these ideas to describe how an object is moving. There are many ways of describing motion:\par 
+            \label{m38795*id68951}The purpose of this chapter is to describe motion, and now that we understand the definitions of displacement, distance, velocity, speed and acceleration, we are ready to start using these ideas to describe how an object or person is moving. We will look at three ways of describing motion:\par 
       \label{m38795*id68956}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
             \label{m38795*uid84}\item words
 \label{m38795*uid85}\item diagrams
@@ -1262,79 +1262,84 @@ Symbol: $v$\hspace{2cm} S.I. Units: $\text{m}\cdot \text{s}^{-1}$}
             \subsection*{Stationary Object}
             \nopagebreak
         \label{m38795*id69015}The simplest motion that we can come across is that of a stationary object. A stationary object does not move and so its position does not change.
+\begin{minipage}{.5\textwidth}
+        \label{m38795*id69021}Consider an example, John is waiting for a taxi. He is standing two metres from a stop street at $t=0~\text{s}$. After one minute, at $t=60~\text{s}$, he is still 2 metres from the stop street and after two minutes, at $t=120~\text{s}$, also 2 metres from the stop street. His position has not changed. His displacement is zero (because his position is the same), his velocity is zero (because his displacement is zero) and his acceleration is also zero (because his velocity is not changing).
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+ \textbf{John stands at a stop sign.}\\
+\includegraphics{photos/stopstreet_CarolynColes_Flickr.jpg}\\
+\textit{Photograph by Carolyn Coles on Flickr}
+\end{minipage}
 
-        \label{m38795*id69021}Lesedi is waiting for a taxi. He is standing two metres from a stop street at $t = 0 \text{ s}$. After one minute, at $t = 60 \text{ s}$, he is still 2 metres from the stop street and after two minutes, at $t = 120 \text{ s}$, also 2 metres from the stop street. His position has not changed. His displacement is zero (because his position is the same), his velocity is zero (because his displacement is zero) and his acceleration is also zero (because his velocity is not changing).\par 
-    \setcounter{subfigure}{0}
-\begin{figure}[H]
-\begin{center}
-%Lesedi at t=0s. Stationary.
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-1.24)(8.404062,1.22)
-\pspolygon[linewidth=0.04](4.5679913,1.2)(4.7965627,0.9714286)(4.7965627,0.62857145)(4.5679913,0.4)(4.225134,0.4)(3.9965625,0.62857145)(3.9965625,0.9714286)(4.225134,1.2)
-\psline[linewidth=0.08cm](4.3765626,0.42)(4.3765626,-0.92)
-\psline[tbarsize=0.07055555cm 5.0]{|-|}(4.3565626,-0.88)(1.1965625,-0.9)
+%     \setcounter{subfigure}{0}
+% \begin{figure}[H]
+% \begin{center}
+% %Lesedi at t=0s. Stationary.
+% \scalebox{1} % Change this value to rescale the drawing.
+% {
+% \begin{pspicture}(0,-1.24)(8.404062,1.22)
+% \pspolygon[linewidth=0.04](4.5679913,1.2)(4.7965627,0.9714286)(4.7965627,0.62857145)(4.5679913,0.4)(4.225134,0.4)(3.9965625,0.62857145)(3.9965625,0.9714286)(4.225134,1.2)
+% \psline[linewidth=0.08cm](4.3765626,0.42)(4.3765626,-0.92)
+% \psline[tbarsize=0.07055555cm 5.0]{|-|}(4.3565626,-0.88)(1.1965625,-0.9)
+% 
+% \rput(4.37,0.795){\footnotesize STOP}
+% 
+% \rput(2.671875,-1.09){2 m}
+% 
+% \rput[r](0.3,-0.09){$t = 0 \text{ s}$}
+% \rput[r](0.3,-0.49){$t = 60 \text{ s}$}
+% \rput[r](0.3,-0.89){$t = 120 \text{ s}$}
+% \psellipse[linewidth=0.04,dimen=outer](1.1965625,0.39)(0.18,0.31)
+% \psline[](1.1965625,0.1)(1.1965625,-0.42)
+% \psline[](1.1965625,-0.4)(1.2765625,-0.7)
+% \psline[](1.2765625,-0.68)(1.2765625,-0.88)
+% \psline[](1.2765625,-0.86)(1.3365625,-0.86)
+% \psline[](1.1965625,-0.4)(1.1165625,-0.7)
+% \psline[](1.1165625,-0.7)(1.1165625,-0.9)
+% \psline[](1.1165625,-0.9)(1.0365624,-0.88)
+% \psline[](1.2165625,-0.02)(1.2565625,-0.28)
+% \psline[](1.2565625,-0.28)(1.2965626,-0.12)
+% \psline[](1.1965625,0.0)(1.1165625,-0.38)
+% \psline[](1.1165625,-0.38)(1.0765625,-0.18)
+% \psdots[dotsize=0.108](1.2565625,0.48)
+% \psdots[dotsize=0.108](1.1365625,0.48)
+% \pscustom[linewidth=0.04,fillstyle=solid]
+% {
+% \newpath
+% \moveto(1.0765625,0.32)
+% \lineto(1.1065625,0.29)
+% \curveto(1.1215625,0.275)(1.1615624,0.26)(1.1865625,0.26)
+% \curveto(1.2115625,0.26)(1.2515625,0.27)(1.2665625,0.28)
+% \curveto(1.2815624,0.29)(1.3015625,0.305)(1.3165625,0.32)
+% }
+% \pscustom[linewidth=0.04,fillstyle=solid]
+% {
+% \newpath
+% \moveto(1.3365625,0.5)
+% \lineto(1.3665625,0.49)
+% \curveto(1.3815625,0.485)(1.3865625,0.465)(1.3565625,0.42)
+% }
+% \pscustom[linewidth=0.04,fillstyle=solid]
+% {
+% \newpath
+% \moveto(1.0365624,0.52)
+% \lineto(1.0165625,0.49)
+% \curveto(1.0065625,0.475)(1.0065625,0.45)(1.0365624,0.42)
+% }
+% \psdots[dotsize=0.08](1.1965625,0.36)
+% 
+% \rput[l](6,0.81){$\text{displacement } = 0 \text{ m}$}
+% 
+% \rput[l](6,0.23){$\text{velocity } = 0 \ms$}
+% 
+% \rput[l](6,-0.35){$\text{acceleration } = 0 \text{m}\cdot$s$^{-2}$}
+% \end{pspicture} 
+% }
+% \end{center}
+% \end{figure}      
 
-\rput(4.37,0.795){\footnotesize STOP}
 
-\rput(2.671875,-1.09){2 m}
-
-\rput[r](0.3,-0.09){$t = 0 \text{ s}$}
-\rput[r](0.3,-0.49){$t = 60 \text{ s}$}
-\rput[r](0.3,-0.89){$t = 120 \text{ s}$}
-\psellipse[linewidth=0.04,dimen=outer](1.1965625,0.39)(0.18,0.31)
-\psline[](1.1965625,0.1)(1.1965625,-0.42)
-\psline[](1.1965625,-0.4)(1.2765625,-0.7)
-\psline[](1.2765625,-0.68)(1.2765625,-0.88)
-\psline[](1.2765625,-0.86)(1.3365625,-0.86)
-\psline[](1.1965625,-0.4)(1.1165625,-0.7)
-\psline[](1.1165625,-0.7)(1.1165625,-0.9)
-\psline[](1.1165625,-0.9)(1.0365624,-0.88)
-\psline[](1.2165625,-0.02)(1.2565625,-0.28)
-\psline[](1.2565625,-0.28)(1.2965626,-0.12)
-\psline[](1.1965625,0.0)(1.1165625,-0.38)
-\psline[](1.1165625,-0.38)(1.0765625,-0.18)
-\psdots[dotsize=0.108](1.2565625,0.48)
-\psdots[dotsize=0.108](1.1365625,0.48)
-\pscustom[linewidth=0.04,fillstyle=solid]
-{
-\newpath
-\moveto(1.0765625,0.32)
-\lineto(1.1065625,0.29)
-\curveto(1.1215625,0.275)(1.1615624,0.26)(1.1865625,0.26)
-\curveto(1.2115625,0.26)(1.2515625,0.27)(1.2665625,0.28)
-\curveto(1.2815624,0.29)(1.3015625,0.305)(1.3165625,0.32)
-}
-\pscustom[linewidth=0.04,fillstyle=solid]
-{
-\newpath
-\moveto(1.3365625,0.5)
-\lineto(1.3665625,0.49)
-\curveto(1.3815625,0.485)(1.3865625,0.465)(1.3565625,0.42)
-}
-\pscustom[linewidth=0.04,fillstyle=solid]
-{
-\newpath
-\moveto(1.0365624,0.52)
-\lineto(1.0165625,0.49)
-\curveto(1.0065625,0.475)(1.0065625,0.45)(1.0365624,0.42)
-}
-\psdots[dotsize=0.08](1.1965625,0.36)
-
-\rput[l](6,0.81){$\text{displacement } = 0 \text{ m}$}
-
-\rput[l](6,0.23){$\text{velocity } = 0 \ms$}
-
-\rput[l](6,-0.35){$\text{acceleration } = 0 \text{m}\cdot$s$^{-2}$}
-\end{pspicture} 
-}
-\end{center}
-\end{figure}      
-        \label{m38795*id69081}We can now draw graphs of position vs. time ($x$ vs. $t$), velocity vs. time ($v$ vs. $t$) and acceleration vs. time ($a$ vs. $t$) for a stationary object. The graphs are shown in Figure~\ref{fig:pr:stationary}.
-Lesedi's position is 2~metres from the stop street. If the stop street is taken as the reference point, his position remains at 2~metres for 120~seconds. The graph is a horizontal line at $2 \text{ m}$.
-The velocity and acceleration graphs are also shown. They are both horizontal lines on the $x$-axis. Since his position is not changing, his velocity is $0~\text{m}\ensuremath{\cdot}\text{s}{}^{-1}$ and since velocity is not changing, acceleration is $0~\text{m}\ensuremath{\cdot}\text{s}{}^{-2}$.\par 
-    \setcounter{subfigure}{0}
-\begin{figure}[H]
+        \label{m38795*id69081}We can now draw graphs of position vs. time ($\vec{x}$ vs. $t$), velocity vs. time ($\vec{v}$ vs. $t$) and acceleration vs. time ($\vec{a}$ vs. $t$) for a stationary object. The graphs are shown below.
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -1398,24 +1403,29 @@ The velocity and acceleration graphs are also shown. They are both horizontal li
 \rput(6.9909377,-2.0765624){(b)}
 
 \rput(11.980938,-2.0765624){(c)}
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](2.7957811,0.8134375)(2.7957811,-1.0865625)
+\psline[](2.7957811,0.8134375)(2.7957811,-1.0865625)
 \end{pspicture} 
 }
 \caption{Graphs for a stationary object (a) position vs. time (b) velocity vs. time (c) acceleration vs. time.}
 \label{fig:pr:stationary}
 \end{center}
-\end{figure}      
+John's position is 2~metres from the stop street. If the stop street is taken as the reference point, his position remains at 2~metres for 120~seconds. The graph is a horizontal line at $2 \text{ m}$.
+The velocity and acceleration graphs are also shown. They are both horizontal lines on the $x$-axis. Since his position is not changing, his velocity is $0~\text{m}\ensuremath{\cdot}\text{s}{}^{-1}$ and since velocity is not changing, acceleration is $0~\text{m}\ensuremath{\cdot}\text{s}{}^{-2}$.\par 
+
+
 \par
-\Definition{ Gradient } {The gradient of a line can be calculated by dividing the change in the $y$-value by the change in the $x$-value. $m = \frac{\Delta y}{\Delta x}$ \par  } 
-        \label{m38795*id69281}Since we know that velocity is the rate of change of position, we can confirm the value for the velocity vs. time graph, by calculating the gradient of the $x$ vs. $t$ graph.\par 
+\Definition{Gradient} {The gradient, $m$, of a line can be calculated by dividing the change in the $y$-value (dependent variable) by the change in the $x$-value (independent variable). $m = \frac{\Delta y}{\Delta x}$ \par  } 
+        \label{m38795*id69281}Since we know that velocity is the rate of change of position, we can confirm the value for the velocity vs. time graph, by calculating the gradient of the $\vec{x}$ vs. $t$ graph.\par 
 \label{m38795*notfhsst!!!underscore!!!id1870}
 \Tip{The gradient of a position vs. time graph gives the velocity.}
 	\par
-        \label{m38795*id69310}If we calculate the gradient of the $x$ vs. $t$ graph for a stationary object we get:\par 
+        \label{m38795*id69310}If we calculate the gradient of the $\vec{x}$ vs. $t$ graph for a stationary object we get:\par 
         \label{m38795*id69332}\nopagebreak\noindent{}
-    \begin{equation*}
-    \begin{array}{cccc}\hfill v& =& \frac{\Delta x}{\Delta t}\hfill & \\ & =& \frac{{x}_{f}-{x}_{i}}{{t}_{f}-{t}_{i}}\hfill & \\ & =& \frac{2\phantom{\rule{3.33333pt}{0ex}}\text{m}-2\phantom{\rule{3.33333pt}{0ex}}\text{m}}{120\phantom{\rule{3.33333pt}{0ex}}\text{s}-60\phantom{\rule{3.33333pt}{0ex}}\text{s}}\hfill & \left(\text{initial\; position}=\text{final\; position}\right)\hfill \\ & =& 0\phantom{\rule{4pt}{0ex}}\phantom{\rule{0.166667em}{0ex}}\text{m}\ensuremath{\cdot}{\text{s}}^{-1}\hfill & \left(\text{for\; the\; time\; that\; Lesedi\; is\; stationary}~\right)\hfill \end{array}
-      \end{equation*}
+    \begin{align*}
+    \begin{array}
+	v &= \frac{\Delta \vec{x}}{\Delta t}
+	&= \frac{\vec{x}_{f}-\vec{x}_{i}}{{t}_{f}-{t}_{i}}\hfill & \\ & =& \frac{2\phantom{\rule{3.33333pt}{0ex}}\text{m}-2\phantom{\rule{3.33333pt}{0ex}}\text{m}}{120\phantom{\rule{3.33333pt}{0ex}}\text{s}-60\phantom{\rule{3.33333pt}{0ex}}\text{s}}\hfill & \left(\text{initial\; position}=\text{final\; position}\right)\hfill \\ & =& 0\phantom{\rule{4pt}{0ex}}\phantom{\rule{0.166667em}{0ex}}\text{m}\ensuremath{\cdot}{\text{s}}^{-1}\hfill & \left(\text{for\; the\; time\; that\; Lesedi\; is\; stationary}~\right)\hfill \end{array}
+      \end{align*}
         \label{m38795*id69558}Similarly, we can confirm the value of the acceleration by calculating the gradient of the velocity vs. time graph.\par 
 \label{m38795*notfhsst!!!underscore!!!id2005}
 \Tip{The gradient of a velocity vs. time graph gives the acceleration.}
@@ -1423,9 +1433,12 @@ The velocity and acceleration graphs are also shown. They are both horizontal li
         \label{m38795*id69571}If we calculate the gradient of the $v$ vs. $t$ graph for a stationary object we get:\par 
         \label{m38795*id69594}\nopagebreak\noindent{}
           
-    \begin{equation*}
-    \begin{array}{ccc}\hfill a& =& \frac{\Delta v}{\Delta t}\hfill \\ & =& \frac{{v}_{f}-{v}_{i}}{{t}_{f}-{t}_{i}}\hfill \\ & =& \frac{0\phantom{\rule{4pt}{0ex}}\phantom{\rule{0.166667em}{0ex}}\text{m}\ensuremath{\cdot}{\text{s}}^{-1}-0\phantom{\rule{4pt}{0ex}}\phantom{\rule{0.166667em}{0ex}}\text{m}\ensuremath{\cdot}{\text{s}}^{-1}}{120\phantom{\rule{3.33333pt}{0ex}}\text{s}-60\phantom{\rule{3.33333pt}{0ex}}\text{s}}\hfill \\ & =& 0\phantom{\rule{4pt}{0ex}}\phantom{\rule{0.166667em}{0ex}}\text{m}\ensuremath{\cdot}{\text{s}}^{-2}\hfill \end{array}
-      \end{equation*}
+    \begin{align*}
+    a &= \frac{\Delta v}{\Delta t}\hfill \\ 
+    &= \frac{{v}_{f}-{v}_{i}}{{t}_{f}-{t}_{i}}\hfill \\ 
+    &= \frac{0~\text{m}\cdot\text{s}^{-1}-0~\text{m}\cdot\text{s}^{-1}}{120~\text{s}-60~\text{s}}\\ 
+    &= 0~\text{m}\cdot\text{s}^{-2}
+      \end{align*}
         \label{m38795*id69809}Additionally, because the velocity vs. time graph is related to the position vs. time graph, we can use the area under the velocity vs. time graph to calculate the displacement of an object.\par 
 \label{m38795*notfhsst!!!underscore!!!id2134}
 \Tip{The area under the velocity vs. time graph gives the displacement.}
@@ -1438,9 +1451,13 @@ The velocity and acceleration graphs are also shown. They are both horizontal li
         \label{m38795*id69845}Assume that Lesedi takes $100~\text{s}$ to walk the $100~\text{m}$ to the taxi-stop every morning. If we assume that Lesedi's house is the origin, then Lesedi's velocity is:\par 
         \label{m38795*id69850}\nopagebreak\noindent{}
           
-    \begin{equation*}
-    \begin{array}{ccc}\hfill v& =& \frac{\Delta x}{\Delta t}\hfill \\ & =& \frac{{x}_{f}-{x}_{i}}{{t}_{f}-{t}_{i}}\hfill \\ & =& \frac{100\phantom{\rule{4pt}{0ex}}\text{m}-0\phantom{\rule{4pt}{0ex}}\text{m}}{100\phantom{\rule{4pt}{0ex}}\text{s}-0\phantom{\rule{4pt}{0ex}}\text{s}}\hfill \\ & =& 1\phantom{\rule{4pt}{0ex}}\phantom{\rule{0.166667em}{0ex}}\text{m}\ensuremath{\cdot}{\text{s}}^{-1}\hfill \end{array}
-      \end{equation*}
+    \begin{align*}
+    \begin{array}
+	v& =& \frac{\Delta x}{\Delta t}\hfill \\ 
+	& =& \frac{{x}_{f}-{x}_{i}}{{t}_{f}-{t}_{i}}\hfill \\ 
+	& =& \frac{100~\text{m}-0~\text{m}}{100~\text{s}-0~\text{s}}\\ 
+	& =& 1~\text{m}\cdot{\text{s}}^{-1}
+      \end{align*}
         \label{m38795*id70029}Lesedi's velocity is 1 m$\ensuremath{\cdot}$s${}^{-1}$. This means that he walked $1~\text{m}$ in the first second, another metre in the second second, and another in the third second, and so on. For example, after $50~\text{s}$ he will be $50~\text{m}$ from home. His position increases by $1~\text{m}$ every $1~\text{s}$. A diagram of Lesedi's position is shown in Figure~\ref{fig:pr:diagram:uniform}.\par 
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38795*uid91}
@@ -1448,7 +1465,7 @@ The velocity and acceleration graphs are also shown. They are both horizontal li
 \scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.57375)(9.02,1.53375)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.0,-0.46625)(9.0,-0.46625)
+\psline[]{->}(2.0,-0.46625)(9.0,-0.46625)
 \psframe[linewidth=0.04,dimen=outer](2.0,0.53375)(0.0,-0.46625)
 \pstriangle[linewidth=0.04,dimen=outer](1.0,0.53375)(2.0,1.0)
 \psframe[linewidth=0.04,dimen=outer](1.2,0.23375)(0.8,-0.46625)
@@ -1512,8 +1529,8 @@ The velocity and acceleration graphs are also shown. They are both horizontal li
 \rput[l](5,-1.05625){$x$ = 50 m}
 
 \rput[l](2,-1.05625){$x$ = 0 m}
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](5.0,1.07375)(5.0,-0.44625)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](7.98,1.05375)(7.98,-0.46625)
+\psline[](5.0,1.07375)(5.0,-0.44625)
+\psline[](7.98,1.05375)(7.98,-0.46625)
 \psellipse[linewidth=0.04,dimen=outer](5.17,0.51375)(0.15,0.2)
 \psline[](5.12,0.31375)(5.12,0.31375)
 \psline[linewidth=0.051999997cm](5.16,0.35375)(5.16,-0.04625)
@@ -1599,21 +1616,21 @@ The velocity and acceleration graphs are also shown. They are both horizontal li
 \lineto(8.08,0.69375)
 \curveto(8.06,0.67375)(8.035,0.63875)(8.02,0.59375)
 }
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](8.14,-0.44625)(8.22,-0.44625)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](8.02,-0.44625)(8.1,-0.44625)
+\psline[](8.14,-0.44625)(8.22,-0.44625)
+\psline[](8.02,-0.44625)(8.1,-0.44625)
 \psline[](8.12,-0.00625)(8.22,-0.22625)
 \psline[](8.08,-0.22625)(8.02,-0.44625)
 \psline[](8.22,-0.20625)(8.14,-0.44625)
 \psline[](5.02,-0.42625)(5.12,-0.42625)
 \psline[](5.2,-0.42625)(5.28,-0.42625)
 
-\rput[l](5,-1.37625){$v$ = 1\ms}
+\rput[l](5,-1.37625){$v$ = 1\text{m}\cdot \text{s}^{-1}}
 
-\rput[l](8,-1.39625){$v$ = 1\ms}
+\rput[l](8,-1.39625){$v$ = 1\text{m}\cdot \text{s}^{-1}}
 \end{pspicture} 
 }
 \end{center}
-\caption{Diagram showing Lesedi's motion at a constant velocity of 1 \ms}
+\caption{Diagram showing Lesedi's motion at a constant velocity of 1 \text{m}\cdot \text{s}^{-1}}
 \label{fig:pr:diagram:uniform}
 \end{figure}     
         \label{m38795*id70106}We can now draw graphs of position vs.time ($x$ vs. $t$), velocity vs.time ($v$ vs. $t$) and acceleration vs.time ($a$ vs. $t$) for Lesedi moving at a constant velocity. The graphs are shown in Figure~\ref{fig:pr:uniform}. \\ 
@@ -1683,15 +1700,15 @@ The velocity and acceleration graphs are also shown. They are both horizontal li
 \rput(7.1909375,-2.0765624){(b)}
 
 \rput(12.180938,-2.0765624){(c)}
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](2.9957812,0.8134375)(2.9957812,-1.0865625)
+\psline[](2.9957812,0.8134375)(2.9957812,-1.0865625)
 
 \rput(5.742656,-0.1765625){1}
 \psline[](5.895781,-0.1865625)(6.0957813,-0.1865625)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](2.8957813,0.8134375)(0.99578124,0.8134375)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](7.9957814,-0.1865625)(7.9957814,-1.1865625)
+\psline[](2.8957813,0.8134375)(0.99578124,0.8134375)
+\psline[](7.9957814,-0.1865625)(7.9957814,-1.1865625)
 \psframe[linewidth=0.02,linecolor=color1158b,dimen=outer,fillstyle=solid,fillcolor=color1158b](7.9757814,-0.2265625)(6.0157814,-1.1465625)
-\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](2.5757813,0.3534375)(2.5757813,-0.5865625)
-\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](2.5757813,-0.5865625)(1.6357813,-0.5865625)
+\psline[linewidth=0.03cm,](2.5757813,0.3534375)(2.5757813,-0.5865625)
+\psline[linewidth=0.03cm,](2.5757813,-0.5865625)(1.6357813,-0.5865625)
 \rput[l](2.7,-0.1365625){$\Delta$x}
 \rput(2.2054687,-0.7315625){\footnotesize $\Delta$t}
 \end{pspicture} 
@@ -1710,12 +1727,12 @@ The velocity and acceleration graphs are also shown. They are both horizontal li
 \definecolor{color1158b}{rgb}{0.8,0.8,0.8}
 
 \rput(9.871614,2.3734374){   }
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.99578124,-1.1865625)(0.99578124,1.8134375)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.99578124,-1.1865625)(3.9957812,-1.1865625)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(6.0110865,1.8133594)(5.980476,-1.1864845)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(5.9957814,0.8134375)(8.995781,0.8134375)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(10.995781,-1.1865625)(10.995781,1.8134375)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(10.995781,-1.1865625)(13.995781,-1.1865625)
+\psline[]{->}(0.99578124,-1.1865625)(0.99578124,1.8134375)
+\psline[]{->}(0.99578124,-1.1865625)(3.9957812,-1.1865625)
+\psline[]{<->}(6.0110865,1.8133594)(5.980476,-1.1864845)
+\psline[]{->}(5.9957814,0.8134375)(8.995781,0.8134375)
+\psline[]{->}(10.995781,-1.1865625)(10.995781,1.8134375)
+\psline[]{->}(10.995781,-1.1865625)(13.995781,-1.1865625)
 \psline[linewidth=0.09cm](10.995781,-1.1865625)(12.995781,-1.1865625)
 \psline[linewidth=0.09cm](5.9957814,-0.1865625)(7.9957814,-0.1865625)
 \psline[linewidth=0.09cm](0.97578126,0.8134375)(2.9957812,-1.1865625)
@@ -1770,10 +1787,10 @@ The velocity and acceleration graphs are also shown. They are both horizontal li
 
 \rput(5.7164063,-0.1765625){-1}
 \psline[](5.895781,-0.1865625)(6.0957813,-0.1865625)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](7.9957814,0.8134375)(7.9957814,-0.1865625)
+\psline[](7.9957814,0.8134375)(7.9957814,-0.1865625)
 \psframe[linewidth=0.02,linecolor=color1158b,dimen=outer,fillstyle=solid,fillcolor=color1158b](7.9757814,0.7734375)(6.0157814,-0.1465625)
-\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](2.5757813,0.1534375)(2.5757813,-0.7865625)
-\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](2.5757813,0.2134375)(1.6357813,0.2134375)
+\psline[linewidth=0.03cm,](2.5757813,0.1534375)(2.5757813,-0.7865625)
+\psline[linewidth=0.03cm,](2.5757813,0.2134375)(1.6357813,0.2134375)
 
 \rput(2.7920313,-0.2315625){\footnotesize $\Delta$x}
 
@@ -1880,7 +1897,7 @@ Answer the following questions in your workbook:
 \scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-2.8925)(10.3475,-0.5)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.7,-2.0475)(10.0,-2.0475)
+\psline[]{->}(1.7,-2.0475)(10.0,-2.0475)
 \psline[linewidth=0.06cm](1.7,-1.1475)(1.7,-2.0475)
 \psline[](4.3,2.8525)(4.3,2.8525)
 \pscircle[linewidth=0.04,dimen=outer](0.55,-1.8975){0.15}
@@ -1920,59 +1937,59 @@ Answer the following questions in your workbook:
 \rput(6.352031,-2.7375){t = 3 s}
 
 \rput(9.852032,-2.7375){t = 4 s}
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](2.7,-1.9475)(3.1,-1.9475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](3.4,-1.9475)(3.7,-1.9475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](6.3,-1.9475)(6.3,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](3.7,-1.6475)(3.5,-1.2475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](2.4,-1.9475)(2.0,-1.9475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](2.0,-1.9475)(2.0,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](2.0,-1.6475)(2.1,-1.2475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](2.1,-1.2475)(3.5,-1.2475)
-\pscircle[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](2.55,-1.8975){0.15}
-\pscircle[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](3.25,-1.8975){0.15}
-\psframe[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](2.5,-1.3475)(2.2,-1.6475)
-\psframe[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](2.9,-1.3475)(2.6,-1.6475)
-\psframe[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](3.3,-1.3475)(3.0,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](3.4,-1.3475)(3.4,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](3.4,-1.6475)(3.6,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](3.6,-1.6475)(3.4,-1.3475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](5.3,-1.9475)(5.7,-1.9475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](6.0,-1.9475)(6.3,-1.9475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](6.3,-1.6475)(6.1,-1.2475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](5.0,-1.9475)(4.6,-1.9475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](4.6,-1.9475)(4.6,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](4.6,-1.6475)(4.7,-1.2475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](4.7,-1.2475)(6.1,-1.2475)
-\pscircle[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](5.15,-1.8975){0.15}
-\pscircle[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](5.85,-1.8975){0.15}
-\psframe[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](5.1,-1.3475)(4.8,-1.6475)
+\psline[](2.7,-1.9475)(3.1,-1.9475)
+\psline[](3.4,-1.9475)(3.7,-1.9475)
+\psline[](6.3,-1.9475)(6.3,-1.6475)
+\psline[](3.7,-1.6475)(3.5,-1.2475)
+\psline[](2.4,-1.9475)(2.0,-1.9475)
+\psline[](2.0,-1.9475)(2.0,-1.6475)
+\psline[](2.0,-1.6475)(2.1,-1.2475)
+\psline[](2.1,-1.2475)(3.5,-1.2475)
+\pscircle[linewidth=0.04,,dimen=outer](2.55,-1.8975){0.15}
+\pscircle[linewidth=0.04,,dimen=outer](3.25,-1.8975){0.15}
+\psframe[linewidth=0.04,,dimen=outer](2.5,-1.3475)(2.2,-1.6475)
+\psframe[linewidth=0.04,,dimen=outer](2.9,-1.3475)(2.6,-1.6475)
+\psframe[linewidth=0.04,,dimen=outer](3.3,-1.3475)(3.0,-1.6475)
+\psline[](3.4,-1.3475)(3.4,-1.6475)
+\psline[](3.4,-1.6475)(3.6,-1.6475)
+\psline[](3.6,-1.6475)(3.4,-1.3475)
+\psline[](5.3,-1.9475)(5.7,-1.9475)
+\psline[](6.0,-1.9475)(6.3,-1.9475)
+\psline[](6.3,-1.6475)(6.1,-1.2475)
+\psline[](5.0,-1.9475)(4.6,-1.9475)
+\psline[](4.6,-1.9475)(4.6,-1.6475)
+\psline[](4.6,-1.6475)(4.7,-1.2475)
+\psline[](4.7,-1.2475)(6.1,-1.2475)
+\pscircle[linewidth=0.04,,dimen=outer](5.15,-1.8975){0.15}
+\pscircle[linewidth=0.04,,dimen=outer](5.85,-1.8975){0.15}
+\psframe[linewidth=0.04,,dimen=outer](5.1,-1.3475)(4.8,-1.6475)
 
-\psframe[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](5.5,-1.3475)(5.2,-1.6475)
-\psframe[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](5.9,-1.3475)(5.6,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](6.0,-1.3475)(6.0,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](6.0,-1.6475)(6.2,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](6.2,-1.6475)(6.0,-1.3475)
+\psframe[linewidth=0.04,,dimen=outer](5.5,-1.3475)(5.2,-1.6475)
+\psframe[linewidth=0.04,,dimen=outer](5.9,-1.3475)(5.6,-1.6475)
+\psline[](6.0,-1.3475)(6.0,-1.6475)
+\psline[](6.0,-1.6475)(6.2,-1.6475)
+\psline[](6.2,-1.6475)(6.0,-1.3475)
 \psline[](3.6,-1.9475)(3.6,-2.1475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](5.4,-2.0475)(5.8,-2.0475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](6.1,-2.0475)(6.4,-2.0475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](3.7,-1.9475)(3.7,-1.6475)
+\psline[](5.4,-2.0475)(5.8,-2.0475)
+\psline[](6.1,-2.0475)(6.4,-2.0475)
+\psline[](3.7,-1.9475)(3.7,-1.6475)
 \psline[](9.7,-1.9475)(9.7,-2.1475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](9.8,-1.9475)(9.8,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](8.8,-1.9475)(9.2,-1.9475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](9.5,-1.9475)(9.8,-1.9475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](9.8,-1.6475)(9.6,-1.2475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](8.5,-1.9475)(8.1,-1.9475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](8.1,-1.9475)(8.1,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](8.1,-1.6475)(8.2,-1.2475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](8.2,-1.2475)(9.6,-1.2475)
-\pscircle[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](8.65,-1.8975){0.15}
-\pscircle[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](9.35,-1.8975){0.15}
-\psframe[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](8.6,-1.3475)(8.3,-1.6475)
-\psframe[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](9.0,-1.3475)(8.7,-1.6475)
-\psframe[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](9.4,-1.3475)(9.1,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](9.5,-1.3475)(9.5,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](9.5,-1.6475)(9.7,-1.6475)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](9.7,-1.6475)(9.5,-1.3475)
+\psline[](9.8,-1.9475)(9.8,-1.6475)
+\psline[](8.8,-1.9475)(9.2,-1.9475)
+\psline[](9.5,-1.9475)(9.8,-1.9475)
+\psline[](9.8,-1.6475)(9.6,-1.2475)
+\psline[](8.5,-1.9475)(8.1,-1.9475)
+\psline[](8.1,-1.9475)(8.1,-1.6475)
+\psline[](8.1,-1.6475)(8.2,-1.2475)
+\psline[](8.2,-1.2475)(9.6,-1.2475)
+\pscircle[linewidth=0.04,,dimen=outer](8.65,-1.8975){0.15}
+\pscircle[linewidth=0.04,,dimen=outer](9.35,-1.8975){0.15}
+\psframe[linewidth=0.04,,dimen=outer](8.6,-1.3475)(8.3,-1.6475)
+\psframe[linewidth=0.04,,dimen=outer](9.0,-1.3475)(8.7,-1.6475)
+\psframe[linewidth=0.04,,dimen=outer](9.4,-1.3475)(9.1,-1.6475)
+\psline[](9.5,-1.3475)(9.5,-1.6475)
+\psline[](9.5,-1.6475)(9.7,-1.6475)
+\psline[](9.7,-1.6475)(9.5,-1.3475)
 
 \rput(1.7004688,-0.8625){\tiny STOP}
 \end{pspicture} 
@@ -2015,12 +2032,12 @@ Answer the following questions in your workbook:
 \definecolor{color1977b}{rgb}{0.8,0.8,0.8}
 
 \rput(9.871614,2.0984375){   }
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.99578124,-1.4615625)(0.99578124,2.5384376)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.99578124,-1.4615625)(4.895781,-1.4615625)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(5.9957814,-1.4615625)(5.9957814,1.9384375)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(5.9957814,-1.4615625)(9.495781,-1.4615625)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(10.995781,-1.4615625)(10.995781,1.5384375)
-\psline[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(10.995781,-1.4615625)(13.995781,-1.4615625)
+\psline[]{->}(0.99578124,-1.4615625)(0.99578124,2.5384376)
+\psline[]{->}(0.99578124,-1.4615625)(4.895781,-1.4615625)
+\psline[]{->}(5.9957814,-1.4615625)(5.9957814,1.9384375)
+\psline[]{->}(5.9957814,-1.4615625)(9.495781,-1.4615625)
+\psline[]{->}(10.995781,-1.4615625)(10.995781,1.5384375)
+\psline[]{->}(10.995781,-1.4615625)(13.995781,-1.4615625)
 \psline[linewidth=0.09cm](10.995781,-0.3615625)(12.995781,-0.3615625)
 \psline[linewidth=0.09cm](5.9957814,-1.4615625)(8.995781,1.5384375)
 
@@ -2071,13 +2088,13 @@ Answer the following questions in your workbook:
 \rput(7.1909375,-2.3515625){(b)}
 
 \rput(12.180938,-2.3515625){(c)}
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](4.295781,0.7384375)(4.295781,-1.1615624)
+\psline[](4.295781,0.7384375)(4.295781,-1.1615624)
 \psline[](4.295781,0.7384375)(2.2957811,-1.0615625)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](2.4957812,-1.0615625)(4.375781,-1.0615625)
+\psline[](2.4957812,-1.0615625)(4.375781,-1.0615625)
 
 \rput(3.7340624,-0.2915625){$\Delta$ x}
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](7.9957814,0.5384375)(7.9757814,-0.4415625)
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](7.9757814,-0.4415625)(6.9957814,-0.4615625)
+\psline[](7.9957814,0.5384375)(7.9757814,-0.4415625)
+\psline[](7.9757814,-0.4415625)(6.9957814,-0.4615625)
 
 \rput(8.714531,0.0684375){$\Delta$ v}
 
@@ -2118,7 +2135,7 @@ Answer the following questions in your workbook:
 \curveto(1.7957813,-1.3115625)(1.5457813,-1.4615625)(1.4957813,-1.4615625)
 \curveto(1.4457812,-1.4615625)(1.3207812,-1.4615625)(1.0957812,-1.4615625)
 }
-\psline[linestyle=dashed,dash=0.16cm 0.16cm](12.995781,-0.3615625)(12.995781,-1.4615625)
+\psline[](12.995781,-0.3615625)(12.995781,-1.4615625)
 \psframe[linewidth=0.04,linecolor=color1977b,dimen=outer,fillstyle=solid,fillcolor=color1977b](13,-0.4)(11.03,-1.435)
 \end{pspicture} 
 }
@@ -2678,7 +2695,7 @@ The velocity vs. time graph looks like this:
          \subsection*{Equations of motion}
     \nopagebreak
             \label{m38796} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11305.imgs/summary_fullmarks.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: P10103 )} \par 
-      \label{m38796*id75595}In this chapter we will look at the third way to describe motion. We have looked at describing motion in terms of graphs and words. In this section we examine equations that can be used to describe motion.\par 
+      \label{m38796*id75595}In this section we will look at the third way to describe motion. We have looked at describing motion in terms of words and graphs. In this section we examine equations that can be used to describe motion.\par 
       \label{m38796*id75600}This section is about solving problems relating to uniformly accelerated motion. In other words, motion at constant acceleration.\par 
       \label{m38796*id75605}The following are the variables that will be used in this section:\par 
       \label{m38796*id75611}\nopagebreak\noindent{}
@@ -2707,7 +2724,7 @@ v_f^2 &=& v_i^2 + 2a \Delta x \label{eq:eq4}
 	\par
       \label{m38796*uid134}
 %Should this next section be out?
-            \subsection*{Extension: Finding the Equations of Motion}
+            \subsection*{Extension: Finding the equations of motion}
             \nopagebreak
         \label{m38796*id76225}The following does not form part of the syllabus and can be considered additional information.\par 
         \label{m38796*uid135}
@@ -2943,11 +2960,11 @@ It is useful to draw a timeline like this one:
 \psline[linewidth=0.02cm,tbarsize=0.07055555cm 5.0]{|-|}(0.1375,-1.4182812)(5.1375,-1.4182812)
 
 \rput(2.6225,-1.6232812){\footnotesize 50 m}
-\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.2375,-0.41828126)(1.6375,-0.41828126)
+\psline[linewidth=0.02cm,]{<->}(0.2375,-0.41828126)(1.6375,-0.41828126)
 
 \rput(1.0020312,-0.23328125){\scriptsize 0,5 s}
 
-\rput(0.9459375,0.06671875){\scriptsize v = 10 \ms}
+\rput(0.9459375,0.06671875){\scriptsize v = 10 \text{m}\cdot \text{s}^{-1}}
 \end{pspicture} 
 }
 \end{center}
@@ -3004,21 +3021,21 @@ The child is 50 meters ahead. The truck will not hit the child.
 \label{m38796*uid158}\item The distance of an object is the length of the path travelled from the starting point to the end point. It has magnitude only because it is a scalar.
 \label{m38796*uid161}\item Speed ($v$) is the distance covered ($D$) divided by the time taken ($\Delta t$):
 \label{m38796*id80758}\nopagebreak\noindent{}
-    \begin{equation}
+    \begin{equation*}
     v=\frac{D}{\Delta t}
-      \end{equation}
+      \end{equation*}
     \label{m38796*uid162}\item Average velocity ($\vec{v}_{av}$) is the displacement ($\Delta x$) divided by the time taken ($\Delta t$):
 \label{m38796*id80827}\nopagebreak\noindent{}
-    \begin{equation}
+    \begin{equation*}
     \vec{v}_{av}=\frac{\Delta x}{\Delta t}
-      \end{equation}
+      \end{equation*}
     \label{m38796*uid163}\item Instantaneous speed is the speed at a specific instant in time.
 \label{m38796*uid164}\item Instantaneous velocity is the velocity at a specific instant in time.
 \label{m38796*uid165}\item Acceleration ($\vec{a}$) is the change in velocity ($\Delta \vec{v}$) over a time interval ($\Delta t$):
 \label{m38796*id80925}\nopagebreak\noindent{}
-    \begin{equation}
+    \begin{equation*}
     \vec{a}=\frac{\Delta \vec{v}}{\Delta t}
-      \end{equation}
+      \end{equation*}
     \label{m38796*uid166}\item The gradient of a position - time graph ($x$ vs. $t$) give the velocity.
 \label{m38796*uid167}\item The gradient of a velocity - time graph ($v$ vs. $t$) give the acceleration.
 \label{m38796*uid168}\item The area under a velocity - time graph ($v$ vs. $t$) give the displacement.
