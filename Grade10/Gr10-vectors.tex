@@ -370,7 +370,7 @@ For example, if in a particular situation, we define the upward direction as the
 Like scalars, vectors can also be added and subtracted. We will investigate how to do this next.
 
 \label{m38813*uid35}
-\subsection*{Addition and subtraction of Vectors}
+\subsection*{Addition and subtraction of vectors}
             \nopagebreak
         \label{m38813*id188304}
 
@@ -455,8 +455,8 @@ steps forward.
 \subsubsection{Subtracting vectors}
 
 Let's go back to the problem of the heavy box that you and your friend are trying to move. 
-If you didn't communicate properly beforehand, you both might think that you should pull in your own directions!
-Imagine you stand behind the box and pull it towards you with a force $\stackrel{\to }{F_{1}}$ and your friend stands at the front of the box and pulls it towards them with a force $\stackrel{\to }{F_{2}}$. In this case the two forces are in \textit{opposite} directions. If we define the direction you are pulling in as \textit{positive} then the force your friend is exerting must be \textit{negative} since it is in the opposite direction. We can write the total force exerted on the box as the sum of the individual forces:
+If you didn't communicate properly first, you both might think that you should pull in your own directions!
+Imagine you stand behind the box and pull it towards you with a force $\stackrel{\to }{F_{1}}$ and your friend stands at the front of the box and pulls it towards them with a force $\stackrel{\to }{F_{2}}$. In this case the two forces are in \textit{opposite} directions. If we define the direction your friend is pulling in as \textit{positive} then the force you are exerting must be \textit{negative} since it is in the opposite direction. We can write the total force exerted on the box as the sum of the individual forces:
 
 \begin{minipage}{0.5\textwidth}
 \begin{center}
@@ -464,11 +464,9 @@ Imagine you stand behind the box and pull it towards you with a force $\stackrel
 {
 \begin{pspicture}(0,-1.18)(5.62,1.18)
 \psframe[linewidth=0.04,dimen=outer](3.94,1.18)(1.58,-1.18)
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(0.0,-0.08)(1.64,-0.1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(0.0,-0.1)(1.64,-0.1)
 \psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.96,-0.12)(5.6,-0.12)
-\usefont{T1}{ptm}{m}{n}
 \rput(0.7814551,0.205){$\stackrel{\to }{F_{1}}$}
-\usefont{T1}{ptm}{m}{n}
 \rput(4.741455,0.205){$\stackrel{\to }{F_{2}}$}
 \end{pspicture} 
 }
@@ -476,27 +474,227 @@ Imagine you stand behind the box and pull it towards you with a force $\stackrel
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 \begin{eqnarray*}
-\stackrel{\to }{F_{Tot}} & = & \stackrel{\to }{F_{1}} + (-\stackrel{\to }{F_{2}}) \\
-& = & \stackrel{\to }{F_{1}} - \stackrel{\to }{F_{2}}
+\stackrel{\to }{F_{Tot}} & = & \stackrel{\to }{F_{2}} + (-\stackrel{\to }{F_{1}}) \\
+& = & \stackrel{\to }{F_{2}} - \stackrel{\to }{F_{1}}
 \end{eqnarray*}
 \end{minipage}
 
-
 What you have done here is actually to subtract two vectors! This is the same as adding two vectors which have opposite directions.
 
+As we did before, we can illustrate vector subtraction nicely using displacement vectors. 
+If you take 5 steps forward and then subtract 3 steps forward you are left with only two steps forward:
+
+\begin{center}
+\begin{pspicture}(-6,-0.5)(5,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\rput(-3.5,0.25){{5 steps}}
+\psline[linewidth=0.04cm]{->}(-6,0)(-1,0)
+\rput(-0.8,0){-}
+\rput(1.1,0.25){{3 steps}}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(-0.6,0)(2.6,0)
+\rput(2.8,0.){=}
+\psline[linewidth=0.04cm]{->}(3.0,0)(5.0,0)
+\rput(4.0,0.25){{2 steps}}
+\end{pspicture}
+\end{center}
+
+What did you physically do to subtract 3 steps? You originally took 5 steps forward but then you took 3 steps \textit{backward} to land up back with only 2 steps forward. That backward displacement is represented by an arrow pointing to the left (backwards) with length 3. The net result of
+adding these two vectors is 2 steps forward:
+
+\begin{center}
+\begin{pspicture}(-6,-0.5)(5,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\uput[u](-3.5,0){{5 steps}}
+\psline[linewidth=0.04cm]{->}(-6,0)(-1,0)
+\rput(-0.8,0){+}
+\uput[u](1.1,0){{3 steps}}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(-0.6,0)(2.6,0)
+\rput(2.8,0.){=}
+\psline[linewidth=0.04cm]{->}(3.0,0)(5.0,0)
+\uput[u](4.0,0){{2 steps}}
+\end{pspicture}
+\end{center}
+
+Thus, subtracting a vector from another is the same as adding a vector in the opposite direction (i.e. subtracting 3 steps forwards is the same
+as adding 3 steps backwards). 
+
+\Tip{Subtracting a vector from another is the same as adding a vector in the opposite direction.}
 
 
-        \label{m38813*id188345}The final quantity you get when adding or subtracting vectors is called the \textbf{resultant vector}. 
+\subsubsection{Resultant and equilibrant vectors}
+
+\label{m38813*id188345}The final quantity you get when adding or subtracting vectors is called the \textbf{resultant vector}. In other words, the individual vectors can be replaced by the
+resultant -- the overall effect is the same.
 
 \Definition{  Resultant vectors } { The resultant vector is the single vector whose effect is the same as the individual vectors acting together.    } 
 
-        \label{m38813*id188374}In other words, the individual vectors can be replaced by the
-resultant -- the overall effect is the same. If vectors $\vec{a}$ and $\vec{b}$ have a resultant $\vec{R}$, this can be represented mathematically as:
-        \label{m38813*id188427}\nopagebreak\noindent{}          
+We can illustrate the concept of the resultant vector by considering our two situations in using forces to move the heavy box. In the first case (on the left), you and your friend are applying forces in the same direction. The resultant force will be the sum of your two applied forces in that direction. In the second case (on the right), the forces are applied in opposite directions and the resultant force will be the difference between them. \\
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+Forces are applied in the same direction \\
+(positive direction to the right)\par \\
+
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+%\begin{pspicture}(0,-1.06)(6.88,1.06)
+\begin{pspicture}(0,-1.06)(6.88,1.5)
+\psframe[linewidth=0.04,dimen=outer](4.94,1.06)(2.82,-1.06)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.0)(2.86,0.0)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.92,0.0)(6.86,0.0)
+\rput(1.4814551,0.725){$\stackrel{\to }{F_{1}}$}
+\rput(5.701455,0.725){$\stackrel{\to }{F_{2}}$}
+\rput(1.4551758,0.265){(20 \ \mathsf{N})}
+\rput(5.6151757,0.265){(15 \ \mathsf{N})}
+\end{pspicture} 
+}
 \begin{eqnarray*}
-\vec{R} &=& \vec{a} + \vec{b}.
+\stackrel{\to }{F_{R}} &=& \stackrel{\to }{F_{1}} + \stackrel{\to }{F_{2}} \\
+&=& 20 \ \mathsf{N} + 15 \ \mathsf{N} \\
+& = & 35 \ \mathsf{N} \ \mathsf{\textit{to the right}}
+\end{eqnarray*} \par \\
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+Forces are applied in opposite directions \\
+(positive direction to the right)\par \\
+
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.06)(6.88,1.06)
+\psframe[linewidth=0.04,dimen=outer](4.94,1.06)(2.82,-1.06)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(0.0,0.0)(2.86,0.0)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.92,0.0)(6.86,0.0)
+\rput(1.4814551,0.725){$\stackrel{\to }{F_{1}}$}
+\rput(5.701455,0.725){$\stackrel{\to }{F_{2}}$}
+\rput(1.4551758,0.265){(20 \ \mathsf{N})}
+\rput(5.6151757,0.265){(15 \ \mathsf{N})}
+\end{pspicture} 
+}
+\begin{eqnarray*}
+\stackrel{\to }{F_{R}} &=& \stackrel{\to }{F_{2}} + (\stackrel{\to }{-F_{2}}) \\
+&=& \stackrel{\to }{F_{2}} - \stackrel{\to }{F_{1}} \\
+&=& 15 \ \mathsf{N} - 20 \ \mathsf{N} \\
+& = & -5 \ \mathsf{N} \\
+& = & 5 \ \mathsf{N} \ \mathsf{\textit{to the left}}
+\end{eqnarray*} \par \\
+\end{center}
+\end{minipage}
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.06)(5.06,1.06)
+\psframe[linewidth=0.04,dimen=outer](2.12,1.06)(0.0,-1.06)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.1,0.0)(5.04,0.0)
+\rput(3.551455,0.730){$\stackrel{\to }{F_{R}}$}
+\rput(3.5351758,0.225){(35 \ \mathsf{N})}
+\end{pspicture} 
+}
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.06)(3.5010157,1.06)
+\psframe[linewidth=0.04,dimen=outer](3.5010157,1.06)(1.3810157,-1.06)
+\rput(0.6324707,0.730){$\stackrel{\to }{F_{R}}$}
+\rput(0.8461914,0.225){(5 \ \mathsf{N})}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.4210156,0.0)(0.58101565,0.0)
+\end{pspicture} 
+}
+\end{center}
+\end{minipage} \\
+
+There is a special name for the vector which has the same magnitude as the resultant vector but the \textit{opposite} direction: the \textbf{equilibrant}. If you add the resultant vector and the equilibrant vectors together, the answer is always zero because the equilibrant cancels the resultant out.
+
+\Definition{Equilibrant}{ The equilibrant is the vector which has the \textit{same magnitude} but \textit{opposite direction} to the resultant vector.}
+
+If you refer to the pictures of the heavy box before, the equilibrant forces for the two situations would look like: \par
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.06)(7.74,1.06)
+\psframe[linewidth=0.04,dimen=outer](4.92,1.06)(2.8,-1.06)
+\rput(6.131455,0.665){$\stackrel{\to }{F_{R}}$}
+\rput(6.1351757,0.245){(35 \ \mathsf{N})}
+\psline[linewidth=0.04cm,linecolor=white,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.78,0.0)(1.94,0.0)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.9,-0.02)(7.72,-0.02)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.82,-0.02)(0.0,-0.02)
+\rput(1.4614551,0.685){$\stackrel{\to }{F_{E}}$}
+\rput(1.4751757,0.245){(35 \ \mathsf{N})}
+\end{pspicture} 
+}
+\begin{eqnarray*}
+\stackrel{\to }{F_{E}} &=& -\stackrel{\to }{F_{R}} \\
+&=& 35 \ \mathsf{N} \ \mathsf{\textit{to the left}}
 \end{eqnarray*}
-\label{m38813*id188482}Let us consider some more examples of vector addition using displacements. The arrows tell you how far to move and in what direction. Arrows to the right correspond to steps forward, while arrows to the left correspond to steps backward. Look at all of the examples below and check them.\par 
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.06)(4.46291,1.06)
+\psframe[linewidth=0.04,dimen=outer](3.2210157,1.06)(1.1010156,-1.06)
+\rput(3.7624707,0.725){$\stackrel{\to }{F_{E}}$}
+\rput(3.7461915,0.245){(5N)}
+\psline[linewidth=0.04cm,linecolor=white,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.0810156,0.0)(0.24101563,0.0)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.1210157,-0.02)(0.021015625,-0.02)
+\rput(0.6324707,0.725){$\stackrel{\to }{F_{R}}$}
+\rput(0.6261914,0.205){(5N)}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.2010157,-0.02)(4.301016,-0.02)
+\end{pspicture} 
+}
+\begin{eqnarray*}
+\stackrel{\to }{F_{E}} &=& -\stackrel{\to }{F_{R}} \\
+&=& 5 \ \mathsf{N} \ \mathsf{\textit{to the right}}
+\end{eqnarray*}
+\end{center}
+\end{minipage} 
+
+
+\section{Techniques of vector addition}
+
+Now that you have learned about the mathematical properties of
+vectors, we return to vector addition in more detail. There are a number of
+techniques of vector addition. These techniques fall into two main categories - graphical and algebraic techniques.
+
+\subsection*{Graphical techniques}
+Graphical techniques involve drawing accurate scale diagrams to denote
+individual vectors and their resultants. We will look at just one graphical method: the head-to-tail method.
+
+\subsubsection*{The head-to-tail method}
+In describing the mathematical properties of vectors we used
+displacements and the head-to-tail graphical method of vector addition
+as an illustration. The head-to-tail method of graphically adding vectors is a standard method that must be understood.\\
+
+\textbf{Method: Head-to-Tail Method of Vector Addition}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+\item{Draw a rough sketch of the situation.}
+\item{Choose a scale and include a reference direction.}
+\item{Choose any of the vectors and draw it as an arrow in the
+correct direction and of the correct length -- remember to put an
+arrowhead on the end to denote its direction.}
+\item{Take the next vector and draw it as an arrow starting from the
+arrowhead of the first vector in the correct direction and of the
+correct length.}
+\item{Continue until you have drawn each vector -- each time starting
+from the head of the previous vector. In this way, the vectors to be
+added are drawn one after the other head-to-tail.}
+\item{The resultant is then the vector drawn from the tail of the
+first vector to the head of the last. Its magnitude can be
+determined from the length of its arrow using the scale. Its
+direction too can be determined from the scale diagram.}
+\end{enumerate} \par
+
+
+\label{m38813*id188482}Let's consider some more examples of vector addition using displacements. The arrows tell you how far to move and in what direction. Arrows to the right correspond to steps forward, while arrows to the left correspond to steps backward. Look at all of the examples below and check them.\par 
         \label{m38813*id186651}
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38813*id186654}
@@ -543,6 +741,7 @@ resultant -- the overall effect is the same. If vectors $\vec{a}$ and $\vec{b}$ 
  \end{figure}      
         \par 
         \label{m38813*id186678}This example says 1 step backward and then another step backward is the same as an arrow twice as long -- two steps backward.\par 
+
 It is sometimes possible that you end up back where you started. In this case the net result of what you have done is that you have gone nowhere
 (your start and end points are at the same place). In this case, your resultant displacement is a vector with length zero units. We use the symbol $\vec{0}$ to denote such a vector:
 
@@ -556,8 +755,10 @@ It is sometimes possible that you end up back where you started. In this case th
 \psline[linecolor=blue,linewidth=0.04cm]{<-}(1.6,0)(2.6,0)
 \rput(2.9,-0.025){=}
 \rput(4.18,0.25){{1 step}}
-\psline[linewidth=0.04cm]{->}(3.7,0.05)(4.7,0.05)
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(3.7,-0.05)(4.7,-0.05)
+%\psline[linewidth=0.04cm]{->}(3.7,0.05)(4.7,0.05)
+%\psline[linecolor=blue,linewidth=0.04cm]{<-}(3.7,-0.05)(4.7,-0.05)
+\psline[linewidth=0.04cm]{->}(3.7,0.0)(4.7,0.0)
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(3.7,-0.0)(4.7,-0.0)
 \rput(4.18,-0.28){{1 step}}
 \rput(5.5,0){= $\vec{0}$}
 \end{pspicture}
@@ -573,18 +774,22 @@ It is sometimes possible that you end up back where you started. In this case th
 \psline[linecolor=blue,linewidth=0.04cm]{->}(1.6,0)(2.6,0)
 \rput(2.9,-0.025){=}
 \rput(4.18,0.25){{1 step}}
-\psline[linewidth=0.04cm]{<-}(3.7,0.05)(4.7,0.05)
-\psline[linecolor=blue,linewidth=0.04cm]{->}(3.7,-0.05)(4.7,-0.05)
+%\psline[linewidth=0.04cm]{<-}(3.7,0.05)(4.7,0.05)
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(3.7,-0.05)(4.7,-0.05)
+\psline[linewidth=0.04cm]{<-}(3.7,0.0)(4.7,0.0)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(3.7,-0.0)(4.7,-0.0)
 \rput(4.18,-0.28){{1 step}}
 \rput(5.5,0){= $\vec{0}$}
 \end{pspicture}
 \end{center}     
 
-        \label{m38813*id188632}Check the following examples in the same way. Arrows up the page can be
+\label{m38813*id188632}Check the following examples in the same way. Arrows up the page can be
 seen as steps left and arrows down the page as steps right.\par 
-        \label{m38813*id188636}Try a couple to convince yourself!\par \nopagebreak
+\label{m38813*id188636}Try a couple to convince yourself!\par \nopagebreak
+
+\begin{minipage}[t]{0.5\textwidth}
 \begin{center}
-\begin{tabular}{cc}
+%\begin{tabular}{cc}
 \begin{pspicture}(-0.5,-1.)(2.3,1)%%\psgrid
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{->}(0, -0.35)(0,0.35)
@@ -596,7 +801,11 @@ seen as steps left and arrows down the page as steps right.\par
 \rput(1.5,0){=}
 \psline[linewidth=0.04cm]{->}(1.8,-0.7)(1.8,0.7)
 \end{pspicture}
-&
+%&
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
 \begin{pspicture}(-0.5,-1.)(2.3,1)%%\psgrid
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{<-}(0, -0.35)(0,0.35)
@@ -608,43 +817,53 @@ seen as steps left and arrows down the page as steps right.\par
 \rput(1.5,0){=}
 \psline[linewidth=0.04cm]{<-}(1.8,-0.7)(1.8,0.7)
 \end{pspicture}
-\end{tabular}
+%\end{tabular}
 \end{center}
+\end{minipage}\par
 
+\begin{minipage}[t]{0.5\textwidth}
 \begin{center}
-\begin{tabular}{cc}
+%\begin{tabular}{cc}
 \begin{pspicture}(-0.5,-1.)(2.3,1)%%\psgrid
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{<-}(0, -0.35)(0,0.35)
 \rput(0.3,0.0){+}
 \psline[linecolor=blue,linewidth=0.04cm]{->}(0.6,-0.35)(0.6,0.35)
 \rput(0.9,0){=}
-\psline[linewidth=0.04cm]{<-}(1.2,-0.35)(1.2,0.35)
-\psline[linecolor=blue,linewidth=0.04cm]{->}(1.3,-0.35)(1.3,0.35)
+%\psline[linewidth=0.04cm]{<-}(1.2,-0.35)(1.2,0.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(1.3,-0.35)(1.3,0.35)
+\psline[linewidth=0.04cm]{<-}(1.1,-0.35)(1.1,0.35)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(1.1,-0.35)(1.1,0.35)
 \rput(1.6,0){=}
 \rput(2.0,0){$\vec{0}$}
 \end{pspicture}
-&
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
 \begin{pspicture}(-0.5,-1.)(2.3,1)%%\psgrid
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{->}(0, -0.35)(0,0.35)
 \rput(0.3,0.0){+}
 \psline[linecolor=blue,linewidth=0.04cm]{<-}(0.6,-0.35)(0.6,0.35)
 \rput(0.9,0){=}
-\psline[linewidth=0.04cm]{->}(1.2,-0.35)(1.2,0.35)
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.3,-0.35)(1.3,0.35)
+%\psline[linewidth=0.04cm]{->}(1.2,-0.35)(1.2,0.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.3,-0.35)(1.3,0.35)
+\psline[linewidth=0.04cm]{->}(1.1,-0.35)(1.1,0.35)
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.1,-0.35)(1.1,0.35)
 \rput(1.6,0){=}
 \rput(2.0,0){$\vec{0}$}
 \end{pspicture}
-\end{tabular}
+%\end{tabular}
 \end{center}
+\end{minipage}
     \par
 It is important to realise that the directions are not special-- `forward
 and backwards' or `left and right' are treated in the same way. The same is
 true of any set of parallel directions: 
 
+\begin{minipage}[t]{0.5\textwidth}
 \begin{center}
-\begin{tabular}{cc}
 \begin{pspicture}(-0.1,-1.)(5.,1)%%\psgrid
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{->}(0, -.35)(.7,0.35)
@@ -656,7 +875,10 @@ true of any set of parallel directions:
 \rput(3.3,0){=}
 \psline[linewidth=0.04cm]{->}(3.4,-0.7)(4.8,0.7)
 \end{pspicture}
-&
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
 \begin{pspicture}(-0.1,-1.)(5.,1)%%\psgrid
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{<-}(0, -.35)(.7,0.35)
@@ -668,11 +890,12 @@ true of any set of parallel directions:
 \rput(3.3,0){=}
 \psline[linewidth=0.04cm]{<-}(3.4,-0.7)(4.8,0.7)
 \end{pspicture}
-\end{tabular}
 \end{center}
+\end{minipage} \par
 
+
+\begin{minipage}[t]{0.5\textwidth}
 \begin{center}
-\begin{tabular}{cc}
 \begin{pspicture}(-0.1,-1.)(3.5,1)%%\psgrid
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{->}(0, -.35)(.7,0.35)
@@ -680,11 +903,15 @@ true of any set of parallel directions:
 \psline[linecolor=blue,linewidth=0.04cm]{<-}(0.9,-.35)(1.6,0.35)
 \rput(1.7,0){=}
 \psline[linewidth=0.04cm]{->}(1.8,-0.35)(2.5,.35)
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.9,-0.35)(2.6,0.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.9,-0.35)(2.6,0.35)
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.8,-0.35)(2.5,0.35)
 \rput(2.7,0){=}
 \rput(3.1,0){$\vec{0}$}
 \end{pspicture}
-&
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
 \begin{pspicture}(-0.1,-1.)(3.5,1)%%\psgrid
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{<-}(0, -.35)(.7,0.35)
@@ -692,222 +919,63 @@ true of any set of parallel directions:
 \psline[linecolor=blue,linewidth=0.04cm]{->}(0.9,-.35)(1.6,0.35)
 \rput(1.7,0){=}
 \psline[linewidth=0.04cm]{<-}(1.8,-0.35)(2.5,.35)
-\psline[linecolor=blue,linewidth=0.04cm]{->}(1.9,-0.35)(2.6,0.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(1.9,-0.35)(2.6,0.35)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(1.8,-0.35)(2.5,0.35)
 \rput(2.7,0){=}
 \rput(3.1,0){$\vec{0}$}
 \end{pspicture}
-\end{tabular}
 \end{center}
+\end{minipage} \par
 
 In the above examples the separate displacements were parallel to one
 another. However the same head-to-tail technique of vector addition
 can be applied to vectors in any direction.
 
-\begin{center}
-\begin{tabular}{ccc}
-\begin{pspicture}(-0.5,-0.5)(4.0,0.5)%%\psgrid
+%\begin{center}
+%\begin{tabular}{ccc}
+%\begin{pspicture}(-0.5,-0.5)(4.0,0.5)%%\psgrid
 %\psgrid[gridcolor=lightgray]
-\psline[linewidth=0.04cm]{->}(0.7,0)
-\rput(1,0){+}
-\psline[linecolor=blue,linewidth=0.04cm]{->}(1.3,-0.35)(1.3,0.35)
-\rput(1.5,-0.025){=}
-\psline[linewidth=0.04cm]{->}(1.8,-0.35)(2.5,-0.35)
-\psline[linecolor=blue,linewidth=0.04cm]{->}(2.5,-0.35)(2.5,0.35)
-\psline[linestyle=dotted]{->}(1.8,-0.35)(2.5,0.35)
-\rput(2.8,0.025){=}
-\psline[linewidth=0.04cm]{->}(3.1,-0.35)(3.8,0.35)
-\end{pspicture}
-&
-\begin{pspicture}(-0.5,-0.5)(4.0,0.5)%%\psgrid
+%\psline[linewidth=0.04cm]{->}(0.7,0)
+%\rput(1,0){+}
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(1.3,-0.35)(1.3,0.35)
+%\rput(1.5,-0.025){=}
+%\psline[linewidth=0.04cm]{->}(1.8,-0.35)(2.5,-0.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(2.5,-0.35)(2.5,0.35)
+%\psline[linestyle=dotted]{->}(1.8,-0.35)(2.5,0.35)
+%\rput(2.8,0.025){=}
+%\psline[linewidth=0.04cm]{->}(3.1,-0.35)(3.8,0.35)
+%\end{pspicture}
+%&
+%\begin{pspicture}(-0.5,-0.5)(4.0,0.5)%%\psgrid
 %\psgrid[gridcolor=lightgray]
-\psline[linewidth=0.04cm]{->}(0.7,0)
-\rput(1,0){+}
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.3,-0.35)(1.3,0.35)
-\rput(1.5,-0.025){=}
-\psline[linewidth=0.04cm]{->}(1.8,0.35)(2.5,0.35)
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(2.5,-0.35)(2.5,0.35)
-\psline[linestyle=dotted]{->}(1.8,0.35)(2.5,-0.35)
-\rput(2.8,0.025){=}
-\psline[linewidth=0.04cm]{->}(3.1,0.35)(3.8,-0.35)
-\end{pspicture}
-&
-\begin{pspicture}(-0.5,-0.5)(4.0,0.5)%%\psgrid
+%\psline[linewidth=0.04cm]{->}(0.7,0)
+%\rput(1,0){+}
+%\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.3,-0.35)(1.3,0.35)
+%\rput(1.5,-0.025){=}
+%\psline[linewidth=0.04cm]{->}(1.8,0.35)(2.5,0.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{<-}(2.5,-0.35)(2.5,0.35)
+%\psline[linestyle=dotted]{->}(1.8,0.35)(2.5,-0.35)
+%\rput(2.8,0.025){=}
+%\psline[linewidth=0.04cm]{->}(3.1,0.35)(3.8,-0.35)
+%\end{pspicture}
+%&
+%\begin{pspicture}(-0.5,-0.5)(4.0,0.5)%%\psgrid
 %\psgrid[gridcolor=lightgray]
-\psline[linewidth=0.04cm]{->}(0.,-0.1)(0.7,0.1)
-\rput(1,0){+}
-\psline[linecolor=blue,linewidth=0.04cm]{->}(1.3,-0.35)(1.5,0.35)
-\rput(1.6,-0.025){=}
-\psline[linewidth=0.04cm]{->}(1.7,-0.45)(2.4,-0.25)
-\psline[linecolor=blue,linewidth=0.04cm]{->}(2.4,-0.25)(2.6,0.45)
-\psline[linestyle=dotted]{->}(1.7,-0.45)(2.6,0.45)
-\rput(2.9,0.025){=}
-\psline[linewidth=0.04cm]{->}(3.2,-0.45 )(4.1,0.45)
-\end{pspicture}
-\end{tabular}
-\end{center}
-
-Now you have discovered one use for vectors; describing resultant
-displacement -- how far and in what direction you 
-have travelled after a series of movements.
-
-Although vector addition here has been demonstrated with
-displacements, all vectors behave in exactly the same way. Thus, if
-given a number of forces acting on a body you can use the same method
-to determine the resultant force acting on the body. We will return to
-vector addition in more detail later. 
-
-\subsection*{Subtracting Vectors}
-
-What does it mean to subtract a vector? Well this is really simple; if
-we have 5 apples and we subtract 3 apples, we have only 2 apples left. Now
-lets work in steps; if we take 5 steps forward and then subtract 3 steps
-forward we are left with only two steps forward:
-
-\begin{center}
-\begin{pspicture}(-6,-0.5)(5,0.5)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\rput(-3.5,0.25){{5 steps}}
-\psline[linewidth=0.04cm]{->}(-6,0)(-1,0)
-\rput(-0.8,0){-}
-\rput(1.1,0.25){{3 steps}}
-\psline[linecolor=blue,linewidth=0.04cm]{->}(-0.6,0)(2.6,0)
-\rput(2.8,0.){=}
-\psline[linewidth=0.04cm]{->}(3.0,0)(5.0,0)
-\rput(4.0,0.25){{2 steps}}
-\end{pspicture}
-\end{center}
+%\psline[linewidth=0.04cm]{->}(0.,-0.1)(0.7,0.1)
+%\rput(1,0){+}
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(1.3,-0.35)(1.5,0.35)
+%\rput(1.6,-0.025){=}
+%\psline[linewidth=0.04cm]{->}(1.7,-0.45)(2.4,-0.25)
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(2.4,-0.25)(2.6,0.45)
+%\psline[linestyle=dotted]{->}(1.7,-0.45)(2.6,0.45)
+%\rput(2.9,0.025){=}
+%\psline[linewidth=0.04cm]{->}(3.2,-0.45 )(4.1,0.45)
+%\end{pspicture}
+%\end{tabular}
+%\end{center}
 
 
 
-What have we done? You originally took 5 steps forward but then you took
-3 steps back. That backward displacement would be represented by an arrow 
-pointing to the left (backwards) with length 3. The net result of
-adding these two vectors is 2 steps forward:
-
-\begin{center}
-
-\begin{pspicture}(-6,-0.5)(5,0.5)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\uput[u](-3.5,0){{5 steps}}
-\psline[linewidth=0.04cm]{->}(-6,0)(-1,0)
-\rput(-0.8,0){+}
-\uput[u](1.1,0){{3 steps}}
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(-0.6,0)(2.6,0)
-\rput(2.8,0.){=}
-\psline[linewidth=0.04cm]{->}(3.0,0)(5.0,0)
-\uput[u](4.0,0){{2 steps}}
-\end{pspicture}
-\end{center}
-
-Thus, subtracting a vector from another is the same as adding a vector in the opposite direction (i.e. subtracting 3 steps forwards is the same
-as adding 3 steps backwards). 
-
-\Tip{Subtracting a vector from another is the same as adding a vector in the opposite direction.}
-
-In the problem, motion in the forward direction has been represented by an arrow to the right. Arrows to the right are positive and arrows to the left are negative. More generally, vectors in opposite directions differ in sign (i.e. if we define up as positive, then 
-vectors acting down are negative). Thus, changing the sign of a vector
-simply reverses its direction: 
-
-\begin{center}
-\begin{tabular}{cc}
-\begin{pspicture}(-0.5,-0.5)(3,0.5)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\psline[linewidth=0.04cm]{->}(0.3,0.0)(1.0,0.0)
-\rput(0,0){-}
-\rput(1.3,-0.025){=}
-\psline[linewidth=0.04cm]{<-}(1.6,0)(2.3,0)
-\end{pspicture}
-&
-\begin{pspicture}(-0.5,-0.5)(3,0.5)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\psline[linewidth=0.04cm]{<-}(0.3,0.0)(1.0,0.0)
-\rput(0,0){-}
-\rput(1.3,-0.025){=}
-\psline[linewidth=0.04cm]{->}(1.6,0)(2.3,0)
-\end{pspicture}
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabular}{cc}
-\begin{pspicture}(-1.,-0.6)(2,0.6)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\rput(-0.2,0.0){-}
-\psline[linewidth=0.04cm]{->}(0, -0.35)(0,0.35)
-\rput(0.3,0.0){=}
-\psline[linewidth=0.04cm]{<-}(0.6,-0.35)(0.6,0.35)
-\end{pspicture}
-&
-\begin{pspicture}(-1.,-0.6)(2,0.6)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\rput(-0.2,0.0){-}
-\psline[linewidth=0.04cm]{<-}(0, -0.35)(0,0.35)
-\rput(0.3,0.0){=}
-\psline[linewidth=0.04cm]{->}(0.6,-0.35)(0.6,0.35)
-\end{pspicture}
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabular}{cc}
-\begin{pspicture}(-0.1,-0.6)(2,0.6)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\rput(0.,0.0){-}
-\psline[linewidth=0.04cm]{<-}(0.1,-.35)(.8,0.35)
-\rput(.9,0){=}
-\psline[linewidth=0.04cm]{->}(1.,-0.35)(1.7,.35)
-\end{pspicture}
-&
-\begin{pspicture}(-0.1,-0.6)(2,0.6)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\rput(0.,0.0){-}
-\psline[linewidth=0.04cm]{->}(0.1,-.35)(.8,0.35)
-\rput(.9,0){=}
-\psline[linewidth=0.04cm]{<-}(1.,-0.35)(1.7,.35)
-\end{pspicture}
-\end{tabular}
-\end{center}
-
-In mathematical form, subtracting $\vec{a}$ from
-$\vec{b}$ gives a new vector $\vec{c}$:
-\begin{eqnarray*}
-\vec{c} &=& \vec{b} - \vec{a}\\
-&=& \vec{b} + (-\vec{a})
-\end{eqnarray*}
-This clearly shows that subtracting vector $\vec{a}$ from
-$\vec{b}$ is the same as adding $(-\vec{a})$ to
-$\vec{b}$. Look at the following examples of vector
-subtraction. 
-
-\begin{center}
-\begin{pspicture}(-0.5,-0.5)(5.2,0.5)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\psline[linewidth=0.04cm]{->}(0.7,0)
-\rput(1,0){-}
-\psline[linecolor=blue,linewidth=0.04cm]{->}(1.3,0)(2,0)
-\rput(2.3,-0.025){=}
-\psline[linewidth=0.04cm]{->}(2.6,0)(3.3,0)
-\rput(3.6,0){+}
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(3.9,0)(4.6,0)
-\rput(4.9,0){=}
-\rput(5.3,0){$\vec{0}$}
-\end{pspicture}
-\end{center}
-
-\begin{center}
-\begin{pspicture}(-0.5,-0.5)(6.8,0.5)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\psline[linewidth=0.04cm]{->}(0.7,0)
-\rput(1,0){-}
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.3,0)(2,0)
-\rput(2.3,-0.025){=}
-\psline[linewidth=0.04cm]{->}(2.6,0)(3.3,0)
-\rput(3.6,0){+}
-\psline[linecolor=blue,linewidth=0.04cm]{->}(3.9,0)(4.6,0)
-\rput(4.9,-0.025){=}
-\psline[linewidth=0.04cm]{->}(5.2,0)(6.6,0)
-\end{pspicture}
-\end{center}
 
 %\subsection*{Scalar Multiplication}
 %What happens when you multiply a vector by a scalar (an ordinary
@@ -930,39 +998,6 @@ subtraction.
 %\end{pspicture}
 %\end{center}
 
-\section{Techniques of Vector Addition}
-
-Now that you have learned about the mathematical properties of
-vectors, we return to vector addition in more detail. There are a number of
-techniques of vector addition. These techniques fall into two main categories - graphical and algebraic techniques.
-
-\subsection*{Graphical techniques}
-Graphical techniques involve drawing accurate scale diagrams to denote
-individual vectors and their resultants. We will look at just one graphical method: the head-to-tail method.
-
-\subsubsection*{The head-to-tail method}
-In describing the mathematical properties of vectors we used
-displacements and the head-to-tail graphical method of vector addition
-as an illustration. The head-to-tail method of graphically adding vectors is a standard method that must be understood.\\
-
-\textbf{Method: Head-to-Tail Method of Vector Addition}
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
-\item{Draw a rough sketch of the situation.}
-\item{Choose a scale and include a reference direction.}
-\item{Choose any of the vectors and draw it as an arrow in the
-correct direction and of the correct length -- remember to put an
-arrowhead on the end to denote its direction.}
-\item{Take the next vector and draw it as an arrow starting from the
-arrowhead of the first vector in the correct direction and of the
-correct length.}
-\item{Continue until you have drawn each vector -- each time starting
-from the head of the previous vector. In this way, the vectors to be
-added are drawn one after the other head-to-tail.}
-\item{The resultant is then the vector drawn from the tail of the
-first vector to the head of the last. Its magnitude can be
-determined from the length of its arrow using the scale. Its
-direction too can be determined from the scale diagram.}
-\end{enumerate}
 
 \begin{wex}{Head-to-Tail Addition I}{A ship leaves harbour H and sails 6 km north to port A. From here the ship travels 12 km east to port B, before sailing 5,5 km south-west to port C. Determine the ship's resultant displacement using the head-to-tail technique of vector addition.}{
 
@@ -1731,9 +1766,12 @@ $\vec{R}$ is 10 m at an angle of $36,8^\circ$ to the positive $x$-axis.}
 \item A dove flies from her nest, looking for food for her chick. She flies at a velocity of 2 \ms on a bearing of 135${^o}$ in a wind with a velocity of 1,2 \ms on a bearing of 230${^o}$. Calculate her resultant velocity by adding the horizontal and vertical components of vectors.
 \end{enumerate}
 }
+<<<<<<< HEAD
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11305.imgs/summary_www.png}} Find the answers with the shortcodes:
  \par \begin{tabular}[h]{cc}
  (1.) l4e  &  (2.) l2Z   & \end{tabular}
+=======
+>>>>>>> 727497e3184f7943c0e0041b12139e4aff4dbbd0
 \end{exercises}
 
 \subsection*{Summary}

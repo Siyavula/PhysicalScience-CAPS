@@ -30,11 +30,12 @@
 \newlength{\saveparindentlength}
 \newlength{\saveparindentlengthtwo}
 
-\usepackage[paper=letter, 
+    \usepackage[paper=letter, 
       lmargin=0.1\paperwidth, rmargin=0.25\paperwidth, 
       tmargin=1in, bmargin=1in,
       twoside, centering,
-      includehead, marginsep=5mm, marginparwidth=0.225\paperwidth ]{geometry}      
+      includehead, marginsep=3mm, marginparwidth=0.225\paperwidth ]{geometry}
+
     \usepackage{layouts}
     \usepackage{multicol}
     \usepackage{amsmath} %for \underset, \overset, and more?
@@ -102,7 +103,7 @@
     \renewcommand{\labelitemii}{\ensuremath{\cdot} }
     \usepackage{enumerate}
     \usepackage{enumitem}
-    \setcounter{tocdepth}{3}
+    \setcounter{tocdepth}{1}
     \DeclareUnicodeCharacter {9653} {\bigtriangleup}
     \DeclareUnicodeCharacter {183} {\ensuremath{\cdot}}
     \DeclareUnicodeCharacter {785} {\textasciibreve}
@@ -169,10 +170,10 @@
 \marginpar{%odd
 \begin{minipage}[h]{0.22\paperwidth}
 
-\begin{mdframed}[linecolor=black, linewidth=1pt, backgroundcolor=white, skipbelow=-pt, margin=10pt]
+\begin{mdframed}[linecolor=black, linewidth=1pt, backgroundcolor=white, skipbelow=-pt, leftmargin=10pt, rightmargin=10pt]
 \textbf{\textit{FACT}}
 \end{mdframed}
-\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, leftmargin=10pt, rightmargin=10pt, skipabove=-4pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -215,23 +216,21 @@
 \newcommand{\Tip}[1]{
 \marginpar{%odd
 \begin{minipage}[m]{0.225\paperwidth}
-\begin{mdframed}[linecolor=black, linewidth=1.0pt]
+\begin{mdframed}[linecolor=black, linewidth=1.0pt, leftmargin=10pt, rightmargin=10pt]
 \textbf{\textit{Tip}}
 \end{mdframed}
-\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt]
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray,skipabove=-4pt, leftmargin=10pt, rightmargin=10pt ]
 \small #1
 \end{mdframed}
 \end{minipage}
 }
 }
 
-
 \newcommand{\Warning}[1]{
 \begin{mdframed}[linewidth=4pt,%
 linecolor=red%
 ]
 %\begin{mdframed}[linewidth=2pt,linecolor=red]%
-\vspace{3mm}
 \begin{center}
 \noindent%
 \textbf{Warning:}\par
@@ -243,12 +242,12 @@ linecolor=red%
 
 \newcommand{\Note}[1]{
 \marginpar{%odd
-\begin{minipage}[h]{0.22\paperwidth}
+\begin{minipage}[h]{0.225\paperwidth}
 
-\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, margin=10pt]
-Note
+\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt,leftmargin=10pt, rightmargin=10pt]
+\textbf{\textit{Note}}
 \end{mdframed}
-\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt, leftmargin=10pt, rightmargin=10pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -438,6 +437,10 @@ Note
 
 \newenvironment{exercises}[1]
 {
+
+\ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
+{\clearpage\vspace*{-\topskip}}{} 
+
 \exercisesheading
 
 %\hrule width \textwidth height 1pt\\
@@ -453,7 +456,7 @@ Note
 \setlength{\parindent}{\saveparindentlength}
 
 %insert the more practise at www.maths10.
-%( More practise at \url{www.maths10.co.za} with \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} M049 )
+ More practise, help or complete solutions at www.everythingscience.co.za 
 }
 
 \newenvironment{eocexercises}[1]
@@ -470,7 +473,9 @@ Note
 }%
 {%
 \end{quotation}
-\setlength{\parindent}{\saveparindentlength}}
+\setlength{\parindent}{\saveparindentlength}
+More practise, help or complete solutions at www.everythingscience.co.za 
+}
 
 \newenvironment{f_experiment_deprecated}[1]
 {
@@ -875,11 +880,27 @@ Note
 \usepackage{tikz}
 \usepackage[explicit]{titlesec}
 
+%
+% Counters for the shortcodes at the beginning of sections    
+%
+
+\newcounter{shortcodecounter}
+\setcounter{shortcodecounter}{1}
+
+
+
+
+
+% fancy headings
+
+\usepackage{tikz}
+\usepackage[explicit]{titlesec}
+
 \newcommand*\chapterlabel{}
 
 \titleformat{\chapter}
   {\gdef\chapterlabel{}
-   \normalfont\sffamily\fontsize{28}\bfseries\slshape}
+   \normalfont\sffamily\fontsize{38}\bfseries\slshape}
   {\gdef\chapterlabel{\thechapter\ }}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
     \node[yshift=-4cm] at (current page.north west)
@@ -888,7 +909,7 @@ Note
           (1.2\paperwidth,4cm);
         \node[anchor=west,text centered, yshift=2cm, xshift=0]
               {\color{black} #1  };
-         \node[anchor=west,text centered, yshift=2cm, xshift=0.85\paperwidth]
+        \node[anchor=west,text centered, yshift=2cm, xshift=0.85\paperwidth]
               {\color{white}\chapterlabel};
       \end{tikzpicture}
       };
@@ -898,23 +919,29 @@ Note
 
 
 
+\usepackage{marvosym} % for the little symbol.
+
 \newcommand*\sectionlabel{}
 \titleformat{\section}
   {\gdef\sectionlabel{}
    \normalfont\sffamily\fontsize{24}\normalfont\itshape}
-  {\gdef\sectionlabel{\thesection }}{0pt}
-  {\begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=west,yshift=-1.5cm, xshift=-0.4\paperwidth]
+  {\gdef\sectionlabel{\thesection}}{0pt}
+{
+\begin{tikzpicture}[remember picture,overlay]
+   \node[anchor=west, yshift=-1.5cm, xshift=-4.0cm]
       {\begin{tikzpicture}[remember picture, overlay]
-        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
-          (1.3\paperwidth,1cm);
-        \node[anchor=west,text centered ,yshift=0.5cm, xshift=0.3\paperwidth]
-              {\color{black} #1  };
+        \draw[fill=siyavula-gray, color=siyavula-gray, xshift=-\marginparwidth] (0,0) rectangle
+          (1.5\paperwidth,1.0cm);
+        \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth]
+              {\color{black} #1 };
+        \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
+              {\Large\color{black} \Info~P\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
-  }
-\titlespacing*{\section}{1.5cm}{1.5cm}{2cm}
+\addtocounter{shortcodecounter}{1}
+}
+\titlespacing*{\section}{1cm}{0cm}{2cm}
 
 
 
@@ -922,25 +949,28 @@ Note
 \titleformat{\subsection}
   {\gdef\subsectionlabel{}
    \normalfont\sffamily\fontsize{18}\bfseries\slshape}
-  {\gdef\subsectionlabel{\thesubsection\ }}{0pt}
+  {\gdef\subsectionlabel{\thesubsection}}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
-   \node[anchor=west, yshift=-1.5cm, xshift=-0.085\paperwidth]
+   \node[anchor=west, yshift=-1.5cm, xshift=-1cm]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (0.915\paperwidth,1.0cm);
-        \node[anchor=west,text centered ,yshift=0.5cm]
-              {\color{black} #1  };
+        \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth]
+              {\color{black} #1 };
+        \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
+              {\Large\color{black} \Info~P\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
+\addtocounter{shortcodecounter}{1}
   }
-\titlespacing*{\subsection}{1.5cm}{1cm}{2cm}
+\titlespacing*{\subsection}{0cm}{1cm}{2cm}
 
 
 
 \newcommand{\summary}{
 \vspace{6\baselineskip} \par
-{\normalfont \sffamily\fontsize{18}\bfseries
+{\normalfont \sffamily\fontsize{22}\bfseries
 \begin{tikzpicture}[remember picture,overlay]
     \node[anchor=west, xshift=-0.4\paperwidth]
       {\begin{tikzpicture}[remember picture, overlay]
@@ -990,7 +1020,6 @@ Note
 
 
 
-
 \newcommand{\eocexercisesheading}{
 \par \vspace*{3\baselineskip} 
 {\normalfont \sffamily\fontsize{16}\bfseries
@@ -1020,6 +1049,7 @@ Note
 
 }
 \par
+More practise, help or full solutions at \url{www.everythingmaths.co.za}
 \vspace{\baselineskip}
 }
 
