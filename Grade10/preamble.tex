@@ -1,4 +1,4 @@
-   \usepackage{setspace} % linespacing
+\usepackage{setspace} % linespacing
 \onehalfspacing
 
 \usepackage{parskip}
@@ -180,20 +180,25 @@
 }
 }
 
-\newenvironment{IFact_old}[1]%
-{\vspace{3mm}%\rmfamily
- \begin{center}\begin{pspicture}(0,0)(5,0.01)
- \psline[linecolor=red]{-}(0,0)(5,0)
-\end{pspicture}\end{center}
-%\psshadowbox{
- \begin{quote}%
-\rput(-1.5,0){\psfact}\noindent #1%
-\end{quote}%
- }%}
-{\begin{center}\begin{pspicture}(0,0)(5,0.01)
- \psline[linecolor=red]{-}(0,-0.1)(5,-0.1)
-\end{pspicture}\end{center}
-\vspace{3mm}}%\sffamily}%
+
+
+%
+% Takes two arguments, Blurb and shortcode
+\newcommand{\mindsetvideo}[2]
+{
+Mindset Video: #1  : (shortcode #2)
+}
+
+
+%
+% Takes two arguments, Blurb and shortcode
+\newcommand{\simulation}[2]
+{
+Simulation : #1  : (shortcode #2)
+}
+
+
+
 
 \newcommand{\Definition}[2]{
 \newlength{\oldparindent}
