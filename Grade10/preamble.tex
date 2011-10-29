@@ -163,68 +163,73 @@
     \DeclareUnicodeCharacter {62843}{\ensuremath{\leftrightarrow}}
 
 
-\definecolor{siyavula-gray}{RGB}{239,239,239}
-\definecolor{siyavula-dark-gray}{RGB}{194,194,194}
+\newcommand{\chapterstartvideo}[1]{
+See introductory video: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #1 at www.everythingscience.co.za)\par
+}
 
-\newenvironment{IFact}[1]{
+\newcommand{\simulation}[2]{
+See simulation: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulation: #2 at www.everythingscience.co.za) \par
+}
+
+
+\newcommand{\mindsetvid}[2]{
+See video about: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #2 at www.everythingscience.co.za) \par
+}
+
+
+\newcommand{\IFact}[1]{
 \marginpar{%odd
-\begin{minipage}[h]{0.22\paperwidth}
-
-\begin{mdframed}[linecolor=black, linewidth=1pt, backgroundcolor=white, skipbelow=-pt, leftmargin=10pt, rightmargin=10pt]
+\begin{minipage}[m]{0.225\paperwidth}
+\begin{mdframed}[linecolor=black, linewidth=1.0pt,leftmargin=15pt, rightmargin=15pt]
 \textbf{\textit{FACT}}
 \end{mdframed}
-\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, leftmargin=10pt, rightmargin=10pt, skipabove=-4pt]
+\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt, leftmargin=15pt, rightmargin=15pt]
 \small #1
 \end{mdframed}
 \end{minipage}
 }
 }
 
-
-
-%
-% Takes two arguments, Blurb and shortcode
-\newcommand{\mindsetvid}[2]
-{
-Mindset Video: #1  : (shortcode #2)
+\newcommand{\practiceinfo}[0]{
+\par\vspace*{2em}
+\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/aplus.pdf}} More practise 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/video.pdf}} video solutions 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/help.pdf}} or help at www.everythingscience.co.za
+\vspace*{2em}
 }
-
-
-%
-% Takes two arguments, Blurb and shortcode
-\newcommand{\simulation}[2]
-{
-Simulation : #1  : (shortcode #2)
-}
-
-
-
 
 \newcommand{\Definition}[2]{
-\newlength{\oldparindent}
-\setlength{\oldparindent}{\parindent}
-\setlength{\parindent}{20pt}
 \begin{mdframed}[linewidth=1,linecolor=black, skipabove=36pt]%
 \vspace*{10pt}
 \leftskip20pt
 \rightskip20pt
 {\Large\textsl{DEFINITION: } \textit{#1}}
 
-\par\noindent
-\textnormal{#2}
+\par
+#2
+
 \vspace*{28pt}
 \end{mdframed}
-\setlength{\parindent}{\oldparindent}
+}
+
+\newcommand{\Identity}[2]{
+\begin{mdframed}[linewidth=1pt,linecolor=black,skipbelow=\baselineskip,%
+skipabove=\baselineskip]%
+\begin{flushleft}
+%\uppercase{\textsl{#1}}\nopagebreak
+#2
+\end{flushleft}
+\end{mdframed}
 }
 
 
 \newcommand{\Tip}[1]{
 \marginpar{%odd
 \begin{minipage}[m]{0.225\paperwidth}
-\begin{mdframed}[linecolor=black, linewidth=1.0pt, leftmargin=10pt, rightmargin=10pt]
+\begin{mdframed}[linecolor=black, linewidth=1.0pt, leftmargin=15pt, rightmargin=15pt]
 \textbf{\textit{Tip}}
 \end{mdframed}
-\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray,skipabove=-4pt, leftmargin=10pt, rightmargin=10pt ]
+\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt,leftmargin=15pt, rightmargin=15pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -236,6 +241,7 @@ Simulation : #1  : (shortcode #2)
 linecolor=red%
 ]
 %\begin{mdframed}[linewidth=2pt,linecolor=red]%
+\vspace{3mm}
 \begin{center}
 \noindent%
 \textbf{Warning:}\par
@@ -249,10 +255,10 @@ linecolor=red%
 \marginpar{%odd
 \begin{minipage}[h]{0.225\paperwidth}
 
-\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt,leftmargin=10pt, rightmargin=10pt]
+\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, leftmargin=15pt, rightmargin=15pt]
 \textbf{\textit{Note}}
 \end{mdframed}
-\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt, leftmargin=10pt, rightmargin=10pt]
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray,leftmargin=15pt, rightmargin=15pt, skipabove=-4pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -305,26 +311,26 @@ linecolor=red%
 \newcounter{workedexamplecounter}
 \setcounter{workedexamplecounter}{1}
 
-\definecolor{siyavula-gray}{RGB}{239, 239, 239}
 
 
 % new Peter John Style
 \newcommand{\westep}[1]
 {\par \vspace{3mm}%\pagebreak[1]
-\leftskip0pt
- \textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}
-\par
 \leftskip20pt
+\noindent
+\textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}
+\par\noindent
+\leftskip50pt
 \addtocounter{stepcounter}{1}}
 
-\definecolor{siyavula-gray}{RGB}{239,239,239}
+\definecolor{siyavula-gray}{RGB}{242,242,242}
+\definecolor{siyavula-dark-gray}{RGB}{205,204,204}
 
 \newenvironment{wex}[3]{
-\par
 \newlength{\myfloatsep}
 \setlength{\myfloatsep}{\floatsep}
 \setlength{\floatsep}{2mm}
-%\begin{quotation}
+\begin{quotation}
 \noindent
 \vspace{.5cm}
 \newlength{\oldparindent}
@@ -335,29 +341,24 @@ linecolor=red%
 {\clearpage\vspace*{-\topskip}}{} 
 
 
-\begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt]
-\vspace*{8pt}
+\begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt, innertopmargin=8pt, innerbottommargin=6pt, skipbelow=0pt]
 {\Large\textbf{\textit{Worked Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
-\vspace*{2pt}
+\vspace*{-2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
 {\large\textbf{\textit{QUESTION}}} \vspace*{4pt} 
 \hrule
 \vspace*{18pt}
 \noindent
-\textit{#2}
+\textit{\noindent #2}
 \vspace*{28pt}
-
-\noindent
+\par\noindent
 \textbf{\textit{SOLUTION}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
-\begingroup
-\leftskip20pt
-\rightskip20pt
-#3%
-\endgroup
+\noindent
+ #3%
 \vspace*{28pt}
 \hrule
 \addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
@@ -365,7 +366,7 @@ linecolor=red%
 }%
 {%
 \end{mdframed}
-%\end{quotation}
+\end{quotation}
 %\nopagebreak[4]
 %\begin{pspicture}(0,0)(10,0.01)
 % \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
@@ -373,7 +374,6 @@ linecolor=red%
 %\end{pspicture}
 \setlength{\parindent}{\oldparindent}
 \setlength{\floatsep}{\myfloatsep}
-\par
 }
 
 
@@ -450,6 +450,7 @@ linecolor=red%
 
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
+\noindent
 \setlength{\parindent}{0pt}
 %\vspace{\baselineskip}
 %\textbf{\textit{Exercises:}
@@ -461,15 +462,15 @@ linecolor=red%
 \setlength{\parindent}{\saveparindentlength}
 
 %insert the more practise at www.maths10.
- More practise, help or complete solutions at www.everythingscience.co.za 
 }
 
 \newenvironment{eocexercises}[1]
 {
 \eocexercisesheading
+\addcontentsline{toc}{section}{End of chapter exercises}
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
-%\noindent
+\noindent
 %\vspace{.5cm}
 \setlength{\parindent}{0pt}
 %\textbf{\textit{End of chapter exercises:}
@@ -479,7 +480,6 @@ linecolor=red%
 {%
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}
-More practise, help or complete solutions at www.everythingscience.co.za 
 }
 
 \newenvironment{f_experiment_deprecated}[1]
@@ -533,12 +533,11 @@ More practise, help or complete solutions at www.everythingscience.co.za
 \newlength{\myfloatsep}
 \setlength{\myfloatsep}{\floatsep}
 \setlength{\floatsep}{2mm}
-%\begin{quotation}
 \noindent
 \vspace{.5cm}
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
-\setlength{\parindent}{20pt}
+\setlength{\parindent}{0pt}
 
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
@@ -551,13 +550,15 @@ More practise, help or complete solutions at www.everythingscience.co.za
 \end{mdframed}
 \vspace*{2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
-
+\begin{quotation}
 }%
 {%
+\end{quotation}
 \end{mdframed}
 \setlength{\parindent}{\oldparindent}
 \setlength{\floatsep}{\myfloatsep}
 \par
+
 }
 
 \newenvironment{i_experiment}[1]{
@@ -570,7 +571,7 @@ More practise, help or complete solutions at www.everythingscience.co.za
 \vspace{.5cm}
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
-\setlength{\parindent}{20pt}
+\setlength{\parindent}{0pt}
 
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
@@ -602,7 +603,7 @@ More practise, help or complete solutions at www.everythingscience.co.za
 \vspace{.5cm}
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
-\setlength{\parindent}{20pt}
+\setlength{\parindent}{0pt}
 
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
@@ -630,9 +631,12 @@ More practise, help or complete solutions at www.everythingscience.co.za
 \newenvironment{activity}[1]
 {
 
+\setlength{\saveparindentlength}{\parindent}
+\setlength{\parindent}{0pt}
+
 \ifdimless{\pagegoal-\pagetotal}{4em}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
-\par
+
 \begin{quotation}
 \vspace*{25.6pt}
 {  \fontsize{12}\bfseries\itshape
@@ -646,7 +650,7 @@ More practise, help or complete solutions at www.everythingscience.co.za
        \end{tikzpicture}
     };
     
-% now the gray bar to the end of the paragraph
+% now the white bar to the end of the paragraph
     \node[anchor=west, xshift=45pt]{
       \begin{tikzpicture}[remember picture, overlay]
         \draw[fill=white, draw=black, linewidth=1pt] (0,0) rectangle
@@ -669,9 +673,7 @@ More practise, help or complete solutions at www.everythingscience.co.za
 
 \end{mdframed}
 \end{quotation}
-\setlength{\parindent}{\saveparindentlength}
-\par
-}
+\setlength{\parindent}{\saveparindentlength}}
 
 \newenvironment{groupdiscussion}[1]
 {
@@ -908,14 +910,21 @@ More practise, help or complete solutions at www.everythingscience.co.za
    \normalfont\sffamily\fontsize{38}\bfseries\slshape}
   {\gdef\chapterlabel{\thechapter\ }}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
-    \node[yshift=-4cm] at (current page.north west)
+    \node[yshift=-5cm] at (current page.north west)
       {\begin{tikzpicture}[remember picture, overlay]
         \shade[left color=white, right color=gray] (0,0) rectangle
           (1.2\paperwidth,4cm);
-        \node[anchor=west,text centered, yshift=2cm, xshift=0]
-              {\color{black} #1  };
-        \node[anchor=west,text centered, yshift=2cm, xshift=0.85\paperwidth]
-              {\color{white}\chapterlabel};
+        \node[anchor=west,text centered, yshift=2.5cm, xshift=1cm]
+              {
+              \begin{minipage}{\textwidth}
+              \phantom{xxx}\color{black} #1
+              \end{minipage}
+              };
+        \node[anchor=west,text centered, yshift=2.0cm, xshift=0.85\paperwidth]
+              {\begin{minipage}{\textwidth}
+              \color{white}\chapterlabel
+              \end{minipage}
+              };
       \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -924,29 +933,31 @@ More practise, help or complete solutions at www.everythingscience.co.za
 
 
 
-\usepackage{marvosym} % for the little symbol.
-
 \newcommand*\sectionlabel{}
 \titleformat{\section}
   {\gdef\sectionlabel{}
-   \normalfont\sffamily\fontsize{24}\normalfont\itshape}
+   \normalfont\sffamily\fontsize{22}\normalfont\itshape}
   {\gdef\sectionlabel{\thesection}}{0pt}
 {
 \begin{tikzpicture}[remember picture,overlay]
    \node[anchor=west, yshift=-1.5cm, xshift=-4.0cm]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray, xshift=-\marginparwidth] (0,0) rectangle
-          (1.5\paperwidth,1.0cm);
-        \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth]
-              {\color{black} #1 };
-        \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \Info~P\arabic{shortcodecounter}};
+          (1.5\paperwidth,2.0cm);
+        \node[anchor=west,text centered ,yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth]
+              {
+              \begin{minipage}{0.85\textwidth}
+              \color{black} #1
+              \end{minipage}
+              };
+        \node[anchor=east,text centered, yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
 \addtocounter{shortcodecounter}{1}
 }
-\titlespacing*{\section}{1cm}{0cm}{2cm}
+\titlespacing*{\section}{1cm}{1cm}{2cm}
 
 
 
@@ -959,11 +970,14 @@ More practise, help or complete solutions at www.everythingscience.co.za
    \node[anchor=west, yshift=-1.5cm, xshift=-1cm]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
-          (0.915\paperwidth,1.0cm);
-        \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth]
-              {\color{black} #1 };
-        \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \Info~P\arabic{shortcodecounter}};
+          (0.915\paperwidth,1.5cm);
+        \node[anchor=west,text centered ,yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth]
+              { \begin{minipage}{0.85\textwidth}
+                \color{black} #1
+                \end{minipage}
+                };
+        \node[anchor=east,text centered, yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -973,7 +987,7 @@ More practise, help or complete solutions at www.everythingscience.co.za
 
 
 
-\newcommand{\summary}{
+\newcommand{\summary}[1]{
 \vspace{6\baselineskip} \par
 {\normalfont \sffamily\fontsize{22}\bfseries
 \begin{tikzpicture}[remember picture,overlay]
@@ -982,7 +996,7 @@ More practise, help or complete solutions at www.everythingscience.co.za
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (1.2\paperwidth,2cm);
         \node[anchor=west,text centered ,yshift=1.cm, xshift=0.3\paperwidth]
-              {   \color{black} Chapter \chapterlabel | Summary  };
+              {  \phantom{xxx} \color{black} Chapter \chapterlabel | Summary  };
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -990,6 +1004,10 @@ More practise, help or complete solutions at www.everythingscience.co.za
 }
 \par
 \vspace{\baselineskip}
+\addcontentsline{toc}{section}{Summary}
+
+See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Presentation: #1 at www.everythingscience.co.za)
+
 }
 
 
@@ -1054,7 +1072,6 @@ More practise, help or complete solutions at www.everythingscience.co.za
 
 }
 \par
-More practise, help or full solutions at \url{www.everythingmaths.co.za}
 \vspace{\baselineskip}
 }
 
