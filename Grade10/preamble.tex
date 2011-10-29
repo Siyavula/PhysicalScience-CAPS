@@ -533,12 +533,11 @@ linecolor=red%
 \newlength{\myfloatsep}
 \setlength{\myfloatsep}{\floatsep}
 \setlength{\floatsep}{2mm}
-%\begin{quotation}
 \noindent
 \vspace{.5cm}
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
-\setlength{\parindent}{20pt}
+\setlength{\parindent}{0pt}
 
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
@@ -551,13 +550,15 @@ linecolor=red%
 \end{mdframed}
 \vspace*{2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
-
+\begin{quotation}
 }%
 {%
+\end{quotation}
 \end{mdframed}
 \setlength{\parindent}{\oldparindent}
 \setlength{\floatsep}{\myfloatsep}
 \par
+
 }
 
 \newenvironment{i_experiment}[1]{
@@ -570,7 +571,7 @@ linecolor=red%
 \vspace{.5cm}
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
-\setlength{\parindent}{20pt}
+\setlength{\parindent}{0pt}
 
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
@@ -602,7 +603,7 @@ linecolor=red%
 \vspace{.5cm}
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
-\setlength{\parindent}{20pt}
+\setlength{\parindent}{0pt}
 
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
@@ -909,7 +910,7 @@ linecolor=red%
    \normalfont\sffamily\fontsize{38}\bfseries\slshape}
   {\gdef\chapterlabel{\thechapter\ }}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
-    \node[yshift=-4cm] at (current page.north west)
+    \node[yshift=-5cm] at (current page.north west)
       {\begin{tikzpicture}[remember picture, overlay]
         \shade[left color=white, right color=gray] (0,0) rectangle
           (1.2\paperwidth,4cm);
