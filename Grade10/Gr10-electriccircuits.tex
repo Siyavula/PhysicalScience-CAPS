@@ -67,8 +67,8 @@ When you measure the potential difference across (or between) the terminals of a
 % Notice that it is a difference between the value of potential energy at two points so we say that potential difference is measured between or across two points. We do not say potential difference through something.
 
 
-\Definition{Potential Difference}{Potential difference is the difference in electrical potential energy per unit charge between two points. The units of potential difference are the volt (V).\\
-Symbol: V\hspace{2cm} S.I. Unit: $\mathsf{J} \cdot \mathsf{C}^{-1}$}
+\Definition{Potential Difference}{Potential difference is the difference in electrical potential energy per unit charge between two points. The units of potential difference are the volt (V) which is defined as one joule per coulomb.\\
+Symbol: V\hspace{2cm} Unit: V\hspace{2cm} S.I. Units: $\text{J} \cdot \text{C}^{-1}$}
 
 \IFact{The volt is named after the Italian physicist Alessandro Volta (1745--1827).} 
 
@@ -110,9 +110,9 @@ be connected in parallel.
 
 \subsection*{Flow of charge}
 
-When we talk about current we talk about how much charge moves past a fixed point in circuit in one second. Think of charges being pushed around the circuit by the battery, there are charges in the wires but unless there is a battery they won't move. When one charge moves the charges next to it also move. They keep their spacing as if you had a tube of marbles like in this picture.
+When we talk about current we talk about how much charge moves past a fixed point in circuit in one second. Think of charges being pushed around the circuit by the battery, there are charges in the wires but unless there is a battery they won't move.\\
 \begin{minipage}{.5\textwidth}
-
+ When one charge moves the charges next to it also move. They keep their spacing as if you had a tube of marbles like in this picture.
 \begin{center}
 \scalebox{.7}{
 \begin{pspicture}(-1.6,-0.4)(6.8,0.4)
@@ -124,35 +124,32 @@ When we talk about current we talk about how much charge moves past a fixed poin
 \psline{->}(-0.6,0.2)(0,0.2) \psline{->}(5.2,0.2)(5.8,0.2)
 \end{pspicture}}
 \end{center}
-
 If you push one marble into the tube one must come out the other side. This is similar to charges in the wires of a circuit.
-If one charge moves they all move and the same number move at every point in the circuit. This is due to the conservation of charge which we've already seen in Electrostatics.
+If one charge moves they all move and the same number move at every point in the circuit. This is due to the conservation of charge which we've already seen in \textsl{Electrostatics}.
  \end{minipage}
 \begin{minipage}{.5\textwidth}
 \begin{center}
-Copper wire\\
+\textbf{Copper wire}\\
 \includegraphics[width=.8\textwidth]{photos/copperwire.jpg}\\
 \textit{Photography on Flickr.}
 \end{center}  
 \end{minipage}
 
-
-\Definition{Current}{Current is the rate at which charges moves past a fixed point in a circuit. \\
-Symbol: $I$\hspace{2cm} S.I. Unit: A
-\begin{equation*}
-I = \frac{Q}{\Delta t}
-\end{equation*}
-}
+\Definition{Current}{Current is the rate at which charges moves past a fixed point in a circuit. The units of current are the ampere (A) which is defined as one coulomb per second.\\
+Symbol: $I$\hspace{2cm} S.I. Unit: A}
 
 \begin{minipage}{.5\textwidth}
 \begin{center}
-Plasma ball\\
+\textbf{Plasma ball}\\
 \includegraphics[width=.8\textwidth]{photos/plasmaball_by_ahisgett.jpg}\\
 \textit{Photography by ahisgett on Flickr.}
 \end{center}   
 \end{minipage}
 \begin{minipage}{.5\textwidth}
-We use the symbol $I$ to show current and it is measured in amperes (A). One ampere is one coulomb of charge moving in one second ($\mathsf{C} \cdot \mathsf{s}^{-1}$).
+We use the symbol $I$ to show current and it is measured in amperes (A). One ampere is one coulomb of charge moving in one second ($\text{C} \cdot \text{s}^{-1}$).
+\begin{equation*}
+\boxed{I = \frac{Q}{\Delta t}}
+\end{equation*}
 
 When current flows in a circuit we show this on a diagram by adding arrows. The arrows show the direction of flow in a circuit. By convention we say that charge flows from the positive terminal on a battery to the negative terminal. 
 
@@ -176,7 +173,7 @@ effort was made to change it.}
 \subsection*{Ammeter}
 
 \begin{minipage}{.5\textwidth}
-An ammeter is an instrument used to measure the flow of electric
+An ammeter is an instrument used to measure the rate of flow of electric
 current in a circuit. Since one is interested in measuring the
 current flowing \textit{through} a circuit component, the ammeter
 must be connected in \textit{series} with the measured circuit
@@ -185,17 +182,18 @@ component.
 \begin{pspicture}(0,0)(3,3)
 %\psgrid
 \pnode(0,0){A} \pnode(0,2.5){B} \pnode(3,2.5){C} \pnode(3,0){D}
-\battery(A)(B){} \circledipole[labeloffset=0](B)(C){A}
-\resistor[dipolestyle=rectangle](C)(D){} \wire[arrowscale=2](D)(A)
+\battery[tension,dipoleconvention=generator](A)(B){$I$} \circledipole[labeloffset=0](B)(C){A}
+\resistor[intensity,dipolestyle=rectangle](D)(C){} \wire[tension,arrowscale=2](D)(A)
 \end{pspicture}
 \label{fig:p:em:ec10:ammeter}
 \end{center}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
 \begin{center}
-Ammeter\\
-\includegraphics[width=.8\textwidth]{photos/ammeter_by_Hillwalker-ca_flickr.jpg}\\
-\textit{Photography by Hillwalker-ca on Flickr.}
+\textbf{Ammeter}\\
+%\includegraphics[width=.8\textwidth]{photos/ammeter_by_Hillwalker-ca_flickr.jpg}\\
+\includegraphics[width=.8\textwidth]{photos/type2ammeter.jpg}\\
+%\textit{Photography by Hillwalker-ca on Flickr.}
 \end{center}  
 \end{minipage}
 
@@ -284,9 +282,9 @@ We are given an amount of charge and a time and asked to calculate the current. 
 We know that:
 \begin{eqnarray*}
 I &=& \frac{Q}{\Delta t} \\
-I &=& \frac{45~\mathsf{C}}{1~\mathsf{s}} \\
-I &=& 45~\mathsf{C} \cdot \mathsf{s}^{-1} \\
-I &=& 45~\mathsf{A} \\
+I &=& \frac{45~\text{C}}{1~\text{s}} \\
+I &=& 45~\text{C} \cdot \text{s}^{-1} \\
+I &=& 45~\text{A} \\
 \end{eqnarray*}
 \westep{Quote the final result}
 The current is 45~A.
@@ -302,9 +300,9 @@ We are given an amount of charge and a time and asked to calculate the current. 
 We know that:
 \begin{eqnarray*}
 I &=& \frac{Q}{\Delta t} \\
-I &=& \frac{53~\mathsf{C}}{2~\mathsf{s}} \\
-I &=& 26,5~\mathsf{C} \cdot \mathsf{s}^{-1} \\
-I &=& 26,5~\mathsf{A} \\
+I &=& \frac{53~\text{C}}{2~\text{s}} \\
+I &=& 26,5~\text{C} \cdot \text{s}^{-1} \\
+I &=& 26,5~\text{A} \\
 \end{eqnarray*}
 \westep{Quote the final result}
 The current is 26,5~A.
@@ -317,22 +315,22 @@ The current is 26,5~A.
 \westep{Analyse the question}
 We are given a number of charged particles that move past a fixed point and the time that it takes.
 We know that current is the rate at which charge moves past a fixed point in a circuit so we have to determine the 
-charge. In the last chapter we learnt that the charge carried by an electron is $1,6\times10^{-19}~\mathsf{C}$.
+charge. In the last chapter we learnt that the charge carried by an electron is $1,6\times10^{-19}~\text{C}$.
 \westep{Apply the principles: determine the charge}
-We know that each electron carries a charge of $1,6\times10^{-19}~\mathsf{C}$, therefore the total charge is:
+We know that each electron carries a charge of $1,6\times10^{-19}~\text{C}$, therefore the total charge is:
 \begin{eqnarray*}
-Q & = & 95 \times 1,6\times10^{-19}~\mathsf{C} \\
-& = & 1,52\times10^{-17}~\mathsf{C} 
+Q & = & 95 \times 1,6\times10^{-19}~\text{C} \\
+& = & 1,52\times10^{-17}~\text{C} 
 \end{eqnarray*}
 \westep{Apply the principles: determine the charge}
 We know that:
 \begin{eqnarray*}
 I &=& \frac{Q}{\Delta t} \\
-I &=& \frac{1,52\times10^{-17}~\mathsf{C}}{\frac{1}{10}~\mathsf{s}} \\
-I &=& \frac{1,52\times10^{-17}~\mathsf{C}}{1}\times{\frac{1}{{\frac{1}{10}~\mathsf{s}}}} \\
-I &=& \frac{1,52\times10^{-17}~\mathsf{C}}{1}\times\frac{10}{1~\mathsf{s}} \\
-I &=& 1,52\times10^{-16}~\mathsf{C} \cdot \mathsf{s}^{-1} \\
-I &=& 1,52\times10^{-16}~\mathsf{A} \\
+I &=& \frac{1,52\times10^{-17}~\text{C}}{\frac{1}{10}~\text{s}} \\
+I &=& \frac{1,52\times10^{-17}~\text{C}}{1}\times{\frac{1}{{\frac{1}{10}~\text{s}}}} \\
+I &=& \frac{1,52\times10^{-17}~\text{C}}{1}\times\frac{10}{1~\text{s}} \\
+I &=& 1,52\times10^{-16}~\text{C} \cdot \text{s}^{-1} \\
+I &=& 1,52\times10^{-16}~\text{A} \\
 \end{eqnarray*}
 \westep{Quote the final result}
 The current is $1,52\times10^{-16}$~A.
@@ -362,12 +360,14 @@ You can feel this directly if you touch a cellphone charger when you are chargin
 \end{center}
 \end{minipage}
 
-\Definition{Resistance}{Resistance slows down the flow of charge in a circuit. \\
-Symbol: R\hspace{2cm} Unit: Ohm ($\Omega$)\\
-\begin{equation*}
-1 \ \mathsf{Ohm} = 1 \frac{\mathsf{Volt}}{ \mathsf{Ampere}}.
-\end{equation*}
+\Definition{Resistance}{Resistance slows down the flow of charge in a circuit. The units of resistance are the ohm ($\Omega$) which is defined as a volt per ampere of current. \\
+Symbol: $R$\hspace{2cm} Unit: Ohm ($\Omega$)\hspace{2cm}S.I. Units: $\text{m}^2\cdot\text{kg}\cdot\text{s}^{-3}\cdot\text{A}^{-2}$\\
 }
+\begin{equation*}
+1 \ \text{Ohm} = 1 \frac{\text{Volt}}{ \text{Ampere}}
+\end{equation*}
+
+
 \begin{minipage}{.5\textwidth}
 \begin{center}
 Light bulb filament\\
@@ -397,7 +397,7 @@ energy into other forms of \textbf{heat} energy. \textbf{Light} energy is a by-p
 \IFact{There is a special type of conductor,
 called a \textbf{superconductor} that has no resistance, but the
 materials that make up all known superconductors only start superconducting
-at very low temperatures (approximately -170$^\mathsf{o}$ C).}
+at very low temperatures (approximately -170$^\text{o}$ C).}
 
 \subsubsection{Physical attributes affecting resistance}
 
