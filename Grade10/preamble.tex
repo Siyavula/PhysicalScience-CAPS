@@ -4,10 +4,9 @@
 \usepackage{parskip}
 \setlength{\parskip}{25.6pt plus0pt minus0pt}
 
+\usepackage{beramono}
 
 \usepackage{extsizes}
-
-   
    
    \newenvironment{toc}%
     {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
@@ -332,7 +331,6 @@ linecolor=red%
 \setlength{\floatsep}{2mm}
 \begin{quotation}
 \noindent
-\vspace{.5cm}
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
 \setlength{\parindent}{20pt}
@@ -346,7 +344,7 @@ linecolor=red%
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{-2pt}
-\begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
+\begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=10pt]
 {\large\textbf{\textit{QUESTION}}} \vspace*{4pt} 
 \hrule
 \vspace*{18pt}
@@ -460,7 +458,6 @@ linecolor=red%
 {%
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}
-
 %insert the more practise at www.maths10.
 }
 
@@ -651,7 +648,7 @@ linecolor=red%
     };
     
 % now the white bar to the end of the paragraph
-    \node[anchor=west, xshift=45pt]{
+    \node[anchor=west, xshift=40pt]{
       \begin{tikzpicture}[remember picture, overlay]
         \draw[fill=white, draw=black, linewidth=1pt] (0,0) rectangle
           (0.8\textwidth-5pt,28pt);
@@ -940,22 +937,23 @@ linecolor=red%
   {\gdef\sectionlabel{\thesection}}{0pt}
 {
 \begin{tikzpicture}[remember picture,overlay]
-   \node[anchor=west, yshift=-1.5cm, xshift=-4.0cm]
+       \node[anchor=west, yshift=-1.5cm, xshift=-4.0cm]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-dark-gray, xshift=-\marginparwidth] (0,0) rectangle
           (1.5\paperwidth,2.0cm);
         \node[anchor=west,text centered ,yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth]
               {
               \begin{minipage}{0.85\textwidth}
+              \raggedright
               \color{black} #1
               \end{minipage}
               };
         \node[anchor=east,text centered, yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
               {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
-       \end{tikzpicture}
+               \end{tikzpicture}
       };
    \end{tikzpicture}
-\addtocounter{shortcodecounter}{1}
+ \addtocounter{shortcodecounter}{1}
 }
 \titlespacing*{\section}{1cm}{1cm}{2cm}
 
@@ -966,21 +964,25 @@ linecolor=red%
   {\gdef\subsectionlabel{}
    \normalfont\sffamily\fontsize{18}\bfseries\slshape}
   {\gdef\subsectionlabel{\thesubsection}}{0pt}
-  {\begin{tikzpicture}[remember picture,overlay]
+  {
+\begin{tikzpicture}[remember picture,overlay]
    \node[anchor=west, yshift=-1.5cm, xshift=-1cm]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (0.915\paperwidth,1.5cm);
-        \node[anchor=west,text centered ,yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth]
+         \node[anchor=west,text centered ,yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth]
               { \begin{minipage}{0.85\textwidth}
+                \raggedright
                 \color{black} #1
                 \end{minipage}
                 };
         \node[anchor=east,text centered, yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
               {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
-       \end{tikzpicture}
+      
+     \end{tikzpicture}
       };
    \end{tikzpicture}
+
 \addtocounter{shortcodecounter}{1}
   }
 \titlespacing*{\subsection}{0cm}{1cm}{2cm}
@@ -1018,7 +1020,7 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
 \begin{tikzpicture}[remember picture,overlay]
     \node[anchor=west ,text centered]
       {\begin{tikzpicture}[remember picture, overlay]
-        \draw[color=white, draw=black, linewidth=1pt] (0,0) rectangle
+        \draw[color=white, draw=black, line width=1pt] (0,0) rectangle
           (0.3\textwidth, 28pt);
        \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
               { \bfseries ~ \color{black} Exercise \chapterlabel~-~\arabic{exercisecounter}   };
@@ -1062,7 +1064,7 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (0.69\textwidth,1.5cm);
             \node[anchor=west, yshift=0.75cm, text centered]
-              {   \color{black} End of Chapter Exercises };
+              {   \color{black} End of chapter exercises };
 
        \end{tikzpicture}
 
