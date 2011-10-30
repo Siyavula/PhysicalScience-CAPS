@@ -397,7 +397,7 @@ energy into other forms of \textbf{heat} energy. \textbf{Light} energy is a by-p
 \IFact{There is a special type of conductor,
 called a \textbf{superconductor} that has no resistance, but the
 materials that make up all known superconductors only start superconducting
-at very low temperatures (approximately -170$^\text{o}$ C).}
+at very low temperatures. The ``highest'' temperature superconductor is mercury barium calcium copper oxide (HgBa$_2$Ca$_2$Cu$_3$O$_x$) which is superconducting for temperatures of -140$^{o}$~C and colder.}
 
 \subsubsection{Physical attributes affecting resistance}
 
@@ -408,7 +408,7 @@ The physical attributes of a resistor affect its total resistance.
 \end{itemize}
 \textbf{Extension:}For a single resistor this can be summarised as
 \begin{equation*}
- R\proportional\frac{L}{A},
+ R\propto\frac{L}{A},
 \end{equation*} where $L$ is the length and $A$ is the cross-sectional area.
 
 \subsubsection*{Why do batteries go flat?}
@@ -1122,8 +1122,8 @@ Consider this circuit:\\
 \pnode(0,3){B}
 \pnode(3,3){C}
 \pnode(3,0){D}
-\psdot[dotscale=2](A)
-\psdot[dotscale=2](B)
+% \psdot[dotscale=2](A)
+% \psdot[dotscale=2](B)
 % draw battery and wires
 \battery(A)(B){2V}
 \psline(B)(C)
@@ -1140,7 +1140,7 @@ We have a circuit with a battery and two resistors. We know the voltage across t
 V_{battery} = 2\rm{V}
 \end{equation*}
 \begin{equation*}
-V_{\rm{A}} = 1\rm{V}
+V_{\rm{B}} = 1\rm{V}
 \end{equation*}
 \westep{Applicable principles}
 We know that the voltage across the battery must be equal to the total voltage across all other circuit components that are in series. 
