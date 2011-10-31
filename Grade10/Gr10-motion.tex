@@ -1635,165 +1635,107 @@ The velocity and acceleration graphs are also shown. They are both horizontal li
 \label{fig:pr:diagram:uniform}
 
         \label{m38795*id70106}We can now draw graphs of position vs.time ($\vec{x}$ vs. $t$), velocity vs. time ($\vec{v}$ vs. $t$) and acceleration vs.time ($\vec{a}$ vs. $t$) for Vivian moving at a constant velocity. The graphs are shown here:
-\begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-2.3034375)(15.220781,2.3034375)
-\definecolor{color1158b}{rgb}{0.8,0.8,0.8}
 
-\rput(9.871614,2.3734374){   }
-\psline[]{->}(0.99578124,-1.1865625)(0.99578124,1.8134375)
-\psline[]{->}(0.99578124,-1.1865625)(3.9957812,-1.1865625)
-\psline[]{->}(5.9957814,-1.1865625)(5.9957814,1.8134375)
-\psline[]{->}(5.9957814,-1.1865625)(8.995781,-1.1865625)
-\psline[]{->}(10.995781,-1.1865625)(10.995781,1.8134375)
-\psline[]{->}(10.995781,-1.1865625)(13.995781,-1.1865625)
-\psline[linewidth=0.09cm](10.995781,-1.1865625)(12.995781,-1.1865625)
-\psline[linewidth=0.09cm](5.9957814,-0.1865625)(7.9957814,-0.1865625)
-\psline[linewidth=0.09cm](0.99578124,-1.1865625)(2.9957812,0.8134375)
 
-\rput(1.9607812,-1.4765625){50}
+\begin{minipage}{.31\textwidth}
+\scalebox{.7}{ 
+\begin{pspicture}*(-2,-6)(5.4,5.2)
+\psset{yunit=.05,xunit=.05}
+\psaxes[Dy=20,Dx=20]{->}(0,0)(110,110)
+\rput{-270}(-20,50){\Large{position $x$ (m)}}
+\rput(50,-20){\Large{time $t$ (s)}}
+\psplot[linewidth=1.5pt,linecolor=blue]{0}{100}{x}
+\psdot(0,0)
+\psline(25,25)(75,25)(75,75)
+\rput[t](50,20){$\Delta t$}
+\rput[l](80,50){$\Delta x$}
+\psdot(50,50)
+\psdot(100,100)
+\end{pspicture}}
+\end{minipage}
+\begin{minipage}{.31\textwidth}
+\scalebox{.7}{ 
+\begin{pspicture}*(-2,-6)(5.4,5.2)
+\psset{yunit=2.5,xunit=.05}
+\psframe[fillstyle=solid,fillcolor=lightgray](0,0)(100,1)
+\psaxes[Dy=1,Dx=20]{->}(0,0)(110,2.6)
+\rput{-270}(-20,1){\Large{velocity $v$ (m$\cdot$s$^{-1}$)}}
+\rput(50,-.4){\Large{time $t$ (s)}}
+\psplot[linewidth=1.5pt,linecolor=blue]{0}{100}{1}
+\psdot(0,1)
+\psdot(50,1)
+\psdot(100,1)
+\end{pspicture}}
+\end{minipage}
+\begin{minipage}{.31\textwidth}
+\scalebox{.7}{ 
+\begin{pspicture}*(-2,-6)(5.4,5.2)
+\psset{yunit=2.5,xunit=.05}
+\psaxes[Dy=1,Dx=20]{->}(0,0)(110,2.6)
+\rput{-270}(-20,1){\Large{acceleration $a$ (m$\cdot$s$^{-2}$)}}
+\rput(50,-.4){\Large{time $t$ (s)}}
+\psplot[linewidth=1.5pt,linecolor=blue]{0}{100}{0}
+\psdot(0,0)
+\psdot(50,0)
+\psdot(100,0)
+\end{pspicture}}
+\end{minipage}
 
-\rput(3.0382812,-1.4765625){100}
-
-\rput(0.53828126,0.8234375){100}
-
-\rput(0.66078126,-0.1765625){50}
-
-\rput(0.7728125,-1.2765625){0}
-
-\rput(8.038281,-1.4765625){100}
-
-\rput(12.938281,-1.4765625){100}
-\psline[](1.9957813,-1.0865625)(1.9957813,-1.1865625)
-\psline[](2.9957812,-1.0865625)(2.9957812,-1.1865625)
-\psline[](6.9957814,-1.0865625)(6.9957814,-1.1865625)
-\psline[](7.9957814,-1.0865625)(7.9957814,-1.1865625)
-\psline[](11.995781,-1.0865625)(11.995781,-1.1865625)
-\psline[](12.995781,-1.0865625)(12.995781,-1.1865625)
-\psline[](0.8957813,-0.1865625)(1.0957812,-0.1865625)
-\psline[](0.8957813,0.8134375)(0.99578124,0.8134375)
-
-\rput(4.6365623,-1.1765625){time (s)}
-
-\rput(9.636562,-1.1765625){time (s)}
-
-\rput(14.636562,-1.1765625){time (s)}
-
-\rput{-270.0}(0.571875,0.2365625){\rput(0.16890626,0.4234375){position $x$ (m)}}
-
-\rput{-270.0}(5.8035936,-4.9960938){\rput(5.396719,0.4234375){velocity $v$ (\ms)}}
-
-\rput{-270.0}(11.0,-10.350469){\rput(10.741875,0.4234375){acceleration $a$ (m$\cdot$s$^{-2}$)}}
-
-\rput(5.8728123,-1.2765625){0}
-
-\rput(10.872812,-1.2765625){0}
-
-\rput(6.960781,-1.4765625){50}
-
-\rput(11.960781,-1.4765625){50}
-
-\rput(2.1809375,-2.0765624){(a)}
-
-\rput(7.1909375,-2.0765624){(b)}
-
-\rput(12.180938,-2.0765624){(c)}
-\psline[](2.9957812,0.8134375)(2.9957812,-1.0865625)
-
-\rput(5.742656,-0.1765625){1}
-\psline[](5.895781,-0.1865625)(6.0957813,-0.1865625)
-\psline[](2.8957813,0.8134375)(0.99578124,0.8134375)
-\psline[](7.9957814,-0.1865625)(7.9957814,-1.1865625)
-\psframe[linewidth=0.02,linecolor=color1158b,dimen=outer,fillstyle=solid,fillcolor=color1158b](7.9757814,-0.2265625)(6.0157814,-1.1465625)
-\psline[linewidth=0.03cm,](2.5757813,0.3534375)(2.5757813,-0.5865625)
-\psline[linewidth=0.03cm,](2.5757813,-0.5865625)(1.6357813,-0.5865625)
-\rput[l](2.7,-0.1365625){$\Delta$x}
-\rput(2.2054687,-0.7315625){\footnotesize $\Delta$t}
-\end{pspicture} 
-}
 \caption{Graphs for motion at constant velocity (a) position vs. time (b) velocity vs. time (c) acceleration vs. time. The area of the shaded portion in the $v$ vs. $t$ graph corresponds to the object's displacement.}
 \label{fig:pr:uniform}
 \end{center}
 
-        \label{m38795*id70200}In the evening Vivian walks $100~\text{m}$ from the bus stop to his house in $100~\text{s}$. Assume that Vivian's house is the origin. The following graphs can be drawn to describe the motion.\par 
-\begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-2.3034375)(15.220781,2.3034375)
-\definecolor{color1158b}{rgb}{0.8,0.8,0.8}
+        \label{m38795*id70200}In the evening Vivian walks $100~\text{m}$ from the bus stop to her house in $100~\text{s}$. Assume that Vivian's house is the origin. The following graphs can be drawn to describe the motion.\par 
 
-\rput(9.871614,2.3734374){   }
-\psline[]{->}(0.99578124,-1.1865625)(0.99578124,1.8134375)
-\psline[]{->}(0.99578124,-1.1865625)(3.9957812,-1.1865625)
-\psline[]{<->}(6.0110865,1.8133594)(5.980476,-1.1864845)
-\psline[]{->}(5.9957814,0.8134375)(8.995781,0.8134375)
-\psline[]{->}(10.995781,-1.1865625)(10.995781,1.8134375)
-\psline[]{->}(10.995781,-1.1865625)(13.995781,-1.1865625)
-\psline[linewidth=0.09cm](10.995781,-1.1865625)(12.995781,-1.1865625)
-\psline[linewidth=0.09cm](5.9957814,-0.1865625)(7.9957814,-0.1865625)
-\psline[linewidth=0.09cm](0.97578126,0.8134375)(2.9957812,-1.1865625)
-
-\rput(1.9607812,-1.4765625){50}
-
-\rput(3.0382812,-1.4765625){100}
-
-\rput(0.53828126,0.8234375){100}
-
-\rput(0.66078126,-0.1765625){50}
-
-\rput(0.7728125,-1.2765625){0}
-
-\rput(7.938281,1.0234375){100}
-
-\rput(12.938281,-1.4765625){100}
-\psline[](1.9957813,-1.0865625)(1.9957813,-1.1865625)
-\psline[](2.9957812,-1.0865625)(2.9957812,-1.1865625)
-\psline[](6.9957814,0.9134375)(6.9957814,0.8134375)
-\psline[](7.9957814,0.9134375)(7.9957814,0.8134375)
-\psline[](11.995781,-1.0865625)(11.995781,-1.1865625)
-\psline[](12.995781,-1.0865625)(12.995781,-1.1865625)
-\psline[](0.8957813,-0.1865625)(1.0957812,-0.1865625)
-\psline[](0.8957813,0.8134375)(0.99578124,0.8134375)
-
-\rput(4.6365623,-1.1765625){time (s)}
-
-\rput(9.536563,0.8234375){time (s)}
-
-\rput(14.636562,-1.1765625){time (s)}
-
-\rput{-270.0}(0.571875,0.2365625){\rput(0.16890626,0.4234375){position $x$ (m)}}
-
-\rput{-270.0}(5.8035936,-4.9960938){\rput(5.396719,0.4234375){velocity $v$ (\ms)}}
-
-\rput{-270.0}(11.158906,-10.350469){\rput(10.741875,0.4234375){acceleration $a$ (m$\cdot$s$^{-2}$)}}
-
-\rput(5.7728124,0.8234375){0}
-
-\rput(10.872812,-1.2765625){0}
-
-\rput(6.960781,1.0234375){50}
-
-\rput(11.960781,-1.4765625){50}
-
-\rput(2.1809375,-2.0765624){(a)}
-
-\rput(7.1909375,-2.0765624){(b)}
-
-\rput(12.180938,-2.0765624){(c)}
-
-\rput(5.7164063,-0.1765625){-1}
-\psline[](5.895781,-0.1865625)(6.0957813,-0.1865625)
-\psline[](7.9957814,0.8134375)(7.9957814,-0.1865625)
-\psframe[linewidth=0.02,linecolor=color1158b,dimen=outer,fillstyle=solid,fillcolor=color1158b](7.9757814,0.7734375)(6.0157814,-0.1465625)
-\psline[linewidth=0.03cm,](2.5757813,0.1534375)(2.5757813,-0.7865625)
-\psline[linewidth=0.03cm,](2.5757813,0.2134375)(1.6357813,0.2134375)
-
-\rput(2.7920313,-0.2315625){\footnotesize $\Delta$x}
-
-\rput(2.2854688,0.3684375){\footnotesize $\Delta$t}
-\end{pspicture} 
+\begin{minipage}{.31\textwidth}
+\scalebox{.7}{ 
+\begin{pspicture}*(-2,-6)(5.4,5.2)
+\psset{yunit=.05,xunit=.05}
+\psaxes[Dy=20,Dx=20]{->}(0,0)(110,110)
+\rput{-270}(-20,50){\Large{position $x$ (m)}}
+\rput(50,-20){\Large{time $t$ (s)}}
+\psplot[linewidth=1.5pt,linecolor=blue]{0}{100}{100 x sub}
+\psdot(0,100)
+\psline(25,75)(75,74)(75,25)
+\rput[b](50,80){$\Delta t$}
+\rput[l](80,50){$\Delta x$}
+\psdot(50,50)
+\psdot(100,0)
+\end{pspicture}
 }
+\end{minipage}
+\begin{minipage}{.31\textwidth}
+\scalebox{.7}{ 
+\begin{pspicture}*(-2,-5.2)(5.4,6)
+\psset{yunit=2.5,xunit=.05}
+\psframe[fillstyle=solid,fillcolor=lightgray](0,0)(100,-1)
+\psaxes[xoffset=3,Dy=1,Dx=20]{->}(0,0)(-.2,.2)(110,-2.6)
+\rput{-270}(-20,-1){\Large{velocity $v$ (m$\cdot$s$^{-1}$)}}
+\rput(50,.2){\Large{time $t$ (s)}}
+\psplot[linewidth=1.5pt,linecolor=blue]{0}{100}{-1}
+\psdot(0,-1)
+\psdot(50,-1)
+\psdot(100,-1)
+\end{pspicture}
+}
+\end{minipage}
+\begin{minipage}{.31\textwidth}
+\scalebox{.7}{ 
+\begin{pspicture}*(-2,-6)(5.4,5.2)
+\psset{yunit=2.5,xunit=.05}
+\psaxes[Dy=1,Dx=20]{->}(0,0)(110,2.6)
+\rput{-270}(-15,1){\Large{acceleration $a$ (m$\cdot$s$^{-2}$)}}
+\rput(50,-.4){\Large{time $t$ (s)}}
+\psplot[linewidth=1.5pt,linecolor=blue]{0}{100}{0}
+\psdot(0,0)
+\psdot(50,0)
+\psdot(100,0)
+\end{pspicture}}
+\end{minipage}
+
+
+
+
 \caption{Graphs for motion with a constant negative velocity (a) position vs. time (b) velocity vs. time (c) acceleration vs. time. The area of the shaded portion in the $v$ vs.$t$ graph corresponds to the object's displacement.}
 \label{fig:pr:uniform:negative}
 \end{center}
@@ -2195,7 +2137,8 @@ Answer the following questions in your workbook:
 % \psframe[linewidth=0.04,linecolor=color1977b,dimen=outer,fillstyle=solid,fillcolor=color1977b](13,-0.4)(11.03,-1.435)
 % \end{pspicture} 
 % }
-\caption{Graphs for motion with a constant acceleration (a) position vs. time (b) velocity vs. time (c) acceleration vs. time.}
+\vspace{\baselineskip}
+\caption{Graphs for motion with a constant acceleration starting from rest.}
 \label{fig:pr:acceleration:uniform}
 \end{center}
 
