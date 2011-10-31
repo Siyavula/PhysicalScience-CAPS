@@ -72,9 +72,17 @@ Classify the following as vectors or scalars
       \label{m38812*uid1}
 \subsection*{Vector notation}
             \nopagebreak
-Vectors are different to scalars and must have their own notation. There are many ways of writing the symbol for a vector. In this book vectors will be shown by symbols with an arrow pointing to the right above it. For example, $\stackrel{\to }{F}$, $\stackrel{\to }{W}$ and $\stackrel{\to }{v}$ represent the vectors of force, weight and velocity, meaning they have both a magnitude \textit{and} a direction.
+Vectors are different to scalars and must have their own notation. There are many ways of writing the symbol for a vector. In this book vectors will be shown by symbols with an arrow pointing to the right above it. For example, $\stackrel{\to }{F}$, $\stackrel{\to }{W}$ and $\stackrel{\to }{v}$ represent the \textit{vectors} of force, weight and velocity, meaning they have both a magnitude \textit{and} a direction.
 
-Sometimes just the magnitude of a vector is needed. In this case, the arrow is omitted. In other words, $F$ represents the \textit{magnitude} of the force vector $\stackrel{\to }{F}$. \par 
+Sometimes just the magnitude of a vector is needed. In this case, the arrow is omitted. 
+%In other words, $F$ represents the \textit{magnitude} of the force vector $\stackrel{\to }{F}$. \par 
+For the case of the force vector:
+\begin{itemize}
+\item  $\stackrel{\to }{F}$ represents the force vector
+\item $F$ represents the magnitude of the force vector
+\end{itemize}
+
+
       \label{m38812*uid2}
 
 \section*{Graphical representation of vectors}
@@ -158,18 +166,19 @@ The direction of this vector can also be described as: W $40{}^{\circ }$ N (West
       \label{m38812*uid7}
             \subsubsection*{Bearing}
             \nopagebreak
-        \label{m38812*id187384}The final method of expressing direction is to use a \textsl{bearing}. A bearing is a direction relative to a fixed point.
+        \label{m38812*id187384}A further method of expressing direction is to use a \textsl{bearing}. A bearing is a direction relative to a fixed point.
         \label{m38812*id187393}Given just an angle, the convention is to define the angle clockwise with respect to North. So, a vector with a direction of $110{}^{\circ }$ has been rotated clockwise $110{}^{\circ }$ relative to North. A bearing is always written as a three digit number, for example $275{}^{\circ }$ or $080{}^{\circ }$ (for $80{}^{\circ }$).\par 
         \label{m38812*id187459}
     \setcounter{subfigure}{0}
 \begin{center}
-\begin{pspicture}(0,0)(2,2)
+\begin{pspicture}(0,0)(2,2.5)
 %\psgrid[gridcolor=lightgray]
-\psline{->}(0,0)(0,2)
+\psline[linestyle=dashed]{->}(0,0)(0,2)
 %\psline{->}(0,0)(1.5,-0.25)
 \psline{->}(0,0)(1.88,-0.684)
 \psarc{<-}(0,0){1}{-20}{90}
 \rput(0.4,0.4){110$^\circ$}
+\rput(0,2.2){N}
 \end{pspicture}
 \end{center}      
         \par 
@@ -217,7 +226,7 @@ include a reference direction in the diagram. A scale allows us to
 translate the length of the arrow into the vector's magnitude. For
 instance if one chooses a scale of 1 cm = 2 N (1 cm represents 2 N), a
 force of 20 N towards the East would be represented as an arrow 10 cm
-long. The points of a compass are often used to show direction or alternatively an arrow pointing in the reference direction.  
+long pointing towards the right. The points of a compass are often used to show direction or alternatively an arrow pointing in the reference direction.  
       \label{m38812*id187716}
     \setcounter{subfigure}{0}
 \begin{center}
@@ -243,7 +252,7 @@ long. The points of a compass are often used to show direction or alternatively 
 
 \begin{wex}{Drawing vectors I}
 {
-Draw the following vector quantity: $\stackrel{\to }{v}$ =  6 \ms north
+Draw the following vector quantity: $\stackrel{\to }{v}$ =  6 \ms North
 }
 {
 \westep{Decide on a scale and write it down.}
@@ -363,7 +372,7 @@ If two vectors have the same magnitude (size) \textit{and} the same direction, t
 
 Just like scalars which can have positive or negative values, vectors can also be positive or negative. 
 A negative vector is a vector which points in the direction \textit{opposite} to the \textbf{reference positive direction}. 
-For example, if in a particular situation, we define the upward direction as the reference positive direction, then a force $\stackrel{\to }{F_{1}} = 30$ N \textit{downwards} would be a \textit{negative vector} and could also be written as $\stackrel{\to }{F_{1}} = -30$ N. In this case, the negative (-) sign indicates that the direction of $\stackrel{\to }{F_{1}}$ is opposite to that of the reference positive direction.
+For example, if in a particular situation, we define the upward direction as the reference positive direction, then a force $\stackrel{\to }{F_{1}} = 30$~N \textit{downwards} would be a \textit{negative vector} and could also be written as $\stackrel{\to }{F_{1}} = -30$~N. In this case, the negative (-) sign indicates that the direction of $\stackrel{\to }{F_{1}}$ is opposite to that of the reference positive direction.
 
 \Definition{Negative vector}{A negative vector is a vector that has the \textit{opposite} direction to the reference positive direction.}
 
@@ -402,7 +411,7 @@ For example, imagine the following. You and a friend are trying to move a heavy 
 \end{minipage}
 
 It is very easy to understand the concept of vector addition through an activity using the \textbf{displacement} vector.  \\
-Displacement is the change in an object's position. It is a vector that points from the initial position to the final position. \\
+Displacement is the vector which describes the change in an object's position. It is a vector that points from the initial position to the final position. \\
 
 \begin{activity}{Adding vectors}
 \textbf{Materials:} masking tape \\
@@ -415,8 +424,8 @@ Go back to your starting line. Now take 3 steps forward. Use a piece of masking 
 \textbf{Discussion:}\\
 What do you notice?\\
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
-\item In \textit{Task 1}, the first 2 steps represent a displacement vector and the second 3 steps also form a displacement vector. If we did not stop after the first 2 steps, we would have taken 5 steps in the forward direction in total. Therefore, if we add the displacement vectors for 2 steps and 3 steps, we should get a total of 5 steps in the forward direction. 
-\item It does not matter whether you take 3 steps forward and then 2 steps, or two steps followed by another 3 steps. Your final position is the same! The order of the addition does not matter!
+\item In \textit{Task 1}, the first 2 steps forward represent a displacement vector and the second 3 steps forward also form a displacement vector. If we did not stop after the first 2 steps, we would have taken 5 steps in the forward direction in total. Therefore, if we add the displacement vectors for 2 steps and 3 steps, we should get a total of 5 steps in the forward direction. 
+\item It does not matter whether you take 3 steps forward and then 2 steps forward, or two steps followed by another 3 steps forward. Your final position is the same! The order of the addition does not matter!
 \end{enumerate}
 \end{activity}
 
@@ -521,14 +530,14 @@ as adding 3 steps backwards).
 \Tip{Subtracting a vector from another is the same as adding a vector in the opposite direction.}
 
 
-\subsubsection{Resultant and equilibrant vectors}
+\subsubsection{The resultant vector}
 
 \label{m38813*id188345}The final quantity you get when adding or subtracting vectors is called the \textbf{resultant vector}. In other words, the individual vectors can be replaced by the
 resultant -- the overall effect is the same.
 
-\Definition{  Resultant vectors } { The resultant vector is the single vector whose effect is the same as the individual vectors acting together.    } 
+\Definition{  Resultant vector } { The resultant vector is the single vector whose effect is the same as the individual vectors acting together.    } 
 
-We can illustrate the concept of the resultant vector by considering our two situations in using forces to move the heavy box. In the first case (on the left), you and your friend are applying forces in the same direction. The resultant force will be the sum of your two applied forces in that direction. In the second case (on the right), the forces are applied in opposite directions and the resultant force will be the difference between them. \\
+We can illustrate the concept of the resultant vector by considering our two situations in using forces to move the heavy box. In the first case (on the left), you and your friend are applying forces in the same direction. The resultant force will be the sum of your two applied forces in that direction. In the second case (on the right), the forces are applied in opposite directions. The resultant vector will again be the sum of your two applied forces, however after choosing a positive direction, one force will be positive and the other will be negative and the sign of the resultant force will just depend on which direction you chose as positive. For clarity look at the diagrams below. \\
 
 \begin{minipage}[t]{0.5\textwidth}
 \begin{center}
@@ -669,10 +678,6 @@ techniques of vector addition. These techniques fall into two main categories - 
 Graphical techniques involve drawing accurate scale diagrams to denote
 individual vectors and their resultants. We will look at just one graphical method: the head-to-tail method.
 
-\subsubsection*{The head-to-tail method}
-In describing the mathematical properties of vectors we used
-displacements and the head-to-tail graphical method of vector addition
-as an illustration. The head-to-tail method of graphically adding vectors is a standard method that must be understood.\\
 
 \textbf{Method: Head-to-Tail Method of Vector Addition}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
@@ -695,6 +700,8 @@ direction too can be determined from the scale diagram.}
 
 
 \label{m38813*id188482}Let's consider some more examples of vector addition using displacements. The arrows tell you how far to move and in what direction. Arrows to the right correspond to steps forward, while arrows to the left correspond to steps backward. Look at all of the examples below and check them.\par 
+
+\label{m38813*id186661}This example says 1 step forward and then another step forward is the same as an arrow twice as long -- two steps forward.
         \label{m38813*id186651}
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m38813*id186654}
@@ -717,7 +724,9 @@ direction too can be determined from the scale diagram.}
 \end{center}
 \end{figure}       
        
-\label{m38813*id186661}This example says 1 step forward and then another step forward is the same as an arrow twice as long -- two steps forward.\par 
+        \label{m38813*id186678}This example says 1 step backward and then another step backward is the same as an arrow twice as long -- two steps backward.
+
+
         \label{m38813*id186668}
     \setcounter{subfigure}{0}
 \begin{figure}[H]
@@ -731,8 +740,8 @@ direction too can be determined from the scale diagram.}
 \psline[linecolor=blue,linewidth=0.04cm]{<-}(1.6,0)(2.6,0)
 \rput(2.9,-0.025){=}
 \rput(4.18,0.25){{2 steps}}
-\psline[linewidth=0.04cm]{<-}(3.2,0)(4.2,0)
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(4.2,0)(5.2,0)
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(3.2,0)(4.2,0)
+\psline[linewidth=0.04cm]{<-}(4.2,0)(5.2,0)
 \rput(5.5,-0.025){=}
 \rput(6.78,0.25){{2 steps}}
 \psline[linewidth=0.04cm]{<-}(5.8,0)(7.8,0)
@@ -740,7 +749,7 @@ direction too can be determined from the scale diagram.}
 \end{center}
  \end{figure}      
         \par 
-        \label{m38813*id186678}This example says 1 step backward and then another step backward is the same as an arrow twice as long -- two steps backward.\par 
+ 
 
 It is sometimes possible that you end up back where you started. In this case the net result of what you have done is that you have gone nowhere
 (your start and end points are at the same place). In this case, your resultant displacement is a vector with length zero units. We use the symbol $\vec{0}$ to denote such a vector:
@@ -812,8 +821,8 @@ seen as steps left and arrows down the page as steps right.\par
 \rput(0.3,0.0){+}
 \psline[linecolor=blue,linewidth=0.04cm]{<-}(0.6,-0.35)(0.6,0.35)
 \rput(0.9,0){=}
-\psline[linewidth=0.04cm]{<-}(1.2,-0.7)(1.2,0)
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.2,0)(1.2,0.7)
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.2,-0.7)(1.2,0)
+\psline[linewidth=0.04cm]{<-}(1.2,0)(1.2,0.7)
 \rput(1.5,0){=}
 \psline[linewidth=0.04cm]{<-}(1.8,-0.7)(1.8,0.7)
 \end{pspicture}
@@ -885,8 +894,8 @@ true of any set of parallel directions:
 \rput(0.8,0.0){+}
 \psline[linecolor=blue,linewidth=0.04cm]{<-}(0.9,-.35)(1.6,0.35)
 \rput(1.7,0){=}
-\psline[linewidth=0.04cm]{<-}(1.8,-0.7)(2.5,0)
-\psline[linecolor=blue,linewidth=0.04cm]{<-}(2.5,0)(3.2,0.7)
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.8,-0.7)(2.5,0)
+\psline[linewidth=0.04cm]{<-}(2.5,0)(3.2,0.7)
 \rput(3.3,0){=}
 \psline[linewidth=0.04cm]{<-}(3.4,-0.7)(4.8,0.7)
 \end{pspicture}
@@ -998,8 +1007,161 @@ can be applied to vectors in any direction.
 %\end{pspicture}
 %\end{center}
 
+\begin{wex}{Head-to-tail addition 1}
+{A car breaks down in the road and you and your friend, who happen to be walking past, help the driver push-start it. You and your friend stand together at the rear of the car. If you push with a force of 50~N and your friend pushes with a force of 45~N, what is the resultant force on the car? Use the head-to-tail technique to calculate the answer graphically.
+}
+{
+\westep{Draw a rough sketch of the situation}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1)(7.82,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(4.04,0.01)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.0,0.01)(7.8,0.01)
+\rput(2.0, 0.25){50~N}
+\rput(5.9, 0.25){45~N}
+\end{pspicture} 
+}
+\end{center}
+\westep{Choose a scale and a reference direction}
+Let's choose the direction \textit{to the right} as the positive direction. The scale can be 1~cm = 10~N.
 
-\begin{wex}{Head-to-Tail Addition I}{A ship leaves harbour H and sails 6 km north to port A. From here the ship travels 12 km east to port B, before sailing 5,5 km south-west to port C. Determine the ship's resultant displacement using the head-to-tail technique of vector addition.}{
+\westep{Choose one of the vectors and draw it as an arrow of the correct length in the correct direction}
+Start with your force vector and draw an arrow pointing to the right which is 5~cm long (i.e. 50~N = 5$\times$10~N, therefore, you must multiply your cm scale by 5 as well).
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1)(7.82,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(4.04,0.01)
+\rput(2.0, 0.25){50~N}
+\end{pspicture} 
+}
+\end{center}
+
+\westep{Take the next vector and draw it starting at the arrowhead of the previous vector.}
+Since your friend is pushing in the same direction as you, your force vectors must point in the same direction. Using the scale, this arrow should be 4,5~cm long.
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1)(7.82,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(4.04,0.01)
+\psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.0,0.01)(7.8,0.01)
+\rput(2.0, 0.25){50~N}
+\rput(5.9, 0.25){45~N}
+\end{pspicture} 
+}
+\end{center}
+
+\westep{Draw the resultant, measure its length and find its direction}
+There are only two vectors in this problem, so the resultant vector must be drawn from the tail (i.e. starting point) of the first vector to the head of the second vector. 
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1)(7.82,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(7.8,0.01)
+\rput(4.0, 0.25){50~N + 45~N = 95~N}
+\end{pspicture} 
+}
+\end{center}
+The resultant vector measures 9,5~cm and points to the right. Therefore the resultant force must be 95~N in the positive direction (\textit{or} to the right).
+
+}
+\end{wex}
+
+
+
+
+\begin{wex}{Head-to-tail addition 2}
+{Use the graphical head-to-tail method to determine the resultant force on a rugby player if two players on his team are pushing him forwards with forces of $\stackrel{\to }{F_{1}}$ = 60~N and $\stackrel{\to }{F_{2}}$ = 90~N respectively and two players from the opposing team are pushing him backwards with forces of $\stackrel{\to }{F_{3}}$ = 100~N and $\stackrel{\to }{F_{4}}$ = 65~N respectively.
+}
+{
+\westep{Choose a scale and a reference direction}
+Let's choose a scale of 0,5~cm = 10~N and for our diagram we will define the positive direction as \textit{to the right.}
+
+\westep{Choose one of the vectors and draw it as an arrow of the correct length in the correct direction}
+We will start with drawing the vector $\stackrel{\to }{F_{1}}$ = 60~N, pointing in the positive direction.
+Using our scale of 0,5~cm = 10~N, the length of the arrow must be 3~cm pointing to the right. \\ \\
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-2,-1)(8.5,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
+\rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
+\end{pspicture} 
+}
+
+\westep{Take the next vector and draw it starting at the arrowhead of the previous vector}
+The next vector is $\stackrel{\to }{F_{2}}$ = 90~N in the same direction as $\stackrel{\to }{F_{1}}$. Using the scale, the arrow should be 4,5~cm long and pointing to the right.\\ 
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-2,-1)(17,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
+\psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0,0.01)(7.5,0.01)
+\rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
+\rput(5.25,0.3){$\stackrel{\to }{F_{2}}$ = 90~N}
+\end{pspicture} 
+}
+
+\westep{Take the next vector and draw it starting at the arrowhead of the previous vector}
+The next vector is $\stackrel{\to }{F_{3}}$ = 100~N in the \textit{opposite} direction. Using the scale, this arrow should be 5~cm long and point to the \textit{left}. \\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-2,-1)(17,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
+\psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0,0.01)(7.5,0.01)
+\psline[linecolor=red,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.5,0.01)(2.5,0.01)
+\rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
+\rput(5.25,0.3){$\stackrel{\to }{F_{2}}$ = 90~N}
+\rput(5, -0.3){$\stackrel{\to }{F_{3}}$ = 100~N}
+\end{pspicture} 
+}
+\end{center}
+
+\westep{Take the next vector and draw it starting at the arrowhead of the previous vector}
+The fourth vector is $\stackrel{\to }{F_{4}}$ = 65~N also in the opposite direction. Using the scale, this arrow must be 3,25 cm long and point to the left. \\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-2,-1)(17,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
+\psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0,0.01)(7.5,0.01)
+\psline[linecolor=red,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.5,0.01)(2.5,0.01)
+\psline[linecolor=green,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.5,0.01)(-0.75,0.01)
+\rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
+\rput(5.25,0.3){$\stackrel{\to }{F_{2}}$ = 90~N}
+\rput(5, -0.3){$\stackrel{\to }{F_{3}}$ = 100~N}
+\rput(1, -0.3){$\stackrel{\to }{F_{4}}$ = 65~N}
+\end{pspicture} 
+}
+\end{center}
+
+\westep{Draw the resultant, measure its length and find its direction}
+We have now drawn all the force vectors that are being applied to the player. The resultant vector is the arrow which starts at the tail of the first vector and ends at the head of the last drawn vector. \\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-2,-1)(17,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
+\psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0,0.01)(7.5,0.01)
+\psline[linecolor=red,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.5,0.01)(2.5,0.01)
+\psline[linecolor=green,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.5,0.01)(-0.75,0.01)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(-0.75,0.01)
+\rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
+\rput(5.25,0.3){$\stackrel{\to }{F_{2}}$ = 90~N}
+\rput(5, -0.3){$\stackrel{\to }{F_{3}}$ = 100~N}
+\rput(1.5, -0.3){$\stackrel{\to }{F_{4}}$ = 65~N}
+\rput(-0.3, -0.3){$\stackrel{\to }{F_{R}}$ = 15~N}
+\end{pspicture} 
+}
+\end{center}
+The resultant vector measures 0,75~cm which, using our scale is equivalent to 15~N and points to the left (\textit{or} the negative direction \textit{or} the direction the opposing team members are pushing in).
+
+}
+\end{wex}
+\clearpage
+\begin{wex}{Head-to-Tail Addition 3 (Not in CAPS)}{A ship leaves harbour H and sails 6 km north to port A. From here the ship travels 12 km east to port B, before sailing 5,5 km south-west to port C. Determine the ship's resultant displacement using the head-to-tail technique of vector addition.}{
 
 \westep{Draw a rough sketch of the situation}
 It's easy to understand the problem if we first draw a quick sketch. The rough sketch should include all of the information given in the problem. All of the magnitudes of the displacements are shown. In a rough sketch one is interested in the approximate shape of the vector diagram.
@@ -1128,8 +1290,9 @@ We now use the scale to convert the length of the resultant in the scale diagram
 \westep{Quote the final answer}
 The resultant displacement of the ship is 9,2 km on a bearing of 072,3$^\circ$.}
 \end{wex}
-\pagebreak
-\begin{wex}{Head-to-Tail Graphical Addition II}{A man walks 40 m East, then 30 m North.
+
+
+\begin{wex}{Head-to-Tail Graphical Addition 4 (Not in CAPS)}{A man walks 40 m East, then 30 m North.
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
 \item{What was the total distance he walked?}
 \item{What is his resultant displacement?}
@@ -1215,7 +1378,7 @@ displacement. According to the chosen scale 1 cm = 10 m. Therefore 5 cm  represe
 }
 \end{wex}
 
-\subsection*{Algebraic Addition and Subtraction of Vectors}
+\subsection*{Algebraic techniques}
 \subsubsection*{Vectors in a Straight Line}
 
 Whenever you are faced with adding vectors acting in a straight line (i.e. some directed left and some right, or some acting up and others down) you can use a very simple algebraic technique:\\
@@ -1244,7 +1407,7 @@ Let us consider a few examples.
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{->}(0,1.5)(5,1.5)
 \rput(2.5,1.7){10 m}
-\psline[linewidth=0.04cm]{->}(5,1)(3.75,1)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(5,1.5)(3.75,1.5)
 \rput(4.5,1.2){2,5 m}
 \psline{-}(5,0)(5,2)
 \rput(5.5,1){Wall}
@@ -1290,7 +1453,7 @@ A quick sketch will help us understand the problem.
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{->}(0,1.5)(3,1.5)
 \rput(1.5,1.7){3 \ms}
-\psline[linewidth=0.04cm]{->}(3,1)(1,1)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(3,1.5)(1,1.5)
 \rput(2,1.2){2 \ms}
 \psline{-}(3,0)(3,2)
 \rput(3.5,1){Wall}
@@ -1338,7 +1501,7 @@ A quick sketch will help us understand the problem.
 %\psgrid[gridcolor=lightgray]
 \psline[linewidth=0.04cm]{->}(0,1.5)(3,1.5)
 \rput(1.5,1.7){$5~\text{N}$}
-\psline[linewidth=0.04cm]{->}(3,1)(1,1)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(3,1.5)(1,1.5)
 \rput(2,1.2){$2~\text{N}$}
 % \psline{-}(3,0)(3,2)
 % \rput(3.5,1){Wall}
@@ -1371,6 +1534,8 @@ Remember that in this case \underline{towards the crate means a positive force}:
 $7~\text{N}$ towards the crate.}
 \end{wex}
 
+Remember that the technique of addition and subtraction just discussed can only be applied to vectors acting along a straight line. When vectors are not in a straight line, i.e. at an angle to each other then simple geometric and trigonometric techniques can be used to find resultant vectors.
+
 \begin{exercises}{Resultant Vectors}{ \noindent
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
 \item Harold walks to school by walking 600 m Northeast and then 500 m N 40$^\circ$ W. Determine his resultant displacement by using accurate scale drawings.
@@ -1379,28 +1544,20 @@ $7~\text{N}$ towards the crate.}
 	\item What is the change in velocity of the squash ball?
 	\item What is the resultant velocity of the squash ball?
 	\end{enumerate}
+\item A frog is trying to cross a river. It swims at 3 \ms in a northerly direction towards the opposite bank. The water is flowing in a westerly direction at 5 \ms. Find the frog's resultant velocity by using appropriate calculations. Include a rough sketch of the situation in your answer.
+\item Mpihlonhle walks to the shop by walking 500 m Northwest and then 400 m N 30$^\circ$ E. Determine her resultant displacement by doing appropriate calculations.
   \label{59e414b70efc194a27a122db47d06ce6**end}
 \par \practiceinfo
- \par \begin{tabular}[h]{ccc}
- (1.) l2b  &  (2.) l2j  &  (3.) l4F  \end{tabular}
+ \par \begin{tabular}[h]{ccccc}
+ (1.) l2b  &  (2.) l2j  &  (3.) l4F &  (4.) l4L  &  (5.) lDq\end{tabular}
 \end{enumerate}
 }
 \end{exercises}
 
-Remember that the technique of addition and subtraction just discussed can only be applied to vectors acting along a straight line. When vectors are not in a straight line, i.e. at an angle to each other then simple geometric and trigonometric techniques can be used to find resultant vectors.
 
-\begin{exercises}{More Resultant Vectors} \noindent
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.] 
-\item A frog is trying to cross a river. It swims at 3 \ms in a northerly direction towards the opposite bank. The water is flowing in a westerly direction at 5 \ms. Find the frog's resultant velocity by using appropriate calculations. Include a rough sketch of the situation in your answer.
-\item Mpihlonhle walks to the shop by walking 500 m Northwest and then 400 m N 30$^\circ$ E. Determine her resultant displacement by doing appropriate calculations.
-\end{enumerate}
 
-  \label{59e414b70efc194a27a122db47d06ce6**end}
-\par \practiceinfo
- \par \begin{tabular}[h]{cc}
- (1.) l4L  &  (2.) lDq   & \end{tabular}
-\end{exercises}
 \section{Components of Vectors}
+\textbf{(Not in CAPS)}\\
 In the discussion of vector addition we saw that a number of vectors acting
 together can be combined to give a single vector (the resultant). In
 much the same way a single vector can be broken down into a number of vectors which when added give that original vector. These vectors which sum to the original are called {\bf components} of the original vector. The process of breaking a vector into its components is called {\bf resolving into components}.
@@ -1771,12 +1928,13 @@ $\vec{R}$ is 10 m at an angle of $36,8^\circ$ to the positive $x$-axis.}
  (1.) l4e  &  (2.) l2Z   & \end{tabular}
 \end{exercises}
 
-\subsection*{Summary}
+\summary{placeholder}
 \begin{itemize}
 \item A scalar is a physical quantity with magnitude only.
 \item A vector is a physical quantity with magnitude and direction.
 \item Vectors may be represented as arrows where the length of the arrow indicates the magnitude and the arrowhead indicates the direction of the vector.
 \item The direction of a vector can be indicated by referring to another vector or a fixed point (eg. $30^{\circ}$ from the river bank); using a compass (eg. N $30^\circ$ W); or bearing (eg. $053 ^\circ$).
+\item The resultant vector is the single vector whose effect is the same as the individual vectors acting together.
 \end{itemize}
 \begin{eocexercises}{Vectors}\noindent
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
