@@ -198,7 +198,7 @@ See simulation: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/vide
 }
 
 \newcommand{\Definition}[2]{
-\begin{mdframed}[nobreak=true, linewidth=1,linecolor=black, skipabove=36pt]%
+\begin{mdframed}[nobreak=true, linewidth=1,linecolor=black, skipabove=18pt, skipbelow=18pt]%
 \vspace*{10pt}
 \leftskip20pt
 \rightskip20pt
@@ -206,8 +206,7 @@ See simulation: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/vide
 
 \par
 #2
-
-\vspace*{28pt}
+\vspace*{5pt}
 \end{mdframed}
 }
 
@@ -600,11 +599,8 @@ linecolor=red%
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
 \setlength{\parindent}{0pt}
-
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
-
-
 \begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
 \vspace*{8pt}
 {\Large\textbf{\textit{General experiment:}} } {\Large\textit{#1}}
@@ -730,7 +726,42 @@ linecolor=red%
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}}
 
-\newenvironment{Investigation}[1]
+\newenvironment{Investigation}[1]{
+\par
+\newlength{\myfloatsep}
+\setlength{\myfloatsep}{\floatsep}
+\setlength{\floatsep}{2mm}
+\noindent
+\vspace{.5cm}
+\newlength{\oldparindent}
+\setlength{\oldparindent}{\parindent}
+\setlength{\parindent}{0pt}
+
+\ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
+{\clearpage\vspace*{-\topskip}}{} 
+
+
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
+\vspace*{8pt}
+{\Large\textbf{\textit{Investigation:}} } {\Large\textit{#1}}
+\vspace*{0pt}
+\end{mdframed}
+\vspace*{2pt}
+\begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
+\begin{quotation}
+}%
+{%
+\end{quotation}
+\end{mdframed}
+\setlength{\parindent}{\oldparindent}
+\setlength{\floatsep}{\myfloatsep}
+\par
+
+}
+
+
+
+\newenvironment{Investigation_old}[1]
 {
 \begin{quotation}
 \noindent
