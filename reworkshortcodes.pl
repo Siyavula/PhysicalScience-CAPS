@@ -50,20 +50,20 @@ foreach $line (@lines)
         @fields = split('&',$line);
         foreach $field (@fields)
         {
-           if ($field =~ /\)\s+[A-Za-z0-9]{3}/)
+           if ($field =~ /\)\s+[A-Za-z0-9]{3}\s+/)
            {
                 $shortcode = &enc($code);
                 for ($i = 0 ; $i < 4 - length(&enc($code)) ; $i++)
                 { 
                    $shortcode = "0".$shortcode;
                 }
-                $oldcode = $field =~ m/\)\s+([A-Za-z0-9]{3})/;
+                $oldcode = $field =~ m/\)\s+([A-Za-z0-9]{3})\s+/;
                 if ($oldcode)
                 { 
                     print DBASE $code.",".$1.",".$shortcode."\n";
                     $code++;
                 }
-                $field =~ s/\)\s+[A-Za-z0-9]{3}/) $shortcode/;
+                $field =~ s/\)\s+[A-Za-z0-9]{3}\s+/) $shortcode/;
            } 
            if ($field =~ /\\end{tabular}/)
            {
