@@ -83,7 +83,7 @@
 \nopagebreak
 \label{m38801*id312946}The amplitude of a pulse is a measurement of how far the medium is displaced momentarily from a position of rest. The pulse length is a measurement of how long the pulse is. Both these quantities are shown in Figure~\ref{m38801*uid2!!!underscore!!!media}
 .
-\Definition{Amplitude} {The amplitude of a pulse is a measurement of how far the medium is displaced from rest. \\
+\Definition{Amplitude} {The amplitude of a pulse is the maximum disturbance or distance the medium is displaced from its rest (equilibrium) position. \\
   Symbol: A \hspace{2cm} Unit: m} 
 \begin{figure}[h]
     \begin{center}
@@ -292,7 +292,7 @@ After pulses pass through each other, each pulse continues along its original di
     \begin{pspicture}(0,-5)(4,1.8)
     %\psgrid[gridcolor=lightgray]
     \def\pulse{\psline[linecolor=white,linestyle=solid,linewidth=2pt](0,0)(1.02,0)\psplot[xunit=0.034]{0}{30}{6 x mul sin}}
-
+\psline(2.,1.2,)(2.,-5.)
     \rput(-3,0){\uput[u](2,1.2){pulses move towards each other}
     \psline(0,0)(4,0)
     \rput(0,0){\psline{->}(0,1.2)(0.5,1.2)\pulse}
@@ -352,7 +352,7 @@ After pulses pass through each other, each pulse continues along its original di
             %\psgrid[gridcolor=lightgray]
             \def\pulse{\psline[linecolor=white,linestyle=solid,linewidth=2pt](0,0)(1.02,0)\psplot[xunit=0.034]{0}{30}{6 x mul sin}}
             \def\dotpulse{\psplot[linestyle=dashed,xunit=0.034]{0}{30}{6 x mul sin}}
-
+	    \psline(5,1.2,)(5,-6)
             \uput[u](2,1.2){pulses move towards each other}
             \psline(0,0)(4,0)
             \psline{->}(0,1.2)(0.5,1.2)
@@ -600,7 +600,7 @@ Ripple tank apparatus
             \label{m38802*eip-404}\begin{itemize}[noitemsep]
             \item A medium is the substance or material in which a pulse will move.
 	    \item A pulse is a single disturbance that moves through a medium.
-	    \item The amplitude of a pulse is a measurement of the maximum distance the medium is displaced from rest.
+	    \item The amplitude of a pulse is the maximum disturbance or distance the medium is displaced from its equilibrium position (rest).
 	    \item Pulse speed is the distance a pulse travels per unit time.
 	    \item Constructive interference is when two pulses meet and result in a bigger pulse.
 	    \item Destructive interference is when two pulses meet and and result in a smaller pulse.
