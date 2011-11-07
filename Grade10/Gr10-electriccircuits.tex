@@ -7,7 +7,9 @@ When a circuit is connected and complete, charge can move through the circuit. C
 A battery has the potential to drive charge round a closed circuit, the battery has potential energy that can be converted into electrical energy by doing work on the charge in the circuit to make it move. \\
 \chapterstartvideo{VPfqj}
 
-\Definition{Potential Difference}{Potential difference is the difference in electrical potential energy per unit charge between two points. The units of potential difference are the volt (V) which is defined as one joule per coulomb.\\
+% \Definition{Potential Difference}{Potential difference is the difference in electrical potential energy per unit charge between two points. The units of potential difference are the volt (V) which is defined as one joule per coulomb.\\
+% Symbol: V\hspace{2cm} Unit: V\hspace{2cm} S.I. Units: $\text{J} \cdot \text{C}^{-1}$}
+\Definition{Potential Difference}{Potential difference is the work done per unit charge, $\frac{W}{q}$. The units of potential difference are the volt (V) which is defined as one joule per coulomb.\\
 Symbol: V\hspace{2cm} Unit: V\hspace{2cm} S.I. Units: $\text{J} \cdot \text{C}^{-1}$}
 \subsection*{Voltmeter}
 \begin{minipage}{.5\textwidth}
@@ -37,7 +39,7 @@ A voltmeter\\
 
 \subsection*{EMF}
 \begin{minipage}{.5\textwidth}
-When you measure the potential difference across (or between) the terminals of a battery you are measuring the emf of the battery. This is the maximum amount of work per coulomb of charge the battery can do to drive charge from one terminal, through the circuit, to the other terminal.
+When you measure the potential difference across (or between) the terminals of a battery that is \textbf{not in a complete circuit} you are measuring the emf of the battery. This is the maximum amount of work per coulomb of charge the battery can do to drive charge from one terminal, through the circuit, to the other terminal.
 \end{minipage}
 \begin{minipage}{.5\textwidth}
 \begin{center}
@@ -363,11 +365,11 @@ You can feel this directly if you touch a cellphone charger when you are chargin
 \end{center}
 \end{minipage}
 
-\Definition{Resistance}{Resistance slows down the flow of charge in a circuit. The units of resistance are the ohm ($\Omega$) which is defined as a volt per ampere of current. \\
-Symbol: $R$\hspace{2cm} Unit: Ohm ($\Omega$)\hspace{2cm}S.I. Units: $\text{m}^2\cdot\text{kg}\cdot\text{s}^{-3}\cdot\text{A}^{-2}$\\
+\Definition{Resistance}{Resistance slows down the flow of charge in a circuit. The unit of resistance is the ohm ($\Omega$) which is defined as a volt per ampere of current. \\
+Symbol: $R$\hspace{2cm} Unit: ohm ($\Omega$)\hspace{2cm}S.I. Units: $\text{m}^2\cdot\text{kg}\cdot\text{s}^{-3}\cdot\text{A}^{-2}$\\
 }
 \begin{equation*}
-1 \ \text{Ohm} = 1 \frac{\text{Volt}}{ \text{Ampere}}
+1 \ \text{ohm} = 1 \frac{\text{volt}}{ \text{ampere}}
 \end{equation*}
 
 \IFact{Fluorescent lightbulbs do not use thin wires; they use the fact that certain gases glow when a current flows through them. They are much more efficient (much less resistance) than lightbulbs.} 
@@ -403,7 +405,7 @@ called a \textbf{superconductor} that has no resistance, but the
 materials that make up all known superconductors only start superconducting
 at very low temperatures. The ``highest'' temperature superconductor is mercury barium calcium copper oxide (HgBa$_2$Ca$_2$Cu$_3$O$_x$) which is superconducting for temperatures of -140$^{o}$~C and colder.}
 
-\subsubsection{Physical attributes affecting resistance}
+\subsubsection{Physical attributes affecting resistance [NOT IN CAPS]}
 
 The physical attributes of a resistor affect its total resistance.
 \begin{itemize}
@@ -423,7 +425,7 @@ Since energy is always conserved, the battery goes flat when all its chemical po
 It is important to understand what effect adding resistors to a circuit has on the \textit{total} resistance of a circuit and on the current that can flow in the circuit. 
 
 
-\section{Potential difference and series resistors}
+\section{Series resistors}
 
 When resistors are in series, one after the other, there is a potential difference across each resistor. The total potential difference across a set of resistors in series is the sum of the potential differences across each of the resistors in the set. 
 % This is the same as falling a large distance under gravity or falling that same distance (difference) in many smaller steps. The total distance (difference) is the same.
@@ -572,7 +574,7 @@ Let us look at this in a bit more detail. In the picture below you can see what 
 % Use the fact that voltage is proportional to resistance to calculate what proportion of the total voltage of a circuit will be found across each circuit element. 
 
 \subsubsection*{Resistors in series}
-When we add resistors in series to a circuit, we \textit{increase} the resistance to the flow of current. There is only \textbf{one path} that the current can flow down and the current is the same at all places in the series circuit. Take a look at the diagram below. On the left there is a circuit with a single resistor and a battery. No matter where we measure the current, it is the same in a series circuit. On the right, we have added a second resistor in series to the circuit. The \textit{total} resistance of the circuit has \textit{increased} and you can see from the reading on the ammeter that the current in the circuit has decreased.
+When we add resistors in series to a circuit, we \textit{increase} the resistance to the flow of current. There is only \textbf{one path} that the current can flow down and the current is the same at all places in the series circuit. Take a look at the diagram below. On the left there is a circuit with a single resistor and a battery. \textbf{No matter where we measure the current, it is the same in a series circuit}. On the right, we have added a second resistor in series to the circuit. The \textit{total} resistance of the circuit has \textit{increased} and you can see from the reading on the ammeter that the current in the circuit has decreased.
 
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -727,7 +729,7 @@ When we add resistors in series to a circuit, we \textit{increase} the resistanc
 The total resistance is equal to $\rm{R}_{1}$ in the first circuit, to $\rm{R}_{1}$ + $\rm{R}_{2}$ in the second circuit and $\rm{R}_{1}$ + $\rm{R}_{2}$ + $\rm{R}_{3}$ in the third circuit.
 In general, for resistors in series, the total resistance is given by:
 \begin{equation*}
- R_S = R_1 + R_2 + \ldots
+ \box{R_S = R_1 + R_2 + \ldots}
 \end{equation*}
 
 We know that the potential energy lost across a resistor is proportional to the resistance of the component because the higher the resistance the more work must be done to drive charge through the resistor.
@@ -838,7 +840,7 @@ R_S &= R_1 + R_2\\
 The total resistance of the resistors in series is $2,45~M\Omega$.}\end{wex}
 
 
-\section{Potential difference and parallel resistors}
+\section{Parallel resistors}
 
 When resistors are connected in parallel the start and end points for all the resistors are the same. These points have the same potential energy and so the potential difference between them is the same no matter what is put in between them. You can have one, two or many resistors between the two points, the potential difference will not change. You can ignore whatever components are between two points in a circuit when calculating the difference between the two points.
 
@@ -1206,10 +1208,8 @@ The total voltage in the circuit is the sum of the voltages across the individua
 V_{total} = V_{\rm{B}} + V_{known}
 \end{equation*}
 Using the relationship between the voltage across the battery and total voltage across the resistors
-\begin{equation*}
-V_{battery} = V_{total}
-\end{equation*}
 \begin{eqnarray*}
+V_{battery} &=& V_{total}
 V_{battery} &=& V_{\rm{B}} + V_{known}\\
 7\rm{V} & = & V_{\rm{B}} + 5\rm{V} \\
  V_{\rm{B}} & = & 2\rm{V}
@@ -1337,7 +1337,7 @@ Take a look at the diagram below. On the left we have the same circuit as in the
 
 The total resistance of a number of parallel resistors is NOT the sum of the individual resistances as the overall resistance decreases with more paths for the current. The total resistance for parallel resistors is given by:
 \begin{equation*}
- \frac{1}{R_P}=\frac{1}{R_1}+\frac{1}{R_2}+\ldots
+\box{ \frac{1}{R_P}=\frac{1}{R_1}+\frac{1}{R_2}+\ldots}
 \end{equation*}
 Let us consider the case where we have two resistors in parallel and work out what the final resistance would be. This situation is shown in the diagram below:
 \begin{center}
@@ -1390,7 +1390,7 @@ R_P&=\frac{R_1R_2}{R_1+R_2}\\
 \end{align*}
 For any two resistors in parallel we now know that
 \begin{equation*}
-R_P=\frac{\text{product of resistances}}{\text{sum of resistances}}=\frac{R_1R_2}{R_1+R_2}
+\box{R_P=\frac{\text{product of resistances}}{\text{sum of resistances}}=\frac{R_1R_2}{R_1+R_2}}
 \end{equation*}
 \vspace{1cm}
 \begin{g_experiment}{Current dividers}
