@@ -10,7 +10,7 @@ A battery has the potential to drive charge round a closed circuit, the battery 
 % \Definition{Potential Difference}{Potential difference is the difference in electrical potential energy per unit charge between two points. The units of potential difference are the volt (V) which is defined as one joule per coulomb.\\
 % Symbol: V\hspace{2cm} Unit: V\hspace{2cm} S.I. Units: $\text{J} \cdot \text{C}^{-1}$}
 \Definition{Potential Difference}{Potential difference is the work done per unit charge, $\frac{W}{q}$. The units of potential difference are the volt (V) which is defined as one joule per coulomb.\\
-Symbol: V\hspace{2cm} Unit: V\hspace{2cm} S.I. Units: $\text{J} \cdot \text{C}^{-1}$}
+Symbol: V\hpace{2cm} Unit: V\hspace{2cm} S.I. Units: $\text{J} \cdot \text{s}^{-1}\cdot \text{A}^{-1}$}
 \subsection*{Voltmeter}
 \begin{minipage}{.5\textwidth}
 A voltmeter is an instrument for measuring the potential difference between two 
@@ -197,7 +197,8 @@ component.
 \begin{center}
 \textbf{Ammeter}\\
 %\includegraphics[width=.8\textwidth]{photos/ammeter_by_Hillwalker-ca_flickr.jpg}\\
-\includegraphics[width=.8\textwidth]{photos/type2ammeter.jpg}\\
+%\includegraphics[width=.8\textwidth]{photos/type2ammeter.jpg}\\
+\includegraphics[width=.8\textwidth]{photos/ammeter.jpg}\\
 %\textit{Photography by Hillwalker-ca on Flickr.}
 \end{center}  
 \end{minipage}
@@ -427,8 +428,29 @@ It is important to understand what effect adding resistors to a circuit has on t
 
 \section{Series resistors}
 
+\begin{mdframed}
+When we add resistors in series to a circuit:
+\begin{itemize}
+ \item There is only one path for current to flow which ensures that the \textbf{current is the same at every point in the circuit}.
+ \item The voltage is \textbf{divided} across the resistors. The voltage across the battery in the circuit is equal to the sum of voltages across the series resistors:
+\begin{equation*}
+ \boxed{V_{battery}=V_1+V_2+\ldots}
+\end{equation*}
+\item The resistance to the flow of current \textbf{increases}. The total resistance, $R_S$ is given by:
+\begin{equation*}
+ \boxed{R_S = R_1+R_2+\ldots}
+\end{equation*}
+\end{itemize}
+\end{mdframed}
+We will revisit each of these features of series circuits in more detail below.
+
 When resistors are in series, one after the other, there is a potential difference across each resistor. The total potential difference across a set of resistors in series is the sum of the potential differences across each of the resistors in the set. 
 % This is the same as falling a large distance under gravity or falling that same distance (difference) in many smaller steps. The total distance (difference) is the same.
+\begin{equation*}
+ \box{V_{battery}=V_1+V_2+\ldots}
+\end{equation*}
+
+
 
 Look at the circuits below. If we measured the potential difference between the black dots in all of these circuits it would be the same as we saw earlier. So we now know the total potential difference is the same across one, two or three resistors. We also know that some work is required to make charge flow through each resistor.
 
@@ -565,16 +587,7 @@ Let us look at this in a bit more detail. In the picture below you can see what 
 \end{pspicture}
 \end{center}
 
-% \subsection*{Ohm's law}
-% 
-% The voltage is the change in potential energy or work done when charge moves between two points in the circuit. The greater the resistance to charge moving the more work that needs to be done. The work done or voltage thus depends on the resistance. The potential difference is proportional to the resistance.
-
-% \Definition{Ohm's Law}{Voltage across a circuit component is proportional to the resistance of the component.}
-
-% Use the fact that voltage is proportional to resistance to calculate what proportion of the total voltage of a circuit will be found across each circuit element. 
-
-\subsubsection*{Resistors in series}
-When we add resistors in series to a circuit, we \textit{increase} the resistance to the flow of current. There is only \textbf{one path} that the current can flow down and the current is the same at all places in the series circuit. Take a look at the diagram below. On the left there is a circuit with a single resistor and a battery. \textbf{No matter where we measure the current, it is the same in a series circuit}. On the right, we have added a second resistor in series to the circuit. The \textit{total} resistance of the circuit has \textit{increased} and you can see from the reading on the ammeter that the current in the circuit has decreased.
+Consider the diagram below. On the left there is a circuit with a single resistor and a battery. \textbf{No matter where we measure the current, it is the same in a series circuit}. On the right, we have added a second resistor in series to the circuit. The \textit{total} resistance of the circuit has \textit{increased} and you can see from the reading on the ammeter that the current in the circuit has decreased.
 
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -841,6 +854,22 @@ The total resistance of the resistors in series is $2,45~M\Omega$.}\end{wex}
 
 
 \section{Parallel resistors}
+
+\begin{mdframed}
+When we add resistors in parallel to a circuit:
+\begin{itemize}
+ \item There are more paths for current to flow which ensures that the \textbf{current splits across the different paths}.
+ \item The voltage is \textbf{the same} across the resistors. The voltage across the battery in the circuit is equal to the voltage across each of the parallel resistors:
+\begin{equation*}
+ \boxed{V_{battery}=V_1=V_2=V_3\ldots}
+\end{equation*}
+\item The resistance to the flow of current \textbf{decreases}. The total resistance, $R_P$ is given by:
+\begin{equation*}
+ \boxed{\frac{1}{R_P} = \frac{1}{R_1}+\frac{1}{R_2}+\ldots}
+\end{equation*}
+\end{itemize}
+\end{mdframed}
+
 
 When resistors are connected in parallel the start and end points for all the resistors are the same. These points have the same potential energy and so the potential difference between them is the same no matter what is put in between them. You can have one, two or many resistors between the two points, the potential difference will not change. You can ignore whatever components are between two points in a circuit when calculating the difference between the two points.
 
@@ -1122,6 +1151,7 @@ V_{1} = 2\rm{V}
 
 \begin{wex}{Voltages II}{
 Consider this circuit:\\
+\begin{center}
 \begin{pspicture}(-3,-0.5)(3,3.5)
 %\psgrid
 \pnode(0,0){A}
@@ -1136,7 +1166,7 @@ Consider this circuit:\\
 % draw resistors
 \resistor[dipolestyle=rectangle](A)(D){$V_{\rm{B}}=1$V}
 \resistor[dipolestyle=rectangle](C)(D){$V_{\rm{A}}$}
-\end{pspicture}\\
+\end{pspicture}\end{center}\\
 What is the voltage across the unknown resistor in the circuit shown?
 }%
 {%
@@ -1273,8 +1303,6 @@ V_{battery} &=& V_{parallel} + V_{known}\\
  V_{parallel} & = & 2\rm{V}
 \end{eqnarray*}}\end{wex}
 
-
-\subsubsection*{Resistors in parallel}
 In contrast to the series case, when we add resistors in parallel, we create \textbf{more paths} along which current can flow. By doing this we \textit{decrease} the total resistance of the circuit! 
 
 Take a look at the diagram below. On the left we have the same circuit as in the previous section with a battery and a resistor. The ammeter shows a current of 1~A. On the right we have added a second resistor in parallel to the first resistor. This has increased the number of paths (branches) the charge can take through the circuit - the total resistance has decreased. You can see that the current in the circuit has increased. Also notice that the current in the different branches can be different.
