@@ -902,10 +902,11 @@ linecolor=red%
     \fancyfoot[LE,RO]{\thepage}
 
 
+% same page footer on chapter pages
+    \fancypagestyle{plain}{%
+    \fancyfoot[C]{}
+    \fancyfoot[LE,RO]{\thepage}}
 
-\usepackage[Bjornstrup]{fncychap}
-\ChNumVar{\fontsize{76}{80}\usefont{OT1}{pzc}{m}{n}\selectfont}
-\ChTitleVar{\raggedleft\HUGE\sffamily\bfseries}
 
 
 
