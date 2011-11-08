@@ -487,20 +487,16 @@ linecolor=red%
 
 \newenvironment{exercises}[1]
 {
-
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
-
+\par
 \exercisesheading
-
-%\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
 \setlength{\parindent}{0pt}
 %\vspace{\baselineskip}
 %\textbf{\textit{Exercises:}
 %#1}
-\par
 }%
 {%
 \end{quotation}
@@ -1094,7 +1090,7 @@ Sien die opsommings aandbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{
 
 \newcommand{\exercisesheading}{
 \addtocounter{exercisecounter}{1}
- \par  \vspace*{3\baselineskip}
+\vspace*{3\baselineskip}
 {  \fontsize{12}\bfseries\itshape
 \begin{tikzpicture}[remember picture,overlay]
     \node[anchor=west ,text centered]
@@ -1112,14 +1108,10 @@ Sien die opsommings aandbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{
         \draw[fill=white, color=white] (0,0) rectangle
           (0.655\textwidth,28pt);
        \end{tikzpicture}
-
-
       };
    \end{tikzpicture}
 
 }
-\par
-\vspace{\baselineskip}
 }
 
 
