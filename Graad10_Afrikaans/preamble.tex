@@ -211,16 +211,16 @@
 
 
 \newcommand{\chapterstartvideo}[1]{
-See introductory video: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #1 at www.everythingscience.co.za)\par
+Sien inleidende video: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #1 by www.everythingscience.co.za)\par
 }
 
 \newcommand{\simulation}[2]{
-See simulation: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulation: #2 at www.everythingscience.co.za) \par
+Sien simulasie: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulasie: #2 by www.everythingscience.co.za) \par
 }
 
 
 \newcommand{\mindsetvid}[2]{
-\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} See video: #2 at www.everythingscience.co.za \par
+\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Sien video: #2 by www.everythingscience.co.za \par
 }
 
 
@@ -239,9 +239,9 @@ See simulation: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/vide
 
 \newcommand{\practiceinfo}[0]{
 \par\vspace*{2em}
-\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/aplus.pdf}} More practice 
-\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/video.pdf}} video solutions 
-\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/help.pdf}} or help at www.everythingscience.co.za
+\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/aplus.pdf}} Meer oefening 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/video.pdf}} video oplossings 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/help.pdf}} of hulp by www.everythingscience.co.za
 \vspace*{2em}
 }
 
@@ -399,7 +399,7 @@ linecolor=red%
 \textit{\noindent #2}
 \vspace*{28pt}
 \par\noindent
-\textbf{\textit{OPLOSSING}}\vspace*{4pt}
+\textbf{\large\textit{OPLOSSING}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
 \noindent
@@ -487,20 +487,16 @@ linecolor=red%
 
 \newenvironment{exercises}[1]
 {
-
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
-
+\par
 \exercisesheading
-
-%\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
 \setlength{\parindent}{0pt}
 %\vspace{\baselineskip}
 %\textbf{\textit{Exercises:}
 %#1}
-\par
 }%
 {%
 \end{quotation}
@@ -909,11 +905,15 @@ linecolor=red%
     \fancyfoot[C]{}
     \fancyfoot[LE,RO]{\thepage}
 
+% same page footer on chapter pages
+    \fancypagestyle{plain}{%
+    \fancyfoot[C]{}
+    \fancyfoot[LE,RO]{\thepage}}
 
 
-\usepackage[Bjornstrup]{fncychap}
-\ChNumVar{\fontsize{76}{80}\usefont{OT1}{pzc}{m}{n}\selectfont}
-\ChTitleVar{\raggedleft\HUGE\sffamily\bfseries}
+
+
+
 
 
 
@@ -1090,7 +1090,7 @@ Sien die opsommings aandbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{
 
 \newcommand{\exercisesheading}{
 \addtocounter{exercisecounter}{1}
- \par  \vspace*{3\baselineskip}
+\vspace*{3\baselineskip}
 {  \fontsize{12}\bfseries\itshape
 \begin{tikzpicture}[remember picture,overlay]
     \node[anchor=west ,text centered]
@@ -1108,14 +1108,10 @@ Sien die opsommings aandbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{
         \draw[fill=white, color=white] (0,0) rectangle
           (0.655\textwidth,28pt);
        \end{tikzpicture}
-
-
       };
    \end{tikzpicture}
 
 }
-\par
-\vspace{\baselineskip}
 }
 
 
