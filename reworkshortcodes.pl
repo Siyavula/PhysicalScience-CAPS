@@ -1,6 +1,11 @@
 #!/usr/bin/perl
 
 $file=$ARGV[0];
+$debugflag=$ARGV[1];
+
+$dbasefile = "UsedCodes";
+if ($debugflag) { $dbasefile .= "TEST";}
+$dbasefile .= '.txt';
 
 print "Processing $file ....\n";
 $time = time;
@@ -15,14 +20,14 @@ my @alphanum = (0 .. 9, "a" .. "k","m","n","p" .. "z");
 my $divisor = scalar @alphanum;
 
 $code = 0;
-open DBASE, "UsedCodes.txt";
+open DBASE, $dbasefile;
 @dbrows = <DBASE>;
 $last_row = $dbrows[$dbrows-1];
 @testcode = split(',',$last_row);
 if ($testcode[0] > 0){ $code = $testcode[0]+1;}
 close DBASE;
-open DBASE, ">>UsedCodes.txt";
-`cp UsedCodes.txt UsedCodes-$time.txt`;
+open DBASE, ">>$dbasefile";
+`cp $dbasefile $dbasefile-$time`;
 
 
 open INFO, ">$file";
@@ -38,7 +43,7 @@ $tableprinted =0;
 foreach $line (@lines)
 {
    $skip=0;
-   if ($line =~ /\\practiceinfo/) 
+   if ($line =~ /\\practiceinfo/)  # this is what to do with existing shortcodes
 	{ #Start of the table stuff
 		$insidetest=1;
 	}
@@ -50,20 +55,20 @@ foreach $line (@lines)
         @fields = split('&',$line);
         foreach $field (@fields)
         {
-           if ($field =~ /\)\s+[A-Za-z0-9]{3}\s+/)
+           if ($field =~ /\)\s+[A-Za-z0-9]{3}(\s+|\\)/)
            {
                 $shortcode = &enc($code);
                 for ($i = 0 ; $i < 4 - length(&enc($code)) ; $i++)
                 { 
                    $shortcode = "0".$shortcode;
                 }
-                $oldcode = $field =~ m/\)\s+([A-Za-z0-9]{3})\s+/;
+                $oldcode = $field =~ m/\)\s+([A-Za-z0-9]{3})(\s+|\\)/;
                 if ($oldcode)
                 { 
                     print DBASE $code.",".$1.",".$shortcode."\n";
                     $code++;
                 }
-                $field =~ s/\)\s+[A-Za-z0-9]{3}\s+/) $shortcode/;
+                $field =~ s/\)\s+[A-Za-z0-9]{3}(\s+|\\)/) $shortcode$1/;
            } 
            if ($field =~ /\\end{tabular}/)
            {
@@ -72,10 +77,44 @@ foreach $line (@lines)
            }
         }
         @newline = join("&",@fields);
+        print @newline;
         print INFO @newline;
 
     } 
-   	if ($insidetest == 0 && $skip == 0 ){ print INFO $line;	}		# Print the array
+   if ($line =~ /\\insertpracticeinfo/)  # this is what to do wehen new shortcodes are required
+   {
+      $skip=1; # skip regular writing so we lose the insertpracticeinfo directive
+      $line =~ m/\\insertpracticeinfo{(\d+)}/;
+      $num_codes = $1;
+      print "Automatically inserting shortcodes - number to insert $num_codes\n";
+      print INFO "% Automatically inserted shortcodes - number to insert $num_codes\n";
+      print INFO "\\par \\practiceinfo\n";
+      print INFO "\\par \\begin{tabular}[h]{cccccc}\n";
+      for ($j=0 ; $j < $num_codes ; $j++ )
+      {
+        $shortcode = &enc($code);
+        for ($i = 0 ; $i < 4 - length(&enc($code)) ; $i++)
+        {
+            $shortcode = "0".$shortcode;
+        }
+        print INFO "% Question ".($j+1) ."\n";
+        print INFO "(".($j+1) .".)\t".$shortcode."\t";
+        print DBASE $code.",.---,".$shortcode."\n";
+        if (($j+1)%6 == 0)
+        {
+            print INFO "\\\\ % End row of shortcodes";
+        }else 
+        {
+            print INFO "&";
+        }
+        print INFO "\n";
+        $code++;
+      }
+      print INFO "\\end{tabular}\n";
+      print INFO "% Automatically inserted shortcodes - number inserted $num_codes\n";
+
+   }
+   if ($insidetest == 0 && $skip == 0 ){ print INFO $line;	}		# Print the array
 }
 
 
