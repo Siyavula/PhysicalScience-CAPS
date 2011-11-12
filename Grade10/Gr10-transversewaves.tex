@@ -161,11 +161,11 @@ From the activity, you would have noticed that the wave travelled from one side 
 \end{center}
 \end{figure}
       
-\par
-\Definition{Crests and troughs}{A \textsl{crest} is a point on the wave where the displacement of the medium is at a maximum. A point on the wave is a \textsl{trough} if the displacement of the medium at that point is at a minimum.} 
+\Definition{Crests and troughs} { A \textsl{crest} is a point on the wave where the displacement of the medium is at a maximum. A point on the wave is a \textsl{trough} if the displacement of the medium at that point is at a minimum.   } 
 \clearpage
-\section{Amplitude}
-\begin{activity}{Amplitude}
+   
+\section{Amplitude} \nopagebreak
+\begin{activity}{Amplitude}  \nopagebreak
 \begin{center}
 \begin{pspicture}(-2,-1.4)(6,1.4)
 %\psgrid
@@ -262,6 +262,7 @@ We have been told that the harbour has a still water mark. This is a line create
 
 \begin{figure}[H] % horizontal\label{m38806*id318520}
     \begin{center}
+\scalebox{.8}{
 \begin{pspicture}(-2,-2.6)(6,2.6)
 %\psgrid%[gridcolor=lightgray]
 \psplot[xunit=0.00555556,plotpoints=300]{0}{1080}{x sin 1.8 mul}
@@ -274,7 +275,7 @@ We have been told that the harbour has a still water mark. This is a line create
 \pcline[offset=8pt]{|-|}(2.5,1.8)(4.5,1.8)
 \aput{:U}{d}
 \psline[linestyle=dashed](0,0)(6,0)\uput[l](0,0){equilibrium}
-\end{pspicture}
+\end{pspicture}}
 \end{center} \end{figure}       
         
         \label{m38806*id318526}Fill in the table below by measuring the distance between crests and troughs in the wave above.\par 
@@ -469,6 +470,7 @@ f&=&\frac{1}{T}\\
 &=&2 \text{ s}^{-1}
 \end{eqnarray*}
 The unit of frequency is the Hertz (Hz) or $\text{s}^{-1}$.
+\pagebreak
 
 \begin{wex}{Period and frequency}{What is the period of a wave of frequency 10\,Hz?}{
 \westep{Determine what is given and what is required}
@@ -521,11 +523,15 @@ The period of a 10\,Hz wave is 0,1\,s.}
 
 \begin{wex}{Speed of a transverse wave I}{When a particular string is vibrated at a frequency of 10\,Hz, a transverse wave of wavelength 0,25\,m is produced. Determine the speed of the wave as it travels along the string.}
 {\westep{Determine what is given and what is required}
+\begin{minipage}{\textwidth}
 \begin{itemize}
 \item{frequency of wave: $f=$\,10\,Hz}
 \item{wavelength of wave: $\lambda=$\,0,25\,m}
 \end{itemize}
-We are required to calculate the speed of the wave as it travels along the string. All quantities are in SI units.
+We are required to calculate the speed of the wave as it travels along the string. 
+
+All quantities are in SI units.
+\end{minipage}
 
 \westep{Determine how to approach the problem}
 We know that the speed of a wave is:
@@ -550,15 +556,17 @@ The wave travels at 2,5\,\ms\ along the string.
 
 \begin{wex}{Speed of a transverse wave II}{A cork on the surface of a swimming pool bobs up and down once every second on some ripples. The ripples have a wavelength of 20\,cm. If the cork is 2\,m from the edge of the pool, how long does it take a ripple passing the cork to reach the edge?}{
 \westep{Determine what is given and what is required}
-We are given:
+We are given:\\
+\begin{minipage}{\textwidth}
 \begin{itemize}
 \item{frequency of wave: $f =$ 1\,Hz}
 \item{wavelength of wave: $\lambda =$ 20\,cm}
 \item{distance of cork from edge of pool: $D\,=$ 2\,m}
 \end{itemize}
-We are required to determine the time it takes for a ripple to travel between the cork and the edge of the pool.
+We are required to determine the time it takes for a ripple to travel between the\\ cork and the edge of the pool.
 
 The wavelength is not in SI units and should be converted.
+\end{minipage}
 
 \westep{Determine how to approach the problem}
 The time taken for the ripple to reach the edge of the pool is obtained from:
@@ -762,7 +770,7 @@ Wave speed ($v$) & metre per second & $\text{m} \cdot \text{s}^{-1}$ \\ \hline
 
 
     \begin{eocexercises}{Waves}
-            \nopagebreak
+            \nopagebreak \vspace{-1cm}
 %            \label{m38806*cid7} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \end{array} $ \hspace{2 pt}\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/www.pdf}} {(section shortcode: P10045 )} \par 
       \label{m38806*id324367}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \label{m38806*uid128}\item A wave travels along a string at a speed of $1,5\text{m}\ensuremath{\cdot}\text{s}{}^{-1}$. If the frequency of the source of the wave is 7,5 Hz, calculate:
