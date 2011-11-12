@@ -8,11 +8,14 @@
 
 \usepackage{extsizes}
    
-   \newenvironment{toc}%
-    {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
-    \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
-    \setlength{\partopsep}{0cm}}
-    {\end{description}}
+%   \newenvironment{toc}%
+%    {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
+%    \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
+%    \setlength{\partopsep}{0cm}}
+%    {\end{description}}
+
+\usepackage{tocloft}
+\setlength{\cftsecnumwidth}{3em}
 
     \newenvironment{indexheading}%
     {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
@@ -380,7 +383,7 @@ linecolor=red%
 
 
 \begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt, innertopmargin=8pt, innerbottommargin=6pt, skipbelow=0pt]
-{\Large\textbf{\textit{Worked Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{-2pt}
@@ -392,7 +395,7 @@ linecolor=red%
 \textit{\noindent #2}
 \vspace*{28pt}
 \par\noindent
-\textbf{\textit{SOLUTION}}\vspace*{4pt}
+{\large\textbf{\textit{SOLUTION}}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
 \noindent
@@ -504,7 +507,6 @@ linecolor=red%
 \newenvironment{eocexercises}[1]
 {
 \eocexercisesheading
-\addcontentsline{toc}{section}{End of chapter exercises}
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
@@ -996,6 +998,7 @@ linecolor=red%
       \end{tikzpicture}
       };
    \end{tikzpicture}
+\setcounter{workedexamplecounter}{1}
   }
 \titlespacing*{\chapter}{1.5cm}{1cm}{1cm}
 
@@ -1014,9 +1017,9 @@ linecolor=red%
           (1.5\paperwidth,2.0cm);
         \node[anchor=west,text centered ,yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth]
               {
-              \begin{minipage}{0.85\textwidth}
+              \begin{minipage}{0.6\textwidth}
               \raggedright
-              \color{black} #1
+              \color{black}#1
               \end{minipage}
               };
         \node[anchor=east,text centered, yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth+1.025\textwidth]
@@ -1075,7 +1078,6 @@ linecolor=red%
 }
 \par
 \vspace{\baselineskip}
-\addcontentsline{toc}{section}{Summary}
 
 See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Presentation: #1 at www.everythingscience.co.za)
 
