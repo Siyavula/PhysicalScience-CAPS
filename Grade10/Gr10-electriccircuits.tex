@@ -144,7 +144,17 @@ The idea is that if a battery started to drive charge in a circuit all the charg
 
 \Definition{Current}{Current is the rate at which charges moves past a fixed point in a circuit. The units of current are the ampere (A) which is defined as one coulomb per second.\\
 Quantity: Current (I) \hspace{1cm} Unit name: ampere\hspace{1cm} Unit symbol: A}
-
+\IFact{Benjamin Franklin made a guess about the
+direction of charge flow when rubbing smooth wax with rough wool.
+He thought that the charges flowed from the wax to the wool (i.e.\@{}
+from positive to negative) which was opposite to the real
+direction. Due to this, electrons are said to have a
+\emph{negative} charge and so objects which Ben Franklin called
+``negative'' (meaning a shortage of charge) really have an excess
+of electrons. By the time the true direction of electron flow was
+discovered, the convention of ``positive'' and ``negative'' had
+already been so well accepted in the scientific world that no
+effort was made to change it.}
 \begin{minipage}{.5\textwidth}
 \begin{center}
 \textbf{Plasma ball}\\
@@ -162,20 +172,8 @@ When current flows in a circuit we show this on a diagram by adding arrows. The 
 
 If the voltage is high enough a current can be driven through almost anything. In the plasma ball example on the left, a voltage is created that is high enough to get charge to flow through the gas in the ball. The voltage is very high but the resulting current is very low. This makes it safe to touch.
 \end{minipage}
-\IFact{Benjamin Franklin made a guess about the
-direction of charge flow when rubbing smooth wax with rough wool.
-He thought that the charges flowed from the wax to the wool (i.e.\@{}
-from positive to negative) which was opposite to the real
-direction. Due to this, electrons are said to have a
-\emph{negative} charge and so objects which Ben Franklin called
-``negative'' (meaning a shortage of charge) really have an excess
-of electrons. By the time the true direction of electron flow was
-discovered, the convention of ``positive'' and ``negative'' had
-already been so well accepted in the scientific world that no
-effort was made to change it.}
 
-
-
+\pagebreak
 
 \subsection*{Ammeter}
 
@@ -186,12 +184,13 @@ current flowing \textit{through} a circuit component, the ammeter
 must be connected in \textit{series} with the measured circuit
 component.
 \begin{center}
+\scalebox{.8}{
 \begin{pspicture}(0,0)(3,3)
 %\psgrid
 \pnode(0,0){A} \pnode(0,2.5){B} \pnode(3,2.5){C} \pnode(3,0){D}
 \battery[tension,dipoleconvention=generator](A)(B){$I$} \circledipole[labeloffset=0](B)(C){A}
 \resistor[intensity,dipolestyle=rectangle](D)(C){} \wire[tension,arrowscale=2](D)(A)
-\end{pspicture}
+\end{pspicture}}
 \label{fig:p:em:ec10:ammeter}
 \end{center}
 \end{minipage}
@@ -200,7 +199,7 @@ component.
 \textbf{Ammeter}\\
 %\includegraphics[width=.8\textwidth]{photos/ammeter_by_Hillwalker-ca_flickr.jpg}\\
 %\includegraphics[width=.8\textwidth]{photos/type2ammeter.jpg}\\
-\includegraphics[width=.8\textwidth]{photos/ammeter.jpg}\\
+\includegraphics[width=.6\textwidth]{photos/ammeter.jpg}\\
 %\textit{Photography by Hillwalker-ca on Flickr.com}
 \end{center}  
 \end{minipage}
@@ -251,14 +250,16 @@ Experiment with different combinations of components in the circuits.
 
 %\end{minipage}
 \end{activity}
-\Tip{A battery \textbf{does not} produce the same amount of
-current no matter what is connected to it. While the voltage
-produced by a battery is constant, the amount of current supplied
-depends on what is in the circuit.}
+
 
 The table below summarises the use of each measuring instrument
 that we discussed and the way it should be connected to a circuit
 component.
+
+\Tip{A battery \textbf{does not} produce the same amount of
+current no matter what is connected to it. While the voltage
+produced by a battery is constant, the amount of current supplied
+depends on what is in the circuit.}
 
 \begin{center}
 \begin{tabular}{ | c | c | c | }
@@ -298,7 +299,7 @@ I &=& 45~\text{A} \\
 The current is 45~A.
 }
 \end{wex}
-
+\clearpage
 \begin{wex}{Calculating current II}
 {An amount of charge equal to 53 C moves past a fixed point in a circuit in 2 seconds, what is the current in the circuit?
 }{%
@@ -394,7 +395,10 @@ transfer a lot of their kinetic energy in the form of heat. The heat energy is e
 to cause the filament to glow white-hot which produces light.
 
 \end{minipage}
-
+\IFact{There is a special type of conductor,
+called a \textbf{superconductor} that has no resistance, but the
+materials that make up all known superconductors only start superconducting
+at very low temperatures. The ``highest'' temperature superconductor is mercury barium calcium copper oxide (HgBa$_2$Ca$_2$Cu$_3$O$_x$) which is superconducting for temperatures of -140$^{o}$~C and colder.}
 The wires
 connecting the lamp to the cell or battery hardly even get warm while
 conducting the same amount of current. This is because of their
@@ -403,10 +407,7 @@ much lower resistance due to their larger cross-section (they are thicker).
 An important effect of a resistor is that it \textit{converts} electrical
 energy into other forms of \textbf{heat} energy. \textbf{Light} energy is a by-product of the heat that is produced.
 
-\IFact{There is a special type of conductor,
-called a \textbf{superconductor} that has no resistance, but the
-materials that make up all known superconductors only start superconducting
-at very low temperatures. The ``highest'' temperature superconductor is mercury barium calcium copper oxide (HgBa$_2$Ca$_2$Cu$_3$O$_x$) which is superconducting for temperatures of -140$^{o}$~C and colder.}
+
 
 \subsubsection{Physical attributes affecting resistance [NOT IN CAPS]}
 
@@ -1150,10 +1151,11 @@ V_{battery} = V_{total} = V_{1}
 V_{1} = 2V
 \end{equation*}}\end{wex}
 \clearpage
-
+\vspace{-1cm}
 \begin{wex}{Voltages II}{
 Consider this circuit:\\
 \begin{center}
+\scalebox{.8}{
 \begin{pspicture}(-3,-0.5)(3,3.5)
 %\psgrid
 \pnode(0,0){A}
@@ -1168,7 +1170,7 @@ Consider this circuit:\\
 % draw resistors
 \resistor[dipolestyle=rectangle](A)(D){$V_{B}=1$V}
 \resistor[dipolestyle=rectangle](C)(D){$V_{A}$}
-\end{pspicture}\end{center}\\
+\end{pspicture}}\end{center}\\
 What is the voltage across the unknown resistor in the circuit shown?
 }%
 {%
@@ -1198,10 +1200,11 @@ V_{battery} &= V_{1} + V_{resistor}\\
 2V &= V_{1} + 1V \\
  V_{1} &=  1V
 \end{align*}}\end{wex}
+\clearpage
 
 \begin{wex}{Voltages III}{
-Consider the circuit diagram:
-\begin{pspicture}(-3,-0.5)(4,3.5)
+Consider the circuit diagram:\\
+\scalebox{.8}{\begin{pspicture}(-3,-0.5)(4,3.5)
 \pnode(0,0){A}
 \pnode(0,3){B}
 \pnode(3,3){C}
@@ -1216,10 +1219,10 @@ Consider the circuit diagram:
 \resistor[dipolestyle=rectangle](A)(D){$V_{C}=4$V}
 \resistor[dipolestyle=rectangle](D)(C){$V_{B}$}
 \resistor[dipolestyle=rectangle](B)(C){$V_{A}=1$V}
-\end{pspicture}\\
+\end{pspicture}}\\
 What is the voltage across the unknown resistor in the circuit shown?
 }%
-{
+{ \vspace{-.5cm}
 \westep{Check what you have and the units}
 We have a circuit with a battery and three resistors. We know the voltage across the battery and two of the resistors. We want to find that voltage across the unknown resistor.
 \begin{equation*}
@@ -1241,11 +1244,11 @@ V_{total} = V_{B} + V_{known}
 \end{equation*}
 Using the relationship between the voltage across the battery and total voltage across the resistors
 \begin{eqnarray*}
-V_{battery} &=& V_{total}
+V_{battery} &=& V_{total}\\
 V_{battery} &=& V_{B} + V_{known}\\
 7V & = & V_{B} + 5V \\
  V_{B} & = & 2V
-\end{eqnarray*}}\end{wex}
+\end{eqnarray*}\vspace{-.5cm}}\end{wex}
 
 \begin{wex}{Voltages IV}{
 Consider the circuit diagram:\\
@@ -1832,9 +1835,9 @@ Resistance ($R$) & ohm & $\Omega$ \\ \hline
 \end{table}
 
 
-
+\pagebreak
 \begin{eocexercises}{Electric circuits}
-
+\vspace{-1cm}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item{ Write definitions for each of the following:
   \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
@@ -1883,6 +1886,7 @@ Potential difference  &   &   &  \\ \hline
 \item{[IEB 2005/11 HG] Three identical light bulbs A, B and C are connected in an electric circuit as shown in the diagram below.
 
 \begin{center}
+\scalebox{.8}{
 \begin{pspicture}(0,0)(6,5)
 \SpecialCoor
 %\psgrid[gridcolor=lightgray]
@@ -1900,7 +1904,7 @@ Potential difference  &   &   &  \\ \hline
 \lamp(D)(E){C}
 \psline(E)(A)
 \lamp(C)(F){B}
-\end{pspicture}
+\end{pspicture}}
 \end{center}
 \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
 \item {How bright is bulb A compared to B and C?}

@@ -116,9 +116,10 @@ Work              & $Fs$             & $\text{kg} \cdot \text{m}^{2} \cdot \text
 \subsection*{Prefixes of base units}
             \nopagebreak
 Now that you know how to write numbers in scientific notation, another important aspect of units is the prefixes that are used with the units. In the case of units, the prefixes have a special use. The kilogram (kg) is a simple example. 1 kg is equal to 1 000 g or $1\ensuremath{\times}{10}^{3}$ g. Grouping the ${10}^{3}$ and the g together we can replace the ${10}^{3}$ with the prefix k (kilo). Therefore the k takes the place of the ${10}^{3}$. The kilogram is unique in that it is the only SI base unit containing a prefix.\\
+\Tip{When writing combinations of base SI units, place a dot ($\ensuremath{\cdot}$) between the units to indicate that different base units are used. For example, the symbol for metres per second is correctly written as m$\ensuremath{\cdot}$s${}^{-1}$, and not as ms${}^{-1}$ or m/s. Although the last two options will be accepted in tests and exams, we will only use the first one in this book.}
+
 In science, all the prefixes used with units are some power of 10. Table~\ref{tab:unitprefixes} lists some of these prefixes. You will not use most of these prefixes, but those prefixes listed in \textbf{bold} should be learnt. The case of the prefix symbol is very important. Where a letter features twice in the table, it is written in uppercase for exponents bigger than one and in lowercase for exponents less than one. For example M means mega (10${}^{6}$) and m means milli (10${}^{-3}$).
 
-\Tip{When writing combinations of base SI units, place a dot ($\ensuremath{\cdot}$) between the units to indicate that different base units are used. For example, the symbol for metres per second is correctly written as m$\ensuremath{\cdot}$s${}^{-1}$, and not as ms${}^{-1}$ or m/s. Although the last two options will be accepted in tests and exams, we will only use the first one in this book.}
 
 \begin{table}[H]
         \begin{center}
@@ -469,10 +470,21 @@ As you work through the experiments in the book you will be given guidance on ho
 You will also need to know how to interpret your data. For example given a table of values, what can you say about those values. Also you should be able to say whether you are performing a qualitative (descriptive) or a quantitative (numbers) analysis. 
 \subsection*{Laboratory apparatus}
 Listed here are some of the common pieces of apparatus that you will be working with in the laboratory. You should be able to name all the apparatus listed here as well as make a simple sketch of it. 
-\begin{table}[H]
+% \begin{table}[H]
  \begin{center}
-  \begin{tabular}{|l|m{3cm}|m{3cm}|}\hline
-   \textbf{Item} & \textbf{Photo} & \textbf{Sketch} \\ \hline
+\tablefirsthead{%
+\hline
+   \textbf{Item} & \textbf{Photo} & \textbf{Sketch} \\ \hline}
+\tablehead{%
+\hline
+   \textbf{Item} & \textbf{Photo} & \textbf{Sketch} \\ \hline}
+\tabletail{%
+\hline
+\multicolumn{3}{|r|}{\small\sl continued on next page}\\
+\hline}
+\tablelasttail{\hline}
+  \begin{supertabular}{|l|m{3cm}|m{3cm}|}\hline
+%    \textbf{Item} & \textbf{Photo} & \textbf{Sketch} \\ \hline
 Beaker & \includegraphics[width=.2\textwidth]{photos/beaker.jpg} & \scalebox{.4}{\begin{pspicture}(0,0)(5,5) \pstTubeEssais[glassType=becher] \end{pspicture}} \\ \hline
 Flask & \includegraphics[width=.05\textheight]{photos/flask.JPG} & \scalebox{.4}{\begin{pspicture}(0,0)(5,5) \pstTubeEssais[glassType=erlen] \end{pspicture}} \\ \hline
 Test tubes & \includegraphics[width=.2\textwidth]{photos/testtubes.jpg} & \scalebox{.4}{\begin{pspicture}(0,0)(5,5) \pstTubeEssais \end{pspicture}} \\ \hline
@@ -534,9 +546,9 @@ Funnel & \includegraphics[width=.1\textwidth]{photos/funnel.jpg} & \scalebox{.4}
 \psline[linewidth=0.04cm](0.86,-0.97)(0.86,-1.15)
 \end{pspicture} 
 } \\ \hline
-  \end{tabular} 
+  \end{supertabular} 
  \end{center}
-\end{table}
+% \end{table}
 
 The following image shows the correct setup for heating liquids on a Bunsen burner:\\
 \includegraphics[width=.3\textwidth]{photos/beaker_tripod.jpg}\\
