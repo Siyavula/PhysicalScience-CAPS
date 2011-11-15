@@ -244,24 +244,23 @@ stroom in 'n stroombaan te meet. Aangesien ons belangstel om die stroom
 \textit{deur} 'n komponent te meet, moet die ammeter in \textit{serie} met die
 gemete komponent gekoppel word.
 \begin{center}
+\scalebox{.8}{
 \begin{pspicture}(0,0)(3,3)
 %\psgrid
 \pnode(0,0){A} \pnode(0,2.5){B} \pnode(3,2.5){C} \pnode(3,0){D}
-\battery[tension,dipoleconvention=generator](A)(B){$I$}
-\circledipole[labeloffset=0](B)(C){A}
-\resistor[intensity,dipolestyle=rectangle](D)(C){}
-\wire[tension,arrowscale=2](D)(A)
-\end{pspicture}
+\battery[tension,dipoleconvention=generator](A)(B){$I$} \circledipole[labeloffset=0](B)(C){A}
+\resistor[intensity,dipolestyle=rectangle](D)(C){} \wire[tension,arrowscale=2](D)(A)
+\end{pspicture}}
 \label{fig:p:em:ec10:ammeter}
 \end{center}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
 \begin{center}
 \textbf{Ammeter}\\
-%\includegraphics[width=.8\textwidth]{photos/ammeter_by_Hillwalker-ca_flickr.jpg
-}\\
-\includegraphics[width=.8\textwidth]{photos/type2ammeter.jpg}\\
-%\textit{Photography by Hillwalker-ca on Flickr.}
+%\includegraphics[width=.8\textwidth]{photos/ammeter_by_Hillwalker-ca_flickr.jpg}\\
+%\includegraphics[width=.8\textwidth]{photos/type2ammeter.jpg}\\
+\includegraphics[width=.6\textwidth]{photos/ammeter.jpg}\\
+%\textit{Photography by Hillwalker-ca on Flickr.com}
 \end{center}  
 \end{minipage}
 

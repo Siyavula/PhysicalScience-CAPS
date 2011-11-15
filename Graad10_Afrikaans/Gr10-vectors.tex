@@ -1103,17 +1103,30 @@ Ons het nou al die kragvektore geteken wat op die speler inwerk. Die resultante 
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(-2,-1)(17,1)
+\begin{pspicture}(-2,-3)(17,3)\
+\psdot(0.0,0.01)
 \psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
 \psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0,0.01)(7.5,0.01)
 \psline[linecolor=red,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.5,0.01)(2.5,0.01)
 \psline[linecolor=green,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.5,0.01)(-0.75,0.01)
 \psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(-0.75,0.01)
+\psline[linecolor=red,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.5,-.75)(2.5,-.75)
+\psline[linestyle=dotted,linecolor=gray]{->}(7.5,-.75)(7.5,.01)
+\psline[linestyle=dotted,linecolor=gray]{->}(2.5,-.75)(2.5,.01)
+\psline[linecolor=green,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.5,-0.75)(-0.75,-.75)
+\psline[linestyle=dotted,linecolor=gray]{->}(-.75,-.75)(-.75,.01)
+\psline[linestyle=dotted,linecolor=gray]{->}(2.5,-.75)(2.5,.01)
+
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.5)(-0.75,0.5)
+\psline[linestyle=dotted,linecolor=gray]{->}(-.75,.5)(-.75,.01)
+\psline[linestyle=dotted,linecolor=gray]{->}(0.0,.5)(0.0,.01)
+
+
 \rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
 \rput(5.25,0.3){$\stackrel{\to }{F_{2}}$ = 90~N}
 \rput(5, -0.3){$\stackrel{\to }{F_{3}}$ = 100~N}
 \rput(1.5, -0.3){$\stackrel{\to }{F_{4}}$ = 65~N}
-\rput(-0.3, -0.3){$\stackrel{\to }{F_{R}}$ = 15~N}
+\rput(-0.3, 0.95){$\stackrel{\to }{F_{R}}$ = 15~N}
 \end{pspicture} 
 }
 \end{center}
@@ -1121,205 +1134,205 @@ Die resultante is dus 0,75cm lank. As jy jou skaal gebruik is dit 15N na links (
 
 }
 \end{wex}
-\begin{wex}{Stert-by-kop optelling 3 (Nie in CAPS nie)}{ 'n Skip verlaat die hawe H en seil 6km noord na poort A. Van daar seil die skip 12km oos na poort B, voordat dit nog 5,5km suidwes vaar na poort C. Bepaal die skip se resulterende verplasing deur van die stert-by-kop-metode gebruik te maak.}{
-
-\westep{Teken  'n rowwe skets van die situasie}
-Dit is makliker om die situasie te verstaan as jy eers  'n skets daarvan maak. Die rowwe skets moet al die inligting bevat wat die probleem vir jou gee. Al die groottes van die verplasings moet aangedui word. Ons wil net rofweg die vorm van die vektordiagram bepaal as ons  'n rowwe skets maak.
-
-\begin{center}
-\begin{pspicture}(-4,-4)(4,0.5)
+%\begin{wex}{Stert-by-kop optelling 3 (Nie in CAPS nie)}{ 'n Skip verlaat die hawe H en seil 6km noord na poort A. Van daar seil die skip 12km oos na poort B, voordat dit nog 5,5km suidwes vaar na poort C. Bepaal die skip se resulterende verplasing deur van die stert-by-kop-metode gebruik te maak.}{
+%
+%\westep{Teken  'n rowwe skets van die situasie}
+%Dit is makliker om die situasie te verstaan as jy eers  'n skets daarvan maak. Die rowwe skets moet al die inligting bevat wat die probleem vir jou gee. Al die groottes van die verplasings moet aangedui word. Ons wil net rofweg die vorm van die vektordiagram bepaal as ons  'n rowwe skets maak.
+%
+%\begin{center}
+%\begin{pspicture}(-4,-4)(4,0.5)
 %\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(-3.8,-3.8)(-3.8,0)
-\psline[arrowscale=2,linecolor=blue]{->}(-3.8,0)(3.8,0)
-\psline[arrowscale=2,linecolor=red]{->}(3.8,0)(1.11,-2.69)
-\rput(-4,-3.8){H}
-\rput(-4.2,-1.9){6 km}
-\rput(-4,0){A}
-\rput(0,0.3){12 km}
-\rput(4,0){B}
-\rput(3.1,-1.4){5,5 km}
-\rput(1.35,-2.69){C}
-\psarc{-}(3.8,0){1.4}{180}{225}
-\rput(3.05,-0.35){45$^\circ$}
-\psline[arrowscale=2]{->}(-3.8,-3.8)(1.11,-2.69)
-\end{pspicture}
+%\psline[arrowscale=2]{->}(-3.8,-3.8)(-3.8,0)
+%\psline[arrowscale=2,linecolor=blue]{->}(-3.8,0)(3.8,0)
+%\psline[arrowscale=2,linecolor=red]{->}(3.8,0)(1.11,-2.69)
+%\rput(-4,-3.8){H}
+%\rput(-4.2,-1.9){6 km}
+%\rput(-4,0){A}
+%\rput(0,0.3){12 km}
+%\rput(4,0){B}
+%\rput(3.1,-1.4){5,5 km}
+%\rput(1.35,-2.69){C}
+%\psarc{-}(3.8,0){1.4}{180}{225}
+%\rput(3.05,-0.35){45$^\circ$}
+%\psline[arrowscale=2]{->}(-3.8,-3.8)(1.11,-2.69)
+%\end{pspicture}
 % \scalebox{0.7}{\pscompass}
-\end{center}
-
-\westep{Kies  'n skaal en  'n verwysingsrigting}
-Die keuse van  'n skaal hang van die vraag af -- jy moet  'n skaal kies sodat jou vektordiagram op een bladsy kan pas. Deur die rowwe skets te maak kan ons aflei dat  'n skaal: 1cm stel 2km voor (1cm= 2km)  'n goeie keuse vir hierdie probleem is. Ons moet nou  'n akkurate skets maak.
-
-\westep{Kies een van die vektore en teken dit as  'n pyl met die regte lengte, in die regte rigting. Onthou om die pylpunt aan die einde te teken om rigting aan te dui.}
-Begin by die hawe H en teken die eerste vektor 3cm lank in die rigting noord.
-
+%\end{center}
+%
+%\westep{Kies  'n skaal en  'n verwysingsrigting}
+%Die keuse van  'n skaal hang van die vraag af -- jy moet  'n skaal kies sodat jou vektordiagram op een bladsy kan pas. Deur die rowwe skets te maak kan ons aflei dat  'n skaal: 1cm stel 2km voor (1cm= 2km)  'n goeie keuse vir hierdie probleem is. Ons moet nou  'n akkurate skets maak.
+%
+%\westep{Kies een van die vektore en teken dit as  'n pyl met die regte lengte, in die regte rigting. Onthou om die pylpunt aan die einde te teken om rigting aan te dui.}
+%Begin by die hawe H en teken die eerste vektor 3cm lank in die rigting noord.
+%
 %\MarginTip{Scale: 1~cm = 2~km}
-\begin{center}
-\begin{pspicture}(0,0)(8,3.5)
+%\begin{center}
+%\begin{pspicture}(0,0)(8,3.5)
 %\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
-\uput[l](0.5,0){H}
-\uput[l](0.5,1.5){6 km}
-\uput[l](0.5,3){A}
-\end{pspicture}
-\end{center}
+%\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
+%\uput[l](0.5,0){H}
+%\uput[l](0.5,1.5){6 km}
+%\uput[l](0.5,3){A}
+%\end{pspicture}
+%\end{center}
+%
+%\westep{Teken die volgende vektor -- begin by die pylpunt van die vorige vektor}
+%Aangesien die skip nou by poort A is, moet ons die volgende vektor vanaf punt A, 6cm oos teken.
 
-\westep{Teken die volgende vektor -- begin by die pylpunt van die vorige vektor}
-Aangesien die skip nou by poort A is, moet ons die volgende vektor vanaf punt A, 6cm oos teken.
-
-\begin{center}
-\begin{pspicture}(0,0)(8,3.5)
+%\begin{center}
+%\begin{pspicture}(0,0)(8,3.5)
 %\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
-\uput[l](0.5,0){H}
-\uput[l](0.5,1.5){6 km}
-\uput[l](0.5,3){A}
-\psline[arrowscale=2,linecolor=blue]{->}(0.5,3)(6.5,3)
-\uput[u](3.5,3){12 km}
-\uput[u](6.5,3){B}
-\end{pspicture}
+%\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
+%\uput[l](0.5,0){H}
+%\uput[l](0.5,1.5){6 km}
+%\uput[l](0.5,3){A}
+%\psline[arrowscale=2,linecolor=blue]{->}(0.5,3)(6.5,3)
+%\uput[u](3.5,3){12 km}
+%\uput[u](6.5,3){B}
+%\end{pspicture}
 % \scalebox{0.7}{\pscompass}
-\end{center}
-
-\westep{Teken die volgende vektor -- begin by die pylpunt van die vorige vektor}
-Aangesien die skip nou by poort B is, moet ons die derde vektor vanaf punt B, 2,256cm in die rigting suidwes teken. Jy het  'n gradeboog nodig om die 45$^\circ$ hoek te meet.
-
-\begin{center}
-\begin{pspicture}(0,0)(8,3.5)
+%\end{center}
+%
+%\westep{Teken die volgende vektor -- begin by die pylpunt van die vorige vektor}
+%Aangesien die skip nou by poort B is, moet ons die derde vektor vanaf punt B, 2,256cm in die rigting suidwes teken. Jy het  'n gradeboog nodig om die 45$^\circ$ hoek te meet.
+%
+%\begin{center}
+%\begin{pspicture}(0,0)(8,3.5)
 %\psgrid[gridcolor=lightgray]
-\SpecialCoor
-\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
-\uput[l](0.5,0){H}
-\uput[l](0.5,1.5){6 km}
-\uput[l](0.5,3){A}
-\psline[arrowscale=2,linecolor=blue]{->}(0.5,3)(6.5,3)
-\uput[u](3.5,3){12 km}
-\uput[u](6.5,3){B}
-\rput(6.5,3){\psline[arrowscale=2,linecolor=red]{->}(0,0)({2.25;225})
-\uput[u]({2.25;225}){C}}
-\uput[r](5.8,2){5,5 km}
-\psarc{->}(6.5,3){1.4}{180}{225}
-\rput(5.7,2.65){45$^\circ$}
-\end{pspicture}
+%\SpecialCoor
+%\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
+%\uput[l](0.5,0){H}
+%\uput[l](0.5,1.5){6 km}
+%\uput[l](0.5,3){A}
+%\psline[arrowscale=2,linecolor=blue]{->}(0.5,3)(6.5,3)
+%\uput[u](3.5,3){12 km}
+%\uput[u](6.5,3){B}
+%\rput(6.5,3){\psline[arrowscale=2,linecolor=red]{->}(0,0)({2.25;225})
+%\uput[u]({2.25;225}){C}}
+%\uput[r](5.8,2){5,5 km}
+%\psarc{->}(6.5,3){1.4}{180}{225}
+%\rput(5.7,2.65){45$^\circ$}
+%\end{pspicture}
 % \scalebox{0.7}{\pscompass}
-\end{center}
-
-\westep{Die resultante word van die stert van die eerste vektor na die kop van die laaste vektor geteken. Sy grootte kan bepaal word deur die lengte van die pyl te meet en die skaal te gebruik. So ook kan rigting met behulp van die skaaldiagram bepaal word.}
-
-Uiteindelik teken ons die resultante van die beginpunt (van die hawe H) na die eindpunt (poort C). Ons meet die lengte van die pyl en bepaal met  'n gradeboog die rigting.
-
-\begin{center}
-\begin{pspicture}(0,0)(8,3.5)
+%\end{center}
+%
+%\westep{Die resultante word van die stert van die eerste vektor na die kop van die laaste vektor geteken. Sy grootte kan bepaal word deur die lengte van die pyl te meet en die skaal te gebruik. So ook kan rigting met behulp van die skaaldiagram bepaal word.}
+%
+%Uiteindelik teken ons die resultante van die beginpunt (van die hawe H) na die eindpunt (poort C). Ons meet die lengte van die pyl en bepaal met  'n gradeboog die rigting.
+%
+%\begin{center}
+%\begin{pspicture}(0,0)(8,3.5)
 %\psgrid[gridcolor=lightgray]
-\SpecialCoor
-\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
-\uput[l](0.5,0){H}
-\uput[l](0.5,1.5){3 cm = 6 km}
-\uput[l](0.5,3){A}
-\psline[arrowscale=2,linecolor=blue]{->}(0.5,3)(6.5,3)
-\uput[u](3.5,3){6 cm = 12 km}
-\uput[u](6.5,3){B}
-\rput(6.5,3){\psline[arrowscale=2,linecolor=red]{->}(0,0)({2.25;225})
-\uput[u]({2.25;225}){C}}
-\uput[r](5.8,2){2,25 cm = 5,5 km}
-\psline[linewidth=2pt]{->}(0.5,0)(4.91,1.41)
-\pcline[offset=8pt,linestyle=none](0.5,0)(4.91,1.41)
-\lput*{:U}{4,6 cm = 9,2 km}
-\psarc{->}(0.5,0){0.9}{17.7}{90}
-\rput(0.85,0.45){?}
-\end{pspicture}
+%\SpecialCoor
+%\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
+%\uput[l](0.5,0){H}
+%\uput[l](0.5,1.5){3 cm = 6 km}
+%\uput[l](0.5,3){A}
+%\psline[arrowscale=2,linecolor=blue]{->}(0.5,3)(6.5,3)
+%\uput[u](3.5,3){6 cm = 12 km}
+%\uput[u](6.5,3){B}
+%\rput(6.5,3){\psline[arrowscale=2,linecolor=red]{->}(0,0)({2.25;225})
+%\uput[u]({2.25;225}){C}}
+%\uput[r](5.8,2){2,25 cm = 5,5 km}
+%\psline[linewidth=2pt]{->}(0.5,0)(4.91,1.41)
+%\pcline[offset=8pt,linestyle=none](0.5,0)(4.91,1.41)
+%\lput*{:U}{4,6 cm = 9,2 km}
+%\psarc{->}(0.5,0){0.9}{17.7}{90}
+%\rput(0.85,0.45){?}
+%\end{pspicture}
 % \scalebox{0.7}{\pscompass}
-\end{center}
+%\end{center}
+%
+%\westep{ Pas die skaal toe om omskakeling te doen.}
+%Ons gebruik nou die skaal om die lengte van die resultante in die skaaldiagram om te skakel na die eintlike verplasing van die probleem. Aangesien ons  'n skaal van 1cm = 2km gekies het, het die resultante  'n grootte van 9,2km. Die rigting kan bepaal word in terme van die hoek wat ons gemeet het, m.a.w. of 072,3$^\circ$ oos van noord of met  'n posisie van 072,3$^\circ$.
+%
+%\westep{Skryf die finale antwoord neer}
+%Die resulterende verplasing van die skip is 9,2 km op  'n bearing van 072,3$^\circ$.}
+%\end{wex}
 
-\westep{ Pas die skaal toe om omskakeling te doen.}
-Ons gebruik nou die skaal om die lengte van die resultante in die skaaldiagram om te skakel na die eintlike verplasing van die probleem. Aangesien ons  'n skaal van 1cm = 2km gekies het, het die resultante  'n grootte van 9,2km. Die rigting kan bepaal word in terme van die hoek wat ons gemeet het, m.a.w. of 072,3$^\circ$ oos van noord of met  'n posisie van 072,3$^\circ$.
 
-\westep{Skryf die finale antwoord neer}
-Die resulterende verplasing van die skip is 9,2 km op  'n bearing van 072,3$^\circ$.}
-\end{wex}
-
-
-\begin{wex}{Stert-by-kop-metode: Grafiese optelling 4 (Nie in CAPS nie)}{ 'n Man loop 40m oos en dan 30m noord.
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
-\item{Wat is die totale afstand wat hy geloop het?}
-\item{Wat is sy resulterende verplasing.}
-\end{enumerate}}
-{
-\westep{Teken  'n rowwe skets}
-\begin{center}
-\begin{pspicture}(-0.5,-0.5)(6,3)
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0,0)(4,0)
-\psline[arrowscale=2,linecolor=blue]{->}(4,0)(4,3)
-\psline[linewidth=2pt]{->}(0,0)(4,3)
-\pcline[offset=8pt,linestyle=none]{-}(0,0)(4,3)
-\lput*{:U}{resultant}
-\uput[d](2,0){40 m}
-\uput[r](4,1.5){30 m}
-\end{pspicture}
-% \scalebox{0.7}{\pscompass}
-\end{center}
-
-\westep{Bepaal die afstand wat die man geloop het}
-In die eerste deel van die man se reis loop hy 40m en daarna  'n verdere 30m. Dit gee  'n totale afstand van 40m + 30m = 70m
-
-\westep{Bepaal sy resulterende verplasing}
-Die man se resulterende verplasing is die vektor van sy beginpunt tot by sy eindpunt. Dit is die vektorsom van die twee afsonderlike verplasings. Ons gebruik die stert-by-kop-metode om  'n akkurate konstruksie van die vektor te maak.
-
-\westep{Kies  'n geskikte skaal}
- 'n Skaal:1cm stel 10m voor (1cm = 10m) is  'n goeie keuse. Ons kan nou begin konstrueer.
-
-\westep{Teken die eerste vektor op skaal.}
-Teken die eerste verplasing as  'n pyl wat 4cm lank is en in  'n ooswaartse rigting dui.
-
-\begin{center}
-\begin{pspicture}(-0.5,-0.5)(6,0.5)
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0,0)(4,0)
-\uput[d](2,0){4 cm = 40 m}
-\end{pspicture}
-% \scalebox{0.7}{\pscompass}
-\end{center}
-
-\westep{Teken die tweede vektor op skaal}
-Begin by die kop van die eerste vektor en teken die tweede vektor as  'n 3cm pyl wat in  'n noordelike rigting wys.
-
-\begin{center}
-\begin{pspicture}(-0.5,-0.5)(6,3)
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0,0)(4,0)
-\psline[arrowscale=2,linecolor=blue]{->}(4,0)(4,3)
-\uput[d](2,0){4 cm = 40 m}
-\uput[r](4,1.5){3 cm = 30 m}
-\end{pspicture}
-% \scalebox{0.7}{\pscompass}
-\end{center}
-
-\westep{Bepaal die resultante.}
-Ons kan nou die begin- en eindpunt verbind en die lengte en rigting van die pyl meet. Dit is die resultante.
-
-\begin{center}
-\begin{pspicture}(-0.5,-0.5)(6,3)
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0,0)(4,0)
-\psline[arrowscale=2,linecolor=blue]{->}(4,0)(4,3)
-\psline[linewidth=2pt]{->}(0,0)(4,3)
-\pcline[offset=8pt,linestyle=none]{-}(0,0)(4,3)
-\lput*{:U}{5 cm = 50 m}
-\uput[d](2,0){4 cm = 40 m}
-\uput[r](4,1.5){3 cm = 30 m}
-\psarc{->}(0,0){1.25}{0}{36.9}
-\rput(0.85,0.25){?}
-\end{pspicture}
-% \scalebox{0.7}{\pscompass}
-\end{center}
-
-\westep{Find the direction}
-To find the direction you measure the angle between the resultant and the 40~m vector. You should get about 37$^\circ$.
-
-\westep{Bepaal die rigting}
-Ons gebruik uiteindelik die skaal om die lengte van die resultante in die skaaldiagram om te skakel na die ware grootte van die resulterende verplasing. Volgens die skaal is 1cm = 10m. 5cm stel dus 50m voor. Die resulterende verplasing is daarom 50m 37$^\circ$ noord van oos.
-}
-\end{wex}
+% \begin{wex}{Stert-by-kop-metode: Grafiese optelling 4 (Nie in CAPS nie)}{ 'n Man loop 40m oos en dan 30m noord.
+% \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+% \item{Wat is die totale afstand wat hy geloop het?}
+% \item{Wat is sy resulterende verplasing.}
+% \end{enumerate}}
+% {
+% \westep{Teken  'n rowwe skets}
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(6,3)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(4,0)
+% \psline[arrowscale=2,linecolor=blue]{->}(4,0)(4,3)
+% \psline[linewidth=2pt]{->}(0,0)(4,3)
+% \pcline[offset=8pt,linestyle=none]{-}(0,0)(4,3)
+% \lput*{:U}{resultant}
+% \uput[d](2,0){40 m}
+% \uput[r](4,1.5){30 m}
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% 
+% \westep{Bepaal die afstand wat die man geloop het}
+% In die eerste deel van die man se reis loop hy 40m en daarna  'n verdere 30m. Dit gee  'n totale afstand van 40m + 30m = 70m
+% 
+% \westep{Bepaal sy resulterende verplasing}
+% Die man se resulterende verplasing is die vektor van sy beginpunt tot by sy eindpunt. Dit is die vektorsom van die twee afsonderlike verplasings. Ons gebruik die stert-by-kop-metode om  'n akkurate konstruksie van die vektor te maak.
+% 
+% \westep{Kies  'n geskikte skaal}
+%  'n Skaal:1cm stel 10m voor (1cm = 10m) is  'n goeie keuse. Ons kan nou begin konstrueer.
+% 
+% \westep{Teken die eerste vektor op skaal.}
+% Teken die eerste verplasing as  'n pyl wat 4cm lank is en in  'n ooswaartse rigting dui.
+% 
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(6,0.5)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(4,0)
+% \uput[d](2,0){4 cm = 40 m}
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% 
+% \westep{Teken die tweede vektor op skaal}
+% Begin by die kop van die eerste vektor en teken die tweede vektor as  'n 3cm pyl wat in  'n noordelike rigting wys.
+% 
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(6,3)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(4,0)
+% \psline[arrowscale=2,linecolor=blue]{->}(4,0)(4,3)
+% \uput[d](2,0){4 cm = 40 m}
+% \uput[r](4,1.5){3 cm = 30 m}
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% 
+% \westep{Bepaal die resultante.}
+% Ons kan nou die begin- en eindpunt verbind en die lengte en rigting van die pyl meet. Dit is die resultante.
+% 
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(6,3)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(4,0)
+% \psline[arrowscale=2,linecolor=blue]{->}(4,0)(4,3)
+% \psline[linewidth=2pt]{->}(0,0)(4,3)
+% \pcline[offset=8pt,linestyle=none]{-}(0,0)(4,3)
+% \lput*{:U}{5 cm = 50 m}
+% \uput[d](2,0){4 cm = 40 m}
+% \uput[r](4,1.5){3 cm = 30 m}
+% \psarc{->}(0,0){1.25}{0}{36.9}
+% \rput(0.85,0.25){?}
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% 
+% \westep{Find the direction}
+% To find the direction you measure the angle between the resultant and the 40~m vector. You should get about 37$^\circ$.
+% 
+% \westep{Bepaal die rigting}
+% Ons gebruik uiteindelik die skaal om die lengte van die resultante in die skaaldiagram om te skakel na die ware grootte van die resulterende verplasing. Volgens die skaal is 1cm = 10m. 5cm stel dus 50m voor. Die resulterende verplasing is daarom 50m 37$^\circ$ noord van oos.
+% }
+% \end{wex}
 
 \subsection*{Algebraïese metodes}
 \subsubsection*{Vektore in  'n reguit lyn}
@@ -1484,361 +1497,361 @@ Onthou dat hierdie metode van optelling en aftrekking van vektore net van toepas
 
 
 
-\section{Komponente van Vektore}
-\textbf{(Nie in CAPS nie)}\\
-In die vorige bespreking waar ons oor die optelling van vektore gepraat het, het ons gesien dat vektore wat saamwerk kan kombineer om een enkele vektor (die resultante) te vorm. Net so kan een vektor dan opgebreek word in die verskillende vektore wat bymekaar getel is om daardie vektor te vorm. Hierdie vektore wat optel om die oorspronklike vektor te vorm word die komponente van die oorspronklike vektor genoem. Die proses waardeur  'n vektor in sy komponente opgebreek word, word die beginsel van ontbinding van vektore genoem.
+% \section{Komponente van Vektore}
+% \textbf{(Nie in CAPS nie)}\\
+% In die vorige bespreking waar ons oor die optelling van vektore gepraat het, het ons gesien dat vektore wat saamwerk kan kombineer om een enkele vektor (die resultante) te vorm. Net so kan een vektor dan opgebreek word in die verskillende vektore wat bymekaar getel is om daardie vektor te vorm. Hierdie vektore wat optel om die oorspronklike vektor te vorm word die komponente van die oorspronklike vektor genoem. Die proses waardeur  'n vektor in sy komponente opgebreek word, word die beginsel van ontbinding van vektore genoem.
+% 
+% Wanneer jy  'n stel vektore bymekaar tel kan jy net een antwoord (die resultante) kry.  'n Enkele vektor kan egter in  'n oneindige hoeveelheid verskillende stelle komponente opgebreek word. Die diagramme hieronder wys hoe dieselfde vektor (die donker streep) in verskillende pare komponente opgebreek kan word. Hierdie komponente word met stippellyne aangedui. Wanneer die twee stippellyne (vektore) bymekaar getel word, gee dit die oorspronklike vektor (die donker streep). Die oorspronklike vektor is dus die resultante van sy komponente.
+% 
+% \begin{center}
+% \begin{pspicture}(-2.5,-2.6)(2.5,2.6)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(-2,0.5)(0,2.5)
+% \psline[arrowscale=2,linestyle=dashed]{->}(-2,0.5)(-2,1.25)
+% \psline[arrowscale=2,linestyle=dashed]{->}(-2,1.25)(0,2.5)
+% 
+% \psline[arrowscale=2]{->}(0.5,0.5)(2.5,2.5)
+% \psline[arrowscale=2,linestyle=dashed]{->}(0.5,0.5)(2.5,-0.5)
+% \psline[arrowscale=2,linestyle=dashed]{->}(2.5,-0.5)(2.5,2.5)
+% \psline[arrowscale=2]{->}(-2,-2.5)(0,-0.5)
+% \psline[arrowscale=2,linestyle=dashed]{->}(-2,-2.5)(0,-2.5)
+% \psline[arrowscale=2,linestyle=dashed]{->}(0,-2.5)(0,-0.5)
+% \psline{-}(-0.25,-2.25)(0,-2.25)
+% \psline{-}(-0.25,-2.25)(-0.25,-2.5)
+% \end{pspicture} 
+% \end{center}
+% 
+% In praktyk help dit baie om  'n vektor in sy komponente op te breek, veral as die komponente  'n reghoek met mekaar vorm, gewoonlik dan  'n horisontale en  'n vertikale komponent.
+% 
+% Enige vektor kan in  'n horisontale en vertikale komponent opgebreek word. As $\vec{A}$  'n vektor is, dan is $\vec{A}_x$ die horisontale komponent en  $\vec{A}_y$ is die vertikale komponent.
+% 
+% \begin{center}
+% \begin{pspicture}(0,-0.5)(3,3)
+% %\psgrid[gridcolor=lightgray]
+% % \psaxes[linewidth=1.2pt,labels=none,showorigin=false,ticks=none]{<->}((0,0)(-1,-1)(3,3)
+% \psline[arrowscale=2]{->}(0,0)(2.5,2.5)
+% \psline[linestyle=dashed](2.5,0)(2.5,2.5)
+% \psline[linestyle=dashed](0,0)(2.5,0)
+% \uput[ul](1,1){$\vec{A}$}
+% \uput[r](2.5,1.25){$\vec{A}_y$}
+% \uput[d](1.25,0){$\vec{A}_x$}
+% \psline{-}(2.25,0.25)(2.5,0.25)
+% \psline{-}(2.25,0)(2.25,0.25)
+% \psarc{->}(-1,0){1.4}{0}{15}
+% \rput(0.6,0.2){$\theta$}
+% \end{pspicture} 
+% \end{center}
+% Note that $\vec{A}_{x} = A cos \theta$ en $\vec{A}_{y} = A sin \theta$
+% \begin{wex}{Breek  'n vektor in komponente op.}{ 'n Motoris ondergaan  'n verplasing van 250km in  'n rigting 30$^\circ$ noord van oos. Breek hierdie verplasing op in sy komponente in die rigting noord ($\vec{x}_N$) en oos ($\vec{x}_E$).\\}{
+% \westep{Teken  'n rowwe skets van die oorspronklike vektor}
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(7,3.5)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(6,3.46)
+% \pcline[offset=8pt,linestyle=none]{-}(0,0)(6,3.46)
+% \psarc{->}(0,0){1.4}{0}{30}
+% \lput{:U}{250 km}
+% \rput(0.9,0.25){30$^\circ$}
+% \psline[linestyle=dashed]{-}(0,0)(2,0)
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% \westep{Bepaal die vektor se komponente} 
+% Breek die verplasing in sy komponente noord en oos op. Aangesien hierdie rigtings loodreg met mekaar is, vorm die komponente  'n reghoekige driehoek met die oorspronklike verplasing as skuinssy. 
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(7,3.5)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(6,3.46)
+% \pcline[offset=8pt,linestyle=none]{-}(0,0)(6,3.46)
+% \psarc{->}(0,0){1.4}{0}{30}
+% \lput{:U}{250 km}
+% \rput(0.9,0.25){30$^\circ$}
+% \psline[linestyle=dashed]{-}(0,0)(2,0)
+% \psline[linestyle=dashed,linewidth=2pt]{->}(0,0)(6,0)
+% \psline[linestyle=dashed,linewidth=2pt]{->}(6,0)(6,3.46)
+% \pcline[offset=-8pt,linestyle=none]{-}(0,0)(6,0)
+% \lput{:U}{$\vec{x}_E$}
+% \pcline[offset=-8pt,linestyle=none]{-}(6.2,0)(6.2,3.46)
+% \lput{:U}{\rotateright{$\vec{x}_N$}}
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% 
+% Let daarop dat die twee komponente wat saam werk die oorspronklike vektor as resultante het.
+% 
+% \westep{ Bepaal die lengte van die komponent vektore}
+% Ons kan nou trigonometrie gebruik om die grootte van die komponente van die oorspronklike verplasing te bereken:
+% \begin{eqnarray*}
+% x_N &=& (250) (\sin{30^\circ})\\
+% &=& 125\ \text{km}
+% \end{eqnarray*}
+% en
+% \begin{eqnarray*}
+% x_E &=& (250)(\cos{30^\circ})\\
+% &=& 216,5\ \text{km}
+% \end{eqnarray*}
+% 
+% Onthou dat $x_N$ en $x_E$ die grootte van die komponente is, hulle is onderskeidelik in die rigting noord en oos.}
+% \end{wex}
 
-Wanneer jy  'n stel vektore bymekaar tel kan jy net een antwoord (die resultante) kry.  'n Enkele vektor kan egter in  'n oneindige hoeveelheid verskillende stelle komponente opgebreek word. Die diagramme hieronder wys hoe dieselfde vektor (die donker streep) in verskillende pare komponente opgebreek kan word. Hierdie komponente word met stippellyne aangedui. Wanneer die twee stippellyne (vektore) bymekaar getel word, gee dit die oorspronklike vektor (die donker streep). Die oorspronklike vektor is dus die resultante van sy komponente.
-
-\begin{center}
-\begin{pspicture}(-2.5,-2.6)(2.5,2.6)
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(-2,0.5)(0,2.5)
-\psline[arrowscale=2,linestyle=dashed]{->}(-2,0.5)(-2,1.25)
-\psline[arrowscale=2,linestyle=dashed]{->}(-2,1.25)(0,2.5)
-
-\psline[arrowscale=2]{->}(0.5,0.5)(2.5,2.5)
-\psline[arrowscale=2,linestyle=dashed]{->}(0.5,0.5)(2.5,-0.5)
-\psline[arrowscale=2,linestyle=dashed]{->}(2.5,-0.5)(2.5,2.5)
-\psline[arrowscale=2]{->}(-2,-2.5)(0,-0.5)
-\psline[arrowscale=2,linestyle=dashed]{->}(-2,-2.5)(0,-2.5)
-\psline[arrowscale=2,linestyle=dashed]{->}(0,-2.5)(0,-0.5)
-\psline{-}(-0.25,-2.25)(0,-2.25)
-\psline{-}(-0.25,-2.25)(-0.25,-2.5)
-\end{pspicture} 
-\end{center}
-
-In praktyk help dit baie om  'n vektor in sy komponente op te breek, veral as die komponente  'n reghoek met mekaar vorm, gewoonlik dan  'n horisontale en  'n vertikale komponent.
-
-Enige vektor kan in  'n horisontale en vertikale komponent opgebreek word. As $\vec{A}$  'n vektor is, dan is $\vec{A}_x$ die horisontale komponent en  $\vec{A}_y$ is die vertikale komponent.
-
-\begin{center}
-\begin{pspicture}(0,-0.5)(3,3)
-%\psgrid[gridcolor=lightgray]
-% \psaxes[linewidth=1.2pt,labels=none,showorigin=false,ticks=none]{<->}((0,0)(-1,-1)(3,3)
-\psline[arrowscale=2]{->}(0,0)(2.5,2.5)
-\psline[linestyle=dashed](2.5,0)(2.5,2.5)
-\psline[linestyle=dashed](0,0)(2.5,0)
-\uput[ul](1,1){$\vec{A}$}
-\uput[r](2.5,1.25){$\vec{A}_y$}
-\uput[d](1.25,0){$\vec{A}_x$}
-\psline{-}(2.25,0.25)(2.5,0.25)
-\psline{-}(2.25,0)(2.25,0.25)
-\psarc{->}(-1,0){1.4}{0}{15}
-\rput(0.6,0.2){$\theta$}
-\end{pspicture} 
-\end{center}
-Note that $\vec{A}_{x} = A cos \theta$ en $\vec{A}_{y} = A sin \theta$
-\begin{wex}{Breek  'n vektor in komponente op.}{ 'n Motoris ondergaan  'n verplasing van 250km in  'n rigting 30$^\circ$ noord van oos. Breek hierdie verplasing op in sy komponente in die rigting noord ($\vec{x}_N$) en oos ($\vec{x}_E$).\\}{
-\westep{Teken  'n rowwe skets van die oorspronklike vektor}
-\begin{center}
-\begin{pspicture}(-0.5,-0.5)(7,3.5)
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0,0)(6,3.46)
-\pcline[offset=8pt,linestyle=none]{-}(0,0)(6,3.46)
-\psarc{->}(0,0){1.4}{0}{30}
-\lput{:U}{250 km}
-\rput(0.9,0.25){30$^\circ$}
-\psline[linestyle=dashed]{-}(0,0)(2,0)
-\end{pspicture}
-% \scalebox{0.7}{\pscompass}
-\end{center}
-\westep{Bepaal die vektor se komponente} 
-Breek die verplasing in sy komponente noord en oos op. Aangesien hierdie rigtings loodreg met mekaar is, vorm die komponente  'n reghoekige driehoek met die oorspronklike verplasing as skuinssy. 
-\begin{center}
-\begin{pspicture}(-0.5,-0.5)(7,3.5)
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0,0)(6,3.46)
-\pcline[offset=8pt,linestyle=none]{-}(0,0)(6,3.46)
-\psarc{->}(0,0){1.4}{0}{30}
-\lput{:U}{250 km}
-\rput(0.9,0.25){30$^\circ$}
-\psline[linestyle=dashed]{-}(0,0)(2,0)
-\psline[linestyle=dashed,linewidth=2pt]{->}(0,0)(6,0)
-\psline[linestyle=dashed,linewidth=2pt]{->}(6,0)(6,3.46)
-\pcline[offset=-8pt,linestyle=none]{-}(0,0)(6,0)
-\lput{:U}{$\vec{x}_E$}
-\pcline[offset=-8pt,linestyle=none]{-}(6.2,0)(6.2,3.46)
-\lput{:U}{\rotateright{$\vec{x}_N$}}
-\end{pspicture}
-% \scalebox{0.7}{\pscompass}
-\end{center}
-
-Let daarop dat die twee komponente wat saam werk die oorspronklike vektor as resultante het.
-
-\westep{ Bepaal die lengte van die komponent vektore}
-Ons kan nou trigonometrie gebruik om die grootte van die komponente van die oorspronklike verplasing te bereken:
-\begin{eqnarray*}
-x_N &=& (250) (\sin{30^\circ})\\
-&=& 125\ \text{km}
-\end{eqnarray*}
-en
-\begin{eqnarray*}
-x_E &=& (250)(\cos{30^\circ})\\
-&=& 216,5\ \text{km}
-\end{eqnarray*}
-
-Onthou dat $x_N$ en $x_E$ die grootte van die komponente is, hulle is onderskeidelik in die rigting noord en oos.}
-\end{wex}
-
-\subsection{Vektoroptelling met behulp van komponente}
-Komponente kan ook gebruik word om die resultante te bepaal. Ons kan hierdie metode vir sowel grafiese as algebraïese metodes om die resultante te bepaal, gebruik. Die metode is eenvoudig: maak  'n rowwe skets van die probleem, kry die horisontale en vertikale komponent van elke vektor, bereken die som van al die horisontale komponente en daarna van al die vertikale komponente en gebruik hulle dan om die resultante te kry.
-
-Kyk na hierdie twee vektore, $\vec{A}$ en $\vec{B}$, in Figuure~\ref{fig:p:v:components:addition:vectors}, met hul resultante, $\vec{R}$. 
-
-\begin{figure}[!htbp]
-\begin{center}
-\scalebox{0.7}
-{
-\begin{pspicture}(0,0)(8,6)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0,0)(5,2)
-\pcline[offset=-8pt,linestyle=none](0,0)(5,2)
-\lput{:U}{$\vec{A}$}
-\psline[arrowscale=2]{->}(5,2)(8,6)
-\pcline[offset=-8pt,linestyle=none](5,2)(8,6)
-\lput{:U}{$\vec{B}$}
-\psline[arrowscale=2,linewidth=2pt]{->}(0,0)(8,6)
-\pcline[offset=8pt,linestyle=none](0,0)(8,6)
-\lput{:U}{$\vec{R}$}
-\end{pspicture}
-}
-\end{center}
-\caption{An example of two vectors being added to give a resultant}
-\label{fig:p:v:components:addition:vectors}
-\end{figure}
-
-Elke vektor in Figuur~\ref{fig:p:v:components:addition:vectors} kan opgebreek word in een komponent in die $x$-rigting (horisontaal) en een in die $y$-direction (vertical). rigting (vertikaal). Hierdie komponente is twee vektore wat bymekaargetel kan word om die oorspronklike vektor as die resultante te gee. As jy na Figuur~\ref{fig:p:v:components:addition:vectors:components} kyk sal jy sien dat:
-
-\begin{minipage}{0.5\textwidth}
-\begin{eqnarray*}
-\vec{A}&=&\vec{A}_x+\vec{A}_y\\
-\vec{B}&=&\vec{B}_x+\vec{B}_y\\
-\vec{R}&=&\vec{R}_x+\vec{R}_y\\
-\end{eqnarray*}
-\end{minipage}
-\begin{minipage}{0.5\textwidth}
-\begin{eqnarray*}
-\mbox{But,}\quad \vec{R}_x&=&\vec{A}_x+\vec{B}_x\\
-\mbox{and}\quad\vec{R}_y&=&\vec{A}_y+\vec{B}_y\\
-\end{eqnarray*}
-\end{minipage}
-
-Om op te som: deur die $x$ komponente van die twee oorspronklike vektore bymekaar te tel, kry ons die $x$ komponent van die resultante. Dieselfde is waar vir die $y$ komponente. As ons daarom al die komponente bymekaar tel, sal ons dieselfde antwoord kry. Hierdie is  'n belangrike eienskap van vektore.
-
-\begin{figure}[H]
-\begin{center}
-\scalebox{1}
-{
-\begin{pspicture}(-1,-0.6)(8.6,7)
-%\psgrid[gridcolor=lightgray]
-%A
-\psline[arrowscale=2]{->}(0,0)(5,2)
-\pcline[offset=-8pt,linestyle=none](0,0)(5,2)
-\lput{:U}{$\vec{A}$}
-\psline[linestyle=dashed,arrowscale=2]{->}(0,0)(5,0)(5,2)	%components of A
-\pcline[offset=-8pt,linestyle=none](0,0)(5,0)
-\lput{:U}{$\vec{A}_x$}
-\psline[linestyle=dashed,arrowscale=2]{->}(0,6.5)(5,6.5)
-\pcline[offset=8pt,linestyle=none](0,6.5)(5,6.5)
-\lput{:U}{$\vec{A}_x$}
-\pcline[offset=-8pt,linestyle=none](5,0)(5,2)
-\lput{:U}{$\vec{A}_y$}
-\psline[linestyle=dashed,arrowscale=2]{->}(-0.5,0)(-0.5,2)
-\pcline[offset=8pt,linestyle=none](-0.5,0)(-0.5,2)
-\lput{:U}{$\vec{A}_y$}
-%Right angle in corner! (5,0)
-\psline[linestyle=dashed,arrowscale=2](4.7,0)(4.7,0.3)
-\psline[linestyle=dashed,arrowscale=2](4.7,0.3)(5.,0.3)
-%B
-\psline[arrowscale=2]{->}(5,2)(8,6)
-\pcline[offset=-8pt,linestyle=none](5,2)(8,6)
-\lput{:U}{$\vec{B}$}
-\psline[linestyle=dashed,arrowscale=2]{->}(5,2)(8,2)(8,6)	%components of B
-\pcline[offset=-8pt,linestyle=none](5,2)(8,2)
-\lput{:U}{$\vec{B}_x$}
-\psline[linestyle=dashed,arrowscale=2]{->}(5,6.5)(8,6.5)
-\pcline[offset=8pt,linestyle=none](5,6.5)(8,6.5)
-\lput{:U}{$\vec{B}_x$}
-\pcline[offset=-8pt,linestyle=none](8,2)(8,6)
-\lput{:U}{$\vec{B}_y$}
-\psline[linestyle=dashed,arrowscale=2]{->}(-0.5,2)(-0.5,6)
-\pcline[offset=8pt,linestyle=none](-0.5,2)(-0.5,6)
-\lput{:U}{$\vec{B}_y$}
-%Right angle in corner (8,2)
-\psline[linestyle=dashed,arrowscale=2](7.7,2)(7.7,2.3)
-\psline[linestyle=dashed,arrowscale=2](7.7,2.3)(8,2.3)
-%R
-\psline[arrowscale=2,linewidth=2pt]{->}(0,0)(8,6)
-\pcline[offset=8pt,linestyle=none](0,0)(8,6)
-\lput{:U}{$\vec{R}$}
-\psline[linestyle=dashed,arrowscale=2]{->}(0,0)(0,6)(8,6)	%components of B
-\pcline[offset=-8pt,linestyle=none](0,6)(8,6)
-\lput{:U}{$\vec{R}_x$}
-\pcline[offset=-8pt,linestyle=none](0,0)(0,6)
-\lput{:U}{$\vec{R}_y$}
-%Right angle in corner (0,6)
-\psline[linestyle=dashed,arrowscale=2](0,5.7)(0.3,5.7)
-\psline[linestyle=dashed,arrowscale=2](0.3,5.7)(0.3,6)
-\end{pspicture}
-}
-\end{center}
-\caption{Adding vectors using components.}
-\label{fig:p:v:components:addition:vectors:components}
-\end{figure}
-To find the resultant we note that $R=\sqrt{R_{x}^{2} + R_{y}^{2}}$. To find the angle we use $\theta = tan^{-1} (\frac{R_{y}}{R_{x}})$.
-\begin{wex}{Adding Vectors Using Components}{If in Figure~\ref{fig:p:v:components:addition:vectors:components}, $\vec{A}=5,385\emm$ at an angle of 21.8$^\circ$ to the horizontal and $\vec{B}=5\emm$ at an angle of 53,13$^\circ$ to the horizontal, find $\vec{R}$.\\}{
-\westep{Decide how to tackle the problem} 
-The first thing we must realise is that the order that we add the vectors does not matter. Therefore, we can work through the vectors to be added in any order.
-
-\westep{Resolve $\vec{A}$ into components}
-We find the components of $\vec{A}$ by using known trigonometric ratios. First we find the magnitude of the vertical component, $A_y$:
-\begin{eqnarray*}
-\sin \theta &=& \frac{A_y}{A} \\
-\sin{21,8^\circ} &=& \frac{A_y}{5,385}\\
-A_y &=& (5,385)(\sin{21,8^\circ})\\
- &=& 2\emm
-\end{eqnarray*}
-
-Secondly we find the magnitude of the horizontal component, $A_x$:
-\begin{eqnarray*}
-\cos \theta &=& \frac{A_x}{A} \\
-\cos{21.8^\circ} &=& \frac{A_x}{5,385}\\
-A_x &=& (5,385) (\cos{21,8^\circ})\\
- &=& 5\emm
-\end{eqnarray*}
-
-\begin{center}
-\begin{pspicture}(-0.2,-0.6)(5.6,2.4)%%\psgrid
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0,0)(5,2)
-\pcline[offset=8pt]{|-|}(0,0)(5,2)
-\lput*{:U}{5,385 m}
-\psline[linestyle=dashed,arrowscale=2]{->}(0,0)(5,0)
-\pcline[offset=-8pt]{|-|}(0,0)(5,0)
-\lput*{:U}{5 m}
-\psline[linestyle=dashed,arrowscale=2]{->}(5,0)(5,2)
-\pcline[offset=-8pt]{|-|}(5,0)(5,2)
-\lput*{:U}{2 m}
-%Right angle in corner! (5,0)
-\psline[linestyle=dashed,arrowscale=2](4.7,0)(4.7,0.3)
-\psline[linestyle=dashed,arrowscale=2](4.7,0.3)(5.,0.3)
-\end{pspicture}
-\end{center}
-
-The components give the sides of the right angle triangle, for which the original vector, $\vec{A}$, is the hypotenuse. 
-
-\westep{Resolve $\vec{B}$ into components}
-We find the components of $\vec{B}$ by using known trigonometric ratios. First we find the magnitude of the vertical component, $B_y$:
-\begin{eqnarray*}
-\sin{\theta} & = & \frac{B_y}{B} \\
-\sin{53,13^\circ} & = &\frac{B_y}{5}\\
-B_y & = & (5)(\sin{53,13^\circ})\\
- & = & 4\emm
-\end{eqnarray*}
-
-Secondly we find the magnitude of the horizontal component, $B_x$:
-\begin{eqnarray*}
-\cos{\theta} &=& \frac{B_x}{B} \\
-\cos{21,8^\circ} &=& \frac{B_x}{5,385}\\
-B_x & = & (5,385) (\cos{53,13^\circ})\\
-& = & 5\emm
-\end{eqnarray*}
-
-\begin{center}
-\begin{pspicture}(4.6,1.4)(8.6,6.4)
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(5,2)(8,6)
-\pcline[offset=8pt]{|-|}(5,2)(8,6)
-\lput*{:U}{5 m}
-\psline[linestyle=dashed,arrowscale=2]{->}(5,2)(8,2)
-\pcline[offset=-8pt]{|-|}(5,2)(8,2)
-\lput*{:U}{3 m}
-\psline[linestyle=dashed,arrowscale=2]{->}(8,2)(8,6)
-\pcline[offset=-8pt]{|-|}(8,2)(8,6)
-\lput*{:U}{4 m}
-%Right angle in corner (8,2)
-\psline[linestyle=dashed,arrowscale=2](7.7,2)(7.7,2.3)
-\psline[linestyle=dashed,arrowscale=2](7.7,2.3)(8,2.3)
-\end{pspicture}
-\end{center}
-
-\westep{Determine the components of the resultant vector}
-Now we have all the components. If we add all the horizontal components then
-we will have the $x$-component of the resultant vector, $\vec{R}_x$.  Similarly, we add all the vertical components then we will have the $y$-component of the resultant vector, $\vec{R}_y$.
-\begin{eqnarray*}
-R_x &=& A_x+B_x\\
-&=&5\emm + 3\emm\\
-&=&8\emm
-\end{eqnarray*}
-Therefore, $\vec{R}_x$ is 8 m to the right.
-\begin{eqnarray*}
-R_y &=& A_y+B_y\\
-&=&2\emm + 4\emm\\
-&=&6\emm
-\end{eqnarray*}
-Therefore, $\vec{R}_y$ is 6 m up.
-
-\westep{Determine the magnitude and direction of the resultant vector}
-Now that we have the components of the resultant, we can use the Theorem of Pythagoras to determine the magnitude of the resultant, $R$.
-\begin{eqnarray*}
-R^2&=&(R_x)^2 + (R_y)^2\\
-R^2&=&(6)^2 + (8)^2\\
-R^2&=&100\\
-\therefore R&=&10\emm
-\end{eqnarray*}
-
-\begin{center}
-\begin{pspicture}(-1,-0.4)(8.4,7)
-%\psgrid[gridcolor=lightgray]
-\psline[arrowscale=2]{->}(0,0)(8,6)
-\pcline[offset=-8pt]{|-|}(0,0)(8,6)
-\lput*{:U}{10 m}
-
-\psline[linestyle=dashed,arrowscale=2]{->}(0,0)(0,6)
-\psline[linestyle=dashed,arrowscale=2]{->}(-.5,0)(-0.5,2)
-\psline[linestyle=dashed,arrowscale=2]{->}(-0.5,2)(-0.5,6)
-\pcline[offset=8pt]{|-|}(-.5,0)(-0.5,6)
-\lput*{:U}{6 m}
-
-\psline[linestyle=dashed,arrowscale=2]{->}(0,6)(8,6)
-\psline[linestyle=dashed,arrowscale=2]{->}(0,6.5)(5,6.5)
-\psline[linestyle=dashed,arrowscale=2]{->}(5,6.5)(8,6.5)
-\pcline[offset=8pt]{|-|}(0,6.5)(8,6.5)
-\lput*{:U}{8 m} 
-
-%Right angle in corner (0,6)
-\psline[linestyle=dashed,arrowscale=2](0,5.7)(0.3,5.7)
-\psline[linestyle=dashed,arrowscale=2](0.3,5.7)(0.3,6)
-\psline[linestyle=dashed,arrowscale=2](0,0)(4,0)
-\rput(0.7,0.25){$\alpha$}
-\psarc{->}(0,0){1}{0}{36.8}
-\end{pspicture}
-\end{center}
-
-The magnitude of the resultant, $R$ is 10 m.  So all we have to do is calculate its direction. We can specify the direction as the angle the vectors makes with a known direction. To do this you only need to visualise the vector as starting at the origin of a coordinate system. We have drawn this explicitly below and the angle we will calculate is labelled $\alpha$.
-
-Using our known trigonometric ratios we can calculate the value of $\alpha$;
-\begin{eqnarray*}
-\tan \alpha & = & \frac{6 \emm}{8\emm} \\
-\alpha & = & \tan^{-1} \frac{6\emm}{8\emm}\\
-\alpha & = & 36,8^o.
-\end{eqnarray*}
-\westep{Quote the final answer}
-$\vec{R}$ is 10 m at an angle of $36,8^\circ$ to the positive $x$-axis.}
-\end{wex}
-
-\begin{exercises}{Adding and Subtracting Components of Vectors}
-\noindent\vspace{-1cm}
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
-\item Harold stap skool toe deur 600m noordoos en dan 500m N $40^o$ W te stap. Bepaal sy resulterende verplasing as die som van die komponente van sy vektore.
-\item  'n Duif vlieg van haar nes af om haar kuiken te soek. Sy vlieg teen  'n snelheid van 2 \ms met  'n bearing 135${^\circ}$ en dan teen  'n snelheid van 1,2 \ms met 'n bearing 230${^\circ}$. Bereken haar resulterende snelheid deur die horisontale en vertikale komponente van haar vektore op te tel.
-\end{enumerate}
-
-\par \practiceinfo
- \par \begin{tabular}[h]{cc}
- (1.) 0090  &  (2.) 0091   & \end{tabular}
-\end{exercises}
+% \subsection{Vektoroptelling met behulp van komponente}
+% Komponente kan ook gebruik word om die resultante te bepaal. Ons kan hierdie metode vir sowel grafiese as algebraïese metodes om die resultante te bepaal, gebruik. Die metode is eenvoudig: maak  'n rowwe skets van die probleem, kry die horisontale en vertikale komponent van elke vektor, bereken die som van al die horisontale komponente en daarna van al die vertikale komponente en gebruik hulle dan om die resultante te kry.
+% 
+% Kyk na hierdie twee vektore, $\vec{A}$ en $\vec{B}$, in Figuure~\ref{fig:p:v:components:addition:vectors}, met hul resultante, $\vec{R}$. 
+% 
+% \begin{figure}[!htbp]
+% \begin{center}
+% \scalebox{0.7}
+% {
+% \begin{pspicture}(0,0)(8,6)%%\psgrid
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(5,2)
+% \pcline[offset=-8pt,linestyle=none](0,0)(5,2)
+% \lput{:U}{$\vec{A}$}
+% \psline[arrowscale=2]{->}(5,2)(8,6)
+% \pcline[offset=-8pt,linestyle=none](5,2)(8,6)
+% \lput{:U}{$\vec{B}$}
+% \psline[arrowscale=2,linewidth=2pt]{->}(0,0)(8,6)
+% \pcline[offset=8pt,linestyle=none](0,0)(8,6)
+% \lput{:U}{$\vec{R}$}
+% \end{pspicture}
+% }
+% \end{center}
+% \caption{An example of two vectors being added to give a resultant}
+% \label{fig:p:v:components:addition:vectors}
+% \end{figure}
+% 
+% Elke vektor in Figuur~\ref{fig:p:v:components:addition:vectors} kan opgebreek word in een komponent in die $x$-rigting (horisontaal) en een in die $y$-direction (vertical). rigting (vertikaal). Hierdie komponente is twee vektore wat bymekaargetel kan word om die oorspronklike vektor as die resultante te gee. As jy na Figuur~\ref{fig:p:v:components:addition:vectors:components} kyk sal jy sien dat:
+% 
+% \begin{minipage}{0.5\textwidth}
+% \begin{eqnarray*}
+% \vec{A}&=&\vec{A}_x+\vec{A}_y\\
+% \vec{B}&=&\vec{B}_x+\vec{B}_y\\
+% \vec{R}&=&\vec{R}_x+\vec{R}_y\\
+% \end{eqnarray*}
+% \end{minipage}
+% \begin{minipage}{0.5\textwidth}
+% \begin{eqnarray*}
+% \mbox{But,}\quad \vec{R}_x&=&\vec{A}_x+\vec{B}_x\\
+% \mbox{and}\quad\vec{R}_y&=&\vec{A}_y+\vec{B}_y\\
+% \end{eqnarray*}
+% \end{minipage}
+% 
+% Om op te som: deur die $x$ komponente van die twee oorspronklike vektore bymekaar te tel, kry ons die $x$ komponent van die resultante. Dieselfde is waar vir die $y$ komponente. As ons daarom al die komponente bymekaar tel, sal ons dieselfde antwoord kry. Hierdie is  'n belangrike eienskap van vektore.
+% 
+% \begin{figure}[H]
+% \begin{center}
+% \scalebox{1}
+% {
+% \begin{pspicture}(-1,-0.6)(8.6,7)
+% %\psgrid[gridcolor=lightgray]
+% %A
+% \psline[arrowscale=2]{->}(0,0)(5,2)
+% \pcline[offset=-8pt,linestyle=none](0,0)(5,2)
+% \lput{:U}{$\vec{A}$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,0)(5,0)(5,2)	%components of A
+% \pcline[offset=-8pt,linestyle=none](0,0)(5,0)
+% \lput{:U}{$\vec{A}_x$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,6.5)(5,6.5)
+% \pcline[offset=8pt,linestyle=none](0,6.5)(5,6.5)
+% \lput{:U}{$\vec{A}_x$}
+% \pcline[offset=-8pt,linestyle=none](5,0)(5,2)
+% \lput{:U}{$\vec{A}_y$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(-0.5,0)(-0.5,2)
+% \pcline[offset=8pt,linestyle=none](-0.5,0)(-0.5,2)
+% \lput{:U}{$\vec{A}_y$}
+% %Right angle in corner! (5,0)
+% \psline[linestyle=dashed,arrowscale=2](4.7,0)(4.7,0.3)
+% \psline[linestyle=dashed,arrowscale=2](4.7,0.3)(5.,0.3)
+% %B
+% \psline[arrowscale=2]{->}(5,2)(8,6)
+% \pcline[offset=-8pt,linestyle=none](5,2)(8,6)
+% \lput{:U}{$\vec{B}$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(5,2)(8,2)(8,6)	%components of B
+% \pcline[offset=-8pt,linestyle=none](5,2)(8,2)
+% \lput{:U}{$\vec{B}_x$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(5,6.5)(8,6.5)
+% \pcline[offset=8pt,linestyle=none](5,6.5)(8,6.5)
+% \lput{:U}{$\vec{B}_x$}
+% \pcline[offset=-8pt,linestyle=none](8,2)(8,6)
+% \lput{:U}{$\vec{B}_y$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(-0.5,2)(-0.5,6)
+% \pcline[offset=8pt,linestyle=none](-0.5,2)(-0.5,6)
+% \lput{:U}{$\vec{B}_y$}
+% %Right angle in corner (8,2)
+% \psline[linestyle=dashed,arrowscale=2](7.7,2)(7.7,2.3)
+% \psline[linestyle=dashed,arrowscale=2](7.7,2.3)(8,2.3)
+% %R
+% \psline[arrowscale=2,linewidth=2pt]{->}(0,0)(8,6)
+% \pcline[offset=8pt,linestyle=none](0,0)(8,6)
+% \lput{:U}{$\vec{R}$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,0)(0,6)(8,6)	%components of B
+% \pcline[offset=-8pt,linestyle=none](0,6)(8,6)
+% \lput{:U}{$\vec{R}_x$}
+% \pcline[offset=-8pt,linestyle=none](0,0)(0,6)
+% \lput{:U}{$\vec{R}_y$}
+% %Right angle in corner (0,6)
+% \psline[linestyle=dashed,arrowscale=2](0,5.7)(0.3,5.7)
+% \psline[linestyle=dashed,arrowscale=2](0.3,5.7)(0.3,6)
+% \end{pspicture}
+% }
+% \end{center}
+% \caption{Adding vectors using components.}
+% \label{fig:p:v:components:addition:vectors:components}
+% \end{figure}
+% To find the resultant we note that $R=\sqrt{R_{x}^{2} + R_{y}^{2}}$. To find the angle we use $\theta = tan^{-1} (\frac{R_{y}}{R_{x}})$.
+% \begin{wex}{Adding Vectors Using Components}{If in Figure~\ref{fig:p:v:components:addition:vectors:components}, $\vec{A}=5,385\emm$ at an angle of 21.8$^\circ$ to the horizontal and $\vec{B}=5\emm$ at an angle of 53,13$^\circ$ to the horizontal, find $\vec{R}$.\\}{
+% \westep{Decide how to tackle the problem} 
+% The first thing we must realise is that the order that we add the vectors does not matter. Therefore, we can work through the vectors to be added in any order.
+% 
+% \westep{Resolve $\vec{A}$ into components}
+% We find the components of $\vec{A}$ by using known trigonometric ratios. First we find the magnitude of the vertical component, $A_y$:
+% \begin{eqnarray*}
+% \sin \theta &=& \frac{A_y}{A} \\
+% \sin{21,8^\circ} &=& \frac{A_y}{5,385}\\
+% A_y &=& (5,385)(\sin{21,8^\circ})\\
+%  &=& 2\emm
+% \end{eqnarray*}
+% 
+% Secondly we find the magnitude of the horizontal component, $A_x$:
+% \begin{eqnarray*}
+% \cos \theta &=& \frac{A_x}{A} \\
+% \cos{21.8^\circ} &=& \frac{A_x}{5,385}\\
+% A_x &=& (5,385) (\cos{21,8^\circ})\\
+%  &=& 5\emm
+% \end{eqnarray*}
+% 
+% \begin{center}
+% \begin{pspicture}(-0.2,-0.6)(5.6,2.4)%%\psgrid
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(5,2)
+% \pcline[offset=8pt]{|-|}(0,0)(5,2)
+% \lput*{:U}{5,385 m}
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,0)(5,0)
+% \pcline[offset=-8pt]{|-|}(0,0)(5,0)
+% \lput*{:U}{5 m}
+% \psline[linestyle=dashed,arrowscale=2]{->}(5,0)(5,2)
+% \pcline[offset=-8pt]{|-|}(5,0)(5,2)
+% \lput*{:U}{2 m}
+% %Right angle in corner! (5,0)
+% \psline[linestyle=dashed,arrowscale=2](4.7,0)(4.7,0.3)
+% \psline[linestyle=dashed,arrowscale=2](4.7,0.3)(5.,0.3)
+% \end{pspicture}
+% \end{center}
+% 
+% The components give the sides of the right angle triangle, for which the original vector, $\vec{A}$, is the hypotenuse. 
+% 
+% \westep{Resolve $\vec{B}$ into components}
+% We find the components of $\vec{B}$ by using known trigonometric ratios. First we find the magnitude of the vertical component, $B_y$:
+% \begin{eqnarray*}
+% \sin{\theta} & = & \frac{B_y}{B} \\
+% \sin{53,13^\circ} & = &\frac{B_y}{5}\\
+% B_y & = & (5)(\sin{53,13^\circ})\\
+%  & = & 4\emm
+% \end{eqnarray*}
+% 
+% Secondly we find the magnitude of the horizontal component, $B_x$:
+% \begin{eqnarray*}
+% \cos{\theta} &=& \frac{B_x}{B} \\
+% \cos{21,8^\circ} &=& \frac{B_x}{5,385}\\
+% B_x & = & (5,385) (\cos{53,13^\circ})\\
+% & = & 5\emm
+% \end{eqnarray*}
+% 
+% \begin{center}
+% \begin{pspicture}(4.6,1.4)(8.6,6.4)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(5,2)(8,6)
+% \pcline[offset=8pt]{|-|}(5,2)(8,6)
+% \lput*{:U}{5 m}
+% \psline[linestyle=dashed,arrowscale=2]{->}(5,2)(8,2)
+% \pcline[offset=-8pt]{|-|}(5,2)(8,2)
+% \lput*{:U}{3 m}
+% \psline[linestyle=dashed,arrowscale=2]{->}(8,2)(8,6)
+% \pcline[offset=-8pt]{|-|}(8,2)(8,6)
+% \lput*{:U}{4 m}
+% %Right angle in corner (8,2)
+% \psline[linestyle=dashed,arrowscale=2](7.7,2)(7.7,2.3)
+% \psline[linestyle=dashed,arrowscale=2](7.7,2.3)(8,2.3)
+% \end{pspicture}
+% \end{center}
+% 
+% \westep{Determine the components of the resultant vector}
+% Now we have all the components. If we add all the horizontal components then
+% we will have the $x$-component of the resultant vector, $\vec{R}_x$.  Similarly, we add all the vertical components then we will have the $y$-component of the resultant vector, $\vec{R}_y$.
+% \begin{eqnarray*}
+% R_x &=& A_x+B_x\\
+% &=&5\emm + 3\emm\\
+% &=&8\emm
+% \end{eqnarray*}
+% Therefore, $\vec{R}_x$ is 8 m to the right.
+% \begin{eqnarray*}
+% R_y &=& A_y+B_y\\
+% &=&2\emm + 4\emm\\
+% &=&6\emm
+% \end{eqnarray*}
+% Therefore, $\vec{R}_y$ is 6 m up.
+% 
+% \westep{Determine the magnitude and direction of the resultant vector}
+% Now that we have the components of the resultant, we can use the Theorem of Pythagoras to determine the magnitude of the resultant, $R$.
+% \begin{eqnarray*}
+% R^2&=&(R_x)^2 + (R_y)^2\\
+% R^2&=&(6)^2 + (8)^2\\
+% R^2&=&100\\
+% \therefore R&=&10\emm
+% \end{eqnarray*}
+% 
+% \begin{center}
+% \begin{pspicture}(-1,-0.4)(8.4,7)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(8,6)
+% \pcline[offset=-8pt]{|-|}(0,0)(8,6)
+% \lput*{:U}{10 m}
+% 
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,0)(0,6)
+% \psline[linestyle=dashed,arrowscale=2]{->}(-.5,0)(-0.5,2)
+% \psline[linestyle=dashed,arrowscale=2]{->}(-0.5,2)(-0.5,6)
+% \pcline[offset=8pt]{|-|}(-.5,0)(-0.5,6)
+% \lput*{:U}{6 m}
+% 
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,6)(8,6)
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,6.5)(5,6.5)
+% \psline[linestyle=dashed,arrowscale=2]{->}(5,6.5)(8,6.5)
+% \pcline[offset=8pt]{|-|}(0,6.5)(8,6.5)
+% \lput*{:U}{8 m} 
+% 
+% %Right angle in corner (0,6)
+% \psline[linestyle=dashed,arrowscale=2](0,5.7)(0.3,5.7)
+% \psline[linestyle=dashed,arrowscale=2](0.3,5.7)(0.3,6)
+% \psline[linestyle=dashed,arrowscale=2](0,0)(4,0)
+% \rput(0.7,0.25){$\alpha$}
+% \psarc{->}(0,0){1}{0}{36.8}
+% \end{pspicture}
+% \end{center}
+% 
+% The magnitude of the resultant, $R$ is 10 m.  So all we have to do is calculate its direction. We can specify the direction as the angle the vectors makes with a known direction. To do this you only need to visualise the vector as starting at the origin of a coordinate system. We have drawn this explicitly below and the angle we will calculate is labelled $\alpha$.
+% 
+% Using our known trigonometric ratios we can calculate the value of $\alpha$;
+% \begin{eqnarray*}
+% \tan \alpha & = & \frac{6 \emm}{8\emm} \\
+% \alpha & = & \tan^{-1} \frac{6\emm}{8\emm}\\
+% \alpha & = & 36,8^o.
+% \end{eqnarray*}
+% \westep{Quote the final answer}
+% $\vec{R}$ is 10 m at an angle of $36,8^\circ$ to the positive $x$-axis.}
+% \end{wex}
+% 
+% \begin{exercises}{Adding and Subtracting Components of Vectors}
+% \noindent\vspace{-1cm}
+% \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+% \item Harold stap skool toe deur 600m noordoos en dan 500m N $40^o$ W te stap. Bepaal sy resulterende verplasing as die som van die komponente van sy vektore.
+% \item  'n Duif vlieg van haar nes af om haar kuiken te soek. Sy vlieg teen  'n snelheid van 2 \ms met  'n bearing 135${^\circ}$ en dan teen  'n snelheid van 1,2 \ms met 'n bearing 230${^\circ}$. Bereken haar resulterende snelheid deur die horisontale en vertikale komponente van haar vektore op te tel.
+% \end{enumerate}
+% 
+% \par \practiceinfo
+%  \par \begin{tabular}[h]{cc}
+%  (1.) 0090  &  (2.) 0091   & \end{tabular}
+% \end{exercises}
 
 \summary{VPgig}
 \begin{itemize}
