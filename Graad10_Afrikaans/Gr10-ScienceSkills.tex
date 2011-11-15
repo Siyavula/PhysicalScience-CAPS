@@ -469,8 +469,19 @@ Jy moet ook weet hoe om jou data te interpreteer. As jy byvoorbeeld  'n tabel wa
 Hierdie lys bevat van die meer algemene apparaat wat jy in  'n laboratorium sal gebruik. Jy moet die naam van die apparaat ken en ook  'n eenvoudige skets daarvan kan maak.
 \begin{table}[H]
  \begin{center}
-  \begin{tabular}{|l|m{3cm}|m{3cm}|}\hline
-   \textbf{Item} & \textbf{Photo} & \textbf{Sketch} \\ \hline
+\tablefirsthead{%
+\hline
+   \textbf{Item} & \textbf{Photo} & \textbf{Sketch} \\ \hline}
+\tablehead{%
+\hline
+   \textbf{Item} & \textbf{Photo} & \textbf{Sketch} \\ \hline}
+\tabletail{%
+\hline
+\multicolumn{3}{|r|}{\small\sl continued on next page}\\
+\hline}
+\tablelasttail{\hline}
+  \begin{supertabular}{|l|m{3cm}|m{3cm}|}\hline
+%    \textbf{Item} & \textbf{Photo} & \textbf{Sketch} \\ \hline
 Beaker & \includegraphics[width=.2\textwidth]{photos/beaker.jpg} & \scalebox{.4}{\begin{pspicture}(0,0)(5,5) \pstTubeEssais[glassType=becher] \end{pspicture}} \\ \hline
 Flask & \includegraphics[width=.05\textheight]{photos/flask.JPG} & \scalebox{.4}{\begin{pspicture}(0,0)(5,5) \pstTubeEssais[glassType=erlen] \end{pspicture}} \\ \hline
 Test tubes & \includegraphics[width=.2\textwidth]{photos/testtubes.jpg} & \scalebox{.4}{\begin{pspicture}(0,0)(5,5) \pstTubeEssais \end{pspicture}} \\ \hline
@@ -532,9 +543,9 @@ Funnel & \includegraphics[width=.1\textwidth]{photos/funnel.jpg} & \scalebox{.4}
 \psline[linewidth=0.04cm](0.86,-0.97)(0.86,-1.15)
 \end{pspicture} 
 } \\ \hline
-  \end{tabular} 
+  \end{supertabular} 
  \end{center}
-\end{table}
+% \end{table}
 
 Die volgende skets wys die korrekte opstelling van die bunsenbrander om vloeistowwe te verhit:\\
 \includegraphics[width=.3\textwidth]{photos/beaker_tripod.jpg}\\
