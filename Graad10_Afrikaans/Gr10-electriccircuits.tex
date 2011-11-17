@@ -9,19 +9,22 @@ moet dit rondstoot. Dit beteken dat arbeid verrig moet word om lading te
 beweeg. 'n Krag werk in op die lading en verrig arbeid om die lading te beweeg.
 Die krag word voorsien deur die battery in die stroombaan.
 
- 'n Battery het die potensiaal om ladings om 'n geslote stroombaan te dryf. Die
+'n Battery het die potensiaal om ladings om 'n geslote stroombaan te dryf. Die
 battery het potensi\"ele energie wat omgeskakel kan word na elektriese energie
-deur arbeid te verrig op die lading in die stroombaan om dit te laat beweeg.\\
-
+deur arbeid te verrig op die lading in die stroombaan om dit te laat beweeg.
 \chapterstartvideo{VPfqj}
+
+\Definition{Potensiaalverskil}{Potensiaalverskil is die verskil in elektriese
+potensi\"ele energie per eenheidlading tussen twee punte. Die eenhede van
+potensiaalverskil is die Volt (V), wat gedefinieer word as een joule per
+coulomb.\\
+Simbool: V\hspace{2cm} Eenheid: V\hspace{2cm} S.I. Eenhede: $\text{J} \cdot
+\text{C}^{-1}$}
 
 \subsection*{Voltmeter}
 \begin{minipage}{.5\textwidth}
  'n Voltmeter is 'n instrument om die arbeid te meet wat nodig is om lading
-tussen twee punte in 'n elektriese stroombaan te dryf. Ons noem dit die
-potensiaalverskil omdat die arbeid verrig die verskil is tussen die potensi\"ele
-energie van die twee punte.
-
+tussen twee punte in 'n elektriese stroombaan te dryf. 
 % This would read better in the enlish version if it was rephrased as follows: A voltmeter is an instrument 
 % for measuring the work done to drive charge between two points in an electric circuit. We call this the 
 % potential difference because the work done is the difference in the potential energy of the two points.
@@ -109,12 +112,6 @@ een pool deur die stroombaan tot by die ander pool te dryf.
 % through something.
 
 
-\Definition{Potensiaalverskil}{Potensiaalverskil is die verskil in elektriese
-potensi\"ele energie per eenheidlading tussen twee punte. Die eenhede van
-potensiaalverskil is die Volt (V), wat gedefinieer word as een joule per
-coulomb.\\
-Simbool: V\hspace{2cm} Eenheid: V\hspace{2cm} S.I. Eenhede: $\text{J} \cdot
-\text{C}^{-1}$}
 
 \IFact{Die Volt is vernoem na die Italiaanse fisikus Alessandro Volta
 (1745--1827).} 
@@ -509,7 +506,7 @@ verskaf deur wyer of ho\"er gemaak te word kan meer stroom daardeur vloei. As
 die totale oppervlak waardeur die stroom vloei (deursnit-area) vergroot word
 met 'n sekere faktor, dan word die weerstand laer met dieselfde faktor.
 \end{itemize}
-\textbf{Uitbreiding:}Vir 'n enkele weerstand kan dit soos volg opgesom word:
+\textbf{Uitbreiding:} Vir 'n enkele weerstand kan dit soos volg opgesom word:
 \begin{equation*}
  R\propto\frac{L}{A},
 \end{equation*} waar $L$ die lengte en $A$ die deursnit-area is.
@@ -531,19 +528,33 @@ weerstande in 'n stroombaan op die \textit{totale} weerstand van die baan is en
 op die stroom wat in die baan kan vloei.
 
 
-\section{Potensiaalverskil en serie-weerstande}
+\section{Serie-weerstande}
+
+\begin{mdframed}
+Wanneer ons weerstande in serie in 'n stroombaan sit: 
+\begin{itemize}
+ \item is daar net een pad waarin die stroom kan vloei, dus \textbf{is die stroom dieselfde op elke punt in die stroombaan}.
+ \item die potensiaalverskil word \textbf{gedeel} oor die weerstande. Die potensiaal oor die battery in die stroombaan is gelyk aan die som van die weerstande in serie.
+\begin{equation*}
+ \boxed{V_{battery}=V_1+V_2+\ldots}
+\end{equation*}
+\item Die weerstand teen die vloei van die stroom \textbf{vermeerder}. Die totale weerstand, $R_S$ word gegee deur:
+\begin{equation*}
+ \boxed{R_S = R_1+R_2+\ldots}
+\end{equation*}
+\end{itemize}
+\end{mdframed}
+
+Ons sal elkeen van hierdie eienskappe van serie stroombane in meer detail bestudeer.
 
 Wanneer daar weerstande in serie is, een na die ander, is daar 'n
 potensiaalverskil oor elke weerstand. Die totale potensiaalverskil oor 'n
 versameling weerstande in serie is die som van die potensiaalverskille oor
 elkeen van die weerstande in die versameling.
-% Hierdie is dieselfde as om 'n groot afstand te val onder gravitasie of
-% dieselfde afstand in kleiner stappe. Die totale afstand (verskil) is
-% dieselfde.
+\begin{equation*}
+ \box{V_{battery}=V_1+V_2+\ldots}
+\end{equation*}
 
-% This is the same as falling a large distance under gravity or falling that
-% same distance (difference) in many smaller steps. The total distance
-% (difference) is the same.
 
 Beskou die stroombane hieronder. As ons die potensiaalverskille tussen al die
 swart kolletjies in die stroombane meet, sal dit dieselfde wees as wat ons
@@ -701,27 +712,8 @@ oor die individuele weerstande.
 \end{pspicture}
 \end{center}
 
-% \subsection*{Ohm se wet}
-% 
-% Die spanning is die verandering in potensi\"ele energie  of die arbeid verrig
-% wanneer ladings beweeg tussen twee punte in die strooombaan. Hoe groter die
-% weerstand, hoe meer arbeid moet verrig word. Die arbeid verrig of spanning
-% hang dus af van die weerstand. Die potensiaalverskil is eweredig aan die
-% weerstand.
-
-% \Definition{Ohm se wet}{Die spanning oor 'n komponent is eweredig aan
-% die weerstand van die komponent.}
-
-% Gebruik die feit dat spanning eweredig is aan weerstand om te bereken
-% watter gedeelte van die totale spanning in die stroombaan oor elke stroombaan
-% element gevind word.
-
-\subsubsection*{Weerstande in serie}
-Wanneer ons weerstande in serie by 'n stroombaan voeg, dan \textit{verhoog} ons
-die weerstand teen die vloei van stroom. Daar is net \textbf{een pad} waardeur
-die stroom kan vloei en die stroom is dieselfde oral in die serie-stroombaan.
 Beskou die figuur hieronder. Aan die linkerkant is 'n stroombaan met 'n enkele
-weerstand en 'n battery. Aan die regterkant het ons 'n tweede weerstand in serie
+weerstand en 'n battery. \textbf{Die stroom is dieselfde orals in 'n serie-stroombaan}. Aan die regterkant het ons 'n tweede weerstand in serie
 bygevoeg. Die \textit{totale} weerstand van die stroombaan het \textit{verhoog}
 en jy kan uit die ammeterlesing sien dat die stroom in die baan afgeneem het.
 
@@ -1013,7 +1005,23 @@ R_S &= R_1 + R_2\\
 Die totale weerstand van die weerstande in serie is $2,45~M\Omega$.}\end{wex}
 
 
-\section{Potensiaalverskil en weerstande in parallel}
+\section{Weerstande in parallel}
+
+
+\begin{mdframed}
+Wanneer ons weerstande in parallel plaas in 'n stroombaan:
+\begin{itemize}
+ \item is daar meer as een pad vir stroom om te volg, dus \textbf{verdeel die stroom oor die verskillende paaie}.
+ \item Die spanning is \textbf{dieselfde} oor die weerstande. Die spanning oor die battery in die stroombaan is dieselfde as die spanning oor elkeen van die parallelle weerstande.
+\begin{equation*}
+ \boxed{V_{battery}=V_1=V_2=V_3\ldots}
+\end{equation*}
+\item Die weerstand tot die vloei van stroom \textbf{verminder}. Die totale weerstand, $R_P$ word gegee deur:
+\begin{equation*}
+ \boxed{\frac{1}{R_P} = \frac{1}{R_1}+\frac{1}{R_2}+\ldots}
+\end{equation*}
+\end{itemize}
+\end{mdframed}
 
 Wanneer weerstande in parallel gekoppel word is die begin en eindpunte vir al
 die weerstande dieselfde. Hierdie punte het almal dieselfde potensi\"ele
@@ -1327,7 +1335,6 @@ V_{battery} = V_{totaal} = V_{1}
 \begin{equation*}
 V_{1} = 2\rm{V}
 \end{equation*}}\end{wex}
-\clearpage
 
 \begin{wex}{Spannings II}{
 Beskou die volgende stroombaan:\\
@@ -1506,7 +1513,6 @@ V_{battery} &=& V_{parallel} + V_{bekend}\\
 \end{eqnarray*}}\end{wex}
 
 
-\subsubsection*{Weerstande in parallel}
 In teenstelling met die seriegeval, wanneer ons weerstande in parallel toevoeg,
 skep ons \textbf{meer paaie} waardeur stroom kan vloei. Sodoende
 \textit{verminder} ons die totale weerstand van die stroombaan!
@@ -1818,7 +1824,7 @@ R_P&=\frac{R_1R_2}{R_1+R_2}\\
 \end{align*}
 \westep{Skryf die finale resultaat neer}
 Die effektiewe parallelweerstand is $4,77~\Omega$.}\end{wex}
-
+\clearpage
 \begin{wex}{Parallelweerstande II}{%
 Ons voeg 'n derde weerstand by die konfigurasie (opstelling) in die vorige
 voorbeeld. Die ekstra weerstand het 'n waarde van $3~\Omega$. \\
@@ -1858,13 +1864,19 @@ het ons:
 \begin{align*}
 \frac{1}{R_P}&=\frac{1}{R_1}+\frac{1}{R_2}+\ldots \\
 &\text{daar is drie weerstande}\\
+\end{align*}
+\begin{align*}
 \frac{1}{R_P}&=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}\\
 &\text{sommeer die breuke}\\
+\end{align*}
+\begin{align*}
 \frac{1}{R_P}&=\frac{1}{R_1}\times\frac{R_2R_3}{R_2R_3}+\frac{1}{R_2}\times\frac
 {R_1R_3}{R_1R_3}+\frac{1}{R_3}\times\frac{R_1R_2}{R_1R_2}\\ 
 \frac{1}{R_P}&=\frac{R_2R_3}{R_1R_2R_3}+\frac{R_1R_3}{R_1R_2R_3}+\frac{R_1R_2}{
 R_1R_2R_3}\\ 
 &\text{herrangskik}\\
+\end{align*}
+\begin{align*}
 \frac{1}{R_P}&=\frac{R_2R_3+R_1R_3+R_2R_3}{R_1R_2R_3}\\ 
 R_P&=\frac{R_1R_2R_3}{R_2R_3+R_1R_3+R_2R_3}\\ 
 R_P&=\frac{(15~\Omega)(7~\Omega)(3~\Omega)}{
@@ -2205,9 +2217,30 @@ geleier per sekonde?
 \item{e/It}
 \end{enumerate}}
 
+
+\item As jy 'n stroombaan het wat bestaan uit 4 weerstande in serie van gelyke weerstand en die totale spanning oor almal is 17~V, wat is die spanning oor elkeen?
+
+\item As jy 'n stroombaan het wat bestaan uit 4 weerstande in parallel van gelyke weerstand en die totale spanning oor almal is 17~V, wat is die spanning oor elkeen?
+
+\item In 'n stroombaan wat bestaan uit 'n battery en 3 weerstande in serie, wat is die spanning oor die eerste weerstand as die spanning oor die battery 12~V is en die spanning oor die ander twee weerstande 3~V en 2~V is?
+
+\item Daar is 3 weerstande in parallel met weerstande van 3~$\Omega$, 4~$\Omega$ en 11~$\Omega$.  Wat is die totale weerstand van die parallelle kombinasie?
+
+\item Dieselfde 3 weerstande as in die vorige vraag word nou in serie gekoppel. Wat is die totale weerstand van die serie kombinasie?
+
+\item Die totale weerstand van twee weerstande in parallel is 3~$\Omega$, Die een weerstand se waarde is 5~$\Omega$. Wat is die weerstand van die ander een?
+
+\item In 'n serie stroombaan is daar 3 weerstande wat spannings van 2~V, 5~V and 8~V oor hulle het, wat is die spanning oor die battery in die stroombaan?
+
+\item In 'n parallel stroombaan is daar 3 weerstande met spannings van 2~V, 2~V and 2~V oor hulle, wat is die spanning oor die battery in die stroombaan?
+
+
+
 \end{enumerate}
 \par \practiceinfo
  \par \begin{tabular}[h]{cccccc}
- (1.) 006y  &  (2.) 006z  &  (3.) 0070  &  (4.) 0071  &  (5.) 0072  &  (6.) 0073  &  (7.) 0074   \end{tabular}
+ (1.) 006y  &  (2.) 006z  &  (3.) 0070  &  (4.) 0071  &  (5.) 0072  &  (6.) 0073 \\
+ (7.) 0074  &  (8.) aaa   &  (9.) aaa   &  (10.) aaa  &  (11.) aaa  &  (12.) aaa \\
+ (13.) aaa  & (14.) aaa   &  (15.) aaa \end{tabular}
 \end{eocexercises}
 
