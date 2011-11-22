@@ -8,11 +8,14 @@
 
 \usepackage{extsizes}
    
-   \newenvironment{toc}%
-    {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
-    \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
-    \setlength{\partopsep}{0cm}}
-    {\end{description}}
+%    \newenvironment{toc}%
+%     {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
+%     \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
+%     \setlength{\partopsep}{0cm}}
+%     {\end{description}}
+
+\usepackage{tocloft}
+\setlength{\cftsecnumwidth}{3em}
 
     \newenvironment{indexheading}%
     {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
@@ -507,7 +510,7 @@ linecolor=red%
 \newenvironment{eocexercises}[1]
 {
 \eocexercisesheading
-\addcontentsline{toc}{section}{Einde van hoofstuk oefeninge}
+% \addcontentsline{toc}{section}{Einde van hoofstuk oefeninge}
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
@@ -1082,7 +1085,7 @@ linecolor=red%
 }
 \par
 \vspace{\baselineskip}
-\addcontentsline{toc}{section}{Opsomming}
+% \addcontentsline{toc}{section}{Opsomming}
 
 Sien die opsommings aandbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Aanbieding: #1 by www.everythingscience.co.za)
 
