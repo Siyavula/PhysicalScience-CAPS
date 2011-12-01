@@ -8,11 +8,11 @@
 
 \usepackage{extsizes}
    
-%    \newenvironment{toc}%
-%     {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
-%     \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
-%     \setlength{\partopsep}{0cm}}
-%     {\end{description}}
+%   \newenvironment{toc}%
+%    {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
+%    \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
+%    \setlength{\partopsep}{0cm}}
+%    {\end{description}}
 
 \usepackage{tocloft}
 \setlength{\cftsecnumwidth}{3em}
@@ -35,9 +35,9 @@
     \usepackage[paper=a4paper, 
       lmargin=0.1\paperwidth, rmargin=0.25\paperwidth, 
       tmargin=1in, bmargin=1in,
-      twoside, centering,
+      twoside, centering, 
       includehead, marginsep=3mm, marginparwidth=0.225\paperwidth ]{geometry}
-    \usepackage{fmtcount}
+
     \usepackage{layouts}
     \usepackage{multicol}
     \usepackage{amsmath} %for \underset, \overset, and more?
@@ -85,6 +85,7 @@
     \sffamily
     \pagestyle{headings}
     \usepackage{latex/chemfig}
+    \usepackage{fmtcount}
     
     \usepackage[utf8x]{inputenc}
     \usepackage[C40,T1]{fontenc}
@@ -177,7 +178,7 @@
 \newcommand{\eW}{\,\text{W}}                %W in equation
 \newcommand{\ms}{$\text{m}\cdot\text{s}^{-1}$}                %m/s in text
 \newcommand{\mss}{$\text{m}\cdot\text{s}^{-2}$}                %m/s in text
-\newcommand{\ems}{\,\text{m} \cdot \text{s}^{-1}}            %m/s in equation
+\newcommand{\ems}{\,\text{m} \cdot \text{s}^{-1}}}            %m/s in equation
 \newcommand{\emss}{\,\text{m} \cdot \text{s}^{-2}}            %m/s in equation
 \newcommand{\px}{$x$}                % position x, in text
 \newcommand{\py}{$y$}                % position y, in text
@@ -188,7 +189,7 @@
 \newcommand{\edt}{\Delta t}            % delta time dt, in text
 \newcommand{\dt}{$\edt$}            % delta time dt, in text
 \newcommand{\vel}{$v$}                % velocity
-\newcommand{\kph}{km$\cdot$h$^{-1}$}    %km/h in text
+\newcommand{\kph}{km$\cdot$hr$^{-1}$}    %km/h in text
 \newcommand{\momen}{\vec{p}}            %momentum
 \newcommand{\kener}{KE}                            %kinetic energy
 \newcommand{\poten}{PE}                            %kinetic energy
@@ -205,27 +206,17 @@
 
 
 
-
-
-%change some names
-\renewcommand{\figurename}{Figuur}
-\renewcommand{\tablename}{Tabel}
-\renewcommand{\chaptername}{Hoofstuk}
-\renewcommand{\contentsname}{Inhoud}
-#
-
-
 \newcommand{\chapterstartvideo}[1]{
-Sien inleidende video: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #1 by www.everythingscience.co.za)\par
+See introductory video: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #1 at www.everythingscience.co.za)\par
 }
 
 \newcommand{\simulation}[2]{
-Sien simulasie:  (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulasie: #2 by www.everythingscience.co.za) \par
+See simulation: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulation: #2 at www.everythingscience.co.za) \par
 }
 
 
 \newcommand{\mindsetvid}[2]{
-\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Sien video: #2 by www.everythingscience.co.za \par
+\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} See video: #2 at www.everythingscience.co.za \par
 }
 
 
@@ -233,7 +224,7 @@ Sien simulasie:  (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.
 \marginpar{%odd
 \begin{minipage}[m]{0.225\paperwidth}
 \begin{mdframed}[linecolor=black, linewidth=1.0pt,leftmargin=15pt, rightmargin=15pt]
-\textbf{\textit{FEIT}}
+\textbf{\textit{FACT}}
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt, leftmargin=15pt, rightmargin=15pt]
 \small #1
@@ -244,9 +235,9 @@ Sien simulasie:  (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.
 
 \newcommand{\practiceinfo}[0]{
 \par\vspace*{2em}
-\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/aplus.pdf}} Meer oefening 
-\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/video.pdf}} video oplossings 
-\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/help.pdf}} of hulp by www.everythingscience.co.za
+\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/aplus.pdf}} More practice 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/video.pdf}} video solutions 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/help.pdf}} or help at www.everythingscience.co.za
 \vspace*{2em}
 }
 
@@ -255,7 +246,7 @@ Sien simulasie:  (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.
 \vspace*{10pt}
 \leftskip20pt
 \rightskip20pt
-{\Large\textsl{DEFINISIE: } \textit{#1}}
+{\Large\textsl{DEFINITION: } \textit{#1}}
 
 \par
 #2
@@ -278,7 +269,7 @@ skipabove=\baselineskip]%
 \marginpar{%odd
 \begin{minipage}[m]{0.225\paperwidth}
 \begin{mdframed}[linecolor=black, linewidth=1.0pt, leftmargin=15pt, rightmargin=15pt]
-\textbf{\textit{WENK}}
+\textbf{\textit{Tip}}
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt,leftmargin=15pt, rightmargin=15pt]
 \small #1
@@ -292,13 +283,14 @@ skipabove=\baselineskip]%
 linecolor=red%
 ]
 %\begin{mdframed}[linewidth=2pt,linecolor=red]%
+\vspace{3mm}
 \begin{center}
 \noindent%
-\textbf{WAARSKUWING:}\par
+\textbf{Warning:}\par
 #1
 \end{center}
 \end{mdframed}
-\vspace{2mm}}
+\vspace{3mm}}
 
 
 \newcommand{\Note}[1]{
@@ -306,7 +298,7 @@ linecolor=red%
 \begin{minipage}[h]{0.225\paperwidth}
 
 \begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, leftmargin=15pt, rightmargin=15pt]
-\textbf{\textit{LET WEL}}
+\textbf{\textit{Note}}
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray,leftmargin=15pt, rightmargin=15pt, skipabove=-4pt]
 \small #1
@@ -322,36 +314,36 @@ linecolor=red%
 
     \setlength{\parindent}{0pt}
 
-%   
-%       \newenvironment{note}[1]%
-%       {\begin{list}{}{%
-%	\setlength{\labelsep}{0pt}\setlength{\rightmargin}{20pt}%
-%       \setlength{\leftmargin}{20pt}%
-%       \setlength{\labelwidth}{0pt}\setlength{\listparindent}{0pt}}%
-%       \item\textbf{\textsc{#1}}}%
-%       {\end{list}}
+    
+	\newenvironment{note}[1]%
+	{\begin{list}{}{%
+ 	\setlength{\labelsep}{0pt}\setlength{\rightmargin}{20pt}%
+        \setlength{\leftmargin}{20pt}%
+	\setlength{\labelwidth}{0pt}\setlength{\listparindent}{0pt}}%
+        \item\textbf{\textsc{#1}}}%
+	{\end{list}}
 
-% 
+  
 
-%   \newenvironment{cnxcaption}%
-%       {\begin{list}{}{%
-%	\setlength{\labelsep}{0pt}\setlength{\rightmargin}{25pt}%
-%       \setlength{\leftmargin}{25pt}%
-%       \setlength{\labelwidth}{0pt}\setlength{\listparindent}{0pt}}%
-%       \item}%
-%       {\end{list}}
+    \newenvironment{cnxcaption}%
+	{\begin{list}{}{%
+ 	\setlength{\labelsep}{0pt}\setlength{\rightmargin}{25pt}%
+        \setlength{\leftmargin}{25pt}%
+	\setlength{\labelwidth}{0pt}\setlength{\listparindent}{0pt}}%
+        \item}%
+	{\end{list}}
 
-%       \newenvironment{example}{%
-%         \noindent
-%         \begingroup
-%         \leftskip=20pt\rightskip=\leftskip
-%       }{%
-%         \vspace{\rubberspace}\par
-%         \endgroup
-%       }
+        \newenvironment{example}{%
+          \noindent
+          \begingroup
+          \leftskip=20pt\rightskip=\leftskip
+        }{%
+          \vspace{\rubberspace}\par
+          \endgroup
+        }
 
-%       %\newenvironment{exercise}{\begin{example}}
-%       %{\end{example}}
+        %\newenvironment{exercise}{\begin{example}}
+        %{\end{example}}
 
 % Inserted by MH to get step number etc. to work nicely
 % My attempt to define a worked example environment
@@ -368,9 +360,9 @@ linecolor=red%
 {\par \vspace{3mm}%\pagebreak[1]
 \leftskip20pt
 \noindent
-\textit{Stap \arabic{stepcounter}} : \textit{\textbf{#1}}
+\textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}
 \par\noindent
-\leftskip40pt
+\leftskip50pt
 \addtocounter{stepcounter}{1}}
 
 \definecolor{siyavula-gray}{RGB}{242,242,242}
@@ -391,24 +383,24 @@ linecolor=red%
 
 
 \begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt, innertopmargin=8pt, innerbottommargin=6pt, skipbelow=0pt]
-{\Large\textbf{\textit{Voorbeeld \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{-2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=10pt]
-{\large\textbf{\textit{PROBLEEM}}} \vspace*{4pt} 
+{\large\textbf{\textit{QUESTION}}} \vspace*{4pt} 
 \hrule
 \vspace*{18pt}
 \noindent
 \textit{\noindent #2}
-\vspace*{18pt}
+\vspace*{28pt}
 \par\noindent
-\textbf{\large\textit{OPLOSSING}}\vspace*{4pt}
+{\large\textbf{\textit{SOLUTION}}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
 \noindent
  #3%
-\vspace*{18pt}
+\vspace*{28pt}
 \hrule
 \addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
 %\vspace{.25cm}
@@ -442,44 +434,44 @@ linecolor=red%
 
 
 
-%   \newenvironment{wex2}[3]
-%   {% This is a picture at the beginning, a line or bar or something else
-%   % this command puts a bar in the margin and sets the bar width
-%   % Now we set margins
-%   % \begin{center}
-%   %\pagebreak
-%   %\begin{flushleft}
-%   %\begin{pspicture}(0,0)(10,0.01)
-%   % \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
-%   % \psline[linecolor=gray]{-}(0,0)(0,-2)
-%   %\end{pspicture}
-%   %\end{flushleft}
-%   %\end{center}
-%   \begin{quotation}
-%   \noindent
-%   \vspace{.5cm}
-%   \setlength{\parindent}{0pt}
-%   %% Title and counter
-%   \rput(-2.0,0){\pspencil}\noindent
-%   \begin{mdframed}[linewidth=2,linecolor=black,backgroundcolor=lightgray]
-%   \textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
-%   #1}\par
-%   \textbf{Question:} #2\par
-%   \textbf{Answer}\par #3%
-%   \addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
-%   \par%\vspace{.25cm}
-%   }%
-%   {%
-%   \end{mdframed}
-%   \end{quotation}
-%   %\nopagebreak[4]
-%   \begin{flushright}
-%   %\begin{pspicture}(0,0)(10,0.01)
-%   % \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
-%   % \psline[linecolor=gray]{-}(10,0)(10,2)
-%   %\end{pspicture}
-%   \end{flushright}
-%   \setlength{\parindent}{\saveparindentlength}}
+\newenvironment{wex2}[3]
+{% This is a picture at the beginning, a line or bar or something else
+% this command puts a bar in the margin and sets the bar width
+% Now we set margins
+% \begin{center}
+%\pagebreak
+%\begin{flushleft}
+%\begin{pspicture}(0,0)(10,0.01)
+% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
+% \psline[linecolor=gray]{-}(0,0)(0,-2)
+%\end{pspicture}
+%\end{flushleft}
+%\end{center}
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+%% Title and counter
+\rput(-2.0,0){\pspencil}\noindent
+\begin{mdframed}[linewidth=2,linecolor=black,backgroundcolor=lightgray]
+\textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
+#1}\par
+\textbf{Question:} #2\par
+\textbf{Answer}\par #3%
+\addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
+\par%\vspace{.25cm}
+}%
+{%
+\end{mdframed}
+\end{quotation}
+%\nopagebreak[4]
+\begin{flushright}
+%\begin{pspicture}(0,0)(10,0.01)
+% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
+% \psline[linecolor=gray]{-}(10,0)(10,2)
+%\end{pspicture}
+\end{flushright}
+\setlength{\parindent}{\saveparindentlength}}
 
 %EZ new counters for exercises, 
 \newcounter{exercisecounter}
@@ -491,16 +483,20 @@ linecolor=red%
 
 \newenvironment{exercises}[1]
 {
+
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
-\par
+
 \exercisesheading
+
+%\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
 \setlength{\parindent}{0pt}
 %\vspace{\baselineskip}
 %\textbf{\textit{Exercises:}
 %#1}
+\par
 }%
 {%
 \end{quotation}
@@ -511,7 +507,6 @@ linecolor=red%
 \newenvironment{eocexercises}[1]
 {
 \eocexercisesheading
-% \addcontentsline{toc}{section}{Einde van hoofstuk oefeninge}
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
@@ -525,51 +520,51 @@ linecolor=red%
 \setlength{\parindent}{\saveparindentlength}
 }
 
-%   \newenvironment{f_experiment_deprecated}[1]
-%   {
-%   \begin{quotation}
-%   \begin{mdframed}[linewidth=2pt,linecolor=darkgray]
-%   \noindent
-%   \vspace{.5cm}
-%   \setlength{\parindent}{0pt}
-%   \textbf{\textit{Formal Experiment:}
-%   #1}\par
-%   }%
-%   {%
-%   \end{mdframed}
-%   \end{quotation}
-%   \setlength{\parindent}{\saveparindentlength}}
+\newenvironment{f_experiment_deprecated}[1]
+{
+\begin{quotation}
+\begin{mdframed}[linewidth=2pt,linecolor=darkgray]
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Formal Experiment:}
+#1}\par
+}%
+{%
+\end{mdframed}
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
 
 
-%   \newenvironment{i_experiment_deprecated}[1]
-%   {
-%   \begin{quotation}
-%   \begin{mdframed}[linewidth=2pt,linecolor=lightgray]
-%   \noindent
-%   \vspace{.5cm}
-%   \setlength{\parindent}{0pt}
-%   \textbf{\textit{Informal Experiment:}
-%   #1}\par
-%   }%
-%   {%
-%   \end{mdframed}
-%   \end{quotation}
-%   \setlength{\parindent}{\saveparindentlength}}
+\newenvironment{i_experiment_deprecated}[1]
+{
+\begin{quotation}
+\begin{mdframed}[linewidth=2pt,linecolor=lightgray]
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Informal Experiment:}
+#1}\par
+}%
+{%
+\end{mdframed}
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
 
-%   \newenvironment{g_experiment_deprecated}[1]
-%   {
-%   \begin{quotation}
-%   \begin{mdframed}[linewidth=2pt,linecolor=lightgray]
-%   \noindent
-%   \vspace{.5cm}
-%   \setlength{\parindent}{0pt}
-%   \textbf{\textit{General Experiment:}
-%   #1}\par
-%   }%
-%   {%
-%   \end{mdframed}
-%   \end{quotation}
-%   \setlength{\parindent}{\saveparindentlength}}
+\newenvironment{g_experiment_deprecated}[1]
+{
+\begin{quotation}
+\begin{mdframed}[linewidth=2pt,linecolor=lightgray]
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{General Experiment:}
+#1}\par
+}%
+{%
+\end{mdframed}
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
 
 \newenvironment{f_experiment}[1]{
 \par
@@ -581,11 +576,14 @@ linecolor=red%
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
 \setlength{\parindent}{0pt}
+
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
+
+
 \begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
 \vspace*{8pt}
-{\Large\textbf{\textit{Formele eksperiment:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Formal experiment:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{2pt}
@@ -598,6 +596,7 @@ linecolor=red%
 \setlength{\parindent}{\oldparindent}
 \setlength{\floatsep}{\myfloatsep}
 \par
+
 }
 
 \newenvironment{i_experiment}[1]{
@@ -618,7 +617,7 @@ linecolor=red%
 
 \begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
 \vspace*{8pt}
-{\Large\textbf{\textit{Informele eksperiment:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Informal experiment:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{2pt}
@@ -647,7 +646,7 @@ linecolor=red%
 {\clearpage\vspace*{-\topskip}}{} 
 \begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
 \vspace*{8pt}
-{\Large\textbf{\textit{Algemene eksperiment:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{General experiment:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{2pt}
@@ -682,7 +681,7 @@ linecolor=red%
         \draw[color=white, draw=black, linewidth=1pt] (0,0) rectangle
           (0.2\textwidth, 28pt);
        \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
-              { \bfseries ~ \color{black} Aktiwiteit:};
+              { \bfseries ~ \color{black} Activity:};
        \end{tikzpicture}
     };
     
@@ -717,7 +716,7 @@ linecolor=red%
 \setlength{\parindent}{0pt}
 \hrule width \textwidth height 1pt\\
 \vspace{1pt}\hrule width \textwidth height 1pt\vspace{7pt}
-\textbf{\Large\textit{Groepbespreking:}
+\textbf{\Large\textit{Group Discussion:}
 #1}
 \vspace{5pt}
 \hrule width \textwidth height 1pt
@@ -762,7 +761,7 @@ linecolor=red%
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{Projek:}
+\textbf{\textit{Project:}
 #1}\par
 }%
 {%
@@ -786,13 +785,12 @@ linecolor=red%
 
 \begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
 \vspace*{8pt}
-{\Large\textbf{\textit{Ondersoek:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Investigation:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
 \begin{quotation}
-\noindent
 }%
 {%
 \end{quotation}
@@ -805,34 +803,34 @@ linecolor=red%
 
 
 
-%   \newenvironment{Investigation_old}[1]
-%   {
-%   \begin{quotation}
-%   \noindent
-%   \vspace{.5cm}
-%   \setlength{\parindent}{0pt}
-%   \textbf{\textit{Investigation:}
-%   #1}\par
-%   }%
-%   {%
-%   \end{quotation}
-%   \setlength{\parindent}{\saveparindentlength}}
+\newenvironment{Investigation_old}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Investigation:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
 
 
 
 
-%           \newenvironment{cnxrule}{\begin{example}}
-%           {\end{example}}
+        \newenvironment{cnxrule}{\begin{example}}
+        {\end{example}}
 
-%   \newenvironment{exercise}{\textbf{\par Needs to be changed to wex environment\par}\begin{example}}
-%           {\end{example}}
+\newenvironment{exercise}{\textbf{\par Needs to be changed to wex environment\par}\begin{example}}
+        {\end{example}}
 
 
-%           \newenvironment{definition}{\begin{example}}
-%           {\end{example}}
+        \newenvironment{definition}{\begin{example}}
+        {\end{example}}
 
-%           \newenvironment{listname}{\vspace{\rubberspace}\par\noindent{}}{\vspace*{0pt}
-%           \nopagebreak}
+        \newenvironment{listname}{\vspace{\rubberspace}\par\noindent{}}{\vspace*{0pt}
+        \nopagebreak}
 
     \newcommand{\lessthan}{\ensuremath{<}}
     \newcommand{\greatthan}{\ensuremath{>}}
@@ -906,14 +904,11 @@ linecolor=red%
     \fancyfoot[C]{}
     \fancyfoot[LE,RO]{\thepage}
 
+
 % same page footer on chapter pages
     \fancypagestyle{plain}{%
     \fancyfoot[C]{}
     \fancyfoot[LE,RO]{\thepage}}
-
-
-
-
 
 
 
@@ -1003,6 +998,7 @@ linecolor=red%
       \end{tikzpicture}
       };
    \end{tikzpicture}
+\setcounter{workedexamplecounter}{1}
   }
 \titlespacing*{\chapter}{1.5cm}{1cm}{1cm}
 
@@ -1021,13 +1017,13 @@ linecolor=red%
           (1.5\paperwidth,2.0cm);
         \node[anchor=west,text centered ,yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth]
               {
-              \begin{minipage}{0.85\textwidth}
+              \begin{minipage}{0.6\textwidth}
               \raggedright
-              \color{black} #1
+              \color{black}#1
               \end{minipage}
               };
         \node[anchor=east,text centered, yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth+1.025\textwidth]
-              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~ESD\ABAlph{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~ESA\ABAlph{shortcodecounter}};
                \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -1054,7 +1050,7 @@ linecolor=red%
                 \end{minipage}
                 };
         \node[anchor=east,text centered, yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth+\textwidth]
-              {\Large\color{black}\raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~ESD\ABAlph{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~ESA\ABAlph{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -1074,7 +1070,7 @@ linecolor=red%
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (1.2\paperwidth,2cm);
         \node[anchor=west,text centered ,yshift=1.cm, xshift=0.3\paperwidth]
-              {  \phantom{xxx} \color{black} Hoofstuk \chapterlabel | Opsomming};
+              {  \phantom{xxx} \color{black} Chapter \chapterlabel | Summary  };
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -1082,16 +1078,15 @@ linecolor=red%
 }
 \par
 \vspace{\baselineskip}
-% \addcontentsline{toc}{section}{Opsomming}
 
-Sien die opsommings aanbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Aanbieding: #1 by www.everythingscience.co.za)
+See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Presentation: #1 at www.everythingscience.co.za)
 
 }
 
 
 \newcommand{\exercisesheading}{
 \addtocounter{exercisecounter}{1}
-\vspace*{3\baselineskip}
+ \par  \vspace*{3\baselineskip}
 {  \fontsize{12}\bfseries\itshape
 \begin{tikzpicture}[remember picture,overlay]
     \node[anchor=west ,text centered]
@@ -1099,7 +1094,7 @@ Sien die opsommings aanbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{.
         \draw[color=white, draw=black, line width=1pt] (0,0) rectangle
           (0.3\textwidth, 28pt);
        \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
-              { \bfseries ~ \color{black} Oefening \chapterlabel~-~\arabic{exercisecounter}   };
+              { \bfseries ~ \color{black} Exercise \chapterlabel~-~\arabic{exercisecounter}   };
        \end{tikzpicture}
     };
     
@@ -1109,10 +1104,14 @@ Sien die opsommings aanbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{.
         \draw[fill=white, color=white] (0,0) rectangle
           (0.655\textwidth,28pt);
        \end{tikzpicture}
+
+
       };
    \end{tikzpicture}
 
 }
+\par
+\vspace{\baselineskip}
 }
 
 
@@ -1126,7 +1125,7 @@ Sien die opsommings aanbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{.
         \draw[color=white, draw=black, very thick] (0,0) rectangle
           (0.3\textwidth,1.5cm);
        \node[anchor=west, yshift=0.75cm, text centered]
-              { ~~  \color{black} Hoofstuk \chapterlabel };
+              { ~~  \color{black} Chapter \chapterlabel };
        \end{tikzpicture}
     };
     
@@ -1136,7 +1135,7 @@ Sien die opsommings aanbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{.
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (0.69\textwidth,1.5cm);
             \node[anchor=west, yshift=0.75cm, text centered]
-              {   \color{black} Einde van hoofstuk oefeninge};
+              {   \color{black} End of chapter exercises };
 
        \end{tikzpicture}
 
