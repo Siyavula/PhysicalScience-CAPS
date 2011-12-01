@@ -37,7 +37,7 @@
       tmargin=1in, bmargin=1in,
       twoside, centering,
       includehead, marginsep=3mm, marginparwidth=0.225\paperwidth ]{geometry}
-
+    \usepackage{fmtcount}
     \usepackage{layouts}
     \usepackage{multicol}
     \usepackage{amsmath} %for \underset, \overset, and more?
@@ -207,10 +207,12 @@
 
 
 
-%change some namew
+%change some names
 \renewcommand{\figurename}{Figuur}
 \renewcommand{\tablename}{Tabel}
-
+\renewcommand{\chaptername}{Hoofstuk}
+\renewcommand{\contentsname}{Inhoud}
+#
 
 
 \newcommand{\chapterstartvideo}[1]{
@@ -1029,7 +1031,7 @@ linecolor=red%
               \end{minipage}
               };
         \node[anchor=east,text centered, yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth+1.025\textwidth]
-              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~ESD\ABAlph{shortcodecounter}};
                \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -1056,7 +1058,7 @@ linecolor=red%
                 \end{minipage}
                 };
         \node[anchor=east,text centered, yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth+\textwidth]
-              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
+              {\Large\color{black}\raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~ESD\ABAlph{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
