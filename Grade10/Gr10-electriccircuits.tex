@@ -10,7 +10,7 @@ A battery has the potential to drive charge round a closed circuit, the battery 
 % \Definition{Potential Difference}{Potential difference is the difference in electrical potential energy per unit charge between two points. The units of potential difference are the volt (V) which is defined as one joule per coulomb.\\
 % Symbol: V\hspace{1cm} Unit: V\hspace{2cm} S.I. Units: $\text{J} \cdot \text{C}^{-1}$}
 \Definition{Potential Difference}{Potential difference is the work done per unit charge, $\frac{W}{q}$. The units of potential difference are the volt (V) which is defined as one joule per coulomb.\\
-Quantity: Potential difference (V) \hspace{1cm} Unit name: volt\hspace{1cm} Unit symbol: $V$}
+Quantity: Potential difference (V) \hspace{.8cm} Unit name: volt\hspace{.8cm} Unit symbol: $V$} \vspace{-1cm}
 \subsection*{Voltmeter}
 \begin{minipage}{.5\textwidth}
 A voltmeter is an instrument for measuring the potential difference between two 
@@ -32,7 +32,7 @@ The symbol for a voltmeter is:
 \begin{minipage}{.5\textwidth}
 \begin{center}
 A voltmeter\\
-\includegraphics[width=.8\textwidth]{photos/volts_windy__Flickr.jpg}\\
+\includegraphics[width=.6\textwidth]{photos/volts_windy__Flickr.jpg}\\
 \textit{Photography by windy\_ on Flickr.com}
 \end{center}
 \end{minipage}
@@ -134,6 +134,17 @@ If you push one marble into the tube one must come out the other side, if a trai
 The idea is that if a battery started to drive charge in a circuit all the charges start moving instantaneously.
 % This is due to the conservation of charge which we've already seen in \textsl{Electrostatics}.
  \end{minipage}
+\IFact{Benjamin Franklin made a guess about the
+direction of charge flow when rubbing smooth wax with rough wool.
+He thought that the charges flowed from the wax to the wool (i.e.\@{}
+from positive to negative) which was opposite to the real
+direction. Due to this, electrons are said to have a
+\emph{negative} charge and so objects which Ben Franklin called
+``negative'' (meaning a shortage of charge) really have an excess
+of electrons. By the time the true direction of electron flow was
+discovered, the convention of ``positive'' and ``negative'' had
+already been so well accepted in the scientific world that no
+effort was made to change it.}
 \begin{minipage}{.5\textwidth}
 \begin{center}
 \textbf{Copper wire}\\
@@ -142,7 +153,7 @@ The idea is that if a battery started to drive charge in a circuit all the charg
 \end{center}  
 \end{minipage}
 
-\Definition{Current}{Current is the rate at which charges moves past a fixed point in a circuit. The units of current are the ampere (A) which is defined as one coulomb per second.\\
+\Definition{Current}{Current is the rate at which charges moves past a fixed point in a circuit. The units of current are the ampere (A) which is defined as one coulomb per second.\\    
 Quantity: Current (I) \hspace{1cm} Unit name: ampere\hspace{1cm} Unit symbol: A}
 
 \begin{minipage}{.5\textwidth}
@@ -162,18 +173,6 @@ When current flows in a circuit we show this on a diagram by adding arrows. The 
 
 If the voltage is high enough a current can be driven through almost anything. In the plasma ball example on the left, a voltage is created that is high enough to get charge to flow through the gas in the ball. The voltage is very high but the resulting current is very low. This makes it safe to touch.
 \end{minipage}
-\IFact{Benjamin Franklin made a guess about the
-direction of charge flow when rubbing smooth wax with rough wool.
-He thought that the charges flowed from the wax to the wool (i.e.\@{}
-from positive to negative) which was opposite to the real
-direction. Due to this, electrons are said to have a
-\emph{negative} charge and so objects which Ben Franklin called
-``negative'' (meaning a shortage of charge) really have an excess
-of electrons. By the time the true direction of electron flow was
-discovered, the convention of ``positive'' and ``negative'' had
-already been so well accepted in the scientific world that no
-effort was made to change it.}
-
 
 
 
@@ -186,12 +185,13 @@ current flowing \textit{through} a circuit component, the ammeter
 must be connected in \textit{series} with the measured circuit
 component.
 \begin{center}
+\scalebox{.8}{
 \begin{pspicture}(0,0)(3,3)
 %\psgrid
 \pnode(0,0){A} \pnode(0,2.5){B} \pnode(3,2.5){C} \pnode(3,0){D}
 \battery[tension,dipoleconvention=generator](A)(B){$I$} \circledipole[labeloffset=0](B)(C){A}
 \resistor[intensity,dipolestyle=rectangle](D)(C){} \wire[tension,arrowscale=2](D)(A)
-\end{pspicture}
+\end{pspicture}}
 \label{fig:p:em:ec10:ammeter}
 \end{center}
 \end{minipage}
@@ -200,7 +200,7 @@ component.
 \textbf{Ammeter}\\
 %\includegraphics[width=.8\textwidth]{photos/ammeter_by_Hillwalker-ca_flickr.jpg}\\
 %\includegraphics[width=.8\textwidth]{photos/type2ammeter.jpg}\\
-\includegraphics[width=.8\textwidth]{photos/ammeter.jpg}\\
+\includegraphics[width=.6\textwidth]{photos/ammeter.jpg}\\
 %\textit{Photography by Hillwalker-ca on Flickr.com}
 \end{center}  
 \end{minipage}
@@ -251,14 +251,15 @@ Experiment with different combinations of components in the circuits.
 
 %\end{minipage}
 \end{activity}
-\Tip{A battery \textbf{does not} produce the same amount of
-current no matter what is connected to it. While the voltage
-produced by a battery is constant, the amount of current supplied
-depends on what is in the circuit.}
 
 The table below summarises the use of each measuring instrument
 that we discussed and the way it should be connected to a circuit
 component.
+
+\Tip{A battery \textbf{does not} produce the same amount of
+current no matter what is connected to it. While the voltage
+produced by a battery is constant, the amount of current supplied
+depends on what is in the circuit.}
 
 \begin{center}
 \begin{tabular}{ | c | c | c | }
@@ -407,7 +408,6 @@ energy into other forms of \textbf{heat} energy. \textbf{Light} energy is a by-p
 called a \textbf{superconductor} that has no resistance, but the
 materials that make up all known superconductors only start superconducting
 at very low temperatures. The ``highest'' temperature superconductor is mercury barium calcium copper oxide (HgBa$_2$Ca$_2$Cu$_3$O$_x$) which is superconducting for temperatures of -140$^{o}$~C and colder.}
-
 \subsubsection{Physical attributes affecting resistance [NOT IN CAPS]}
 
 The physical attributes of a resistor affect its total resistance.
@@ -415,7 +415,7 @@ The physical attributes of a resistor affect its total resistance.
  \item \textbf{Length}: if a resistor is increased in length its resistance will increase. Typically if you increase the length of a resistor by a certain factor you will increase the resistance by the same factor.
 \item \textbf{Width and height or cross-sectional area}: if a resistor provides a larger pathway by being made wider or broader then more current can flow through it. If the total surface area through which current flows (cross-sectional area) is increased by a factor the resistance typically decreases by the same factor. 
 \end{itemize}
-\textbf{Extension:}For a single resistor this can be summarised as
+\textbf{Extension:} For a single resistor this can be summarised as
 \begin{equation*}
  R\propto\frac{L}{A},
 \end{equation*} where $L$ is the length and $A$ is the cross-sectional area.
@@ -592,7 +592,7 @@ Let us look at this in a bit more detail. In the picture below you can see what 
 Consider the diagram below. On the left there is a circuit with a single resistor and a battery. \textbf{No matter where we measure the current, it is the same in a series circuit}. On the right, we have added a second resistor in series to the circuit. The \textit{total} resistance of the circuit has \textit{increased} and you can see from the reading on the ammeter that the current in the circuit has decreased.
 
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-2.43)(15.033594,2.43)
 \psline[linewidth=0.04cm](8.128563,-0.127)(9.108562,-0.127)
@@ -1149,11 +1149,12 @@ V_{battery} = V_{total} = V_{1}
 \begin{equation*}
 V_{1} = 2V
 \end{equation*}}\end{wex}
-\clearpage
 
+\vspace{-1cm}
 \begin{wex}{Voltages II}{
 Consider this circuit:\\
 \begin{center}
+\scalebox{.8}{
 \begin{pspicture}(-3,-0.5)(3,3.5)
 %\psgrid
 \pnode(0,0){A}
@@ -1168,7 +1169,7 @@ Consider this circuit:\\
 % draw resistors
 \resistor[dipolestyle=rectangle](A)(D){$V_{B}=1$V}
 \resistor[dipolestyle=rectangle](C)(D){$V_{A}$}
-\end{pspicture}\end{center}\\
+\end{pspicture}}\end{center}\\
 What is the voltage across the unknown resistor in the circuit shown?
 }%
 {%
@@ -1199,9 +1200,10 @@ V_{battery} &= V_{1} + V_{resistor}\\
  V_{1} &=  1V
 \end{align*}}\end{wex}
 
+
 \begin{wex}{Voltages III}{
-Consider the circuit diagram:
-\begin{pspicture}(-3,-0.5)(4,3.5)
+Consider the circuit diagram:\\
+\scalebox{.8}{\begin{pspicture}(-3,-0.5)(4,3.5)
 \pnode(0,0){A}
 \pnode(0,3){B}
 \pnode(3,3){C}
@@ -1216,16 +1218,14 @@ Consider the circuit diagram:
 \resistor[dipolestyle=rectangle](A)(D){$V_{C}=4$V}
 \resistor[dipolestyle=rectangle](D)(C){$V_{B}$}
 \resistor[dipolestyle=rectangle](B)(C){$V_{A}=1$V}
-\end{pspicture}\\
+\end{pspicture}}\\
 What is the voltage across the unknown resistor in the circuit shown?
 }%
-{
+{ \vspace{-.5cm}
 \westep{Check what you have and the units}
 We have a circuit with a battery and three resistors. We know the voltage across the battery and two of the resistors. We want to find that voltage across the unknown resistor.
-\begin{equation*}
-V_{battery} = 7V
-\end{equation*}
 \begin{eqnarray*}
+V_{battery} &=& 7V\\
 V_{known} &=& V_{A}+V_{C}\\
           &=& 1V + 4V
 \end{eqnarray*}
@@ -1234,18 +1234,18 @@ V_{known} &=& V_{A}+V_{C}\\
 We know that the voltage across the battery must be equal to the total voltage across all other circuit components that are in series. 
 \begin{equation*}
 V_{battery} = V_{total}
-\end{equation*}
+\end{equation*} \\
 The total voltage in the circuit is the sum of the voltages across the individual resistors
 \begin{equation*}
 V_{total} = V_{B} + V_{known}
 \end{equation*}
 Using the relationship between the voltage across the battery and total voltage across the resistors
 \begin{eqnarray*}
-V_{battery} &=& V_{total}
+V_{battery} &=& V_{total}\\
 V_{battery} &=& V_{B} + V_{known}\\
 7V & = & V_{B} + 5V \\
  V_{B} & = & 2V
-\end{eqnarray*}}\end{wex}
+\end{eqnarray*}\vspace{-.5cm}}\end{wex}
 
 \begin{wex}{Voltages IV}{
 Consider the circuit diagram:\\
@@ -1310,7 +1310,7 @@ In contrast to the series case, when we add resistors in parallel, we create \te
 Take a look at the diagram below. On the left we have the same circuit as in the previous section with a battery and a resistor. The ammeter shows a current of 1~A. On the right we have added a second resistor in parallel to the first resistor. This has increased the number of paths (branches) the charge can take through the circuit - the total resistance has decreased. You can see that the current in the circuit has increased. Also notice that the current in the different branches can be different.
 
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-2.84)(15.3203125,2.84)
 \rput(11.470312,-2.235){Adding a resistor to the circuit in}
@@ -1408,12 +1408,14 @@ Let us consider the case where we have two resistors in parallel and work out wh
 Applying the formula for the total resistance we have:
 \begin{align*}
 \frac{1}{R_P}&=\frac{1}{R_1}+\frac{1}{R_2}+\ldots \\
-&\text{there are only two resistors}\\
+&\text{There are only two resistors}\\
 \frac{1}{R_P}&=\frac{1}{R_1}+\frac{1}{R_2}\\
-&\text{add the fractions}\\
+&\text{Add the fractions}\\
 \frac{1}{R_P}&=\frac{1}{R_1}\times\frac{R_2}{R_2}+\frac{1}{R_2}\times\frac{R_1}{R_1}\\ 
 \frac{1}{R_P}&=\frac{R_2}{R_1R_2}+\frac{R_1}{R_1R_2}\\ 
-&\text{rearrange}\\
+\end{align*}
+\begin{align*}
+&\text{Rearrange}\\
 \frac{1}{R_P}&=\frac{R_2+R_1}{R_1R_2}\\ 
 \frac{1}{R_P}&=\frac{R_1+R_2}{R_1R_2}\\ 
 R_P&=\frac{R_1R_2}{R_1+R_2}\\ 
@@ -1644,7 +1646,7 @@ R_P&=1,84~\Omega
 The total resistance of the resistors in parallel is $1,84~\Omega$. It makes sense that this is less than in the previous example because we added an additional path and reduced the overall resistance in the circuit.}\end{wex}
 
 When calculating the resistance for complex resistor configurations, you can start with any combination of two resistors (in series or parallel) and calculate their total resistance. Then you can replace them with a single resistor that has the total resistance you calculated. Now use this new resistor in combination with any other resistor and repeat the process until there is only one resistor left. In the above example we could just have used the answer from the first example in parallel with the new resistor and we would get the same answer. 
-
+\nopagebreak \vspace{-1cm}
 \begin{wex}{Parallel resistors III}{%
 We add a third parallel resistor to the first parallel worked example configuration (setup). The additional resistor has a resistance of $3~\Omega$. \\
 \begin{center}
@@ -1831,17 +1833,16 @@ Resistance ($R$) & ohm & $\Omega$ \\ \hline
 \label{table:electrostatics::units}
 \end{table}
 
-
-
 \begin{eocexercises}{Electric circuits}
-
+\vspace{-1cm}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item{ Write definitions for each of the following:
   \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
   \item resistor
   \item coulomb
   \item voltmeter
-  \end{enumerate}}
+  \end{enumerate}
+}
 
 \item{ Draw a circuit diagram which consists of the following components:
   \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
@@ -1883,6 +1884,7 @@ Potential difference  &   &   &  \\ \hline
 \item{[IEB 2005/11 HG] Three identical light bulbs A, B and C are connected in an electric circuit as shown in the diagram below.
 
 \begin{center}
+\scalebox{1}{
 \begin{pspicture}(0,0)(6,5)
 \SpecialCoor
 %\psgrid[gridcolor=lightgray]
@@ -1900,7 +1902,7 @@ Potential difference  &   &   &  \\ \hline
 \lamp(D)(E){C}
 \psline(E)(A)
 \lamp(C)(F){B}
-\end{pspicture}
+\end{pspicture}}
 \end{center}
 \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
 \item {How bright is bulb A compared to B and C?}
@@ -1925,7 +1927,8 @@ Potential difference  &   &   &  \\ \hline
 \item{It/e}
 \item{Ite}
 \item{e/It}
-\end{enumerate}}
+\end{enumerate}
+}
 
 \item If you have a circuit consisting of 4 resistors of equal resistance in series and the total voltage across all of them is 17~V, what is the voltage across each of them?
 

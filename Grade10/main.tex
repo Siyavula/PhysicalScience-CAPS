@@ -1,13 +1,13 @@
-\documentclass[9pt, openany]{extbook}
+\documentclass[10pt, openany]{extbook}
 
-%\usepackage{pdfpages}
+\usepackage{pdfpages}
  \include{preamble}    
 
 
 
 \begin{document}
-%    \raggedbottom
-    %\bibliographystyle{plain} 
+    \raggedbottom
+   %\bibliographystyle{plain} 
     
    % \catcode`\^^J=10 %ignore line feeds since they mean nothing to XML
    % \catcode`\^^M=10 %ignore carriage returns since they mean nothing to XML
@@ -15,25 +15,26 @@
 
   %  \include{titlepages}
 
-%\frontmatter
-%   \includepdf[pages=1]{../covers/PhScGr10.pdf}
-%    \include{EverythingScienceTitlePages}   
-%    \tableofcontents
-%    \mainmatter
-%    \renewcommand{\sectionmark}[1]{\markright{\thesection}{}}
-%    \renewcommand{\footrulewidth}{0.4pt}
-%    \newpage
+\frontmatter
+   \includepdf[pages=1]{../covers/science-gr10-front.pdf}
+\includepdf{fhsst_periodic_table_tikz_EN_BW.pdf}
+    \include{EverythingScienceTitlePages}   
+    \tableofcontents
+    \mainmatter
+    \renewcommand{\sectionmark}[1]{\markright{\thesection}{}}
+    \renewcommand{\footrulewidth}{0.4pt}
+    \newpage
  
 
    \include{Gr10-ScienceSkills}
        \include{Gr10-classification}
       \include{Gr10-StatesOfMatter}
       \include{Gr10-atom}
-        \include{Gr10-periodictable}
-       \include{Gr10-bonding}
-      \include{Gr10-transversepulses}
-       \include{Gr10-transversewaves}
-       \include{Gr10-longitudinalwaves}
+       \include{Gr10-periodictable}
+      \include{Gr10-bonding}
+     \include{Gr10-transversepulses}
+      \include{Gr10-transversewaves}
+      \include{Gr10-longitudinalwaves}
         \include{Gr10-sound}
        \include{Gr10-emradiation}
        \include{Gr10-composition}
@@ -50,8 +51,9 @@
         \include{Gr10-hydrosphere}
          \include{Gr10-AppendixUnits}
       \include{Gr10-ExerciseSolutions}
-
-%\includepdf[pages=2]{../covers/PhScGr10.pdf}
+\cleardoublepage
+\mbox{}
+\includepdf[pages=1]{../covers/science-gr10-back.pdf}
 
 
 %     \include{PhysSci_Gr10_Ch_25-chapterGlossary}

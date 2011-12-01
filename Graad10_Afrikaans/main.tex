@@ -1,53 +1,50 @@
-\documentclass[9pt]{extbook}
- \include{preamble}    
+\documentclass[10pt, openany]{extbook}
+
+
+\usepackage{pdfpages}
+ \include{preamble}      
 
 
 
 \begin{document}
     \raggedbottom
-    %\bibliographystyle{plain} 
-    
-   % \catcode`\^^J=10 %ignore line feeds since they mean nothing to XML
-   % \catcode`\^^M=10 %ignore carriage returns since they mean nothing to XML
-  
 
-  %  \include{titlepages}
-
-   
+    \frontmatter
+    \includepdf[pages=1]{../covers/science-gr10-front.pdf}
+    \include{EverythingScienceTitlePages}   
     \tableofcontents
     \mainmatter
     \renewcommand{\sectionmark}[1]{\markright{\thesection}{}}
     \renewcommand{\footrulewidth}{0.4pt}
     \newpage
- 
 
-      \include{Gr10-ScienceSkills}                % translated
-%      \include{Gr10-classification}              % translated
-%     \include{Gr10-StatesOfMatter}               % translated
-%     \include{Gr10-atom}                         % Translated
-%    \include{Gr10-periodictable}                 % translated
-%     \include{Gr10-bonding}                      % translated  
-%     \include{Gr10-transversepulses}             %translated
-%     \include{Gr10-transversewaves}              %translated
-%      \include{Gr10-longitudinalwaves}           %translated
-%      \include{Gr10-sound}                       % translated
-%      \include{Gr10-emradiation}                 % translated
-%     \include{Gr10-composition}                  % translated
-%      \include{Gr10-physchemchange}              % translated
-%     \include{Gr10-chemchange}                    % translated
-%      \include{Gr10-magnetism}                   % translated
-%      \include{Gr10-electrostatics}              % translated
-%     \include{Gr10-electriccircuits}             % translated
-%     \include{Gr10-reactionsaq}                   % translated
-%     \include{Gr10-quanchemchange}               % translated
+
+  \include{Gr10-ScienceSkills}                % translated
+  \include{Gr10-classification}              % translated
+  \include{Gr10-StatesOfMatter}               % translated
+  \include{Gr10-atom}                         % Translated
+  \include{Gr10-periodictable}                 % translated
+  \include{Gr10-bonding}                      % translated  
+  \include{Gr10-transversepulses}             %translated
+  \include{Gr10-transversewaves}              %translated
+  \include{Gr10-longitudinalwaves}           %translated
+  \include{Gr10-sound}                       % translated
+  \include{Gr10-emradiation}                 % translated
+  \include{Gr10-composition}                  % translated
+  \include{Gr10-physchemchange}              % translated
+  \include{Gr10-chemchange}                    % translated
+  \include{Gr10-magnetism}                   % translated
+  \include{Gr10-electrostatics}              % translated
+  \include{Gr10-electriccircuits}             % translated
+  \include{Gr10-reactionsaq}                   % translated
+  \include{Gr10-quanchemchange}               % translated
     \include{Gr10-vectors}                        % translated
-%     \include{Gr10-motion}                        % translated
-%     \include{Gr10-energy}                        % translated
-%     \include{Gr10-hydrosphere}                   % translated
-%     \include{Gr10-AppendixUnits}
-%     \include{PhysSci_Gr10_Ch_25-chapterGlossary}
-%     \include{PhysSci_Gr10_Ch_26-chapterIndexofKeywordsandTerms}
-%    \include{PhysSci_Gr10_Ch_27-chapterAttributionsdefleftmarkATTRIBUTIONSdefrightmarkATTRIBUTIONSlabelcol11305Attributionsvspace3cmbeginminipagetextwidth}
+  \include{Gr10-motion}                        % translated
+  \include{Gr10-energy}                        % translated
+  \include{Gr10-hydrosphere}                   % translated
+  \include{Gr10-AppendixUnits}
+  \include{Gr10-ExerciseSolutions}
+
    
     
     

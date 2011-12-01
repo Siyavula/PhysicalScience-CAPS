@@ -8,11 +8,14 @@
 
 \usepackage{extsizes}
    
-   \newenvironment{toc}%
-    {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
-    \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
-    \setlength{\partopsep}{0cm}}
-    {\end{description}}
+%    \newenvironment{toc}%
+%     {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
+%     \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
+%     \setlength{\partopsep}{0cm}}
+%     {\end{description}}
+
+\usepackage{tocloft}
+\setlength{\cftsecnumwidth}{3em}
 
     \newenvironment{indexheading}%
     {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
@@ -29,7 +32,7 @@
 \newlength{\saveparindentlength}
 \newlength{\saveparindentlengthtwo}
 
-    \usepackage[paper=letter, 
+    \usepackage[paper=a4paper, 
       lmargin=0.1\paperwidth, rmargin=0.25\paperwidth, 
       tmargin=1in, bmargin=1in,
       twoside, centering,
@@ -185,7 +188,7 @@
 \newcommand{\edt}{\Delta t}            % delta time dt, in text
 \newcommand{\dt}{$\edt$}            % delta time dt, in text
 \newcommand{\vel}{$v$}                % velocity
-\newcommand{\kph}{km$\cdot$hr$^{-1}$}    %km/h in text
+\newcommand{\kph}{km$\cdot$h$^{-1}$}    %km/h in text
 \newcommand{\momen}{\vec{p}}            %momentum
 \newcommand{\kener}{KE}                            %kinetic energy
 \newcommand{\poten}{PE}                            %kinetic energy
@@ -215,7 +218,7 @@ Sien inleidende video: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/
 }
 
 \newcommand{\simulation}[2]{
-Sien simulasie: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulasie: #2 by www.everythingscience.co.za) \par
+Sien simulasie:  (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulasie: #2 by www.everythingscience.co.za) \par
 }
 
 
@@ -287,14 +290,13 @@ skipabove=\baselineskip]%
 linecolor=red%
 ]
 %\begin{mdframed}[linewidth=2pt,linecolor=red]%
-\vspace{3mm}
 \begin{center}
 \noindent%
 \textbf{WAARSKUWING:}\par
 #1
 \end{center}
 \end{mdframed}
-\vspace{3mm}}
+\vspace{2mm}}
 
 
 \newcommand{\Note}[1]{
@@ -302,7 +304,7 @@ linecolor=red%
 \begin{minipage}[h]{0.225\paperwidth}
 
 \begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, leftmargin=15pt, rightmargin=15pt]
-\textbf{\textit{NOTA}}
+\textbf{\textit{LET WEL}}
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray,leftmargin=15pt, rightmargin=15pt, skipabove=-4pt]
 \small #1
@@ -366,7 +368,7 @@ linecolor=red%
 \noindent
 \textit{Stap \arabic{stepcounter}} : \textit{\textbf{#1}}
 \par\noindent
-\leftskip50pt
+\leftskip40pt
 \addtocounter{stepcounter}{1}}
 
 \definecolor{siyavula-gray}{RGB}{242,242,242}
@@ -397,14 +399,14 @@ linecolor=red%
 \vspace*{18pt}
 \noindent
 \textit{\noindent #2}
-\vspace*{28pt}
+\vspace*{18pt}
 \par\noindent
 \textbf{\large\textit{OPLOSSING}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
 \noindent
  #3%
-\vspace*{28pt}
+\vspace*{18pt}
 \hrule
 \addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
 %\vspace{.25cm}
@@ -507,7 +509,7 @@ linecolor=red%
 \newenvironment{eocexercises}[1]
 {
 \eocexercisesheading
-\addcontentsline{toc}{section}{Einde van hoofstuk oefeninge}
+% \addcontentsline{toc}{section}{Einde van hoofstuk oefeninge}
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
@@ -792,6 +794,7 @@ linecolor=red%
 \vspace*{2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
 \begin{quotation}
+\noindent
 }%
 {%
 \end{quotation}
@@ -1081,9 +1084,9 @@ linecolor=red%
 }
 \par
 \vspace{\baselineskip}
-\addcontentsline{toc}{section}{Opsomming}
+% \addcontentsline{toc}{section}{Opsomming}
 
-Sien die opsommings aandbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Aanbieding: #1 by www.everythingscience.co.za)
+Sien die opsommings aanbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Aanbieding: #1 by www.everythingscience.co.za)
 
 }
 
