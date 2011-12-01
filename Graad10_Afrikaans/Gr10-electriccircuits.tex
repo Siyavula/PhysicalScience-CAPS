@@ -803,7 +803,7 @@ stroombaan.
 
 % draw resistors
 
-\resistor[dipolestyle=rectangle](C)(D){$\rm{R}_{1}$}
+\resistor[dipolestyle=rectangle](C)(D){$\text{R}_{1}$}
 
 % Second case
 \rput(4.5,0){
@@ -823,8 +823,8 @@ stroombaan.
 
 % draw resistors
 
-\resistor[dipolestyle=rectangle](C)(D){$\rm{R}_{1}$}
-\resistor[dipolestyle=rectangle](A)(D){$\rm{R}_{2}$}
+\resistor[dipolestyle=rectangle](C)(D){$\text{R}_{1}$}
+\resistor[dipolestyle=rectangle](A)(D){$\text{R}_{2}$}
 %\resistor[dipolestyle=rectangle](H)(J){}
 }
 
@@ -850,9 +850,9 @@ stroombaan.
 
 % draw resistors
 
-\resistor[dipolestyle=rectangle](A)(D){$\rm{R}_{2}$}
-\resistor[dipolestyle=rectangle](D)(C){$\rm{R}_{1}$}
-\resistor[dipolestyle=rectangle](B)(C){$\rm{R}_{3}$}
+\resistor[dipolestyle=rectangle](A)(D){$\text{R}_{2}$}
+\resistor[dipolestyle=rectangle](D)(C){$\text{R}_{1}$}
+\resistor[dipolestyle=rectangle](B)(C){$\text{R}_{3}$}
 }
 \end{pspicture}
 \end{center}
@@ -865,9 +865,9 @@ dieselfde stroombaan.
 
 \end{g_experiment}
 
-Die totale weerstand is gelyk aan $\rm{R}_{1}$ in die eerste stroombaan, aan
-$\rm{R}_{1}$ + $\rm{R}_{2}$ in die tweede stroombaan en 
-$\rm{R}_{1}$ + $\rm{R}_{2}$ + $\rm{R}_{3}$ in die derde stroombaan.
+Die totale weerstand is gelyk aan $\text{R}_{1}$ in die eerste stroombaan, aan
+$\text{R}_{1}$ + $\text{R}_{2}$ in die tweede stroombaan en 
+$\text{R}_{1}$ + $\text{R}_{2}$ + $\text{R}_{3}$ in die derde stroombaan.
 In die algemeen, vir resistors in serie, word die totale weerstand
 gegee deur:
 \begin{equation*}
@@ -1295,7 +1295,7 @@ Beskou die volgende stroombaandiagram:\\
 \psline(B)(C)
 \psline(A)(D)
 % draw resistors
-\resistor[dipolestyle=rectangle](C)(D){$\rm{V}_{1}$}
+\resistor[dipolestyle=rectangle](C)(D){$\text{V}_{1}$}
 \end{pspicture}}\end{center}\\
 Wat is die spanning oor die resistor in die gegewe stroombaan?
 }{%
@@ -1325,7 +1325,7 @@ V_{battery} = V_{totaal} = V_{1}
 V_{battery} = V_{totaal} = V_{1}
 \end{equation*}
 \begin{equation*}
-V_{1} = 2\rm{V}
+V_{1} = 2\text{V}
 \end{equation*}
 
 \westep{Skryf die finale antwoord neer}
@@ -1348,8 +1348,8 @@ Beskou die volgende stroombaan:\\
 \battery(A)(B){2V}
 \psline(B)(C)
 % draw resistors
-\resistor[dipolestyle=rectangle](A)(D){$V_{\rm{B}}=1$V}
-\resistor[dipolestyle=rectangle](C)(D){$V_{\rm{A}}$}
+\resistor[dipolestyle=rectangle](A)(D){$V_{\text{B}}=1$V}
+\resistor[dipolestyle=rectangle](C)(D){$V_{\text{A}}$}
 \end{pspicture}\\
 Wat is die spanning oor die onbekende resistor in die gegewe stroombaan?
 }%
@@ -1359,10 +1359,10 @@ Ons het 'n stroombaan met 'n battery en twee resistors. Ons weet wat die
 spanning oor die battery en een van die resistors is. Ons wil uitvind wat die
 spanning oor die ander resistor is.
 \begin{equation*}
-V_{battery} = 2\rm{V}
+V_{battery} = 2\text{V}
 \end{equation*}
 \begin{equation*}
-V_{\rm{B}} = 1\rm{V}
+V_{\text{B}} = 1\text{V}
 \end{equation*}
 \westep{Toepaslike beginsels}
 Ons weet dat die spanning oor die battery gelyk moet wees aan die totale
@@ -1373,7 +1373,7 @@ V_{battery} = V_{totaal}
 Die totale spanning in die stroombaan is die som van die spanning oor elke
 individuele resistor.
 \begin{equation*}
-V_{Totaal} = V_{\rm{A}} + V_{\rm{B}}
+V_{Totaal} = V_{\text{A}} + V_{\text{B}}
 \end{equation*}
 Gebruik die verwantskap tussen die spanning oor die battery en die totale
 spanning oor die resistors:
@@ -1382,8 +1382,8 @@ V_{battery} = V_{totaal}
 \end{equation*}
 \begin{align*}
 V_{battery} &= V_{1} + V_{resistor}\\
-2\rm{V} &= V_{1} + 1\rm{V} \\
- V_{1} &=  1\rm{V}
+2\text{V} &= V_{1} + 1\text{V} \\
+ V_{1} &=  1\text{V}
 \end{align*}
 
 \westep{Skryf die finale antwoord neer}
@@ -1406,9 +1406,9 @@ Beskou die stroombaandiagram:
 \pnode(2,.5){I}
 \pnode(4,.5){J}
 \battery(A)(B){7V}
-\resistor[dipolestyle=rectangle](A)(D){$V_{\rm{C}}=4$V}
-\resistor[dipolestyle=rectangle](D)(C){$V_{\rm{B}}$}
-\resistor[dipolestyle=rectangle](B)(C){$V_{\rm{A}}=1$V}
+\resistor[dipolestyle=rectangle](A)(D){$V_{\text{C}}=4$V}
+\resistor[dipolestyle=rectangle](D)(C){$V_{\text{B}}$}
+\resistor[dipolestyle=rectangle](B)(C){$V_{\text{A}}=1$V}
 \end{pspicture}\\
 Wat is die spanning oor die onbekende resistor in die gegewe baan?
 }%
@@ -1418,11 +1418,11 @@ Ons het 'n stroombaan met drie resistors. Ons weet wat die spanning oor die
 battery en twee van die resistors is. Ons wil die spanning oor die onbekende
 resistor uitvind.
 \begin{equation*}
-V_{battery} = 7\rm{V}
+V_{battery} = 7\text{V}
 \end{equation*}
 \begin{eqnarray*}
-V_{bekend} &=& V_{\rm{A}}+V_{\rm{C}}\\
-          &=& 1\rm{V} + 4\rm{V}
+V_{bekend} &=& V_{\text{A}}+V_{\text{C}}\\
+          &=& 1\text{V} + 4\text{V}
 \end{eqnarray*}
 
 \westep{Toepaslike beginsels}
@@ -1434,7 +1434,7 @@ V_{battery} = V_{totaal}
 Die totale spanning is die som van die spanning oor al die individule
 resistors.
 \begin{equation*}
-V_{totaal} = V_{\rm{B}} + V_{bekend}
+V_{totaal} = V_{\text{B}} + V_{bekend}
 \end{equation*}
 Gebruik die verwantskap tussen spanning oor die battery en die spanning oor die
 resistors
@@ -1442,9 +1442,9 @@ resistors
 V_{battery} = V_{totaal}
 \end{equation*}
 \begin{eqnarray*}
-V_{battery} &=& V_{\rm{B}} + V_{bekend}\\
-7\rm{V} & = & V_{\rm{B}} + 5\rm{V} \\
- V_{\rm{B}} & = & 2\rm{V}
+V_{battery} &=& V_{\text{B}} + V_{bekend}\\
+7\text{V} & = & V_{\text{B}} + 5\text{V} \\
+ V_{\text{B}} & = & 2\text{V}
 \end{eqnarray*}
 
 \westep{Finale resultaat}
@@ -1485,7 +1485,7 @@ stroombaan? Wenk: die res van die stroombaan is dieselfde as die vorige probleem
 \westep{Kort antwoord}
 Die stroombaan is dieselfde as die vorige voorbeeld en ons weet dat die
 spanning tussen twee punte in 'n stroombaan nie afhang van wat tussen hulle is
-nie, dus is die antwoord dieselfde as hierbo $V_{parallel}  = 2\rm{V}$.
+nie, dus is die antwoord dieselfde as hierbo $V_{parallel}  = 2\text{V}$.
 
 \westep{Bevestig wat jy het, asook die eenhede - lang antwoord}
 Ons het 'n stroombaan met 'n battery en vyf resistors (twee in serie en drie
@@ -1493,10 +1493,10 @@ in parallel). Ons weet wat die spanning oor die battery en twee van die
 resistors is. Ons wil uitvind wat die spanning oor die resistors in parallel,
 $V_{parallel}$ is.
 \begin{equation*}
-V_{battery} = 7\rm{V}
+V_{battery} = 7\text{V}
 \end{equation*}
 \begin{equation*}
-V_{bekend} = 1\rm{V} + 4\rm{V}
+V_{bekend} = 1\text{V} + 4\text{V}
 \end{equation*}
 \westep{Toepaslike beginsels}
 Ons weet dat die spanning oor die battery gelyk moet wees aan die spanning oor
@@ -1517,8 +1517,8 @@ V_{battery} = V_{Totaal}
 \end{equation*}
 \begin{eqnarray*}
 V_{battery} &=& V_{parallel} + V_{bekend}\\
-7\rm{V} & = & V_{1} + 5\rm{V} \\
- V_{parallel} & = & 2\rm{V}
+7\text{V} & = & V_{1} + 5\text{V} \\
+ V_{parallel} & = & 2\text{V}
 \end{eqnarray*}}\end{wex}
 
 

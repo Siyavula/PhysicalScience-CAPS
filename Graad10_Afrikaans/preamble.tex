@@ -177,7 +177,7 @@
 \newcommand{\eW}{\,\text{W}}                %W in equation
 \newcommand{\ms}{$\text{m}\cdot\text{s}^{-1}$}                %m/s in text
 \newcommand{\mss}{$\text{m}\cdot\text{s}^{-2}$}                %m/s in text
-\newcommand{\ems}{\,\text{m} \cdot \text{s}^{-1}}}            %m/s in equation
+\newcommand{\ems}{\,\text{m} \cdot \text{s}^{-1}}            %m/s in equation
 \newcommand{\emss}{\,\text{m} \cdot \text{s}^{-2}}            %m/s in equation
 \newcommand{\px}{$x$}                % position x, in text
 \newcommand{\py}{$y$}                % position y, in text
@@ -322,36 +322,36 @@ linecolor=red%
 
     \setlength{\parindent}{0pt}
 
-    
-	\newenvironment{note}[1]%
-	{\begin{list}{}{%
- 	\setlength{\labelsep}{0pt}\setlength{\rightmargin}{20pt}%
-        \setlength{\leftmargin}{20pt}%
-	\setlength{\labelwidth}{0pt}\setlength{\listparindent}{0pt}}%
-        \item\textbf{\textsc{#1}}}%
-	{\end{list}}
+%   
+%       \newenvironment{note}[1]%
+%       {\begin{list}{}{%
+%	\setlength{\labelsep}{0pt}\setlength{\rightmargin}{20pt}%
+%       \setlength{\leftmargin}{20pt}%
+%       \setlength{\labelwidth}{0pt}\setlength{\listparindent}{0pt}}%
+%       \item\textbf{\textsc{#1}}}%
+%       {\end{list}}
 
-  
+% 
 
-    \newenvironment{cnxcaption}%
-	{\begin{list}{}{%
- 	\setlength{\labelsep}{0pt}\setlength{\rightmargin}{25pt}%
-        \setlength{\leftmargin}{25pt}%
-	\setlength{\labelwidth}{0pt}\setlength{\listparindent}{0pt}}%
-        \item}%
-	{\end{list}}
+%   \newenvironment{cnxcaption}%
+%       {\begin{list}{}{%
+%	\setlength{\labelsep}{0pt}\setlength{\rightmargin}{25pt}%
+%       \setlength{\leftmargin}{25pt}%
+%       \setlength{\labelwidth}{0pt}\setlength{\listparindent}{0pt}}%
+%       \item}%
+%       {\end{list}}
 
-        \newenvironment{example}{%
-          \noindent
-          \begingroup
-          \leftskip=20pt\rightskip=\leftskip
-        }{%
-          \vspace{\rubberspace}\par
-          \endgroup
-        }
+%       \newenvironment{example}{%
+%         \noindent
+%         \begingroup
+%         \leftskip=20pt\rightskip=\leftskip
+%       }{%
+%         \vspace{\rubberspace}\par
+%         \endgroup
+%       }
 
-        %\newenvironment{exercise}{\begin{example}}
-        %{\end{example}}
+%       %\newenvironment{exercise}{\begin{example}}
+%       %{\end{example}}
 
 % Inserted by MH to get step number etc. to work nicely
 % My attempt to define a worked example environment
@@ -442,44 +442,44 @@ linecolor=red%
 
 
 
-\newenvironment{wex2}[3]
-{% This is a picture at the beginning, a line or bar or something else
-% this command puts a bar in the margin and sets the bar width
-% Now we set margins
-% \begin{center}
-%\pagebreak
-%\begin{flushleft}
-%\begin{pspicture}(0,0)(10,0.01)
-% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
-% \psline[linecolor=gray]{-}(0,0)(0,-2)
-%\end{pspicture}
-%\end{flushleft}
-%\end{center}
-\begin{quotation}
-\noindent
-\vspace{.5cm}
-\setlength{\parindent}{0pt}
-%% Title and counter
-\rput(-2.0,0){\pspencil}\noindent
-\begin{mdframed}[linewidth=2,linecolor=black,backgroundcolor=lightgray]
-\textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
-#1}\par
-\textbf{Question:} #2\par
-\textbf{Answer}\par #3%
-\addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
-\par%\vspace{.25cm}
-}%
-{%
-\end{mdframed}
-\end{quotation}
-%\nopagebreak[4]
-\begin{flushright}
-%\begin{pspicture}(0,0)(10,0.01)
-% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
-% \psline[linecolor=gray]{-}(10,0)(10,2)
-%\end{pspicture}
-\end{flushright}
-\setlength{\parindent}{\saveparindentlength}}
+%   \newenvironment{wex2}[3]
+%   {% This is a picture at the beginning, a line or bar or something else
+%   % this command puts a bar in the margin and sets the bar width
+%   % Now we set margins
+%   % \begin{center}
+%   %\pagebreak
+%   %\begin{flushleft}
+%   %\begin{pspicture}(0,0)(10,0.01)
+%   % \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
+%   % \psline[linecolor=gray]{-}(0,0)(0,-2)
+%   %\end{pspicture}
+%   %\end{flushleft}
+%   %\end{center}
+%   \begin{quotation}
+%   \noindent
+%   \vspace{.5cm}
+%   \setlength{\parindent}{0pt}
+%   %% Title and counter
+%   \rput(-2.0,0){\pspencil}\noindent
+%   \begin{mdframed}[linewidth=2,linecolor=black,backgroundcolor=lightgray]
+%   \textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
+%   #1}\par
+%   \textbf{Question:} #2\par
+%   \textbf{Answer}\par #3%
+%   \addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
+%   \par%\vspace{.25cm}
+%   }%
+%   {%
+%   \end{mdframed}
+%   \end{quotation}
+%   %\nopagebreak[4]
+%   \begin{flushright}
+%   %\begin{pspicture}(0,0)(10,0.01)
+%   % \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
+%   % \psline[linecolor=gray]{-}(10,0)(10,2)
+%   %\end{pspicture}
+%   \end{flushright}
+%   \setlength{\parindent}{\saveparindentlength}}
 
 %EZ new counters for exercises, 
 \newcounter{exercisecounter}
@@ -525,51 +525,51 @@ linecolor=red%
 \setlength{\parindent}{\saveparindentlength}
 }
 
-\newenvironment{f_experiment_deprecated}[1]
-{
-\begin{quotation}
-\begin{mdframed}[linewidth=2pt,linecolor=darkgray]
-\noindent
-\vspace{.5cm}
-\setlength{\parindent}{0pt}
-\textbf{\textit{Formal Experiment:}
-#1}\par
-}%
-{%
-\end{mdframed}
-\end{quotation}
-\setlength{\parindent}{\saveparindentlength}}
+%   \newenvironment{f_experiment_deprecated}[1]
+%   {
+%   \begin{quotation}
+%   \begin{mdframed}[linewidth=2pt,linecolor=darkgray]
+%   \noindent
+%   \vspace{.5cm}
+%   \setlength{\parindent}{0pt}
+%   \textbf{\textit{Formal Experiment:}
+%   #1}\par
+%   }%
+%   {%
+%   \end{mdframed}
+%   \end{quotation}
+%   \setlength{\parindent}{\saveparindentlength}}
 
 
-\newenvironment{i_experiment_deprecated}[1]
-{
-\begin{quotation}
-\begin{mdframed}[linewidth=2pt,linecolor=lightgray]
-\noindent
-\vspace{.5cm}
-\setlength{\parindent}{0pt}
-\textbf{\textit{Informal Experiment:}
-#1}\par
-}%
-{%
-\end{mdframed}
-\end{quotation}
-\setlength{\parindent}{\saveparindentlength}}
+%   \newenvironment{i_experiment_deprecated}[1]
+%   {
+%   \begin{quotation}
+%   \begin{mdframed}[linewidth=2pt,linecolor=lightgray]
+%   \noindent
+%   \vspace{.5cm}
+%   \setlength{\parindent}{0pt}
+%   \textbf{\textit{Informal Experiment:}
+%   #1}\par
+%   }%
+%   {%
+%   \end{mdframed}
+%   \end{quotation}
+%   \setlength{\parindent}{\saveparindentlength}}
 
-\newenvironment{g_experiment_deprecated}[1]
-{
-\begin{quotation}
-\begin{mdframed}[linewidth=2pt,linecolor=lightgray]
-\noindent
-\vspace{.5cm}
-\setlength{\parindent}{0pt}
-\textbf{\textit{General Experiment:}
-#1}\par
-}%
-{%
-\end{mdframed}
-\end{quotation}
-\setlength{\parindent}{\saveparindentlength}}
+%   \newenvironment{g_experiment_deprecated}[1]
+%   {
+%   \begin{quotation}
+%   \begin{mdframed}[linewidth=2pt,linecolor=lightgray]
+%   \noindent
+%   \vspace{.5cm}
+%   \setlength{\parindent}{0pt}
+%   \textbf{\textit{General Experiment:}
+%   #1}\par
+%   }%
+%   {%
+%   \end{mdframed}
+%   \end{quotation}
+%   \setlength{\parindent}{\saveparindentlength}}
 
 \newenvironment{f_experiment}[1]{
 \par
@@ -581,11 +581,8 @@ linecolor=red%
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
 \setlength{\parindent}{0pt}
-
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
-
-
 \begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
 \vspace*{8pt}
 {\Large\textbf{\textit{Formele eksperiment:}} } {\Large\textit{#1}}
@@ -601,7 +598,6 @@ linecolor=red%
 \setlength{\parindent}{\oldparindent}
 \setlength{\floatsep}{\myfloatsep}
 \par
-
 }
 
 \newenvironment{i_experiment}[1]{
@@ -809,34 +805,34 @@ linecolor=red%
 
 
 
-\newenvironment{Investigation_old}[1]
-{
-\begin{quotation}
-\noindent
-\vspace{.5cm}
-\setlength{\parindent}{0pt}
-\textbf{\textit{Investigation:}
-#1}\par
-}%
-{%
-\end{quotation}
-\setlength{\parindent}{\saveparindentlength}}
+%   \newenvironment{Investigation_old}[1]
+%   {
+%   \begin{quotation}
+%   \noindent
+%   \vspace{.5cm}
+%   \setlength{\parindent}{0pt}
+%   \textbf{\textit{Investigation:}
+%   #1}\par
+%   }%
+%   {%
+%   \end{quotation}
+%   \setlength{\parindent}{\saveparindentlength}}
 
 
 
 
-        \newenvironment{cnxrule}{\begin{example}}
-        {\end{example}}
+%           \newenvironment{cnxrule}{\begin{example}}
+%           {\end{example}}
 
-\newenvironment{exercise}{\textbf{\par Needs to be changed to wex environment\par}\begin{example}}
-        {\end{example}}
+%   \newenvironment{exercise}{\textbf{\par Needs to be changed to wex environment\par}\begin{example}}
+%           {\end{example}}
 
 
-        \newenvironment{definition}{\begin{example}}
-        {\end{example}}
+%           \newenvironment{definition}{\begin{example}}
+%           {\end{example}}
 
-        \newenvironment{listname}{\vspace{\rubberspace}\par\noindent{}}{\vspace*{0pt}
-        \nopagebreak}
+%           \newenvironment{listname}{\vspace{\rubberspace}\par\noindent{}}{\vspace*{0pt}
+%           \nopagebreak}
 
     \newcommand{\lessthan}{\ensuremath{<}}
     \newcommand{\greatthan}{\ensuremath{>}}
