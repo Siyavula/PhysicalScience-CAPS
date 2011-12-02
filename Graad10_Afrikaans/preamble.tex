@@ -189,7 +189,7 @@
 \newcommand{\edt}{\Delta t}            % delta time dt, in text
 \newcommand{\dt}{$\edt$}            % delta time dt, in text
 \newcommand{\vel}{$v$}                % velocity
-\newcommand{\kph}{km$\cdot$hr$^{-1}$}    %km/h in text
+\newcommand{\kph}{km$\cdot$h$^{-1}$}    %km/h in text
 \newcommand{\momen}{\vec{p}}            %momentum
 \newcommand{\kener}{KE}                            %kinetic energy
 \newcommand{\poten}{PE}                            %kinetic energy
@@ -204,19 +204,23 @@
 \def\deg{$^\circ$}
 \newcommand{\ud}{\mathrm{d}}
 
+\renewcommand{\figurename}{Figuur}
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\chaptername}{Hoofstuk}
+\renewcommand{\contentsname}{Inhoud}
 
 
 \newcommand{\chapterstartvideo}[1]{
-See introductory video: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #1 at www.everythingscience.co.za)\par
+\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Sien inleidende video: #1 at www.everythingscience.co.za\par
 }
 
 \newcommand{\simulation}[2]{
-See simulation: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulation: #2 at www.everythingscience.co.za) \par
+(\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Sien simulasie: #2 by www.everythingscience.co.za) \par
 }
 
 
 \newcommand{\mindsetvid}[2]{
-\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} See video: #2 at www.everythingscience.co.za \par
+\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Sien video: #2 by www.everythingscience.co.za \par
 }
 
 
@@ -224,7 +228,7 @@ See simulation: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.p
 \marginpar{%odd
 \begin{minipage}[m]{0.225\paperwidth}
 \begin{mdframed}[linecolor=black, linewidth=1.0pt,leftmargin=15pt, rightmargin=15pt]
-\textbf{\textit{FACT}}
+\textbf{\textit{FEIT}}
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt, leftmargin=15pt, rightmargin=15pt]
 \small #1
@@ -246,7 +250,7 @@ See simulation: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.p
 \vspace*{10pt}
 \leftskip20pt
 \rightskip20pt
-{\Large\textsl{DEFINITION: } \textit{#1}}
+{\Large\textsl{DEFINISIE: } \textit{#1}}
 
 \par
 #2
@@ -269,7 +273,7 @@ skipabove=\baselineskip]%
 \marginpar{%odd
 \begin{minipage}[m]{0.225\paperwidth}
 \begin{mdframed}[linecolor=black, linewidth=1.0pt, leftmargin=15pt, rightmargin=15pt]
-\textbf{\textit{Tip}}
+\textbf{\textit{Wenk}}
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt,leftmargin=15pt, rightmargin=15pt]
 \small #1
@@ -286,7 +290,7 @@ linecolor=red%
 \vspace{3mm}
 \begin{center}
 \noindent%
-\textbf{Warning:}\par
+\textbf{Waarskuwing:}\par
 #1
 \end{center}
 \end{mdframed}
@@ -298,7 +302,7 @@ linecolor=red%
 \begin{minipage}[h]{0.225\paperwidth}
 
 \begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, leftmargin=15pt, rightmargin=15pt]
-\textbf{\textit{Note}}
+\textbf{\textit{Let wel}}
 \end{mdframed}
 \begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray,leftmargin=15pt, rightmargin=15pt, skipabove=-4pt]
 \small #1
@@ -383,19 +387,19 @@ linecolor=red%
 
 
 \begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt, innertopmargin=8pt, innerbottommargin=6pt, skipbelow=0pt]
-{\Large\textbf{\textit{Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Voorbeeld \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{-2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=10pt]
-{\large\textbf{\textit{QUESTION}}} \vspace*{4pt} 
+{\large\textbf{\textit{PROBLEEM}}} \vspace*{4pt} 
 \hrule
 \vspace*{18pt}
 \noindent
 \textit{\noindent #2}
 \vspace*{28pt}
 \par\noindent
-{\large\textbf{\textit{SOLUTION}}}\vspace*{4pt}
+{\large\textbf{\textit{OPLOSSING}}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
 \noindent
@@ -456,8 +460,8 @@ linecolor=red%
 \begin{mdframed}[linewidth=2,linecolor=black,backgroundcolor=lightgray]
 \textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
 #1}\par
-\textbf{Question:} #2\par
-\textbf{Answer}\par #3%
+\textbf{Probleem:} #2\par
+\textbf{Oplossing:}\par #3%
 \addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
 \par%\vspace{.25cm}
 }%
@@ -583,7 +587,7 @@ linecolor=red%
 
 \begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
 \vspace*{8pt}
-{\Large\textbf{\textit{Formal experiment:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Formele eksperiment:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{2pt}
@@ -617,7 +621,7 @@ linecolor=red%
 
 \begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
 \vspace*{8pt}
-{\Large\textbf{\textit{Informal experiment:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Informele eksperiment:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{2pt}
@@ -646,7 +650,7 @@ linecolor=red%
 {\clearpage\vspace*{-\topskip}}{} 
 \begin{mdframed}[backgroundcolor=siyavula-dark-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
 \vspace*{8pt}
-{\Large\textbf{\textit{General experiment:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Algemene eksperiment:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{2pt}
@@ -681,7 +685,7 @@ linecolor=red%
         \draw[color=white, draw=black, linewidth=1pt] (0,0) rectangle
           (0.2\textwidth, 28pt);
        \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
-              { \bfseries ~ \color{black} Activity:};
+              { \bfseries ~ \color{black} Aktiwiteit:};
        \end{tikzpicture}
     };
     
@@ -716,7 +720,7 @@ linecolor=red%
 \setlength{\parindent}{0pt}
 \hrule width \textwidth height 1pt\\
 \vspace{1pt}\hrule width \textwidth height 1pt\vspace{7pt}
-\textbf{\Large\textit{Group Discussion:}
+\textbf{\Large\textit{Groep Bespreking:}
 #1}
 \vspace{5pt}
 \hrule width \textwidth height 1pt
@@ -748,7 +752,7 @@ linecolor=red%
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{Case Study:}
+\textbf{\textit{Gevallestudie:}
 #1}\par
 }%
 {%
@@ -761,7 +765,7 @@ linecolor=red%
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{Project:}
+\textbf{\textit{Projek:}
 #1}\par
 }%
 {%
@@ -785,7 +789,7 @@ linecolor=red%
 
 \begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-dark-gray, leftmargin=10pt]
 \vspace*{8pt}
-{\Large\textbf{\textit{Investigation:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Ondersoek:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{2pt}
@@ -1023,7 +1027,7 @@ linecolor=red%
               \end{minipage}
               };
         \node[anchor=east,text centered, yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth+1.025\textwidth]
-              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~ESA\ABAlph{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~ESD\ABAlph{shortcodecounter}};
                \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -1050,7 +1054,7 @@ linecolor=red%
                 \end{minipage}
                 };
         \node[anchor=east,text centered, yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth+\textwidth]
-              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~ESA\ABAlph{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~ESD\ABAlph{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -1070,7 +1074,7 @@ linecolor=red%
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (1.2\paperwidth,2cm);
         \node[anchor=west,text centered ,yshift=1.cm, xshift=0.3\paperwidth]
-              {  \phantom{xxx} \color{black} Chapter \chapterlabel | Summary  };
+              {  \phantom{xxx} \color{black} Hoofstuk \chapterlabel | Opsomming  };
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -1079,7 +1083,7 @@ linecolor=red%
 \par
 \vspace{\baselineskip}
 
-See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Presentation: #1 at www.everythingscience.co.za)
+Sien die opsomminsaanbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} #1 by www.everythingscience.co.za)
 
 }
 
@@ -1094,7 +1098,7 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
         \draw[color=white, draw=black, line width=1pt] (0,0) rectangle
           (0.3\textwidth, 28pt);
        \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
-              { \bfseries ~ \color{black} Exercise \chapterlabel~-~\arabic{exercisecounter}   };
+              { \bfseries ~ \color{black} Oefening \chapterlabel~-~\arabic{exercisecounter}   };
        \end{tikzpicture}
     };
     
@@ -1125,7 +1129,7 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
         \draw[color=white, draw=black, very thick] (0,0) rectangle
           (0.3\textwidth,1.5cm);
        \node[anchor=west, yshift=0.75cm, text centered]
-              { ~~  \color{black} Chapter \chapterlabel };
+              { ~~  \color{black} Hoofstuk \chapterlabel };
        \end{tikzpicture}
     };
     
@@ -1135,7 +1139,7 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (0.69\textwidth,1.5cm);
             \node[anchor=west, yshift=0.75cm, text centered]
-              {   \color{black} End of chapter exercises };
+              {   \color{black}  Einde van hoofstuk oefeninge };
 
        \end{tikzpicture}
 
